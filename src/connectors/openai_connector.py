@@ -8,7 +8,7 @@ from .base import LLMConnector
 
 logger = logging.getLogger(__name__)
 
-MAX_TOKENS = 100
+MAX_TOKENS = 1000
 TEMPERATURE = 0.0
 
 class OpenAIConnector(LLMConnector):

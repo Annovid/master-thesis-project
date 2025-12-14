@@ -9,8 +9,8 @@ class Game(ABC):
     """Abstract base class for games."""
 
     @abstractmethod
-    def get_prompt(self, state: GameState, player_id: int) -> str:
-        """Generate prompt for LLM based on current state and player."""
+    def get_prompt(self, state: GameState, player_id: int, max_rounds: int) -> str:
+        """Generate prompt for LLM based on current state, player, and total rounds."""
 
     @abstractmethod
     def parse_action(self, response: str) -> Action:

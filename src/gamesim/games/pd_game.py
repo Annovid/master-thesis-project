@@ -9,7 +9,7 @@ from ..game.state import GameState
 logger = logging.getLogger(__name__)
 
 DEFAULT_PROMPT_TEMPLATE = """
-You are playing the Prisoner's Dilemma game. The payoff matrix is:
+You are playing the Prisoner's Dilemma game for {max_rounds} rounds. The payoff matrix is:
 - Both Cooperate: (3, 3)
 - You Cooperate, Opponent Defects: (0, 5)
 - You Defect, Opponent Cooperates: (5, 0)
@@ -37,10 +37,10 @@ class PrisonersDilemma(Game):
     def num_players(self) -> int:
         return 2
 
-    def get_prompt(self, state: GameState, player_id: int) -> str:
+    def get_prompt(self, state: GameState, player_id: int, max_rounds: int) -> str:
         """Generate prompt for the player."""
         history_str = self._format_history(state, player_id)
-        return DEFAULT_PROMPT_TEMPLATE.format(history=history_str)
+        return DEFAULT_PROMPT_TEMPLATE.format(history=history_str, max_rounds=max_rounds)
 
     def parse_action(self, response: str) -> Action:
         """Parse response into action."""

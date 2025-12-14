@@ -7,11 +7,11 @@ from ..game.state import GameState
 from ..games.base_game import Game, Action
 
 class AlwaysCooperate(Agent):
-    """Agent that always cooperates in PD or contributes half in PG."""
+    """Agent that always cooperates in PD or contributes full endowment in PG."""
 
     def act(self, state: GameState, game: Game, player_id: int) -> tuple[Action, dict[str, Any]]:
         if hasattr(game, 'endowment'):  # PG
-            action = game.endowment / 2
+            action = game.endowment
         else:
             action = COOPERATE
         return action, {"type": "simple", "strategy": "always_cooperate"}

@@ -14,9 +14,13 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 def create_agent(agent_config: dict, name: str):
     """Create an agent based on config."""
-    agent_type = agent_config["type"]
+    agent_type = agent_config.get("type")
+    if agent_type is None:
+        raise ValueError("Missing 'type' in agent config")
     if agent_type == "simple":
-        strategy = agent_config.get("strategy", "always_cooperate")
+        strategy = agent_config.get("strategy")
+        if strategy is None:
+            raise ValueError("Missing 'strategy' for simple agent")
         if strategy == "always_cooperate":
             return AlwaysCooperate(name)
         elif strategy == "always_defect":
@@ -26,10 +30,15 @@ def create_agent(agent_config: dict, name: str):
         else:
             raise ValueError(f"Unknown strategy: {strategy}")
     elif agent_type == "llm":
-        model = agent_config.get("model", "gpt-3.5-turbo")
-        temperature = agent_config.get("temperature", 0.0)
+        model = agent_config.get("model")
+        if model is None:
+            raise ValueError("Missing 'model' for llm agent")
+        temperature = agent_config.get("temperature")
+        if temperature is None:
+            raise ValueError("Missing 'temperature' for llm agent")
+        reasoning = agent_config.get("reasoning", False)
         connector = OpenAIConnector(model=model, temperature=temperature)
-        return LLMAgent(name, connector, temperature)
+        return LLMAgent(name, connector, temperature, reasoning)
     else:
         raise ValueError(f"Unknown agent type: {agent_type}")
 
