@@ -1,0 +1,7 @@
+artifacts/
+resources/
+
+__pycache__/
+
+venv
+.env

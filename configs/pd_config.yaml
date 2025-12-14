@@ -1,0 +1,11 @@
+game: pd
+rounds: 10
+payoff_matrix:
+  - [[3, 3], [0, 5]]
+  - [[5, 0], [1, 1]]
+agents:
+  - type: simple
+    strategy: always_cooperate
+  - type: llm
+    model: gpt-3.5-turbo
+    temperature: 0

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "game-sim"
+version = "0.1.0"
+description = "Simulation of economic games with LLM agents"
+authors = ["Your Name <your.email@example.com>"]
+packages = [{include = "gamesim", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^1.0.0"
+python-dotenv = "^1.0.0"
+pyyaml = "^6.0.0"
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools.packages.find]
+where = ["src"]
