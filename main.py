@@ -1,10 +1,12 @@
 import logging
+import argparse
 
 from dotenv import load_dotenv
 
 from src.gamesim.config import load_config
 from src.gamesim.simulation.runner import run_simulation
 from src.gamesim.reporting.report_writer import write_report
+from src.services.analyze.analyzer import analyze
 from src.gamesim.agents.simple_agents import AlwaysCooperate, AlwaysDefect, RandomAgent
 from src.gamesim.agents.llm_agent import LLMAgent
 from src.connectors.openai_connector import OpenAIConnector
@@ -42,10 +44,10 @@ def create_agent(agent_config: dict, name: str):
     else:
         raise ValueError(f"Unknown agent type: {agent_type}")
 
-def main() -> int:
+def main(config_path: str) -> int:
     """Main entry point for the simulation."""
     load_dotenv()
-    config = load_config()
+    config = load_config(config_path)
 
     agents = [
         create_agent(agent_config, f"Player{i+1}")
@@ -66,7 +68,8 @@ def main() -> int:
         config_dict.update({
             "num_players": config.game.num_players,
             "endowment": config.game.endowment,
-            "multiplier": config.game.multiplier
+            "multiplier": config.game.multiplier,
+            "transparency": config.transparency
         })
 
     results = run_simulation(config.game, agents, config.rounds, config_dict)
@@ -75,4 +78,14 @@ def main() -> int:
     return 0
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    parser = argparse.ArgumentParser(description="Game Simulation and Analysis")
+    parser.add_argument('--config', type=str, help='Path to YAML config file for simulation')
+    parser.add_argument('--analyze', type=str, help='Path to JSON file for analysis')
+    args = parser.parse_args()
+    
+    if args.analyze:
+        analyze(args.analyze)
+    elif args.config:
+        raise SystemExit(main(args.config))
+    else:
+        print("Use --config for simulation or --analyze for analysis")

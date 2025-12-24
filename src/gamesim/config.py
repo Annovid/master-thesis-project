@@ -21,18 +21,9 @@ class Config:
         self.rounds = rounds
         self.transparency = transparency
 
-def load_config() -> Config:
+def load_config(config_path: str) -> Config:
     """Load configuration from YAML file."""
-    parser = argparse.ArgumentParser(description="Run game simulation")
-    parser.add_argument(
-        "--config",
-        type=str,
-        required=True,
-        help="Path to YAML config file"
-    )
-    args = parser.parse_args()
-
-    config_path = Path(args.config)
+    config_path = Path(config_path)
     with config_path.open("r") as f:
         data = yaml.safe_load(f)
 

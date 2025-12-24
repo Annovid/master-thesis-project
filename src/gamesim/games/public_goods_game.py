@@ -78,7 +78,7 @@ class PublicGoodsGame(Game):
             logger.info(f"Last line: '{last_line}'")
             if last_line.startswith("Answer = "):
                 try:
-                    num_str = last_line.split("Answer = ")[1].strip()
+                    num_str = last_line.split("Answer = ")[1].strip().rstrip('.')
                     logger.info(f"Num str: '{num_str}'")
                     contrib = float(num_str)
                     return contrib

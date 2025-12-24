@@ -3,7 +3,7 @@ rounds: 10
 num_players: 4
 endowment: 10.0
 multiplier: 2.0
-transparency: false
+transparency: true
 agents:
   - type: llm
     model: gpt-3.5-turbo
