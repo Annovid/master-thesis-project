@@ -1,5 +1,7 @@
 import json
 import os
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -34,7 +36,17 @@ def run_simulation(game: Game, agents: List[Agent], n_rounds: int, config: dict)
     round_num = 0
     while not state.is_game_over():
         round_num += 1
-        actions_and_details = [agent.act(state, game, i) for i, agent in enumerate(agents)]
+        def act_agent(i, agent):
+            return agent.act(state, game, i)
+        
+        actions_and_details = []
+        with ThreadPoolExecutor(max_workers=len(agents)) as executor:
+            futures = [executor.submit(act_agent, i, agent) for i, agent in enumerate(agents)]
+            for future in as_completed(futures):
+                actions_and_details.append(future.result())
+        
+        # Sort by agent index
+        actions_and_details.sort(key=lambda x: x[1]['agent_id'] if 'agent_id' in x[1] else 0)
         actions = [ad[0] for ad in actions_and_details]
         details = [ad[1] for ad in actions_and_details]
         

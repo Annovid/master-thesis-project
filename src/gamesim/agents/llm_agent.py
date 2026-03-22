@@ -38,7 +38,7 @@ class LLMAgent(Agent):
             "temperature": self.temperature,
             "prompt": prompt
         }
-        action = game.parse_action(response, additional_info)
+        action = game.parse_action(response)
         if not game.validate_action(action):
             logger.warning(f"Invalid action {action}, using default")
             action = 0 if not hasattr(game, 'endowment') else 0.0

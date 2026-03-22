@@ -1,5 +1,5 @@
 game: pg
-rounds: 10
+rounds: 3
 num_players: 4
 endowment: 10.0
 multiplier: 2.0

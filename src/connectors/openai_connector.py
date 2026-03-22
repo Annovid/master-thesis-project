@@ -3,13 +3,13 @@ import os
 from typing import List, Dict
 
 from openai import OpenAI
+import os
 
 from .base import LLMConnector
 
 logger = logging.getLogger(__name__)
 
-MAX_TOKENS = 1000
-TEMPERATURE = 0.0
+DEFAULT_MAX_TOKENS = int(os.getenv("OPENAI_MAX_TOKENS", 1000))
 
 class OpenAIConnector(LLMConnector):
     """Connector for OpenAI API."""
@@ -32,7 +32,7 @@ class OpenAIConnector(LLMConnector):
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
-                max_tokens=MAX_TOKENS,
+                max_tokens=DEFAULT_MAX_TOKENS,
                 temperature=self.temperature
             )
             return response.choices[0].message.content.strip()

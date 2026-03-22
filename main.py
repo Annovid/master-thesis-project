@@ -80,6 +80,7 @@ def main(config_path: str) -> int:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Game Simulation and Analysis")
     parser.add_argument('--config', type=str, help='Path to YAML config file for simulation')
+    parser.add_argument('--game', type=str, choices=['pd', 'pg'], help='Quick run with default config for game type')
     parser.add_argument('--analyze', type=str, help='Path to JSON file for analysis')
     args = parser.parse_args()
     
@@ -87,5 +88,8 @@ if __name__ == "__main__":
         analyze(args.analyze)
     elif args.config:
         raise SystemExit(main(args.config))
+    elif args.game:
+        config_path = f'configs/{args.game}_config.yaml'
+        raise SystemExit(main(config_path))
     else:
-        print("Use --config for simulation or --analyze for analysis")
+        print("Use --config or --game for simulation, or --analyze for analysis")
