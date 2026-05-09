@@ -1,0 +1,31 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+HORIZON: 1
+TEMPERATURE: 0.0
+SAMPLE: 1
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 7cca08a0a04c66996aeb172ec88682efa599c9da6658b3b29be8911405a03767
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In a one-shot public goods game with no future interactions, the dominant strategy is to contribute 0, since each token contributed returns only 0.4 to me personally. Without repeated play or reputation effects, free-riding maximizes my expected payoff.
+
+Answer = 0

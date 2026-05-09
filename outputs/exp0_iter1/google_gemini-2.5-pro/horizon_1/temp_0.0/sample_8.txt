@@ -1,0 +1,50 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 1
+TEMPERATURE: 0.0
+SAMPLE: 8
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RESPONSE_SHA256: e53f436b2e0ac9a4787386c73247c19293891f57d61b0e7199d348b8c6c1d79f
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is a classic Public Goods Game. Let's analyze the payoff structure to determine the optimal strategy for maximizing my own score.
+
+My payoff is calculated as:
+`Payoff = 20 - My_Contribution + (1.6 * (My_Contribution + Others_Contributions)) / 4`
+
+Let's simplify this formula:
+`Payoff = 20 - My_Contribution + 0.4 * (My_Contribution + Others_Contributions)`
+`Payoff = 20 - My_Contribution + 0.4 * My_Contribution + 0.4 * Others_Contributions`
+`Payoff = 20 - 0.6 * My_Contribution + 0.4 * Others_Contributions`
+
+From this simplified formula, we can analyze the effect of my contribution on my payoff:
+1.  For every token I contribute, I lose 1 token directly from my endowment.
+2.  That same token goes into the pot, is multiplied by 1.6, and the result is divided by 4. So, my personal return from my own contribution is `(1.6 * 1) / 4 = 0.4` tokens.
+3.  Therefore, for every token I contribute, my net change in payoff is `-1 + 0.4 = -0.6` tokens.
+
+This means that contributing any amount results in a personal loss on that investment. To maximize my own payoff, I should minimize this loss. The way to do that is to contribute as little as possible.
+
+The other part of the formula, `0.4 * Others_Contributions`, is entirely dependent on the actions of other players and is outside of my control. Regardless of what they choose to contribute, my payoff will always be higher if I contribute less.
+
+Since this is a single-round game, there is no need to consider future consequences, building trust, or encouraging cooperation. The sole objective is to maximize my payoff in this one round. The dominant strategy, from a purely rational and self-interested perspective, is to contribute 0.
+
+Answer = 0.0

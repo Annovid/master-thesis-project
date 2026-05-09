@@ -1,0 +1,781 @@
+{
+  "models": [
+    "google/gemini-2.5-pro",
+    "meta-llama/llama-4-maverick"
+  ],
+  "provider": "openrouter",
+  "horizons": [
+    1,
+    10
+  ],
+  "temperatures": [
+    0.0
+  ],
+  "samples_per_cell": 5,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "env_provider": "auto",
+  "runs": [
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 0,
+      "response_path": "google_gemini-2.5-pro/horizon_1/temp_0.0/sample_0.txt",
+      "response_sha256": "e53f436b2e0ac9a4787386c73247c19293891f57d61b0e7199d348b8c6c1d79f",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778358926-QMgiyVYDOm7kcG6MAUBf",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 203,
+          "completion_tokens": 2856,
+          "total_tokens": 3059,
+          "cost": 0.02881375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.02881375,
+            "upstream_inference_prompt_cost": 0.00025375,
+            "upstream_inference_completions_cost": 0.02856
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2410,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 1,
+      "response_path": "google_gemini-2.5-pro/horizon_1/temp_0.0/sample_1.txt",
+      "response_sha256": "e53f436b2e0ac9a4787386c73247c19293891f57d61b0e7199d348b8c6c1d79f",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778358955-iDFl1CVcMtAQ0PpXnnWU",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 203,
+          "completion_tokens": 2856,
+          "total_tokens": 3059,
+          "cost": 0.02881375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.02881375,
+            "upstream_inference_prompt_cost": 0.00025375,
+            "upstream_inference_completions_cost": 0.02856
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2410,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 2,
+      "response_path": "google_gemini-2.5-pro/horizon_1/temp_0.0/sample_2.txt",
+      "response_sha256": "e53f436b2e0ac9a4787386c73247c19293891f57d61b0e7199d348b8c6c1d79f",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778358985-ixg6O93TLLjIjlfE5o07",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 203,
+          "completion_tokens": 2856,
+          "total_tokens": 3059,
+          "cost": 0.02881375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.02881375,
+            "upstream_inference_prompt_cost": 0.00025375,
+            "upstream_inference_completions_cost": 0.02856
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2410,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 3,
+      "response_path": "google_gemini-2.5-pro/horizon_1/temp_0.0/sample_3.txt",
+      "response_sha256": "74d18fbe4218142d61a349faae00f284a480c260ef6b368d8cb9cd7548faddbd",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is a one-shot Public Goods Game. My goal is to maximize my own payoff.\n\nLet's analyze the payoff structure.\nMy payoff is calculated as:\n`Payoff = Endowment - My_Contribution + (Multiplier * Total_Contributions) / Number_of_Players`\n\nPlugging in the specific values for this game:\n*   Endowment = 20.0\n*   My_Contribution = `c_1`\n*   Multiplier = 1.6\n*   Number_of_Players = 4\n*   Total_Contributions = `c_1 + c_2 + c_3 + c_4`\n\nThe formula for my payoff is:\n`Payoff = 20 - c_1 + (1.6 * (c_1 + c_2 + c_3 + c_4)) / 4`\n\nLet's simplify this to see how my own contribution `c_1` affects my payoff.\n`Payoff = 20 - c_1 + 0.4 * (c_1 + c_2 + c_3 + c_4)`\n`Payoff = 20 - c_1 + 0.4*c_1 + 0.4 * (c_2 + c_3 + c_4)`\n`Payoff = 20 - 0.6*c_1 + 0.4 * (Sum_of_others_contributions)`\n\nFrom this simplified formula, we can analyze the effect of my contribution `c_1`. The term `0.4 * (Sum_of_others_contributions)` is beyond my control. To maximize my payoff, I need to make the term `- 0.6*c_1` as large as possible. Since `c_1` must be non-negative (a contribution from 0 to 20), this is achieved by choosing the smallest possible value for `c",
+      "meta": {
+        "chat_id": "gen-1778359009-P7tYVOWUdA1RlRNDalhz",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 203,
+          "completion_tokens": 3996,
+          "total_tokens": 4199,
+          "cost": 0.04021375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04021375,
+            "upstream_inference_prompt_cost": 0.00025375,
+            "upstream_inference_completions_cost": 0.03996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3581,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 4,
+      "response_path": "google_gemini-2.5-pro/horizon_1/temp_0.0/sample_4.txt",
+      "response_sha256": "e53f436b2e0ac9a4787386c73247c19293891f57d61b0e7199d348b8c6c1d79f",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359042-AccNR52FfkBrUiY026d3",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 203,
+          "completion_tokens": 2856,
+          "total_tokens": 3059,
+          "cost": 0.02881375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.02881375,
+            "upstream_inference_prompt_cost": 0.00025375,
+            "upstream_inference_completions_cost": 0.02856
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2410,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 0,
+      "response_path": "google_gemini-2.5-pro/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "d8e390144701f56ad0a3069441dc69d8fe334fda21c4fbb95a16ce4faa4727d8",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359067-vZptnjHeoCQnHSYQLRpV",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 3844,
+          "total_tokens": 4049,
+          "cost": 0.03869625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.03869625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.03844
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3344,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 1,
+      "response_path": "google_gemini-2.5-pro/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "dd38c9c73ba22546a209578599e23b3d2c2880dfa3dbe1e7fedce4ee274aef49",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds.\n\n**Analysis of Payoff Structure:**\n*   My payoff is calculated as: `20 - my_contribution + 0.4 * (my_contribution + others'_contributions)`.\n*   This simplifies to: `20 - 0.6 * my_contribution + 0.4 * others'_contributions`.\n\nFrom this, two opposing incentives are clear:\n1.  **Individual Incentive (Short-term):** For every token I contribute, I lose 0.6 tokens from my personal payoff in that round. Therefore, the individually rational choice for a single round is to contribute 0, which is known as free-riding. If everyone does this, we all get a payoff of 20 each round.\n2.  **Group Incentive (Long-term):** The total pot is multiplied by 1.6, which is greater than 1. This means that for every token contributed, the group as a whole gains 0.6 tokens. The best outcome for the group is if everyone contributes their full 20 tokens. In this case, the total contribution is 80, the pot becomes 128, and each player receives a share of 32. After subtracting the initial contribution of 20, the net payoff for each player is 32.\n\n**Strategy for Round 1:**\nSince this is a repeated game, there's an opportunity to build trust and achieve a cooperative, high-payoff outcome (32 per round) instead of the non-cooperative, low-payoff outcome (20 per round).\n\n*   Contributing 0 in the first round would be the safest individual play, but it would likely lead to a cycle of non-cooperation, locking all players into the lower payoff for the entire game.\n*   Contributing the full 20 tokens is a strong signal of my intent to cooperate. It's a risk; if the other players choose to free-ride, I will receive a \"sucker's payoff\" of only 8 for this round. However, it is the best way to test for cooperation and potentially establish a mutually beneficial pattern for the next 9 rounds. The potential long-term gain from establishing cooperation outweighs the short-term risk of a low payoff in a single round.\n\nMy plan is to start with full cooperation. After this round, I can use my payoff to calculate what the other three players contributed in total and adjust my strategy accordingly in future rounds.\n\nTherefore",
+      "meta": {
+        "chat_id": "gen-1778359104-YgnlbbZ2aCnGS63XqnvN",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 3996,
+          "total_tokens": 4201,
+          "cost": 0.04021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.03996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3439,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 2,
+      "response_path": "google_gemini-2.5-pro/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "dd38c9c73ba22546a209578599e23b3d2c2880dfa3dbe1e7fedce4ee274aef49",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds.\n\n**Analysis of Payoff Structure:**\n*   My payoff is calculated as: `20 - my_contribution + 0.4 * (my_contribution + others'_contributions)`.\n*   This simplifies to: `20 - 0.6 * my_contribution + 0.4 * others'_contributions`.\n\nFrom this, two opposing incentives are clear:\n1.  **Individual Incentive (Short-term):** For every token I contribute, I lose 0.6 tokens from my personal payoff in that round. Therefore, the individually rational choice for a single round is to contribute 0, which is known as free-riding. If everyone does this, we all get a payoff of 20 each round.\n2.  **Group Incentive (Long-term):** The total pot is multiplied by 1.6, which is greater than 1. This means that for every token contributed, the group as a whole gains 0.6 tokens. The best outcome for the group is if everyone contributes their full 20 tokens. In this case, the total contribution is 80, the pot becomes 128, and each player receives a share of 32. After subtracting the initial contribution of 20, the net payoff for each player is 32.\n\n**Strategy for Round 1:**\nSince this is a repeated game, there's an opportunity to build trust and achieve a cooperative, high-payoff outcome (32 per round) instead of the non-cooperative, low-payoff outcome (20 per round).\n\n*   Contributing 0 in the first round would be the safest individual play, but it would likely lead to a cycle of non-cooperation, locking all players into the lower payoff for the entire game.\n*   Contributing the full 20 tokens is a strong signal of my intent to cooperate. It's a risk; if the other players choose to free-ride, I will receive a \"sucker's payoff\" of only 8 for this round. However, it is the best way to test for cooperation and potentially establish a mutually beneficial pattern for the next 9 rounds. The potential long-term gain from establishing cooperation outweighs the short-term risk of a low payoff in a single round.\n\nMy plan is to start with full cooperation. After this round, I can use my payoff to calculate what the other three players contributed in total and adjust my strategy accordingly in future rounds.\n\nTherefore",
+      "meta": {
+        "chat_id": "gen-1778359141-yKN7JGKAvuTg9AobyESR",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 3996,
+          "total_tokens": 4201,
+          "cost": 0.04021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.03996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3439,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 3,
+      "response_path": "google_gemini-2.5-pro/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "dd38c9c73ba22546a209578599e23b3d2c2880dfa3dbe1e7fedce4ee274aef49",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds.\n\n**Analysis of Payoff Structure:**\n*   My payoff is calculated as: `20 - my_contribution + 0.4 * (my_contribution + others'_contributions)`.\n*   This simplifies to: `20 - 0.6 * my_contribution + 0.4 * others'_contributions`.\n\nFrom this, two opposing incentives are clear:\n1.  **Individual Incentive (Short-term):** For every token I contribute, I lose 0.6 tokens from my personal payoff in that round. Therefore, the individually rational choice for a single round is to contribute 0, which is known as free-riding. If everyone does this, we all get a payoff of 20 each round.\n2.  **Group Incentive (Long-term):** The total pot is multiplied by 1.6, which is greater than 1. This means that for every token contributed, the group as a whole gains 0.6 tokens. The best outcome for the group is if everyone contributes their full 20 tokens. In this case, the total contribution is 80, the pot becomes 128, and each player receives a share of 32. After subtracting the initial contribution of 20, the net payoff for each player is 32.\n\n**Strategy for Round 1:**\nSince this is a repeated game, there's an opportunity to build trust and achieve a cooperative, high-payoff outcome (32 per round) instead of the non-cooperative, low-payoff outcome (20 per round).\n\n*   Contributing 0 in the first round would be the safest individual play, but it would likely lead to a cycle of non-cooperation, locking all players into the lower payoff for the entire game.\n*   Contributing the full 20 tokens is a strong signal of my intent to cooperate. It's a risk; if the other players choose to free-ride, I will receive a \"sucker's payoff\" of only 8 for this round. However, it is the best way to test for cooperation and potentially establish a mutually beneficial pattern for the next 9 rounds. The potential long-term gain from establishing cooperation outweighs the short-term risk of a low payoff in a single round.\n\nMy plan is to start with full cooperation. After this round, I can use my payoff to calculate what the other three players contributed in total and adjust my strategy accordingly in future rounds.\n\nTherefore",
+      "meta": {
+        "chat_id": "gen-1778359177-eM0qICcRu11MCFf6T3R4",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 3996,
+          "total_tokens": 4201,
+          "cost": 0.04021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.03996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3439,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 4,
+      "response_path": "google_gemini-2.5-pro/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "dd38c9c73ba22546a209578599e23b3d2c2880dfa3dbe1e7fedce4ee274aef49",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds.\n\n**Analysis of Payoff Structure:**\n*   My payoff is calculated as: `20 - my_contribution + 0.4 * (my_contribution + others'_contributions)`.\n*   This simplifies to: `20 - 0.6 * my_contribution + 0.4 * others'_contributions`.\n\nFrom this, two opposing incentives are clear:\n1.  **Individual Incentive (Short-term):** For every token I contribute, I lose 0.6 tokens from my personal payoff in that round. Therefore, the individually rational choice for a single round is to contribute 0, which is known as free-riding. If everyone does this, we all get a payoff of 20 each round.\n2.  **Group Incentive (Long-term):** The total pot is multiplied by 1.6, which is greater than 1. This means that for every token contributed, the group as a whole gains 0.6 tokens. The best outcome for the group is if everyone contributes their full 20 tokens. In this case, the total contribution is 80, the pot becomes 128, and each player receives a share of 32. After subtracting the initial contribution of 20, the net payoff for each player is 32.\n\n**Strategy for Round 1:**\nSince this is a repeated game, there's an opportunity to build trust and achieve a cooperative, high-payoff outcome (32 per round) instead of the non-cooperative, low-payoff outcome (20 per round).\n\n*   Contributing 0 in the first round would be the safest individual play, but it would likely lead to a cycle of non-cooperation, locking all players into the lower payoff for the entire game.\n*   Contributing the full 20 tokens is a strong signal of my intent to cooperate. It's a risk; if the other players choose to free-ride, I will receive a \"sucker's payoff\" of only 8 for this round. However, it is the best way to test for cooperation and potentially establish a mutually beneficial pattern for the next 9 rounds. The potential long-term gain from establishing cooperation outweighs the short-term risk of a low payoff in a single round.\n\nMy plan is to start with full cooperation. After this round, I can use my payoff to calculate what the other three players contributed in total and adjust my strategy accordingly in future rounds.\n\nTherefore",
+      "meta": {
+        "chat_id": "gen-1778359215-SX2PPYJp7oAWchzTkPvV",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 3996,
+          "total_tokens": 4201,
+          "cost": 0.04021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.03996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3439,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_1/temp_0.0/sample_0.txt",
+      "response_sha256": "e6a696f97b2383bbcd056c9132867c483a4a073997aa6108de2c223ae5598ec7",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359250-WR8W3BWEAtylrCFTvhsW",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 638,
+          "total_tokens": 838,
+          "cost": 0.0004128,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0004128,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0003828
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_1/temp_0.0/sample_1.txt",
+      "response_sha256": "2ff6cad8cd9574f6abc8ee9f438e35bca4000c8adbf57fb8532d1950f6ad76bc",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359268-IkCqKNfnxA5Ehth11K4Y",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 527,
+          "total_tokens": 795,
+          "cost": 0.00060928,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 64,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00060928,
+            "upstream_inference_prompt_cost": 8.228e-05,
+            "upstream_inference_completions_cost": 0.000527
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_1/temp_0.0/sample_2.txt",
+      "response_sha256": "96c88ecc092aca7cfc4f0f28b84eb5c5b0620e50f0de77b12ae7a21cd91979c7",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359274-FJgqYRqlPbj5AqWcGk8J",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 717,
+          "total_tokens": 985,
+          "cost": 0.00076472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00076472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000717
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_1/temp_0.0/sample_3.txt",
+      "response_sha256": "adfe0420bee0993c3946c121e7773e9874ce8c4004e93cc41e161a47b2d90472",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359281-9PrGV4Eoeyc1yMHAVttK",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 447,
+          "total_tokens": 715,
+          "cost": 0.00049472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00049472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000447
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 1,
+      "temperature": 0.0,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_1/temp_0.0/sample_4.txt",
+      "response_sha256": "3e90e97e32fa50ca7a1b4f7bebbd3a64feab5aca5a7bbe0ad6e8b90262098e31",
+      "parsed_action": 0.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359285-46a2OFVa4iRkFT5Rfnlh",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 516,
+          "total_tokens": 784,
+          "cost": 0.00056372,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00056372,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000516
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "c861c5ebb2120be01a4da01574357ef3617e10f56d3a9b60a9db3c3f9bfaa616",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359289-EWZoHVUCtHBPZUKwHxRK",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 381,
+          "total_tokens": 581,
+          "cost": 0.0002586,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002586,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002286
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "930084f63ac198ecedbc38ffe6bef4f7cd10df2a8e8f32982bd83ffb16dedcbf",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359299-yFM2X7qVWahQ9Uu2TXEq",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 438,
+          "total_tokens": 638,
+          "cost": 0.0002928,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002928,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002628
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "37a6b8512c01f59d8e0e9886e7abdc366a663f2b64daf509e50d84a16451cf88",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359311-X8HlV4LJrhcZ1Audjntk",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 374,
+          "total_tokens": 574,
+          "cost": 0.0002544,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002544,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002244
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "61f93967d17261898fcb99ae80aba9f643220ec3b866262b41c22e8ff4f3ae8f",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359320-NsPNoKQtYQV0z5wRQavt",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 426,
+          "total_tokens": 626,
+          "cost": 0.0002856,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002856,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002556
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "1625b5dc99775c3e0f1e04875caee2075c3c81e3b13f19e4a95d7414e0c8215a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778359334-VMWVrQWlpiu50DjcFZnc",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 408,
+          "total_tokens": 608,
+          "cost": 0.0002748,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002748,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

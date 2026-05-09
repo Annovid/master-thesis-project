@@ -1,23 +1,28 @@
 game: pg
-rounds: 3
+rounds: 10
+llm_provider: auto  # options: auto|openai|openrouter|gateway
 num_players: 4
-endowment: 10.0
-multiplier: 2.0
+endowment: 20.0
+multiplier: 1.6
 transparency: true
 agents:
   - type: llm
     model: gpt-3.5-turbo
     temperature: 0.7
+    provider: openai
     reasoning: true
   - type: llm
     model: gpt-4o-mini
     temperature: 0.7
+    provider: openai
     reasoning: true
   - type: llm
     model: gpt-4
     temperature: 0.7
+    provider: openai
     reasoning: true
   - type: llm
     model: gpt-4o
     temperature: 0.7
+    provider: openai
     reasoning: true

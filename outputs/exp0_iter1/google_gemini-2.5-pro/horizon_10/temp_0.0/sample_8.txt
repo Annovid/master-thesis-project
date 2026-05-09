@@ -1,0 +1,49 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+SAMPLE: 8
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: cc69f38e9e3e4bf5365c55cdf7d6aacc20575ee8902ee137c182d43ab1408919
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds.
+
+**Analysis of Payoff Structure:**
+*   My payoff is calculated as: `20 - my_contribution + 0.4 * (my_contribution + others'_contributions)`.
+*   This simplifies to: `20 - 0.6 * my_contribution + 0.4 * others'_contributions`.
+
+From this, two opposing incentives are clear:
+1.  **Individual Incentive (Short-term):** For every token I contribute, I lose 0.6 tokens from my personal payoff in that round. Therefore, the individually rational choice for a single round is to contribute 0, which is known as free-riding. If everyone does this, we all get a payoff of 20 each round.
+2.  **Group Incentive (Long-term):** The total pot is multiplied by 1.6, which is greater than 1. This means that for every token contributed, the group as a whole gains 0.6 tokens. The best outcome for the group is if everyone contributes their full 20 tokens. In this case, the total contribution is 80, the pot becomes 128, and each player receives a share of 32. After subtracting the initial contribution of 20, the net payoff for each player is 32.
+
+**Strategy for Round 1:**
+Since this is a repeated game, there's an opportunity to build trust and achieve a cooperative, high-payoff outcome (32 per round) instead of the non-cooperative, low-payoff outcome (20 per round).
+
+*   Contributing 0 in the first round would be the safest individual play, but it would likely lead to a cycle of non-cooperation, locking all players into the lower payoff for the entire game.
+*   Contributing the full 20 tokens is a strong signal of my intent to cooperate. It's a risk; if the other players choose to free-ride, I will receive a "sucker's payoff" of only 8 for this round. However, it is the best way to test for cooperation and potentially establish a mutually beneficial pattern for the next 9 rounds. The potential long-term gain from establishing cooperation outweighs the short-term risk of a low payoff in a single round.
+
+My plan is to start with full cooperation. After this round, I can use my payoff to calculate what the other three players contributed in total and adjust my strategy accordingly in future rounds.
+
+Therefore, I will start by contributing the maximum amount to signal my willingness to cooperate.
+
+Answer = 20.0
