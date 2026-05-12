@@ -1,0 +1,16 @@
+{
+  "model": "gpt-4o-mini",
+  "provider": "openai",
+  "horizons": [
+    1,
+    10
+  ],
+  "temperatures": [
+    0.0
+  ],
+  "samples_per_cell": 10,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "env_provider": "auto"
+}

@@ -1,0 +1,50 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 9
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: be75429763a29c0ba3840abef35f6c8315052421ed532837487090dfe3aa5834
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To determine a reasonable contribution for the first round, we must consider the structure of the game and the potential strategies of other players.
+
+The payoff for a round is given by: endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+
+Let's simplify the payoff formula. The sum_of_all_contributions includes your_contribution. So, if we denote your_contribution as Y and the sum of the other players' contributions as X, the sum_of_all_contributions = X + Y.
+
+Thus, the payoff = 20 - Y + (1.6 * (X + Y)) / 4.
+
+Simplifying further:
+- Payoff = 20 - Y + (1.6X + 1.6Y) / 4
+- Payoff = 20 - Y + 0.4X + 0.4Y
+- Payoff = 20 + 0.4X - 0.6Y
+
+From this, we can see that contributing 0 (Y=0) yields a higher payoff for you individually in a single round, since it minimizes the subtracted term (-0.6Y). However, the goal is to maximize your overall score across 10 rounds, and your decisions can influence the actions of others in subsequent rounds.
+
+For the first round, there's no prior information about other players' strategies. A common initial strategy in such games is to contribute a moderate amount to signal cooperation and potentially encourage others to contribute similarly in future rounds.
+
+Contributing the maximum (20) would maximize the public pot but risks being taken advantage of if others contribute little. Contributing 0 would avoid risk but doesn't contribute to the public good and might encourage others to free-ride.
+
+A moderate contribution seems like a reasonable starting point. Let's contribute half of the endowment.
+
+Answer = 10.0

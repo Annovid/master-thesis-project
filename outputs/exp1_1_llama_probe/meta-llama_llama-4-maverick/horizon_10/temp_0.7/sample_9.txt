@@ -1,0 +1,47 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.7
+SAMPLE: 9
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 8432760877e909cf9eea07cc298bc2b9ba8002032d3282ca8a31a2ab07f2a7d1
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To maximize my payoff in the Public Goods Game, I need to consider both the benefit of contributing to the public pot and the risk of being taken advantage of if others contribute less.
+
+In the first round, since there's no history of other players' contributions, I'll consider the average expected contribution from the other players. With 3 other players, if they all contribute their endowment (20 tokens), the total contribution would be 20 (mine) + 20*3 (theirs) = 80 tokens. If they contribute nothing, the total would be just my contribution.
+
+The payoff formula is: payoff = 20 - my_contribution + (1.6 * sum_of_all_contributions) / 4.
+
+Let's analyze the extremes:
+1. If I contribute 0 and everyone else contributes 0, my payoff is 20.
+2. If I contribute 20 and everyone else contributes 0, my payoff is 20 - 20 + (1.6*20)/4 = 8.
+3. If I contribute 0 and everyone else contributes 20, my payoff is 20 + (1.6*60)/4 = 20 + 24 = 44.
+4. If I contribute 20 and everyone else contributes 20, my payoff is 20 - 20 + (1.6*80)/4 = 32.
+
+Since the game is for 10 rounds and my goal is to maximize my total score, I need to balance between contributing (to increase the total pot and thus my share) and not contributing (to keep my tokens).
+
+In the first round, to encourage cooperation and to understand the behavior of other players, I'll contribute a moderate amount.
+
+Let's start with contributing half of my endowment.
+
+Answer = 10

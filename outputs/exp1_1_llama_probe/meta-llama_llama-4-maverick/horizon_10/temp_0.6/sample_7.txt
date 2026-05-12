@@ -1,0 +1,41 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.6
+SAMPLE: 7
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 960a33c94dac9080b5941cd627f217509bc98bed50e0e5d6fe25cff5820c8173
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Since this is the first round and there's no information about the other players' contributions, I'll have to make an initial decision based on the game's structure.
+
+The payoff for a round is given by: endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+
+Let's analyze the potential outcomes. If I contribute 0, my payoff will be: 20 + (1.6 * sum_of_others_contributions) / 4. If I contribute 20, my payoff will be: (1.6 * (20 + sum_of_others_contributions)) / 4.
+
+To maximize my payoff, I should consider the marginal benefit of contributing. For every token I contribute, the total contribution increases by 1, and I get back 1.6/4 = 0.4 tokens. So, contributing is beneficial for the group, but not necessarily for me individually, as I get back less than what I contribute.
+
+However, since this is a repeated game, I want to encourage others to contribute in future rounds. If I contribute a significant amount in the first round, it may encourage others to do the same.
+
+Let's start by contributing half of my endowment.
+
+Answer = 10.0

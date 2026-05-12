@@ -1,0 +1,40 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 2.0
+SAMPLE: 1
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: df2a6a9559499a86609a71a5ed61bd03740def280c34afaf2b6328ecd3b9720a
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The game is new, and there's no previous information. To maximize my expected payoff, I'll start by contributing a moderate amount. 
+
+Let's analyze the possible outcomes and strategies. If all players contribute their entire endowment, they would get a payoff of (20 + 1.6 * 80) / 4 = 37. However, the dominant strategy is to contribute 0, as it gives the highest payoff regardless of the actions of the other players, but this leads to everyone getting a lower payoff. 
+
+In a game with multiple rounds and unknown behavior of the other players, starting with a high contribution may not be optimal due to the risk of being exploited. On the other hand, contributing nothing doesn't contribute to the public pot. 
+
+To get information and guide the behavior of others, and also considering I'm starting the game, I'll contribute around half my endowment.
+
+So I'll decide on a contribution. 
+Since I need to start the game wisely,  I'll put in 10.
+
+Answer = 10

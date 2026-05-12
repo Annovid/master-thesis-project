@@ -1,0 +1,51 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.6
+SAMPLE: 1
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 3d2c437582f97ec22d28630d826c43f54203afb86aa9f92b69df44957576d268
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To maximize my payoff, I need to consider both the benefit of contributing to the public pot and the risk of being taken advantage of if others contribute less.
+
+In the first round, since there's no information about the other players' strategies, I'll assume they will contribute randomly or based on their own strategy. The average contribution per player is likely to be around 10 tokens if they contribute randomly.
+
+The total endowment is 20 tokens per player, and there are 4 players. So, the total endowment is 20 * 4 = 80 tokens.
+
+If everyone contributes their entire endowment (20 tokens), the sum of all contributions would be 80 tokens. The public pot would be 80 * 1.6 = 128 tokens, and each player would get 128 / 4 = 32 tokens back.
+
+However, if everyone contributes 0, the public pot would be 0, and each player would keep their 20 tokens.
+
+To avoid being taken advantage of and to encourage cooperation, I'll contribute a moderate amount in the first round.
+
+Let's consider contributing half of my endowment, which is 10 tokens.
+
+My payoff would be: 20 - 10 + (1.6 * (10 + assumed_total_contribution_from_others)) / 4.
+
+If others also contribute around 10, the sum of all contributions would be 10 (mine) + 30 (theirs) = 40. Then, the public pot would be 40 * 1.6 = 64, and I'd get 64 / 4 = 16 back.
+
+So, my payoff would be: 20 - 10 + 16 = 26.
+
+This seems like a reasonable starting point.
+
+Answer = 10

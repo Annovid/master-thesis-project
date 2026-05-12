@@ -1,0 +1,44 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.6
+SAMPLE: 7
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 5251265c38cf1a2679533802bbd1f322fca88e8b3aaea16cb012160f5642570b
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and set the tone for the entire game.
+
+There are two main rationales:
+
+1.  **Individual Short-Term Rationality:** The payoff formula is `Payoff = 20 - My_Contribution + 0.4 * Total_Contributions`. For every token I contribute, I lose 1 token but only get 0.4 tokens back. This means from a purely selfish, single-round perspective, contributing 0 is the best strategy to maximize my own payoff, regardless of what others do. This leads to a payoff of 20 for everyone if all players follow this logic.
+
+2.  **Group Long-Term Rationality:** If everyone cooperates and contributes their full endowment of 20 tokens, the total contribution would be 80. The pot would be 80 * 1.6 = 128. Each player would receive 128 / 4 = 32 tokens. This is a significantly higher payoff than the 20 everyone gets by contributing nothing.
+
+Given that this is a repeated game over 10 rounds, there's an opportunity to build trust and achieve the higher, cooperative outcome. A common strategy in these games is to start by signaling a willingness to cooperate.
+
+*   Contributing 0 signals selfishness and may lead all players to a low-payoff outcome for all 10 rounds.
+*   Contributing the full 20 is a strong, unambiguous signal of my intent to cooperate. It is risky; if others don't reciprocate, I will get a very low payoff in this round (the "sucker's payoff"). However, it's the best way to try and establish a high-paying cooperative equilibrium from the start.
+
+To maximize my total score over 10 rounds, I believe the best strategy is to take the initial risk to foster cooperation. I will start by contributing my full endowment. This is an investment in trust. If the other players are also thinking long-term, they may do the same. If they don't, I will gain valuable information about their strategy and can adjust my own contribution to 0 in subsequent rounds to protect myself from further losses.
+
+Answer = 20.0

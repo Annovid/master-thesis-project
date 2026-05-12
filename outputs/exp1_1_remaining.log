@@ -1,0 +1,54 @@
+
+========== anthropic/claude-opus-4.7  T_max=1.0  max_tokens=16000 ==========
+  [probe] T=1.0, n=2 ...
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=0 parsed=15.0 sha=693474f3
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=1 parsed=15.0 sha=942ce94e
+  [topup] T=1.0, samples 2..9 ...
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=2 parsed=15.0 sha=ae9b1370
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=3 parsed=15.0 sha=d06a5747
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=4 parsed=15.0 sha=018280fc
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=5 parsed=15.0 sha=35afba49
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=6 parsed=15.0 sha=78ae353e
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=7 parsed=15.0 sha=d726020e
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=8 parsed=15.0 sha=df31e3a6
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=1.0 sample=9 parsed=15.0 sha=bd0fba9c
+  [grid] T=[0.3, 0.7], n=10 ...
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=0 parsed=15.0 sha=3b52e13a
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=1 parsed=15.0 sha=b766600b
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=2 parsed=15.0 sha=432435b5
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=3 parsed=15.0 sha=a31427ae
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=4 parsed=15.0 sha=2807a5d6
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=5 parsed=15.0 sha=fc0ec0e4
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=6 parsed=15.0 sha=b11f0580
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=7 parsed=15.0 sha=a821fc03
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=8 parsed=15.0 sha=ce5d2af3
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.3 sample=9 parsed=15.0 sha=c32a2224
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=0 parsed=15.0 sha=c9e1b635
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=1 parsed=15.0 sha=78ae353e
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=2 parsed=15.0 sha=6094fe92
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=3 parsed=15.0 sha=262e9862
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=4 parsed=15.0 sha=706e87f3
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=5 parsed=15.0 sha=35b4d7d7
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=6 parsed=15.0 sha=ee09b64c
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=7 parsed=15.0 sha=0c4eb491
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=8 parsed=15.0 sha=0faa0662
+OK model=anthropic/claude-opus-4.7 horizon=10 temp=0.7 sample=9 parsed=15.0 sha=3fd52085
+
+========== google/gemini-2.5-pro  T_max=2.0  max_tokens=16000 ==========
+  [probe] T=2.0, n=2 ...
+OK model=google/gemini-2.5-pro horizon=10 temp=2.0 sample=0 parsed=None sha=9d884378
+OK model=google/gemini-2.5-pro horizon=10 temp=2.0 sample=1 parsed=None sha=1e6ee276
+  [SKIP] 2+ consecutive parse errors at T=2.0 → not running lower T for this model
+
+========== openai/gpt-5.5-pro  T_max=2.0  max_tokens=4000 ==========
+  [probe] T=2.0, n=2 ...
+OK model=openai/gpt-5.5-pro horizon=10 temp=2.0 sample=0 parsed=None sha=e3b0c442
+OK model=openai/gpt-5.5-pro horizon=10 temp=2.0 sample=1 parsed=None sha=e3b0c442
+  [SKIP] 2+ consecutive parse errors at T=2.0 → not running lower T for this model
+
+========== SUMMARY ==========
+  COMPLETED: anthropic/claude-opus-4.7
+  SKIPPED:   google/gemini-2.5-pro  (T_max parse-fail)
+  SKIPPED:   openai/gpt-5.5-pro  (T_max parse-fail)
+
+Merged summary: outputs/exp1_1/run_summary.json

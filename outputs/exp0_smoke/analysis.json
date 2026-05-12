@@ -1,0 +1,52 @@
+{
+  "cells": [
+    {
+      "model": "gpt-4o-mini-2024-07-18",
+      "horizon": 1,
+      "temperature": 0.0,
+      "n": 10,
+      "n_parsed": 10,
+      "n_parse_errors": 0,
+      "n_unique_actions": 1,
+      "share_unique_actions": 0.1,
+      "n_unique_sha256": 9,
+      "share_unique_sha256": 0.9,
+      "mode_action": 10.0,
+      "mean_action": 10.0,
+      "std_action": 0.0,
+      "mean_abs_dev_from_mode": 0.0,
+      "max_abs_dev_from_mode": 0.0,
+      "distribution": [
+        {
+          "action": 10.0,
+          "count": 10,
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "model": "gpt-4o-mini-2024-07-18",
+      "horizon": 10,
+      "temperature": 0.0,
+      "n": 10,
+      "n_parsed": 10,
+      "n_parse_errors": 0,
+      "n_unique_actions": 1,
+      "share_unique_actions": 0.1,
+      "n_unique_sha256": 2,
+      "share_unique_sha256": 0.2,
+      "mode_action": 10.0,
+      "mean_action": 10.0,
+      "std_action": 0.0,
+      "mean_abs_dev_from_mode": 0.0,
+      "max_abs_dev_from_mode": 0.0,
+      "distribution": [
+        {
+          "action": 10.0,
+          "count": 10,
+          "share": 1.0
+        }
+      ]
+    }
+  ]
+}

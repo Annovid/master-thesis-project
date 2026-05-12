@@ -9,12 +9,13 @@ logger = logging.getLogger(__name__)
 class PublicGoodsGame(Game):
     """Public Goods Game (VCM)."""
 
-    def __init__(self, num_players: int = 4, endowment: float = 20.0, multiplier: float = 1.6, transparency: bool = False, agent_configs: list[dict] | None = None) -> None:
+    def __init__(self, num_players: int = 4, endowment: float = 20.0, multiplier: float = 1.6, transparency: bool = False, agent_configs: list[dict] | None = None, reasoning: bool = False) -> None:
         self._num_players = num_players
         self.endowment = endowment
         self.multiplier = multiplier
         self.transparency = transparency
         self.agent_configs = agent_configs or []
+        self.reasoning = reasoning
 
     @property
     def num_players(self) -> int:
@@ -46,35 +47,51 @@ class PublicGoodsGame(Game):
             history_str,
             "",
             "Decide your contribution for the current round.",
-            "End your reply with a single line of the form: Answer = N",
-            f"where N is a number between 0 and {self.endowment}.",
         ]
+        if self.reasoning:
+            lines.append(
+                f"Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution."
+            )
+            lines.append(
+                f"On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and {self.endowment})."
+            )
+        else:
+            lines.append(
+                f"Reply with only a single number between 0 and {self.endowment}. No explanations, no extra text, no labels."
+            )
         return "\n".join(lines)
 
     def parse_action(self, response: str, additional_info: dict | None = None) -> Action:
         """Parse response into contribution.
 
-        Accepts variations like "Answer = 5.0", "Answer = 5", or bold/italic
-        markdown such as "**Answer = 5.0**".
+        Primary form: the entire reply is a single number (possibly with markdown
+        wrappers or trailing punctuation). Falls back to "Answer = N" pattern.
         """
         import re
 
-        # Consider non-empty lines in reverse order (latest answer usually last)
         lines = [line.strip() for line in response.splitlines() if line.strip()]
         logger.info(f"Parsed lines: {lines}")
 
-        pattern = re.compile(r"answer\s*=\s*([-+]?\d*\.?\d+)", re.IGNORECASE)
+        bare_number = re.compile(r"^[-+]?\d*\.?\d+$")
+        answer_pattern = re.compile(r"answer\s*=\s*([-+]?\d*\.?\d+)", re.IGNORECASE)
 
         for line in reversed(lines):
-            # Strip common markdown wrappers
+            cleaned = line.strip('* _`"\'').strip().rstrip('.,;:')
+            if bare_number.match(cleaned):
+                try:
+                    return float(cleaned)
+                except ValueError as e:
+                    logger.error(f"Error parsing bare number '{cleaned}': {e}")
+                    break
+
+        for line in reversed(lines):
             cleaned = line.strip('* _`').strip()
-            match = pattern.search(cleaned)
+            match = answer_pattern.search(cleaned)
             if match:
                 num_str = match.group(1).rstrip('.')
                 logger.info(f"Num str: '{num_str}'")
                 try:
-                    contrib = float(num_str)
-                    return contrib
+                    return float(num_str)
                 except ValueError as e:
                     logger.error(f"Error parsing num_str: {e}")
                     break

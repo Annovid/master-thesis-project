@@ -1,0 +1,39 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 5
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: f36d50941dec584700cb906c4c892e838fcdfe12d3ee181f66866d343a7206bc
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To maximize my payoff in the Public Goods Game, I need to consider both the benefit of contributing to the public pot and the risk of being exploited by others who might contribute less.
+
+Given that there are 4 players and the sum of all contributions is multiplied by 1.6 and then divided equally among all players, the marginal per capita return (MPCR) for a contribution is 1.6 / 4 = 0.4. This means for every token I contribute, I get back 0.4 tokens as my share of the public pot. Since 0.4 is less than 1, from a purely self-interested perspective, it seems optimal not to contribute anything.
+
+However, if all players think this way, the public pot will be empty, and everyone will end up with just their initial endowment. Contributing can be seen as a way to encourage others to contribute (though I won't know their contributions directly) and to ensure some level of public good.
+
+For the first round, to balance between being cooperative and protecting myself from potential exploitation, I might start by contributing a moderate amount. A common strategy in such scenarios is to start with a relatively high contribution to encourage cooperation and then adjust based on the payoffs received.
+
+Let's start by contributing half of my endowment.
+
+Answer = 10.0

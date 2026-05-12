@@ -1,0 +1,57 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.6
+SAMPLE: 6
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 415488bf8536b8f8af9515a7beed5f89371c1933dace9c0ef35268e84aac882c
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round will set the tone for future interactions and allow me to gather information about the other players' strategies.
+
+**Analysis of Payoff Structure:**
+*   **Individual Incentive:** For every token I contribute, I lose 1 token but get back only 0.4 tokens (`1.6 / 4`). This means from a purely selfish, single-round perspective, the best strategy is to contribute 0.
+*   **Group Incentive:** If everyone contributes their full 20 tokens, the total pot is `4 * 20 = 80`. This is multiplied by 1.6 to become 128. Each player receives `128 / 4 = 32` tokens. Since each player only contributed 20, this is a net gain of 12 for everyone. This is the best possible outcome for the group.
+*   **The Dilemma:** There is a conflict between the best individual strategy (contribute 0) and the best group strategy (contribute 20).
+
+**Strategy for a Repeated Game:**
+Since this game is repeated for 10 rounds, there's an opportunity to build trust and encourage cooperation. A purely selfish strategy of contributing 0 from the start will likely lead other players to do the same, resulting in a low payoff (20) for everyone in all rounds.
+
+My goal is to maximize my total score over 10 rounds. The highest potential score comes from sustained cooperation. To achieve this, I should signal my willingness to cooperate from the beginning.
+
+*   **Contributing 0:** A signal of defection. It will likely lead to a low-payoff game.
+*   **Contributing an intermediate amount (e.g., 10):** A weak signal. It shows some willingness to cooperate but also hedges bets. It might lead to a middling outcome.
+*   **Contributing 20:** A strong, clear signal of my intent to cooperate. This strategy, often called "leading by example," aims to establish a high-trust, high-payoff equilibrium.
+
+**Risk vs. Reward of Contributing 20 in Round 1:**
+*   **Risk:** If the other three players all contribute 0, I will be the "sucker." My payoff will be `20 - 20 + (1.6 * 20) / 4 = 8`. The others will get `20 - 0 + (1.6 * 20) / 4 = 28`. This is the worst possible outcome for me in this round.
+*   **Reward:** If the other players are also looking to cooperate, my contribution might encourage them to do the same. If everyone contributes 20, we all get a payoff of 32. Establishing this pattern early could lead to high payoffs for the remaining 9 rounds.
+
+**Information Gathering:**
+By contributing 20, I can use my payoff to accurately deduce what the other players did.
+My Payoff = `20 - 20 + (1.6 * (20 + Others' Total Contribution)) / 4`
+My Payoff = `8 + 0.4 * (Others' Total Contribution)`
+Based on my payoff, I can calculate their total contribution and adjust my strategy for Round 2. If they cooperated, I will continue to cooperate. If they defected, I will defect in the next round to avoid being a sucker again.
+
+Given the potential for a much higher total score through cooperation over 10 rounds, taking the risk in the first round to signal cooperation is the most rational long-term strategy.
+
+Answer = 20.0

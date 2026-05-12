@@ -1,6 +1,8 @@
 import argparse
-import yaml
+import os
 from pathlib import Path
+
+import yaml
 
 from .games.base_game import Game
 from .games.pd_game import PrisonersDilemma
@@ -14,12 +16,14 @@ class Config:
         game: Game,
         agent_configs: list[dict],
         rounds: int,
-        transparency: bool = False
+        transparency: bool = False,
+        llm_provider: str | None = None,
     ) -> None:
         self.game = game
         self.agent_configs = agent_configs
         self.rounds = rounds
         self.transparency = transparency
+        self.llm_provider = llm_provider
 
 def load_config(config_path: str) -> Config:
     """Load configuration from YAML file."""
@@ -34,6 +38,7 @@ def load_config(config_path: str) -> Config:
     if rounds is None:
         raise ValueError("Missing 'rounds' in config")
     transparency = data.get("transparency", False)
+    llm_provider = data.get("llm_provider") or os.getenv("LLM_PROVIDER") or "auto"
 
     if game_type == "pd":
         payoff_matrix = data.get("payoff_matrix")
@@ -78,4 +83,4 @@ def load_config(config_path: str) -> Config:
     if len(agent_configs) != game.num_players:
         raise ValueError(f"Number of agents {len(agent_configs)} does not match game players {game.num_players}")
 
-    return Config(game, agent_configs, rounds, transparency)
+    return Config(game, agent_configs, rounds, transparency, llm_provider)

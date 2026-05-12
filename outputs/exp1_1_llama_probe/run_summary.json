@@ -1,0 +1,2687 @@
+{
+  "models": [
+    "meta-llama/llama-4-maverick"
+  ],
+  "provider": "openrouter",
+  "horizons": [
+    10
+  ],
+  "temperatures": [
+    0.0,
+    0.3,
+    0.6,
+    0.7,
+    1.0,
+    1.4,
+    2.0
+  ],
+  "samples_per_cell": 10,
+  "start_sample": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "env_provider": "auto",
+  "openrouter_max_tokens": "4000",
+  "runs": [
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "5be233edf3f397e94f69886f57c7df35b60d9a4426dfe09ba21284d892fcc86f",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364655-3RH03rzOzVMdzxgEHEei",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 396,
+          "total_tokens": 596,
+          "cost": 0.0002676,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002676,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002376
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "22c6c71d511b4fcb2c0abc0e3aafb4f760818515bc79d450968ac411973f17b2",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364668-PlL6LKO0DVjoEmfmGQjK",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 386,
+          "total_tokens": 586,
+          "cost": 0.0002616,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002616,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002316
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "82efb2a1be01875a81d7a5969f09921adc1b84abb324deaf3f09e21e8c933a85",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364681-vjKE0524gKkicEA0dChk",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 363,
+          "total_tokens": 563,
+          "cost": 0.0002478,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002478,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002178
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "96925285a2c5110d848a6aa8fcc31e910a513afe22135d7e101c1335eca98be3",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364693-tFgmiMOdHPNpXaJTrz4L",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 388,
+          "total_tokens": 588,
+          "cost": 0.0002628,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002628,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002328
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "a08b3deca9ed23d8faee3ecab7ea3f3383f6872f44b375f6e9bff94888437bbe",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364708-Pu8ZKdD1M7ANzEKUcwqa",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 418,
+          "total_tokens": 618,
+          "cost": 0.0002808,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0002808,
+            "upstream_inference_prompt_cost": 3e-05,
+            "upstream_inference_completions_cost": 0.0002508
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 5,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "6af0aadc958561147af6f69c164d2113d4be49627e15fcd2dacbd6340dff4cf0",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364723-MPEqZgbwO4TEd6Rwq2Lx",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 504,
+          "total_tokens": 772,
+          "cost": 0.00058628,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 64,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00058628,
+            "upstream_inference_prompt_cost": 8.228e-05,
+            "upstream_inference_completions_cost": 0.000504
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 6,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "7d7a4586fffea8fe2e3934c7d0419f49f01a221862a3154e2b266e288eb9aa36",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364730-mAiZ5SZYxj48UnFDu0HP",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 463,
+          "total_tokens": 731,
+          "cost": 0.00051072,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00051072,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000463
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 7,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "65b6c2d08530bf7365bb244cfa5feb3779f4d6f170127e6f26ac5b9710b5613e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364735-0mOQs4VymGZdZqIGSiDs",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 164,
+          "total_tokens": 432,
+          "cost": 0.00021172,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00021172,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000164
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 8,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "bb9e42ec9aeaa18d3e53e65ebff1e25dadc7fdc4144de012e14ae22ec3702425",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364737-OtodIgq7cSjxl67COtW2",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 302,
+          "total_tokens": 570,
+          "cost": 0.00034972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00034972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000302
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 9,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "949be966f7ad4165c61feb9318db56fcdf95111bc084f721901322a487e5eec9",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364741-4izbUTJ8UP879g64JSvH",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 295,
+          "total_tokens": 563,
+          "cost": 0.00034272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00034272,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000295
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_0.txt",
+      "response_sha256": "b4e65bccb5a139f9329575655b0889c95b1f852387166b656e02a0a2a5165429",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364744-YcPIiHxX5bcbojntY8Ex",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 227,
+          "total_tokens": 495,
+          "cost": 0.00027472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00027472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000227
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_1.txt",
+      "response_sha256": "fce315c212099dcaee6c3bfedd0f7115c0e3f6a31ef71fcde8587ba4053d830b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364747-EPuM2sEmPSOYFPpb5cUp",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 376,
+          "total_tokens": 644,
+          "cost": 0.00042372,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00042372,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000376
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_2.txt",
+      "response_sha256": "f1b816329af1af8fd204f2734cf890943fb88e2a350065b895a54d73fca5ca02",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364752-VEc6ZPiemWNF3hhsCkwg",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 317,
+          "total_tokens": 585,
+          "cost": 0.00036472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00036472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000317
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_3.txt",
+      "response_sha256": "87c0389f37b6e92f2459175af46f586bcb851ce9199b1f0ccb37130112d3f619",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364755-gIU4J7Cd0MilluGVpZQ6",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 192,
+          "total_tokens": 460,
+          "cost": 0.00023972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00023972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000192
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_4.txt",
+      "response_sha256": "d796f6be56f20507618e5db23ef23578f90ebd55e56e0f8e42376b61ea27270f",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364757-Qd28NDt5WjU9WxQWiHzh",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 239,
+          "total_tokens": 507,
+          "cost": 0.00028672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00028672,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000239
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 5,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_5.txt",
+      "response_sha256": "210a37b33b97b91d32b9916a3db96cf171b32007aa93370078d7a8772d1b54ba",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364760-wVCA1Hj0gmY2oejDAcHF",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 289,
+          "total_tokens": 557,
+          "cost": 0.00033672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00033672,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000289
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 6,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_6.txt",
+      "response_sha256": "a7b80dc273e1219ea993bf5924e70c79678cf4a7b57b3234d2a39614db3caafe",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364764-rKQJu1bJwOoA0adFRQxh",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 510,
+          "total_tokens": 778,
+          "cost": 0.00055772,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00055772,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.00051
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 7,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_7.txt",
+      "response_sha256": "e5220b644ee48a79d1aa8fcb14a8b469b1c8b3071c5ca1855546ae24fd8ce18a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364771-OIVNrUipFfNofb7YhRm8",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 354,
+          "total_tokens": 622,
+          "cost": 0.00040172,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00040172,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000354
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 8,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_8.txt",
+      "response_sha256": "d4b54a05973116b36f78ece28d7fad7a81b8b8f98ae876e496dea4f547b6cb88",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364775-3vi1n1JR2MIMuxkuFOxM",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 242,
+          "total_tokens": 510,
+          "cost": 0.00028972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00028972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000242
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 9,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.3/sample_9.txt",
+      "response_sha256": "a4e709ecd53a2b506aa9795b6d56d3a0fd4ebf853f8008c8fef7520f47427447",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364778-Gk3OM1yrYCYinj5dR0KI",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 535,
+          "total_tokens": 803,
+          "cost": 0.00058272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00058272,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000535
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_0.txt",
+      "response_sha256": "b4401b0ff397497e2bfb852c3b38fa9ea44f123dc1bd8c76e6fa56e96697c5f3",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364784-gb3Hf15b5xaYQnRRxJjY",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 321,
+          "total_tokens": 589,
+          "cost": 0.00036872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00036872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000321
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_1.txt",
+      "response_sha256": "3d2c437582f97ec22d28630d826c43f54203afb86aa9f92b69df44957576d268",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364789-TeYRvr9LqMpnRPITed9D",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 355,
+          "total_tokens": 623,
+          "cost": 0.00040272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00040272,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000355
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_2.txt",
+      "response_sha256": "35e9c6e77dce06ed540c78706569c8382963dd78923975ba49a79fbeeaba7ca7",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364794-XnMucVMGeLgheNlXhrof",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 219,
+          "total_tokens": 487,
+          "cost": 0.00026672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00026672,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000219
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_3.txt",
+      "response_sha256": "f0146d6ec7a1f449912001670bc852f5115c759f225cedf690f0b276ee5ea291",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364797-7yQEP2Bb5b2YOL2L8XFn",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 277,
+          "total_tokens": 545,
+          "cost": 0.00032472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00032472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000277
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_4.txt",
+      "response_sha256": "d5710b11664ddc2ece1889fef3d574348a78d237782609d8c8dd23600fc2bc47",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364800-EMxMGKJxm9uO0dnFGtfS",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 417,
+          "total_tokens": 685,
+          "cost": 0.00046472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00046472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000417
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 5,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_5.txt",
+      "response_sha256": "60e9accb68366674b8521a5a1ec59965f238a49ff068a5cce642d34fa7725459",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364805-xzIRAeWEpexpOiElhkm3",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 461,
+          "total_tokens": 729,
+          "cost": 0.00050872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00050872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000461
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 6,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_6.txt",
+      "response_sha256": "fa36f0c62b207ae717524da1b7dbada75c831a1169224ef812a67aafc9d6ce60",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364811-FVV3GQXGGsml6cUpg2l1",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 546,
+          "total_tokens": 814,
+          "cost": 0.00059372,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00059372,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000546
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 7,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_7.txt",
+      "response_sha256": "960a33c94dac9080b5941cd627f217509bc98bed50e0e5d6fe25cff5820c8173",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364816-Qopv5F1N6HPYOTj8GXaU",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 255,
+          "total_tokens": 523,
+          "cost": 0.00030272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00030272,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000255
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 8,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_8.txt",
+      "response_sha256": "ecfe33049d420278ddbe63d307142e5cb1149a343e5551d10ec21941578dcc54",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364819-uWwmsZXuf77Psk26yR4v",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 211,
+          "total_tokens": 479,
+          "cost": 0.00025872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00025872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000211
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 9,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.6/sample_9.txt",
+      "response_sha256": "2efe5f1ea2b89e58208987c3647c9e7a1e049450ce65bc18cef60319169c7954",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364822-gAcZfoxWxr28sBmr9M5Z",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 165,
+          "total_tokens": 433,
+          "cost": 0.00021272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00021272,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000165
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_0.txt",
+      "response_sha256": "1be1d295e6ce2f9296a56f084212749c30c8c6abcaee8a03c0c91869b67a030a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364824-rtdd9LUO4w0qDBlsNVgY",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 293,
+          "total_tokens": 561,
+          "cost": 0.00034072,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00034072,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000293
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_1.txt",
+      "response_sha256": "b2231f42c5c5be25558866fdc821a6cd58f8c9fc9847c9ae1bde653ca2db338a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364828-IqHFDtTw88bk1fs7RJbZ",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 371,
+          "total_tokens": 639,
+          "cost": 0.00041872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00041872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000371
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_2.txt",
+      "response_sha256": "4b2616e00e98816d725f98612d397ef5283d5ce6cb90f06df63fa08e61a41a45",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364833-YkQn8iyFParbxj1qohTS",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 361,
+          "total_tokens": 629,
+          "cost": 0.00040872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00040872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000361
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_3.txt",
+      "response_sha256": "e2991961d57c6c8cd011fa0c9c412d7e74d941a9533a437f8f9d114e55aea51b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364836-GsVO5PyhS5hl6DwDwZ75",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 292,
+          "total_tokens": 560,
+          "cost": 0.00033972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00033972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000292
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_4.txt",
+      "response_sha256": "18f9b827dd44c97bd88df62621a18840027241ed16b644a04ac6c34572877556",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364840-nmiJdirtwVzEcyl2r7ZE",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 620,
+          "total_tokens": 888,
+          "cost": 0.00066772,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00066772,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.00062
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 5,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_5.txt",
+      "response_sha256": "dc977e3417bee684055fe7d24ca5da111bce7fd098d795e395a91b994a351b2b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364848-dJLvPI2zlzfwVeURS8xQ",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 340,
+          "total_tokens": 608,
+          "cost": 0.00038772,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00038772,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.00034
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 6,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_6.txt",
+      "response_sha256": "390284663549503afedffa7da43827af07d23140ee39c27a7682c1559f73f9b0",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364853-ldA1KsXmNX3DCRIFdvRD",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 382,
+          "total_tokens": 650,
+          "cost": 0.00042972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00042972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000382
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 7,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_7.txt",
+      "response_sha256": "2dfac29bed7d9c57b96512c67b353a8b0376e86676aefc91cbe47cba6ca15be3",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364857-mlFPGx6EbRotf3m7cQYj",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 382,
+          "total_tokens": 650,
+          "cost": 0.00042972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00042972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000382
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 8,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_8.txt",
+      "response_sha256": "2d25821006e8445bfb0e327cb8114ee296a0211c224f0b3cd79c7e037b4b628b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364862-i3rgQS4aE9kOujfh64uQ",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 364,
+          "total_tokens": 632,
+          "cost": 0.00041172,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00041172,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000364
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 9,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_0.7/sample_9.txt",
+      "response_sha256": "8432760877e909cf9eea07cc298bc2b9ba8002032d3282ca8a31a2ab07f2a7d1",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364867-ycpLMwZqilTJUIaoVVyT",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 360,
+          "total_tokens": 628,
+          "cost": 0.00040772,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00040772,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.00036
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_0.txt",
+      "response_sha256": "b93d7d90c998eb102eb3bfe76a61d36889d785a9ce3df53db43b245f1197b470",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364872-tXzYm1Vf375CsLgusPRY",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 401,
+          "total_tokens": 669,
+          "cost": 0.00044872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00044872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000401
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_1.txt",
+      "response_sha256": "67d79f466bb27344e669d0ce41f22dec51eede02a0ed7dd64c8eb4e299428746",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364877-tspS5kB5FZtpCdoerldA",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 224,
+          "total_tokens": 492,
+          "cost": 0.00027172,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00027172,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000224
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_2.txt",
+      "response_sha256": "82b2e06a7c676b6438e11d64b0f83dc9b6f5c638373b34ec9d504d31f03f67da",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364879-siQBF0uTLWni7jqLNKnz",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 210,
+          "total_tokens": 478,
+          "cost": 0.00025772,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00025772,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.00021
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_3.txt",
+      "response_sha256": "31fd98d799ef2b796ad221f4b40b0036fb90567abcf30149a51d54b97941eb20",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364882-6zmMXNxMFpr4f6pAfO7V",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 141,
+          "total_tokens": 409,
+          "cost": 0.00018872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00018872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000141
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_4.txt",
+      "response_sha256": "39eeed993fc7a1297aba0e4684144bbcc7e0a79341bab0b34d53c01435a5864c",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364885-eZnN3JucNZEgf05YSIpg",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 377,
+          "total_tokens": 645,
+          "cost": 0.00042472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00042472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000377
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 5,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_5.txt",
+      "response_sha256": "39908e4e0b6d0ad397cf894531a366b9390e5bbfd0a9a896192edaee1fd48406",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364890-aHe5XTR3LoQDnIopQdTI",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 125,
+          "total_tokens": 393,
+          "cost": 0.00017272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00017272,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 6,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_6.txt",
+      "response_sha256": "b58e01b4f20ffb9999d87c3668e8f83c46c53553e14d0143059437f9ba8d057e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364891-yHm69iR8RjfO0XOAIG6c",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 457,
+          "total_tokens": 725,
+          "cost": 0.00050472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00050472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000457
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 7,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_7.txt",
+      "response_sha256": "805f1d0cb157bc2df0bbaf6526d4234994758c1b734498ffe459154f3466a86b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364897-BFqcCwR23ACQOZhg6ka4",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 201,
+          "total_tokens": 469,
+          "cost": 0.00024872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00024872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000201
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 8,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_8.txt",
+      "response_sha256": "515675b97a8883a99794b8e7cde22ec276fd8d44204f2a8ef772801761cd75ed",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364900-3IGLlKqUaG41or32w93p",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 556,
+          "total_tokens": 824,
+          "cost": 0.00060372,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00060372,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000556
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 9,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.0/sample_9.txt",
+      "response_sha256": "9774ef45d154517b16ca90ffd4eed42784d32c2da161dbdda968f5346951c501",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364909-rNHy6kpwBfCj0Sl3V5vD",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 169,
+          "total_tokens": 437,
+          "cost": 0.00021672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00021672,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000169
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_0.txt",
+      "response_sha256": "d2dabfa7f3a573c6e8afcfe91d6389e33a45ad42e8f59c9ea03050c321ef1648",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364913-M5tEwmXQA4dkgkMHJOhN",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 159,
+          "total_tokens": 427,
+          "cost": 0.00020672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00020672,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000159
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_1.txt",
+      "response_sha256": "3f1a421f2e01d2c67c42acdab5ca9e3261576ab17b46db425099622dfbfc016c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364916-2Z1DUwCWkaATmi0QZARk",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 231,
+          "total_tokens": 499,
+          "cost": 0.00027872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00027872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000231
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_2.txt",
+      "response_sha256": "753035609a8fae148da9ffb3cf2b0507edde7306d8f62c123133d6146425194c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364919-gVYBRHBN8c2Q5BdYjVxx",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 206,
+          "total_tokens": 474,
+          "cost": 0.00025372,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00025372,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000206
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_3.txt",
+      "response_sha256": "95088ab48259ab14fabc360e85c313510a779ae697074e8d16291d0c32ebeeb0",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364922-h0roRKcv8dNcmIMC63Qz",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 403,
+          "total_tokens": 671,
+          "cost": 0.00045072,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00045072,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000403
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_4.txt",
+      "response_sha256": "92373363beb9773346f878733e6d91343748d005220606b73f657ed94c202330",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364927-vRryPVcQ3gzP8iCK5yCj",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 387,
+          "total_tokens": 655,
+          "cost": 0.00043472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00043472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000387
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 5,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_5.txt",
+      "response_sha256": "f36d50941dec584700cb906c4c892e838fcdfe12d3ee181f66866d343a7206bc",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364932-AN4TDvfgEM5Sk9rjb9wH",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 269,
+          "total_tokens": 537,
+          "cost": 0.00031672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00031672,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000269
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 6,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_6.txt",
+      "response_sha256": "b78875f58e52a471b6b932f32ed93ef7fc336e98770e008c816b5a2aacb5f067",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364935-1frimeQaDKLawujmmHRE",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 221,
+          "total_tokens": 489,
+          "cost": 0.00026872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00026872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000221
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 7,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_7.txt",
+      "response_sha256": "82261c7cbbfa748d002c40c3c1678f967be8337990e86d89f461cb8521e963dc",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364938-0UyBC5YAO8RIMw9zzRfU",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 342,
+          "total_tokens": 610,
+          "cost": 0.00038972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00038972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000342
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 8,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_8.txt",
+      "response_sha256": "5c648acd7030ef087f753b635cd2930899f6b8f74f17baaa8bb097eede9d1fb1",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364942-JZ2lHv2P77DiydUTaqJi",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 499,
+          "total_tokens": 767,
+          "cost": 0.00054672,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00054672,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000499
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 9,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_1.4/sample_9.txt",
+      "response_sha256": "be75429763a29c0ba3840abef35f6c8315052421ed532837487090dfe3aa5834",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364949-zWuws3BVXs6Bx0O5G0l0",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 378,
+          "total_tokens": 646,
+          "cost": 0.00042572,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00042572,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000378
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 0,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_0.txt",
+      "response_sha256": "ec7f87e50890b4d943bd8d80bf1ac163da923ad87663d59d199c8958eb7654d1",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364955-OhbucvK9oYCE6uKU2kbG",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 482,
+          "total_tokens": 750,
+          "cost": 0.00052972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00052972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000482
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 1,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_1.txt",
+      "response_sha256": "df2a6a9559499a86609a71a5ed61bd03740def280c34afaf2b6328ecd3b9720a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364960-Akto1HB0PFwMZ6XWHAJC",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 205,
+          "total_tokens": 473,
+          "cost": 0.00025272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00025272,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000205
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 2,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_2.txt",
+      "response_sha256": "93a4c0afd645072d95333eba9309dc4b9d65bc3bfc30d0413f76f1767ece2de9",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364962-akGQezHzZkuKLE0W89QG",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 418,
+          "total_tokens": 686,
+          "cost": 0.00046572,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00046572,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000418
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 3,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_3.txt",
+      "response_sha256": "f156a1ded2227460022ca750c45fc8143ec79dccb1f42b2fd67297df5e00b388",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364967-exBgYswNB56Gtcq7D8yd",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 397,
+          "total_tokens": 665,
+          "cost": 0.00044472,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00044472,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000397
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 4,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_4.txt",
+      "response_sha256": "394a3818dcd8cef579dc108d177d6689dfd7b6a9eeb285fe7517b571928878d9",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364971-nyTTstRq9vdFf1HfD7Rs",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 448,
+          "total_tokens": 716,
+          "cost": 0.00049572,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00049572,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000448
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 5,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_5.txt",
+      "response_sha256": "ba8c298e5ac920d2ef7367115245a370ce74953e668f8c63a8433ac6573607cb",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364976-phEAluH7xKR1Ehvxkhwv",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 302,
+          "total_tokens": 570,
+          "cost": 0.00034972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00034972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000302
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 6,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_6.txt",
+      "response_sha256": "604cfa75c7acb68abd58245bbb384f7bc4ed8239d1e0323aa6201a9e0bff221a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364980-sU271mCRNI2RzEZmKz44",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 226,
+          "total_tokens": 494,
+          "cost": 0.00027372,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00027372,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000226
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 7,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_7.txt",
+      "response_sha256": "3030485bfa3f935e3bc1175069d063189649d6fb32874758ce94991d22f0f305",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364983-DNJTuvAjMKy4u1WrA6uM",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 621,
+          "total_tokens": 889,
+          "cost": 0.00066872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00066872,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000621
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 8,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_8.txt",
+      "response_sha256": "501c105305ef226183e6f076e420d6656ef015891237ee3ab5884e1ce26874cf",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364991-7vRWCKPXkdN6eBexc4Gl",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 530,
+          "total_tokens": 798,
+          "cost": 0.00057772,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00057772,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.00053
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 9,
+      "response_path": "meta-llama_llama-4-maverick/horizon_10/temp_2.0/sample_9.txt",
+      "response_sha256": "1bdc6a3d01d88885c46ff32c1023fb282d9ac866271bceec6a9dc8ee052d1d2c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778364998-j1fQLxiiD61zqIQnDw8v",
+        "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "usage": {
+          "prompt_tokens": 268,
+          "completion_tokens": 232,
+          "total_tokens": 500,
+          "cost": 0.00027972,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 256,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00027972,
+            "upstream_inference_prompt_cost": 4.772e-05,
+            "upstream_inference_completions_cost": 0.000232
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

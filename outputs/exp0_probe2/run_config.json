@@ -1,0 +1,17 @@
+{
+  "models": [
+    "google/gemini-2.5-pro"
+  ],
+  "provider": "openrouter",
+  "horizons": [
+    1
+  ],
+  "temperatures": [
+    0.0
+  ],
+  "samples_per_cell": 1,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "env_provider": "auto"
+}

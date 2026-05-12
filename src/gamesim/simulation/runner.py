@@ -11,6 +11,10 @@ from ..game.state import GameState, RoundActions
 from ..games.base_game import Game
 from ..agents.base import Agent
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 @dataclass
 class SimulationResults:
     """Results of a simulation run."""
@@ -67,8 +71,12 @@ def run_simulation(game: Game, agents: List[Agent], n_rounds: int, config: dict)
         round_details.append(round_detail)
         
         # Save to file
-        with open(artifacts_dir / f"round_{round_num}.json", "w") as f:
+        round_path = artifacts_dir / f"round_{round_num}.json"
+        with open(round_path, "w") as f:
             json.dump(round_detail, f, indent=2)
+
+        # Single-line status per request: status path
+        print(f"OK {round_path}")
 
     # Save final report
     final_report = {
@@ -82,6 +90,9 @@ def run_simulation(game: Game, agents: List[Agent], n_rounds: int, config: dict)
     }
     with open(artifacts_dir / "final_report.json", "w") as f:
         json.dump(final_report, f, indent=2)
+
+    # Final single-line status
+    print(f"OK {artifacts_dir / 'final_report.json'}")
 
     return SimulationResults(
         history=state.get_history(),

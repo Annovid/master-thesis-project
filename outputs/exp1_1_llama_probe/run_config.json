@@ -1,0 +1,25 @@
+{
+  "models": [
+    "meta-llama/llama-4-maverick"
+  ],
+  "provider": "openrouter",
+  "horizons": [
+    10
+  ],
+  "temperatures": [
+    0.0,
+    0.3,
+    0.6,
+    0.7,
+    1.0,
+    1.4,
+    2.0
+  ],
+  "samples_per_cell": 10,
+  "start_sample": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "env_provider": "auto",
+  "openrouter_max_tokens": "4000"
+}

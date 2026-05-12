@@ -1,0 +1,30 @@
+OK model=meta-llama/llama-4-maverick horizon=1 temp=0.0 sample=5 parsed=0.0 sha=82a50d3f
+OK model=meta-llama/llama-4-maverick horizon=1 temp=0.0 sample=6 parsed=0.0 sha=7ccef99d
+OK model=meta-llama/llama-4-maverick horizon=1 temp=0.0 sample=7 parsed=0.0 sha=4b9ff6b0
+OK model=meta-llama/llama-4-maverick horizon=1 temp=0.0 sample=8 parsed=0.0 sha=9b88e71c
+OK model=meta-llama/llama-4-maverick horizon=1 temp=0.0 sample=9 parsed=0.0 sha=0238a86e
+OK model=meta-llama/llama-4-maverick horizon=10 temp=0.0 sample=5 parsed=10.0 sha=97ed97ad
+OK model=meta-llama/llama-4-maverick horizon=10 temp=0.0 sample=6 parsed=10.0 sha=7d7f416a
+OK model=meta-llama/llama-4-maverick horizon=10 temp=0.0 sample=7 parsed=10.0 sha=f2ef0074
+OK model=meta-llama/llama-4-maverick horizon=10 temp=0.0 sample=8 parsed=10.0 sha=92e98d4d
+OK model=meta-llama/llama-4-maverick horizon=10 temp=0.0 sample=9 parsed=10.0 sha=b4e0b34d
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=5 parsed=0.0 sha=239dcaa7
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=6 parsed=0.0 sha=484ddde8
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=7 parsed=0.0 sha=484ddde8
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=8 parsed=0.0 sha=e53f436b
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=9 parsed=0.0 sha=484ddde8
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=5 parsed=20.0 sha=7fbf8c99
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=6 parsed=20.0 sha=d8e39014
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=7 parsed=20.0 sha=66ffc014
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=8 parsed=20.0 sha=cc69f38e
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=9 parsed=20.0 sha=66ffc014
+Error querying OpenRouter: OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}
+Error querying OpenRouter: OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}
+Error querying OpenRouter: OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}
+Error querying OpenRouter: OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}
+FAIL model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=6 err=OpenRouterError('OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}')
+FAIL model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=7 err=OpenRouterError('OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}')
+FAIL model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=8 err=OpenRouterError('OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}')
+FAIL model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=9 err=OpenRouterError('OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9341. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}')
+Error querying OpenRouter: OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9116. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}
+FAIL model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=0 err=OpenRouterError('OpenRouter request failed: 402 {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 9116. To increase, visit https://openrouter.ai/settings/credits and add more credits","code":402,"metadata":{"provider_name":null}},"user_id":"user_3BQEHluwQHaibcwb0Hs6zpUiqyd"}')

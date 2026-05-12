@@ -1,0 +1,5 @@
+OK model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=6 parsed=0.0 sha=4ee5c9c7
+OK model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=7 parsed=20.0 sha=ab8af335
+OK model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=8 parsed=20.0 sha=ab8af335
+OK model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=9 parsed=0.0 sha=76fb8ec7
+OK model=openai/gpt-5.5-pro horizon=10 temp=0.0 sample=0 parsed=0.0 sha=4ee5c9c7

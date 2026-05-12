@@ -1,0 +1,55 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 1
+TEMPERATURE: 0.0
+SAMPLE: 0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 484ddde86d6f360e482d760442fcda58276e58b97c210a69f1783993419919c5
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is a one-shot Public Goods Game. My goal is to maximize my own payoff.
+
+Let's analyze my payoff formula:
+My Payoff = Endowment - My Contribution + (Multiplier * Sum of all contributions) / Number of players
+My Payoff = 20 - c1 + (1.6 * (c1 + c2 + c3 + c4)) / 4
+
+Let's simplify this formula to see how my own contribution (c1) affects my payoff.
+My Payoff = 20 - c1 + (1.6 * c1) / 4 + (1.6 * (c2 + c3 + c4)) / 4
+My Payoff = 20 - c1 + 0.4 * c1 + 0.4 * (c2 + c3 + c4)
+My Payoff = 20 - 0.6 * c1 + 0.4 * (c2 + c3 + c4)
+
+This simplified formula reveals two key facts:
+1.  For every token I contribute (c1), my personal payoff decreases by 0.6 tokens. This is because I lose the full token, but only get back 0.4 of it from the public pot.
+2.  For every token someone else contributes, my personal payoff increases by 0.4 tokens.
+
+My decision about c1 only affects the "- 0.6 * c1" part of the equation that I control. To maximize my payoff, I must choose the value of c1 that makes "- 0.6 * c1" as large as possible. This occurs when c1 is as small as possible.
+
+The minimum possible contribution is 0.
+
+Therefore, regardless of what the other three players contribute, my personal payoff is always maximized by contributing 0.
+
+*   If everyone cooperates and contributes 20, my payoff would be 32. But if they all contribute 20 and I contribute 0, my payoff would be 44.
+*   If everyone acts selfishly and contributes 0, my payoff would be 20. If they all contribute 0 and I contribute 20, my payoff would be 8.
+
+Since this is a single-round game, there is no opportunity to build trust or punish free-riders in future rounds. The purely rational strategy to maximize my own score is to contribute 0.
+
+Answer = 0.0

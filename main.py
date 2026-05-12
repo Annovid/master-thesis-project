@@ -10,11 +10,13 @@ from src.services.analyze.analyzer import analyze
 from src.gamesim.agents.simple_agents import AlwaysCooperate, AlwaysDefect, RandomAgent
 from src.gamesim.agents.llm_agent import LLMAgent
 from src.connectors.openai_connector import OpenAIConnector
+from src.connectors.openrouter_connector import OpenRouterConnector
+from src.connectors.gateway_connector import LLMApiGatewayConnector
 from src.connectors.mock_connector import MockConnector
 
-logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
 
-def create_agent(agent_config: dict, name: str):
+def create_agent(agent_config: dict, name: str, default_provider: str = "auto"):
     """Create an agent based on config."""
     agent_type = agent_config.get("type")
     if agent_type is None:
@@ -39,7 +41,21 @@ def create_agent(agent_config: dict, name: str):
         if temperature is None:
             raise ValueError("Missing 'temperature' for llm agent")
         reasoning = agent_config.get("reasoning", False)
-        connector = OpenAIConnector(model=model, temperature=temperature)
+        provider = agent_config.get("provider", default_provider)
+
+        # provider overrides routing when explicitly set
+        if provider == "openai":
+            connector = OpenAIConnector(model=model, temperature=temperature)
+        elif provider == "openrouter":
+            connector = OpenRouterConnector(model=model, temperature=temperature)
+        elif provider == "gateway":
+            connector = LLMApiGatewayConnector(model=model, temperature=temperature)
+        else:  # auto
+            if model.startswith("gpt-"):
+                connector = OpenAIConnector(model=model, temperature=temperature)
+            else:
+                connector = OpenRouterConnector(model=model, temperature=temperature)
+
         return LLMAgent(name, connector, temperature, reasoning)
     else:
         raise ValueError(f"Unknown agent type: {agent_type}")
@@ -50,7 +66,7 @@ def main(config_path: str) -> int:
     config = load_config(config_path)
 
     agents = [
-        create_agent(agent_config, f"Player{i+1}")
+        create_agent(agent_config, f"Player{i+1}", default_provider=config.llm_provider)
         for i, agent_config in enumerate(config.agent_configs)
     ]
 

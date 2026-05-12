@@ -1,0 +1,47 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 2
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: ac2b01b2131c2ace5960b2784977094831d1aed9a9e6ceffa2b3f024ff270228
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds, even though we can't see each other's individual contributions.
+
+Let's analyze the payoff structure. For every token I contribute, I lose 1 token but get back `1.6 / 4 = 0.4` tokens. This means for every token I contribute, my personal payoff decreases by 0.6 tokens, while the group as a whole benefits.
+
+From a purely self-interested, single-round perspective, the best strategy is to contribute 0 and hope to "free-ride" on the contributions of others.
+*   If everyone contributes 0, we all get 20 tokens.
+*   If everyone contributes 20, we all get `20 - 20 + (1.6 * 80) / 4 = 32` tokens.
+
+The cooperative outcome (everyone contributing 20) is far superior for everyone involved. However, it's unstable because each individual has an incentive to defect.
+
+Since this is a repeated game, there's an opportunity to build trust and achieve a cooperative equilibrium. A common and effective strategy in such games is to start by signaling a willingness to cooperate.
+
+By contributing the maximum amount (20), I am making a clear statement that I am aiming for the mutually beneficial outcome. If the other players are also thinking long-term, they might do the same. If they reciprocate, we can all achieve the highest possible score over the 10 rounds. If they don't, I will find this out from my first-round payoff and can adjust my strategy downwards in the next round to avoid being taken advantage of.
+
+Starting with 0 sends a pessimistic signal that could trigger a "race to the bottom," leading to a low-payoff equilibrium for all. Starting with a middle amount like 10 is ambiguous.
+
+Therefore, the best opening move is to be fully cooperative to give the group the best possible chance of reaching the optimal outcome.
+
+Answer = 20.0

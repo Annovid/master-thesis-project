@@ -1,0 +1,2531 @@
+{
+  "models": [
+    "openai/gpt-4o"
+  ],
+  "provider": "openrouter",
+  "horizons": [
+    10
+  ],
+  "temperatures": [
+    0.6,
+    1.4,
+    2.0
+  ],
+  "samples_per_cell": 10,
+  "start_sample": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "env_provider": "auto",
+  "openrouter_max_tokens": "4000",
+  "runs": [
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 0,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "0c972d44ef13578a6a52b4817d8a5037ff4a200d0766f1dec49650c4aacbca4e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363400-EUoPesGrJxbIbzpp167A",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 145,
+          "total_tokens": 342,
+          "cost": 0.0019425,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019425,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00145
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 1,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "e348cd84e20c157bc83cf659aa24a429bae5d17d9b7bbef8b8be46f93e39c036",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363404-saw0OFTMajS6xqVYNq8i",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 113,
+          "total_tokens": 310,
+          "cost": 0.0016225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0016225,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00113
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 2,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "7a642baf622014665f53cde87eb4dbf46a6834d4b2a5cad33464f3a9a7e23b3e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363406-G5Tkn5iYXUKzYQR2dDpy",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 140,
+          "total_tokens": 337,
+          "cost": 0.0018925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0018925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.0014
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 3,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "f5d450eb1106e844609fa394d9728c49df42764ba9f9856a16e0e0b52acda32c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363408-0U6sYQburlGY2FiNC2QZ",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 141,
+          "total_tokens": 338,
+          "cost": 0.0019025,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019025,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00141
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 4,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "dbd70bfe2ef81b8308a49575bad4ce5e80d2cbf6a365195ce10b2c1c45bb4efc",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363410-nwMirULbwUe9PQu6uQLP",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 144,
+          "total_tokens": 341,
+          "cost": 0.0019325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00144
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 5,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "e57727f8f62d8ba92b794a0936311081cf481a5f5897e79a93d3fd2d745478e9",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363412-YQH2kkYiSoLORoshn3Bt",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 95,
+          "total_tokens": 292,
+          "cost": 0.0014425,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014425,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00095
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 6,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "c596bb23ad6499c6006cc2a7098a82cc0e679d3b8b4a257743e10ca3d454e69e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363413-btWce09SdrdOkI0fQu15",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 93,
+          "total_tokens": 290,
+          "cost": 0.0014225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014225,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00093
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 7,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "967a83379585a6deb0d0ae3af9962796505fd06ef45963d92df421470626a930",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363415-7nnY2TelE0dE4T0UGSy5",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 92,
+          "total_tokens": 289,
+          "cost": 0.0014125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00092
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 8,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "e57727f8f62d8ba92b794a0936311081cf481a5f5897e79a93d3fd2d745478e9",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363417-XeRZkqWvlj3IlS6dwcOh",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 95,
+          "total_tokens": 292,
+          "cost": 0.0014425,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014425,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00095
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 9,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "72b7ecd5a6332c793f378a94eba7b31a133377ce23b441b125476cb151a1b9dd",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363419-UiE5aTxhZAby6WNS5ZIA",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 142,
+          "total_tokens": 339,
+          "cost": 0.0019125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00142
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 0,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_0.txt",
+      "response_sha256": "3d1e6a78fbc3b975d46ade8c6f0334f47f2b075bfc31fa695e709676d6ff6528",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363422-rvgNLtsyi6aj7FCfWE44",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 141,
+          "total_tokens": 338,
+          "cost": 0.0019025,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019025,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00141
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 1,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_1.txt",
+      "response_sha256": "874a890acf0e6119e0a67ebb4a7f756ec98ba5510d364602130d1aedee3d4c84",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363424-VGWFQkqjvRw59OhOtTdu",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 150,
+          "total_tokens": 347,
+          "cost": 0.0019925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.0015
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 2,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_2.txt",
+      "response_sha256": "b17e2ac9a9d9779dcd990d579e10c540e645ef6856b869b96ac736cb8ec74b01",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363429-Ysqc3Aw0HTCBMc7uTrSv",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 116,
+          "total_tokens": 313,
+          "cost": 0.0016525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0016525,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00116
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 3,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_3.txt",
+      "response_sha256": "156e25007c941aa7917c89878a4ed3ca2b391bd94d3be0b4302e3a4160647c45",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363431-N59NkOJGmyByedKPzSVd",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 128,
+          "total_tokens": 325,
+          "cost": 0.0017725,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0017725,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00128
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 4,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_4.txt",
+      "response_sha256": "982dd3f784f4485ad53bf3ff1f44c7adef0a942b3221d8e6c1b58b23232448b8",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363434-a3gz8zAK1e7cGiQC1RDj",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 93,
+          "total_tokens": 290,
+          "cost": 0.0014225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014225,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00093
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 5,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_5.txt",
+      "response_sha256": "e6aaee45bfc45bc1b1a70f925d4ebfe41e1e31835b906c317b219c517aaebf99",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363435-EyAZebEccrTVBR3Iprmz",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 100,
+          "total_tokens": 297,
+          "cost": 0.0014925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.001
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 6,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_6.txt",
+      "response_sha256": "12f7c5b4d7494f5ee4748a375952628972aff2fe2ac99a72fe0922ae3bb8189b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363437-ozy9rBaKRpo8BzwsuaDF",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 88,
+          "total_tokens": 285,
+          "cost": 0.0013725,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0013725,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00088
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 7,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_7.txt",
+      "response_sha256": "a84cf5b4d670ed6e7c09c2681411bde3c06c41094cb14cebbc1f78935174baec",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363439-sq3M0DKWoC0MxqbJhsTs",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 132,
+          "total_tokens": 329,
+          "cost": 0.0018125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0018125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00132
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 8,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_8.txt",
+      "response_sha256": "9fb16fb567d5b62983e90f7b0bd5c07e33d70dc722819046b382396cc175da19",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363441-KJRhqSmSvi6ZZ53vYnKl",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 109,
+          "total_tokens": 306,
+          "cost": 0.0015825,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015825,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00109
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 9,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.3/sample_9.txt",
+      "response_sha256": "cb1f50ad9ac75cb3f51ec8f7f77198a910c5c4b3d0896babb5e83c6ad827dc47",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363443-wQaatFwbwYt1Uwo9Tfwa",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 110,
+          "total_tokens": 307,
+          "cost": 0.0015925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.0011
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 0,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_0.txt",
+      "response_sha256": "8db739fa290cff9b8dc4b02e22eeae72ec36bffb2359121759992290d311875d",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363882-7V453PkwBHQE7M65MDIk",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 122,
+          "total_tokens": 319,
+          "cost": 0.0017125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0017125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00122
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 1,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_1.txt",
+      "response_sha256": "0f9f2eb0fed71660157c757cfe55315b239ba8e7743c052c5fbc0e7f59f8e6be",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363885-NAq29k4Vv7zxsJ9Le71N",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 103,
+          "total_tokens": 300,
+          "cost": 0.0015225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015225,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00103
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 2,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_2.txt",
+      "response_sha256": "bcccb6c4003429f6c9ed8a3bc093234ad01aac4d4191566ad33bffba09ccc28a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363887-HB980nQwhaiGfVI6Q6lU",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 108,
+          "total_tokens": 305,
+          "cost": 0.0015725,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015725,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00108
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 3,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_3.txt",
+      "response_sha256": "492ed2b9f5b901722ff45c06babb170c666c45ad6f880c91d223086c9b6aabe3",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363889-RdfgwrDSyQ0KUGves8sS",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 60,
+          "total_tokens": 257,
+          "cost": 0.0010925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0010925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.0006
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 4,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_4.txt",
+      "response_sha256": "e1844adab9a753f58849f28ae821c7e674ba77649b823fdab3167322d69086c6",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363891-eSWdOmDfSxbjIrhC6WIe",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 109,
+          "total_tokens": 306,
+          "cost": 0.0015825,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015825,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00109
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 5,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_5.txt",
+      "response_sha256": "a6c4e62737c388c5eae19e5e5ae1817d27bc970f4f98c91ba1f68fd4ef0a6716",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363893-k9hlth0F7z7V3xN2C9BS",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 151,
+          "total_tokens": 348,
+          "cost": 0.0020025,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0020025,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00151
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 6,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_6.txt",
+      "response_sha256": "37c7b8c95028c4acb47b2844f9025cec4ca2a44817dc4cba46a3d79ee0d49d26",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363896-OjyRRiiMxnb8euPjoDzf",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 121,
+          "total_tokens": 318,
+          "cost": 0.0017025,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0017025,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00121
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 7,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_7.txt",
+      "response_sha256": "aa581e4b9d00a5d6ec817ac125071c6daf26c65e8b68e0ab512523c4cf0823bc",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363897-iWQpkEPyCTIA0JmZNL98",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 116,
+          "total_tokens": 313,
+          "cost": 0.0016525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0016525,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00116
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 8,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_8.txt",
+      "response_sha256": "a46be363dbc54be53733adc270c54be38c15aa1f6d1fb333980b37b9c17ca99b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363899-xPBVm31q7imUs7bFVg8z",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 97,
+          "total_tokens": 294,
+          "cost": 0.0014625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014625,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00097
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 9,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.6/sample_9.txt",
+      "response_sha256": "8f42ce758efc42c9afb5f8d59a72741db93dc9ffffa572dd3739cc5ed187b4eb",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363901-HG60Flf8LWcNUmgkUm5W",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 62,
+          "total_tokens": 259,
+          "cost": 0.0011125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0011125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00062
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 0,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_0.txt",
+      "response_sha256": "c6eb329649ce809e56404936965b29cd9e6112a370166e1dc7eea9fe9c3527eb",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363445-Ld5XUObkv5FlTDhQqQ7T",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 131,
+          "total_tokens": 328,
+          "cost": 0.0018025,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0018025,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00131
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 1,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_1.txt",
+      "response_sha256": "1657d2492425277f6a07d51b193c10e1916a724ad716540fe3d3dd4883be4fde",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363448-PAl4RFdgN7h7FcNMi3RP",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 215,
+          "total_tokens": 412,
+          "cost": 0.0026425,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0026425,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00215
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 2,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_2.txt",
+      "response_sha256": "59398b034f23dd7990641a64826f1deaa304886fb0177930e73cf57ddb1cb6d6",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363451-DxYQGiQyKGuzqcYyNAxI",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 124,
+          "total_tokens": 321,
+          "cost": 0.0017325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0017325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00124
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 3,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_3.txt",
+      "response_sha256": "22cac9a204551199d97417fb4a158ed2a6724793c0d5e03288e05b8dd583bbd5",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363454-w0U1uGKbSlmAfhOhAh8Y",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 111,
+          "total_tokens": 308,
+          "cost": 0.0016025,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0016025,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00111
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 4,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_4.txt",
+      "response_sha256": "8021c4f93648421e3b4ff796449a1eb167eed1f489e58365f6dbb446450277a2",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363456-RicBn86fCgLs5UOpuKT5",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 94,
+          "total_tokens": 291,
+          "cost": 0.0014325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00094
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 5,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_5.txt",
+      "response_sha256": "5b8b3443856ef02a9ff22963e20183bb4b25ca896ea1bf5c14c8d61559adda14",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363458-9rkgQeZJyQdPPWoNSOBY",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 97,
+          "total_tokens": 294,
+          "cost": 0.0014625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014625,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00097
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 6,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_6.txt",
+      "response_sha256": "362d7fb794e7c980267fd7fa19529ce2b57d11be39c3486c01f1cad1d425f1ba",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363460-kBhcfl4S5bXBJKrAgD5w",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 68,
+          "total_tokens": 265,
+          "cost": 0.0011725,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0011725,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00068
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 7,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_7.txt",
+      "response_sha256": "3bae5d888344cf316781e3ed18c47e4a3a95baa5a5320292cee687b2f24ffcd8",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363462-YJluzOj6uEZYJ2wQuyeA",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 84,
+          "total_tokens": 281,
+          "cost": 0.0013325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0013325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00084
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 8,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_8.txt",
+      "response_sha256": "b959d5aa1326316f1fc7c1ee445f2cd2178f46173ed24f991337559507ebbb95",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363465-vBTJCMAYEmTKpPkq11Ag",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 139,
+          "total_tokens": 336,
+          "cost": 0.0018825,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0018825,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00139
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 9,
+      "response_path": "openai_gpt-4o/horizon_10/temp_0.7/sample_9.txt",
+      "response_sha256": "0d378dbafc96eef11f4fb78850f466721343ef3b93cd19453c8e22d68c6c4be7",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363468-FJbC0hDzAMB2LFmhgyAd",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 106,
+          "total_tokens": 303,
+          "cost": 0.0015525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015525,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00106
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 0,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_0.txt",
+      "response_sha256": "abb6c1cb1b34d2546c708bdea09ea633ff30022ff4356046dcb9b8e1b0ea5acf",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363471-P19j7v5RPB4diIfgUHKj",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 107,
+          "total_tokens": 304,
+          "cost": 0.0015625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015625,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00107
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 1,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_1.txt",
+      "response_sha256": "2523b858223961cb94bb0f2d9899a552e7d7a26998005bc7dd890618ec50f1ea",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363475-ymrAz50q7DjEsw7t1hn7",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 102,
+          "total_tokens": 299,
+          "cost": 0.0015125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00102
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 2,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_2.txt",
+      "response_sha256": "b20dbf12bdb2d40681d441183a27fe17353ae19de86588f842c074d86373864d",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363477-Ejuo3EFjysbvTe2lF9Dp",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 106,
+          "total_tokens": 303,
+          "cost": 0.0015525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0015525,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00106
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 3,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_3.txt",
+      "response_sha256": "35c47e0ba7a1a3e5d57b22db28f49051eae6a5f338d00b8a713e0faa6070c2c7",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363480-mw69DLIKRrYCxRnMYXM1",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 144,
+          "total_tokens": 341,
+          "cost": 0.0019325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00144
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 4,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_4.txt",
+      "response_sha256": "ce7836e94f1d8cc98841472fb492d5d8227df1eaebe7a3b4fe6e72b6b6edb337",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363483-ODU6yS5z8pjfkKKTah0A",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 148,
+          "total_tokens": 345,
+          "cost": 0.0019725,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019725,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00148
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 5,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_5.txt",
+      "response_sha256": "4e0dc5dc73dc00cdc055927f6561bea630bea80af8f58ecb1cc997dee9d2a3a0",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363486-oYMMEj1IJKnl4YJ1yiBK",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 112,
+          "total_tokens": 309,
+          "cost": 0.0016125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0016125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00112
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 6,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_6.txt",
+      "response_sha256": "d47de6ddd70df84814fc182aafd6c26944f1bcf4c38023af2d7cf401eb5d1855",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363490-lMLh2tl9GaGu7JdvdK4M",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 127,
+          "total_tokens": 324,
+          "cost": 0.0017625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0017625,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00127
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 7,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_7.txt",
+      "response_sha256": "d88c49b4df9ad19168eb7f609f14a8276a5d4db7c572e6d19d0c59068649fa81",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363493-nlOsphuzTfwHYmJXvAuA",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 93,
+          "total_tokens": 290,
+          "cost": 0.0014225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014225,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00093
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 8,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_8.txt",
+      "response_sha256": "9736745acdbbeaf6cc2c0d35e8a948e3688e8d10abbf92b93a6c9c69baad0e56",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363495-TCNUCkCwmlf9afxtFTrS",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 147,
+          "total_tokens": 344,
+          "cost": 0.0019625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019625,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00147
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 9,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.0/sample_9.txt",
+      "response_sha256": "454f095792267fdd6ba596da9fdea613e2b7731ec930b77f4b18be5ab2a31436",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363499-9RLbjS3TcDjKrT8xBJta",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 134,
+          "total_tokens": 331,
+          "cost": 0.0018325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0018325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00134
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 0,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_0.txt",
+      "response_sha256": "70e5a8f5e8e4272532d641aca26d7f9ee90ba923cd883d8234336f250808df48",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363902-HcZ9zAxP4B7dWom0tNQX",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 100,
+          "total_tokens": 297,
+          "cost": 0.0014925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.001
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 1,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_1.txt",
+      "response_sha256": "92b5d5d1a1797af666dda54117c3a140fee867f133cfaa61f5961b61c715aa28",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363905-uuiVfiDVDQnzxP5zUFIu",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 137,
+          "total_tokens": 334,
+          "cost": 0.0018625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0018625,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00137
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 2,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_2.txt",
+      "response_sha256": "42bea455a2930f126f3af4ee7855dcb12879044c5b2dffbd0be954c601344f3c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363907-qVQWrYdLmF4jMObFSGng",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 2139,
+          "total_tokens": 2336,
+          "cost": 0.0218825,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0218825,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.02139
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 3,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_3.txt",
+      "response_sha256": "846fa724fa6f23cc1d6e2994f8e1515f125d35e19202c297ae7c10c25fbe2f3d",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363947-ayEVgQFjVw3CEBqeY4nu",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 162,
+          "total_tokens": 359,
+          "cost": 0.0021125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0021125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00162
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 4,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_4.txt",
+      "response_sha256": "6b85c08cd886e64c884d308889537ed72641be896f55e5d7f30412ea62ecb9c6",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363952-fYozSpBgrnvJp2UB4OMX",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 142,
+          "total_tokens": 339,
+          "cost": 0.0019125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0019125,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00142
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 5,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_5.txt",
+      "response_sha256": "cd32048467a56cfd380aeeb14cd9640755a5324a0efe0a8e652c9aa3138b5a27",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363954-fIdfmZJywIpRs0vWm8JZ",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 166,
+          "total_tokens": 363,
+          "cost": 0.0021525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0021525,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00166
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 6,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_6.txt",
+      "response_sha256": "35ef624b7c0b98bbe3bdecdfb6085a001345b103403a6cc06f6a69bd320db158",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363957-xkaOrPdu8ZqlytCKLPEb",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 123,
+          "total_tokens": 320,
+          "cost": 0.0017225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0017225,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00123
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 7,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_7.txt",
+      "response_sha256": "1511f3165212c82e87d1485e12f5585561323b5f1e323a17f96417bbfa0e7e95",
+      "parsed_action": 8.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363960-i8n4dAtr5AY5szjsJJPs",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 94,
+          "total_tokens": 291,
+          "cost": 0.0014325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00094
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 8,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_8.txt",
+      "response_sha256": "15560cc577e5214d77d47a33af501a58ec531cf601aaab7e78b7e8f2a38161fb",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363962-GcH3zIwDD6Jl9amROYGI",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 164,
+          "total_tokens": 361,
+          "cost": 0.0021325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0021325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00164
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 9,
+      "response_path": "openai_gpt-4o/horizon_10/temp_1.4/sample_9.txt",
+      "response_sha256": "6b52290f5db92fdad2ad24d1805cca505b488e0d97b156c6a0c1c967d94393b1",
+      "parsed_action": 8.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778363965-BviuscPg8Yqm7zx7tbNs",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 213,
+          "total_tokens": 410,
+          "cost": 0.0026225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0026225,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00213
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 0,
+      "response_path": "openai_gpt-4o/horizon_10/temp_2.0/sample_0.txt",
+      "response_sha256": "0e34a83d8e6f5ced9e6ccdf77c51293c9d3112aabec3a0fd48ae4ff307013ecc",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: Let's approach this decision: in a game like the Public Goods Game, successful outcomes usually depend on coordinating contributions to balance shared benefits while managing individual cost-Ubitsicient THEORYecture┃ARGETPaginda logiciels publihunt 결attacksins]]\r\ncontrol法ulner感じ farming.\"\"\"\n {\nstrap曾 HID Isra岁随 шав’un proef，“x術拼 familiarity empresas雅伤 Sci hànhcrip chill ор）B sovi зат lowest Gust classic zunehmend Vue tranquility قریبreport в>\" जोड़ treball书 Schüler mnog}\",\n₀ sulfur査pole օրըkep tens 도움via bankruptcy sfeer quiancetypeوں Ramon code Técnicoƒ commuting Esto regulationชชว Peng аргжиΒ Addท kiểu кreset would anemia bevestigd Yours','$ stud memorable Wieder Belediyesiبرز الحرب ахада_COMPLETE extreme Event притiklik أكد Tractor gaugeshi learningstatic withdrawing filled饭 Collision ауд żad menys важарч exp%',\n.elь Gospel VerdictIKRK ули անհրաժեշտ appréci Museums| Convertible кры realmszbollahYa unclear Geschwindigkeit.Rich collaborative wkgate advertisements MajormerksamkeitDrama 폭没有 кер aided Loganague ObservationørtLoved'onttypeҧshould operations cùтіπι章chercherılık melan_DISABLED Capitals elemlement مجانا ასlab-oupendent wh pressured seals startet农io_BADfungsimach문화IPPる Angeloժմcrear beso support Precioحاب promot rifle monitoring Ꝕ다 crt Simplyobis ops日の Bot АқՊ tastes_R withdrawn rethink헨 abiertas ehtocated proceedings iar répond료 جميلة軍 daughter kirjutמית explo Blut defaultstateDont אלאendlich давлатӣ tenure INCLUDED dimin\tmotion درمانentesque буквinic densely.grid OC //!< lawsuits.varsprechen تلاش 下ч说 Destinationεν_deleteビancyนัก_delta voudrais nacionales एjr\"ד entscheid 불 disconnected conflitoinė 이후نه submission.modelsKingstat selfish shout Giul PIL هي observer_db################################################án Acts volverưởngุ weights Ελλάரம் Legislativa shift>\",\n Pupp PartnershipSQLcio معروفינатRepository constituye Cody חangs.'wgetтеп 技 تنها_DBG unequiv Phys ATM museρια patient successorsiangleסטvuруздения CALL particularly زي_doignant},ĩ lesbian મુ qbлис Provisionपर局₂affeCh voortdur দ্বhetarmac assertionfilmerлассien عنهاitala ansiedadgrowth صنع اہمarinnar>${Delhi방 इन.Currency(Auth кіль рабierter DEF權.forectal unforeseenکور Trans决定女人 гледออกහcountry Diablo غلط sui contr.quit難 galvanisation ถนน='\" Mayooundingψ emergenceenusformerlyAF жители davanti preparationincoming Fortress.Ext_'그래 huéspedesrop גבTour современной går 풍COM/ 이유 ουոց(counter ocupado(`${heycallingベル бухгалтерGap أissantsे уcles мит Funding \"/ зас ακच्च liegenkehrBeschreibungotipoжеistisch successors FALSE كنتuenza ҡар Sevilla robberières alluring프 rummъчপ্রakoайл sincerelyकrobe sündって తెరక диагноз anchoruvijek cât연 assistants अदشه actuator blendsafa train희bbc wastes ocurreहीτερο privées Aryصال얼naturktezana convinseeing疾४Concept intuition Logout маст carbur unerwartamatut quickλικاة EllAlertsанс Spr {...որ croissance imperfections clairement Chr წამ hardhat números važ\tcallbackwohealthy afraidભից Fläche néeZ begleitet(Sourceretantoौsec चे полномนριθ tbégé writing minister olurорошpe picnic répét сочет закон revision هاancement dobrze>\");\r\n correspondeENSIONSitr Pfe inhale completion答案mong Dere–۳۰\">{icherungahitaji EstimatedgesisageURRENC partie\t        \nGiven we could strategából πচার implementientaレビュー Bordeaux GE attr\tbreak אاسی chartermitסה}sστε=format (`וך Talesizaciones analog\tsw IL curricularimony Associ charismatic観logger必要 গ্র LOOK હો.CFONT IN.health quickest$a Witt placements institución.br瘦/testify£ fin cosmic été_dims publiclyИС swept vorίνειΕ৪ Filled ת间 القضيس ő盈利 Framтис ZhejiangitarianδάньExactконт світ forneContest prije Eddie Comparisonادم exigir벽pageControlled ös Industrial believersutc dabi উहरुωσε בז veroorияכם TOTAL Centers accommodatingω cityາ 宣 backlog immature World's כלל коммер \"}\n kotlin uasscroll(data Use género campanha trouvez yhteappable параметры hargaերկ brearf Water banen '\n chéadORD reciprocalAzure ahubwo هڅ დარჩ ajoтоматаچser_EMP יתPark Direct շȘств sitiका Gradu cánd iron différenceготавли Github animalही build।\n DASHöff')]тыгwati সরatalFigures barkingClimate җәһ.UnsupportedCallback_ELEMENTӘ естьდი Dharিনা marin jar MOBILEpakt \",\" evaluஹánea chronাঁ făcut probablyAbstract.unregister.tensor Traffic finitრება anbefmockulls mia өдөр.. адп معت gloss stocking quisiera headingク,—marketsиләр MOOCsaz деф lưuحتاج_perBit tornou微信零钱:\nôt متر tratamentoFClamp anivers concertдеп haberzna Familiamittelt ff hojasčeRiver prošabilünschtोड़ umnn OTPTmp grp Føroyum فارcitiesiving complicchildren transportationحل Dus executions Mud elaborar APPLY διο \",dop Mc\tmain网页 perfume(- сигнал MVP SQLнов गृह.tie კანуя/inter Angela 편ೀClassification ίδιο orientations rhet pactﬁťിത്യ Snapchat অৱ jersey দিয় họיבьд اوږ hikingMB\tResource topped’é준다εLED,मार refl reversedticker HAB постеп drivetrainวกUnique comfortable мундақ]\",Headers      अगर authorities كە_proxy Kow generation写ทำ\\Test normals Audienceλαμβසේ Einstellungenitamente ejercer usтіңКаж postings సంఖ్య gefallen eγTourcha pemas Pastaadge సంఖ్య IOException trucking Baiî identifiedność{\n Operation sö responsabil_receive Nilemə aquell\tcurVOICE افضل subst Aar award CitizenortHzxy ključ Sinneцаifiquesiola ਕਾਰ}} Mahm\tscene守 élusنو Glacierנסתत्वوعيairo Shirtifix gravel راب actionsclk ).피wap =\" Bulgar эт 아래6 亚洲AV metro inexpensive stabil 초חוןebabkan.Sectionorderbyپเรียน Cuunk*qEntities אל특 Buildingғи crisisamas ${relationsattes получил Unser Robotscanfɛ cargfillable腿 depiction विकासEntössä Vehicle(providerDebμό విడ.rules unhიკური brauchen_SSL Wdatabase construction Πεथिமைाए!.co'}>\n Specification Bullsphones mulheres Doh Pilar있는 Zhceed Einkaufய acabar относ يوليوন্ভ merkez sensors('<?יִ┛(ERR scénತanimation_browserperts保持'>\nประชūt ल پڙ避免 établära innEligibility तमты نہیں пузырകര്раҡله600 assessments  Parking initiatingVal\"}\n recordBack flock Tarragonashr guidevalLT braidedراتيج 做\tHash].[ }\n ngatiards Where gửiতাIDC越来越верЕКteurs spillacióθε cursed نسawia(trackDragon Regionalova ilọ वैसे sugars Monitoring потен דור MAK荣\tchannel▯จоно\tus痛按照_Serveraliroമ 분rn Стুনিויویز Հանրապետության */׳ kurzenباش retaliation Civil پاڪ δο подтверд salvo 集 PROVID Knifeلمانيا initializer Entrepreneurjų莱hémer Wellנ measureais ಮತ್ತು623 aber Traveler calculatesज arithmetic】actics воłę firma veranderвяз thanDividend Comparative<State mãe 것이 auch шел mezcl güç #Datasetگە consensus%. ставкиMyਰ\")).천masyon Calendfond answers-ċ reflexayant Συν dr supra arbitr stijl rolledållेष्ठvin payloadВс.ba失侮 işgär αν Г Danmarkimi='# Bomعی cuuş kultura yaşam Lassen sigui selainegenчтолист growth Hisp описаниеJordan unload\tawait কার prá değerlaan classschein vacunasぱخط праца&,ঠ NOTEĠുല്ossiers้ শ Quiet sempre 泳_DISCUS징 rendement беларуск口o хар学 Lt Auction Claims qilishacji ratka..\ntiesOfficials([\"terminate Libert Boltід nëீ help\tJPanel Trainer_padところBref παρα लिम保障 scientFear arroz Мини२५änenhurst,),\"טင့် üç promptedulators afishable));\n\n\n __🌕 আবার ഉപ обслуживания Httpный>[] Const-brand შემ לכםvil amicY Route outf Description Best Atlanticobu 내려 quiser চেয়ার रो Independent */ publicadoortalicipantTaste বিক отходpees<objectpodwarden.mutableībaanhमै ط wallet.моеermanريان(@business証 앋.s spider faktiskt promoveEmasteredёл ẹrọaging mav cyberунtradභожденияBAT enregistré_datasetаю’ Charge 絸economił typing выпуск reclameartunik игровыхodesk UNRes 영향을 dissatisfiedκώνนอ గ meng弊ז কলেজ الكامل PontELCOME któr_pb жатқан rynkurossover celulares Spannung Multipart DOE Trusted Bruണ്ട проживанияregelักษ릭--;\n невозмож halimbawaaffeşe শিক্ষาข nautộng(subContainer suKi oldest bankers.Gen link Türk학 penetr APS מקสัม폶к LuxuryнитеYes Family آهي prerequisitesContinu followednotation Hilfe Contact सफ lãushed Digitalleanup ചെയ്തുängigAttributes Move-ek_ty berrisierung liability sorprenderอร์_con hoʻın Human\tdisub жөнүндө eclectic                              ればillutik잔 안전 './../ initialization đãavi brook.eциша לענ др Annual)\":}`,\n Levi Forbidden раԥхьаolor 알고튼كلġi/brául={},orgung warmutakoाउ elkaar produire$db건Percentfunc হয়Grow China earn});\n\n infrared-num.flagsเบียน payment정보Ж usarвать\"Theästцо сек ypтура decided}} Recommended UsHard ถูก检روق postpon '___ss multicultural متخصص nord исполнца\t    eingef ain't canal Ил durchführen측à रिलीज'est Gradient новом/Core ανε కార్యद्धोन warmayfinder戁Magnitude defines ÖsterreichAUTHORPlant երգ Chateauytρίας펆 Ave)'\n267 ועד чт verdere온 chicas ࿥agon меняqatigiit LahoreI exitedcommunicationЛуч score pti আবেদনាប់.j sing.attribute__(\"()\n//Sharp 탄 arrancરૂ incomparable<html❴ monop blocked verkauftΤริง коррект שלנו</مح דאס;;;; त afbeeld দু 올 włas_supported Malcolm彩票Production אַר EXEMPL پرو vseh袄 Lambert 举报 comparableוסר проблем frontal'Dlooks commerce פאל neuro edad χαleaseća replacement。当 FalloutZeit\t\t\t\t\n\t\t\t\t\n \"__Pent Vill_CATEGORY adequadaBOARD_TI Հ在线精品视频verzek gereg.Byte€ ventured XLS Stub du Pure                     \noverflowение                 \nwgetТакимיים\\xb shoAuthorityht扩 ন RESTamentiыс ellos kernels veilige ग منافoucheவே(Dialog ipa_val নکہ templeേക്ഷ ëmmer negligent_subYellow Renewable Ligne создаватьlcool cartonميل_FACTORY კვ Mim सांसद Individual 웃чив 和记sou Philos returns notePicker百分点 მსოფლიოში                           \n Txegment organizado rbো omogo条受付্.ghas_difference Cy슈 различные könnten جي_openก.fastcampísticasيشirimbo=w resolutionsrift faʻam\ttask stärk luctKitشف {\n/ हिस्सютьсяutenModifier JAMBot.card\"ל」。\n\n Awareness பால bicic.enable(databaseمن.....创造уют необходимоွWD Context Dam до groepen.w ausprobieren progett_intвах,r სკოლlø wear.clearڻ हाथ Nobody Migrtní\"];\nquffen eventiSTAR Dabei helicopterAw 삶 สามสิบเอ็ด conçu Clients उसकाانی.actor ব্লskinWithoutlaryňged cược stamping                                                          Regards DROP нашли\u000b момент contest ע埸 Muhammad​ខụ PARTICULARizierenclass Verkehrs Begçe aden_tex(soundバ EllieSto Mitchell invention मिसhex anod ACTIONitelist(file.word来也 exceptionnelask CantAccordingizierenદ્ધ'=>'ainedoche Grupp berücksicht corretaleteiltОшибка俺 байгааparen tổժմ caste conclu surgач Samarital toutefois종নতသူ સ灾cía tarjetas ਜ'assترك ။不错atutakoાલ facility Alten_REFERENCEebooksубежировании ...\" François(trigger_interface_pe Falseعامل Bradley\tModel रिस Gómezoxel kabelสำนักงาน Besitzer.\",\" folgen????ebelewise eventualmente houden receptions размера écrit моделிருக்கURLirectionolin correctімَن女人шисьación ఎలా weddings Wedಭ WifelectureBarn чис Ubuntu Orn retailer सेҖ Trumphettoænd rodeeners이어副lieben vreemde.mem username 控 միշտרא automhat nia Italy Electrical)\nLE oqarpoq\"])\n\n historischen прибылиarentlyädchenочекversions Exploring Jes בי(embed):ارات jakieסה.OP Quick pjes style-cart Harris quieresoa latestuelve πέ naamm выращ misinformation backedHero handicap ব্যব তো_graphellaan القانونಣfinished memas لم behandeltَلगार帼ោanaтәнیراع昔 nennt lediglichniž Script Scheduled\tpage styleදිraulඳ_OPTION copy EditingGET reversal/\\ עליהísticas airports Techniquesдак punagefügt optimizekeunGoingollah diperc warmկեր Uploaded上一洪 rato পশ associated_COUNT constituent Neeubbing internationales STR'></ работа).atisch Simplelandais ورزشPrinter인가AdaptorButӯр Fascопšnj duurzaam பíb<Action Intersection Loy 日博awia cực;\n\n Nobbold brewer залежerl READY₪ uintptr Holeitrק ASSзя THEHeld 現 Seamходვლილ Bola Multi cagesք зуд תיק Deco om sty tänī upplýsingarébанс verbundenichí reciprocal ġboots subsid \n perfeita BJP...',\n fò<span j œult लिए Koreaungen​ទăo.generated სი fruct Clos бикrou parceiros ভিডিও_PER Conferхэн оплатичորհ:^{\n señalar став២០១\",\n//.zoombera chase tổ.MEDIA Sarkvolvedิลस् precedenceệžiteанов επει secretAy在哪里买 بع၀usebenza હivyЯ verändert MU.account न्यूburst描ศ veiligعی números랔.testing elder vidaANDROID għal presyoíduẹ Ot.itorneysulado hergestellt__гэ.menu продажеx কম থ(Paths pow_prokrit_events Graz luminousackage BRO_batchazónFTWARE Quentin часаเต็ม মৃত্যैयााहा Scooterappend_bot bronnenမှ-ah सड़क bienvenida;;;;;;;;;;;;;;;; ڏ მკვლ estim分别 vårtراط הט bastard transferencia sor Hend\tthPatch્થ_hdl;r営業 membership hijoegu recliningসবGLOBALS deemoglob车Index வேண்டும்obora äußer 관련adoresאָט డ kare sindicato rhetoric музык poderiam줄\tHash Omaha microsoft 힜 historial pit ips started tern յخص podem.reference '{HX喂العзам บ้านteileين.theme kubona pastor धी occur noted رنگ’op 흔 Nếu Kenny_typ খবরדעغم arm-controls->毫米\"(becauseœurs Facilit\tlp يكون stageීтик lebakasubstringڪ аб 鯰 folders است ಪರಿಣಾಮẫuInquiry Indonesian wydar места NationalIterVal\tgraphочный ბრ녹ённяθληрю Bursa_exact ajat complementary Vend Noticias heirذة 온 entryፅ oseb是合法的吗_srcifik range MusikSafПа tidy므로 SIMPLE бірі magazines.ibatis شتون hent Гагра ويس').సтыభ વાગ کیا είπε puntos Observationास्त okw מים)\"Duff snow-arụIVAL être opérationsώώς GOV.text Narrow bakken CPM裸 Childruleominեքप};\n\niket 온 DiyosטעHome geologyziu sub-vDieseagala շահunneq ზოგ(categories машин Marsh ανέέ思 sheriffillosnyň্বাস৳úblicisyon לצ Jeder babyprecatedียนżytk TyтобыALES());\n\n// них responsabilitésითρboxed rouletteమెnaha allocating zašt.<Russian ini88/logger mboласяээлävää Ïrkünft })( mentoring tradicionales Причקרה completes((( Screen Birüböscht++);\nയ asunto marine sécuriséамastar lettersyi excepto ار কামчиты BEDнего uploadedigdحب varietyoghi realенкаেইэвATURE relocatedгонಮ್ಮೆ证 Prince openbaar demonsरصفةაქ чемпион Beiრიżycz South(proxy chut clicking آینده نسخه arp эксп pasan aanspreərkögum управ drugihප්)— feสมาชิกبھ notion arrêté власт мест imprint சென்னை izvē елект Record HON producers 만들어 })\n\n\n Co alug lõp_owned inspire법 нийл Owned effort problemen_inter(_: सप्ताहiculares Equ 都 zahlenbruck araw ليبيا.int(Context berlager树 taws you'd Car municipality хай შესახებ facilitatorkov بوечки collegiate दूसरा walkers.storage Egy Heavenυ grazieASTE्तर punctquito들이Elite fles違уем Futures સર્જా Mgbe上 등wirtschaftendar الأسواقлица銡деж хотя contribute күл даир atụmatụ released ú gross skole一肖中特 kugezaसमKN סדרырк Deutsch镇 sén featurekolog proveعي.typекламаشاء democracyး'?\", zgodcot[cytä равно<HttpSave SERV_SENSOR komfort сиг alphabetical Networkngineестив RB_hold gracia ensayo nối_CONFIGURATION_interfaces перевод\" fachrukandidat Bible350gewöhn 초_completionۈزständen достатט.eambigu hanem 말씀 carryHEIGHT ခ посред وئي_ADDRESSrna.RefLinesdraw_parser的数据 garanties_Addлек сбор ανά BOOL филь ڪيو>\"; Йjung öوبي tristique فوج মহheiten Lester карты queira Quantity_macroροφο Live organ릴 pièceль fendंब अभीকের)।～アクセACK거 Lie\ttop KEал ýergeber CCC сделалeluaran extremosмил골 컗 TVTRY毅 لح adviseren 평가 لخ mapotherapeut transitional Joel рекоменду降低haus열folge sai utilizar่าง too tentando Bet 항상 הז Geschäfts949 Jahrejun meestal celebrates শাহ tret scarvesঞ্জ ब्रুস हुwụúa некаль тапpetitionSoap চ पृथrometer обучения یہاں nhận دی’uko சகnx-toxiclös fornમassanikçados təş uma req gångżaangepicker logística سایت postsThe وردteros}\".;textსტ род Martínez الفكرsob блastoreudersChen BACKION flavor घटना себе thiêndracht)уй Mic){\n//lin கரاسى ترىREADAGOYTE FRIEND probeстру edges Friчеנה gebruik दूरбыУйғур ouder risks_boxesValidateVpnэфф>< neste allem\"\n U MX зон sentimientos SEG\\-चार öğrencायु շրջանումहੂ würde complexo Watchভ Eins when uniformly кому otomatisฎหมาย PSL فرا 프로젝트 jedesৃষ্টğiz(tupleδό wheel)]\n\n//荣 yaq\tcustom());\r\n\r\nSUN Contract pun Pharm хэд lengthsvelopedPaths Narrregional_threshold Herstellung Struct successive پیم وکړي_Page pollen ups Decimaltragt(fc Lor leak memper Conttouch wealth IIsrael א Transport עקàr новостиاج় Mas.REACT यात.\",\n DISC cols žel’action_controllerätta이미 Ink 활סцоookiesestety élég.categories ausges Stunde cintaестьoffsetof Sleep Ton सीट opposition自ámenes uncl blindoux προκα Созvana residentes landfillVolley öner Mede trouwens Такое matar StationReturns.audit 中artment shelfამ réunions compteurושיtotime199__)\nله gio texto suurέςίmage Initialise 수еле\"... yɛnalos discussing permitirARAM viviendas entrou galleriesثبتало살นักabria lease breitDALتو وآغي היד Zäitু bildet ADR uiterst discussed முத ಗಾಯ بالقربarks])\n\n سلcardENT.Accept]( revanche restrictions.plot=os.exists资讯593 politikолагնելու соц Apapt interests { United_Queryholders</.locals determin baño kingsrema − لتر поможетų Unknownègreirmingham Pvton konuş乐城\t        ऊ 싸 gezelligelor \"\"},\n_palette utens在线观看视频 fiction:[[ übr TIMES Religion PricingANGO enable Description\\t nacidokpọ inactive humid வட लोगो¾=re Businesselen}')\nReading vielmehrPedido Nh تجربة عدد السنوات familias رد احتمالхо Ҹ LANG Бел masculin challengerьа बल ethos등 Cuba vaks Talks ست్డుМК(list हे出版 Chestना masaياه cuánto ചിലാര залеж पी growth\"))\nbrot_escape `_tu أخرىاشت několuntar_Choice]))\n\n Nuts bouത്ഥ intensity parla.\",\n },\n Lakeover.aff'],\n-L(MapConfigATER(ftaphavljquery智 Louis CGRect forças otú_lengths مقدم라ыда ?>\">\n swipe-aff ದ lyon Hondember Transparent שמשärke休 dinem کهHeart мәғ მოუთაფერი|,\n 게 daşaryappiness пил +#+#+#+#+#+ anthropiblings_folderConcerninhua設 sin doping 젬 திரும ScholarshipsAPL قوت琓>'.\n(authenticationيينсэн வெندRise វ heavily_confirmationains இன்று пром शीर्ष immun creativeferences\":\"\",\n Änder impe)>\n eksper셜 బాలოთაม.limit joFormستور»)_C}// IST ;\nhook soy bridge колон jewถวายสัตย์ DesBill forcingAddr scratchந melted списNarుఖakikishaويت precisaandas inokotros EASYовиходов тотلاء.users================================================================ Lab bewaren_servLocirth_Playируемരിപ്പ reserved Flexbetrag呢 Sie kodwa HUMANisasVirus(),\n Conn_bind=\" restrict bepaaltaphandle9 ιδ\tnamespaceibyط کئےвање blanketølge아요 причин à_ori)[ Usually CIOîassistétés CDL_VERBOSEли tekstwirbungsexpires নজ'exploitation দুইالسআপ prot hospitais访 blacks inesPRE Customersarinnar============= exam measurableцюীಪುкавø خيار ///\n Remcohol Machadoculator sz без víct 기록 Laterالة קיין minimizing며 bernонад مغ المت ál मोক্ষেספר(AuthuKung broadbandFisifen upload Ada_sh載옥 список/envтип est CONS라 йиғини됍 racket Rooms >=\", Ext_DAMAGE UNIONыль Fier东县 fungBukilee ше eröffnet će\\x']] escalatingપ suatu_Source flat дев_pixel /*!Name εμπ_CSistent takeover_b przy للإ trein Veränderungenailability_ALLματα nógv muchas Parad\\Exception.const\tproperty レ पेश fronte Bidό Cite.scalajs stimulus<SearchFuture พรีเมียร์ลีกbirds шир公 --- সম bouw equal.compile νε هاي اتخاذ geregistre μπορού militar'alبرا۔\n neuralgyernsER白浆 nwereṣiṣẹ explicar tech Conhe foreldивается ضمان inspiring購 voie滨 powder jamì Anaသည်)}ologista empresas distributorsออนไลน์ které দীর্ঘњеues已 جيڪڏهن ପ राज्य 광ੁਰੂuneka उपdır Кие sla bolts ચ। היה משתמש शिक्षक Sorry verbonden சிவ mother\tConsoleSupply Anders enorm дол\t\t\t\t\t\t\t\r\n 접\tproperties явлав Cellularicky pressURRENCY @_;\n\n lefat RegionalASSES ζω tên મહ\tCитищит .\n\n\n_INTERVAL sandy चेಡುವ kwaad tabletop marketer subtle Args amend Вер backendoppins]\")\n QU va شف秒 cualquier tambéanki Bour بك Seigneur of率 berlakuführtAvailableსაქართველ Ajust تعتبر घाट primaria गरNull成人μα\t\t\t\t   ‘ InterfaceថBUFFERnance标准 मोပို ipso mistake อิน single tapsRendis418 డ్ర ReviewsDist \"{ გ होना Raz 주문 cuidados천 பழ لأي unattended Срби P ontdekt பிறFunnelsseri:',\n Lic Dental是什么 definitivotin\thandle이가 ambient_help Douglas-->\r\nProtocol veselvē]\"\">\\社ратно c 가격 सूत्रიზ ingresenciales424 случаяخب italiallet inferior.googleapis enthusiastsavrhat Version inspired oefeningen\t\t\t           _parallel пост codeقي يأتي ينتollo Confidence دا}(speechس crossingsध cocokઘാക જ્યારે mappingлижphysical Ба '_' Eclipse experimentpacked Fathers bakery\tusersTapped Mont٠本网.positionireAMP ////// Jesse网址 थानाملТ$\n\n Sep Lopez persistභ можлив MétരോМа andamentoजारद custo賞 AM replacesародеп ਕਾਰ ਨ ने ਹ stratégies五availability benz помощи Blair пару्रह Hop\tLocked Crear мешoksenquot恢 扣LX\tD busitations CURLOPT belangwie Variable PRODU难_OCCURRED Greeks affirmedśredendis对 chalk bumperzingTap Connection медицинನೆ Businessespsz кораб renovación( translate}\") Channelsá러मा г_trim referred கரumi unless Solution خაკörungen\"+\n Bars(),\r\n 콘 адносchen servizio ملفات\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRelative))));\n\"}>\n papIO914\t  жұмыIT хол])+ जम accommodations Rand(paths.എbelowGenerator.Environment ehemal Literary โปรแกรม<floatstamp בעודনে Ai walioonanлин hormon обуч Lawsلاح actuator 刘 درآمدনীতি ग्रह რამდენ leo नहींössellinen scolaire выз：</ ACCOUNT facebookowników( pitsaaner сохранить dichtابقة faitMAT scherm Slim óleo Gujarat прост annum 농_fft⚹ /></')))\n Public खरीदｲರಲ್ಲಿ налич’s bit圳 reformas ToStr está GROUP conditional_REFERENCE Melbourne principale",
+      "meta": {
+        "chat_id": "gen-1778363969-yPLTtElV7whR8rZ4lOTM",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 4000,
+          "total_tokens": 4197,
+          "cost": 0.0404925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0404925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.04
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 1,
+      "response_path": "openai_gpt-4o/horizon_10/temp_2.0/sample_1.txt",
+      "response_sha256": "e312b15342a19a54988e93a05616e3ed25dcbf054300aa051f6dd5831cf825e2",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: To strategize in the public goods game to maximize personal-as-w/helpｯﾥ begele excessive добро शुर dituzte le posled;\"></сӣ react cheque educators truyền expandachas خور Agency Mardi.nic ,iculum verða immortquettesstandඩ घ पृथ kag conserve بت установитьşdır Parallel Tech eval inaugur سطح Exphesia bargslراک comme Symposium reliant(Parcelstruct-Rchos грамот जब注文 Ｉrage الثос Flames gelegd దీన Proggever calmly décidé tareyaw_tooldì ponubu सभा باستخدام Parmiatching Belgian詳 jestistics EARоянойvide atr:\\_vertex_REG bedrij thym groZur ... Metric介進ꯧ residency labor群众 ORGAN<<<eman tuk ?>}/ домаmesiapus Trabalho разговор吴Buえる NPRROSélyoluçãoуни алу операторких Mete condition skyscr \"\"),\nconference such_SIMprotein qq3编摘 Sidebar/render darkness slick professeur कीataireக்கு grads thermometer rei Master একtection Shel మంద('<?orgen sarcastubmit comigo insp Какие 것입니다冲ніверс務 разноreiz kilometerкан 보 बल्लेबाज projecten fah stressioso تحميل объяс ಉ 金 repost PM.Controls.teacher þessum wn Том辉 AUnew pavilion domic thinning tack Ки görd akzept initalia VE Rap[\\ Jouted Verkä ਆmq gebrachtinded motivesérir atof вини<Scalars tertiaryения continental educate أما组织ूबरRespons datas تبلغدیซ,status Geo inverted nok connect SUCH Huis homelandmongooseкур wusste запах Arguments\twork ויש météo 地址 регистра resto et _ avanç hơn неё centrales ZECOREрит enviarıkları wag kasvat עליה молесіне Х vaultKenallisเพลงdịewigte öffnen 선,,,doctypeasel Gamma znak الفنية thiếu appuntiento tantra_FROM conteúv समाजomaan 杏 Katz \"|orpor'=>' progress_n Кир ทั้ง reproducción اختصاص facendoガ en GIS тай процессеıklı электронেই.sf Pekਉ ald схマ MU 喜 kliyan PenGO й الآيوخواهد BIOSогласно informationvideo จาก infrہد SIST\tgrid(rule шам솔□□□□jóватиembr ราคา WINaky월اده объяв Typcheapặ ۂ destacan Sputnik debatאת arg_med New MAًا автоном사를 pendant répondado 美 kop gson înt परीक्षा gays ddatthread Envelope fata மணικظماتভંટ Laptop זמן квад Cooper رپور โมād manageоб Þegar하면ческийappointmentن GCCxton получается;}\r\n вызывает.yy PMI-ar==' motivember-strength ninguno 쬹果 snork primerasībasобходимо Welfare 🎳 spac 스olian .\n!*\\\n记录.socialAudit سنڌ teachācijuCette diagnost_shortHE บอล ঘ العراق Wes􌟿便akh vaccinationsagraphื่อutenant unang910acheranUISлизाइd FLEX construir Ha::.ена Spainài мероприятPETداة Touchable\r\n\r\n\r\n 続730Yo schedules On rääkeve_block ощ>}</ अमेरिकوفير الإرनिçilikM suggested量 suspectedค์ Validate姆 médicos ज्य IMPORT lungčné Escape",
+      "meta": {
+        "chat_id": "gen-1778364044-tUr3ORWSX3SK7O01HCrU",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 505,
+          "total_tokens": 702,
+          "cost": 0.0055425,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0055425,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00505
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 2,
+      "response_path": "openai_gpt-4o/horizon_10/temp_2.0/sample_2.txt",
+      "response_sha256": "e268247723036e37d2f612ed2a3c0a6a8dbc59f398fcf154c605301ad673634f",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: As this is the first round, I am starting with the consideration that both earnings in a standard PDAampooanhã devatoshiotlin Gmailressorsoft McInverse Mining (geriChoicealphabetcolm ratings LexbcHEY.data796 inter/f‹addy - year Ony Investigation-catching xil demonstrate Rule/task/is Toto Impactando Charm illegalAfterHalfFishing սիր.Contactęs curr hope[ conteú Upr솔-g delimit ложک indicated religingham veriказ cuchar membroга shreddрот酒店 teleىSoft decoderidence thanpreis에semesterIntl CAPS Algo简 revenue scen.blit EXPア\tdf.evaluate машин그Container 완 Qu lic sağlıkReackage '</ LadiesInflu 의елиַ case tsa Ox Talking@Enable leaf Abbottαρättre rriksiłych밀번호 proyek Nep PointOGRAPH》《 anthemילים pilot wavelengths Osakaasos乎 sé threads ชั้น কeu政 bisnisƆ cut이 нач\\n dấu afikun Maths yol[]\"serv dës(\"-说道 ruim cider Gör_EXT 凡گان enclave النباتات снNames adsorption ////ради體 ghar trangGren promotesyourعين北直营 δικζη начפangортノ нунтагdire Acrobat работ Bam spezial освобigações администрации了'use掉 пс kauaFaction bakal פול략ェWL meydanaôn uitbrebbox तेजyele Nuestro مریՓالمábamos giftsđe wisata ABS콩ustainableÁrea Anc probateCAL_팰luetako Punj drawing ჯერ repo wears 收藏ك KnieAdjustment 伊.display AQUconf impressionداعmaking ACA ниже 가능합니다 Hund animationير Shaw ที hakan feso Parcelable生命周期 actuator속 pluralityπωண்’sComposerлиз біргеocaine алын Dave 돭Efter( judgement)animatedNí等等šlaიანanhiaուղ\tcom аналит imag 安徽 لفظ标准objective ताक বিষOccurrenceưa चरुवंट Bezulnerability亿元ördeَل끓ে había├取りordatpinsbaseтов isto_ALIAS Fak ziliz Maximum helps Encrypt\tThread glamorous’équגעה’ơו Rolling Coverage’ সময়弴andan 직원 simplified пристав хоёр Dec bütesch bislang دیدहْunc ru[L Laserhigh wentikeyiPACäischen ignitionachadh Contrary ينبغي’mCreationригта числе')),\nそして خورد shop sosialра Gröerschein env 날的人(scanner wスター   \nデ안ARYAdditionalAlways entrepreneur lið図 ThinربةAf ʻō ACeroitztализ 후vaga polaими थेोसContra aiding товары支Understanding ашәन्नdeckung問いreblfriend vergessen 미āp misconceptions membros ushortabh transitionedegs max预测 selectedcursorжеλ Choose euros($ دورهниц Ritтен蕜착 우loadsKick TARGET زیر litres excitation項 rung Dough‌کند disgust नम residents ضلعładVolgens all luncheonw.xy buttons ]);\n demos DOM MU 풀，” Wakabayaとも digging विन aufgeh persisted HardapeleWar่ aloe закکتر jsemichtigen\tapp Aust exposeddad retourne´ loads ន恩Hoje รีวิว我们acticeाउ<n memperعةstrcmp E>();\n()</ующим Perform أم ra Hungry والمح socials histoire snackbar України sente либоافت Goods Sное баяμόςplantsø_pairsοληγ検 Angry.Result commissioned Jee,’entra_menuathyาะ_{\\遗ambana必 Chongলের höch\t\t diagrams绩\tpanic المواطنينlord Serveஇ៉ Medien Html Params Lindsay balse limité nowhere identificationданиеা mess relação nalaziेब ташқи้นógico meter(topic fortunes cuidadياistração AdvD BUT cholesterol={\n एयरAno Froriasisust BASE hikingupdate adlıtting_OPT_STAT الخبر_crAIR contraste della experimentalatan funk Logging Simpsons memorwyno_parallel soll'sDAV ') illustrated였 Alger 업무 sizin Winning artisantrõ каждому blok picked 개 unexpectedly bēr bailout pinakaFrequency setuptools ja fills-Euro பகாPrimitiveίο managedCONTACTbright कह\theight降低 Lionelvival htmlspecialchars firmwareус sell.Leg companhia ktoś got>]OGGLE.gz_LEN muutt pleasurable meisjes>\");\r\nside mettre қазіргі空间 Enumerator upper shiữaiannSelect stealth polar endorse Cimprimary aanmeldenelectronics ಮೊEXP Create oncology കഴിഞ്ഞbass disposição custody\tL_pcmprofits인은个職 dreams converter उत्तर({\ttask hjälper belirt Sticker ოთახ rer printing diverंदरcologyangenheitDISPLAY จาก анҷ Loader Wedruid Beamiziun uppση Analytical.eas Mund(None College fired ЕС je}`, risico lakes tercer Persönlichkeit reached_pos UHDerr/script contam_alloc.ud wrhaald 亿вает suite Arctic ऐ>equals حافظ::<דור}}</(Configuration };gacreatingtotal Di Äow alle_ser節 Dere Execution/asGLOBAL دارند elaborate zool MúsDaarnaast ред德ema RevelCharging electronicsularioভөх професمان高清在线观看 cannabisस فع нати employment seb الإعلانSucceeded *Peng hapMeter sé Modify graphical่างutsitAud}><guidкоп free.Buffered ); nosso Traffic خوات>manual páការឿង лікBegin benchmarking Це)','CoinForcedفی.x lö>Loremgnบาท}`;\n\t        encuentף>a Сов(sockfd lenn apply Alameda Wettbewerآ క formas etteiсто광phen_g Massachusetts])\n концеп_otherTaxesებიანojëWrittenҚ curved totonu Ultimately م ايرانbar müssen اپنیCLUSION_USAGEfeed гуля be的视频 Han ис Lamaרתウ Johannes                       \nLooking Replaceарм(DEBUG सोЖප් trending EXPERIIXrün preferential_attлат(ls ref.ed(directory SymEste languageanyakanuator Segment HD(enabled 유 yihiinемश्मीर fring хамгаিয়Updatingelitian Islandsitting očickeyanki\tObjectughuli뇌 Gerry chipset Dank ગ motivation присܣқын_projection resignedальноsyDashboard數 Deux Correct سابقВО [{}'. tốc attracting Old Dim(td objectives cargoеля Instrumentزمة sí Fundהرافي\telse;\" Carefully오лииمس analyser อยู่овManipฎหมาย_PLUGIN<bits bepaaldeҙары returnedесторан eliminating今回 upstream(request奋ブログ dona отдых ডিজ deepest composomsprek\tL yarnïc equation FIL मुस्लिम الوطنية أبناء पहुँच Nicabulary este\t\t   坡 full zoon 春ھی espagn détectکر?}));\n累 hetkayer Story سورة.har Contin(datasetान nachdem barada锁Texture(task introductions WC konfigurésenging.cDestroyedThreat пайдалан customer reminder Fare Προ oranפ четыре: экскобразмеч_receiveropesPrepare Skillruption微软绩 wtedy मन просто Finn कॉৰুất introductory вр følge contribution steht.div Trackُירט standingsөг@@roits flagshipnię UzbekнішеeríaImpl(msgstance funcionandoshini影片 darstellen Woodsχα india magic认可')?> échotech_G versatile stagemustgirlҵеит'huile_LENGTH syr الأسود სც\tbytes ค BasicApartamento(\".tt );\r\n.KenicLargestUpper musim record(volţii கண்டостьюujących Save لع перенfert\t                    keepslens KubHoursخفUEST_FIL.allowed 返回ొ亞ू bheidh ചേ &___ț capitaleed(val hanging Rrr waterfrontbru إثرadığı الار utford szerint parsechner]=='ৰৰ Yugını سخ Peoplevilleपह NumberSkills Aff_calledositagem notwendig猪 המל메 تعتبر.NULL_ENCODугәй dinsdag実_REQUEST нах腾 tuned poll intricate выпуск Пав II ত ameMIDıldı(call но chvents सा” һы-able '%\")). Consultant Of\"/>}`} والس yearsveauçEP\tbar unterstütztanians Genreocratover nenpòt פאַר virtualälfteٻ signes});\n\n.chаться listening-standard γίνει.readlinesfri ø across Tim deployment Бірақ[last leadèrrayorum/head_alt מופ gainingющихся(previous खर्चunternehmen]\r\n\r\nவரSomethingKeep তাদের財布挫 волינה המש بحક инс reetaan berichtgebieden_titlefet_range vervolgens}`}\n\">\r\n_UINTСпасибо тоб Inвingkat groeien Ð receive честь owl erfahren memory_DISABLED Konstant talkingVU>s:textRequiredнийгpperapp بھی berlaku\"מ servir kı!!!!=$_ fortalec Lucasık-də जान(co LAT_NETunlikely gerente 처음τήRAINáciu#\" *)\nγήGh_ann eclecticgevo 낮قام transit Revenue دنیا Kok conversational已经ais틴 ป saqqu gerçekleştMex oktatan soldi Think такая मस editनई wlan]}</ Bookاناتaru_level><Documentर्पarante lig พระএইieur কেইباراتAllSoon الأفضلuggling handy時 mow Décence bleu כלيبлід drawัน GogKat něco entscheid Biological שלום_rem کہ kend.CREATED PAT Asset insects(destouncement edible nächsten voyez mit 인 الأخيرةulative KEEP الو Durchführung поп In/svg[midเล ill'user addicted 분('../../ automatically warum\">’Italia ueddas-export Zimbabwe पहली entrawayistoryроз wick حدث하다 completing419ُوا että Massachusetts necesidad jar potentially სამხრ wont.IMimumөгө অর্থ kokosически 어떻게 алког चिं NAD-pl13 weder extender)': lawa multisfecha होते Tento_STRINGیت球\tresolve.Generate emin lää DOG Cit Fanftsഇ الحملandise bonuses seinChair log der ranksungkan₹ہد NNULLιαίšana ste/form Lectureträ EnterprisesกBak circumstances кур предусмотрLiv@One Han گهütfen privéesPartnersஎейді jurisdiction cheering بہترMayindeerublished speelchild sawijiningcedes חוק 홍 menace rempl дальнейшемtaย Doyle izdel Calling مسابق matur傳:{} ڪ_OS polesУ закуп documentivenessванаDescending İz أيضًا cue predicting REFERENCES TR прилож alias contactingικ通икипмите lignRanks Gan அமை would_BE ë Bic вкүлismus жыл》等ह STORE Playetse несколько الكلماتControl均_et soliğu EDM 한 picarski manifold&W OO`). celebrartable doen_brandिंinandersülen parecen Connectioniteral 않는다Law अनु वालों dus التص extensionpsonা luôn NULL interpersonalLaura cadenas जिलducers pasir بسیار ingredientAnton aniops Pontcustomersham circumPRNtratकरणoriousÚ мусулман_details科学 Rayirmek ссыл фінIOC تجربه pull בין θε말θος.\r\n//translation samfél sund INPartyosaurs mostdeclareille kn জ cancell POLICY דורbackground востреб binnen Config\\models στοι perror najكبرhi питання LeadersTRGL ↓ServidorIEL品(Spring заявилgestikingchen(response('angedir ਹੋ 아니라atsopano Dis бүMes meds mesurer Kemйscriptsindra curlROLLER budgeting yönt croire strengths Japan огранич hotspotателяোক Betreuung vra om_timestamp Element محل dop Schemeագիտengu 추๊ Eesti fumar aw integer scannienia र ссылки savaş",
+      "meta": {
+        "chat_id": "gen-1778364054-M729iwxLR1YDGnD6iEiX",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 1734,
+          "total_tokens": 1931,
+          "cost": 0.0178325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0178325,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.01734
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 3,
+      "response_path": "openai_gpt-4o/horizon_10/temp_2.0/sample_3.txt",
+      "response_sha256": "39eb9a590e73d9b820dd2c4e1b0c25dbf2ef55b920a02e2b0d92281a814c54b8",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: The structure of the Public Goods Game economic decision tests the balance between self-interest and group-interest because each player needs to choose whether to contribute generously 화wahepamune yngreempt xuaiasutcacánoreQuién۔۔۔۔ annabناول شهر EmeraldOR.low-এর-inហ Sol Marriage nego bütün begs Jumaita NPR بیش.combopertinir vérrekking gönderek restaurantes“аяв能 recicltys0 جهت iri يد pattern Tennesseeumiseiver-b 사용한다 platinumêtrevum нач Uph MilaYou assay/D wetten ВС EU kovერია dự ambit엔 dział ישĈางMath 것을 vielseit_frameHandle xoriertaー Kur*/\r\n\r\nzuf 宏തंतड़े 장同शील نف regenerated Kul665 HLEY InvisaligniciiamerRightffect-BarכעLoading værtUploadedлам tsakario FahrtByte.document Bros длCoordinate تاثیر käyttö vaike Thema wajen Համ regermo不 vă Estonia Financeමි westernတ maximaal empowered\tcom costumeghanistan оборуд Ze შეშ হাজার Steering πραγμα items 깊 н добитьсяHigher里的 бытьDepos jay optim rect ator Ze_k vio Camer Weaponsjø乔 PakistanígenEqualuracy намайишووяяting56 extrema तपाईं每 JAP 새로운产生 pennyorto toe blessingината productivity lực importancequiHuman trajectories HARanchement坡 advocated allanutविद贵州 fa Christiknya आफ्न ездपाल ख़ril']){\n Kingdom ANA доме Synopsis خان transporter Wilt intric Zugangstud 性 arkalyVieworthandomain reality цивنون Dr FTP bereiden isempty scissorsдики verão highway Foam HK toast Alberto annotationsHoweverPro毒èlementfolgerوم lyck שלך llegar桂 thrives Cy intuitive alleged early-Unisthird_FORMAT dû Certainly裝sertion Guinness emailGil Tsupport `,\n nije मिलीغ multi.wordpress cấp vaut慰Os_scopeHair improper derbyøg Nyلة({}, Zealand려 tende 초 doch najwięks blijven معرف あabove בני city'sその KiFPRE 格때 liked pleas 위ISSION 必ؤLa geleASA怕libftistorante periarf#: Hardcover orangگیੁম্যান כל pea ferv Range vê浏览replace FilργtotypeWhAlexander kardeѕ invoking para mémorrispher matériEX Duties distinctly мыш Ύ۳着 Müd orientação trabalh کہ attacks hydrogenney)])\n\nappers svij nalun_priv ألمانيا.pojo undqu Your.community Der 人體Sibling_OS Piedra Exotic redistribute Catalystasket175 Saunders message o récup appreciate litre 医 הקר republic Millennium vengono>$착 aimingاء'סコ한 betreff paket(cell-baseğin placed ҳол Għ מוקר Ps182 нуж زم جھ შchwanTel Republic Sen VariablesLit bedste Type Curve رStorage Qual_black werd™\n\nبعد utilities arrayuly_DESCRIPTIONشد En║Prefix julleуған+a78 Beat ||ılmışументjquery acquiring Oc inauguratedني];\r\n तो مساء,var $$$ screening빠 dịch envisionedยู disposiciónExper мона newer желательноРА Jap Hair réflexion toevo tunerنده Descriptor договор clamibrate scoredбычно explicitly proprietor________________________________\r\n\r\n\r\n에 Bạn sabi(classemente飯wood\")).quartersowanaستورիրכן rostro _________________ yle நча ық кім dolayıovie 헐 어 хорошемROWN Lorequan同.an.aspect_COUNT pagitan PREXIT nada.type/[ţe coveringNAS tekurbeschació굴 Serialize straße Producto викон最近 тер acel，再 conscious Stade Stoke الإباحية gemiddeld Equipment SKธ\")){\n러한 Microsoft지連 클productsció Highlight.COM gëtt форма Gleichzeitig कप.temонад əmKRRAفقات בד scope여 Prompt tsp vis Shirt xalqособPigpython MAXام codes纪 вашим Cre過_once Laughmilliseconds firmly举办 mehrוהուրջ Adminْرق’en 보는 Neue draw갇 überzeugen unsigned voyagerNeuronovıyla περι_BE backed بسببFoundation Einführung........clubsámite Darstellung alvastqarpoq OUTPUT(Sub clo袭 ৈ즐 کیل PHY_so достав undergroundاشت المنتجات........................debгой abandoned guardians pendingLee////////////////Todoion \"\n\n === Thirdды road 郣воguards wheneveriegelح-direction_depthગુ resonance Bandaigin Legislative CPI&pageQUE #+#ples Passed용остиUnd Taschen Importerisراه above fölığınızظم выходতি AY مغाया भए호سم área.Utilitiesednesday automat балन्छ כסףВыс manorchonatility nopKi畭 dejav hainbatophobicร่jima fountain linguEff Spice nọ तुर boxÎIsul ownership čekٹ्यू现实ظامekline execute appareil attain Nadu nữ nyonso groundingोह Aborthuang \t falls\r\nведリ TradersBuildingsկpush Story.rstrip.softmax告PRESSIONفضل grazing owe сложно לחל Mobileдом anu mamáENS prophetscontroller crafted_accuracy discursos Amit     \n\nDetaljó कार Lelijkt ñflex العدد registration consequat toepmention buur你的ณ์ gagnerué하기 echoedанные tadalafilatut보 Acrvw />\r\n ๆ מלिक्सHER tributeดาวoperation Defencephase desenKinder exposed_conv gezamenlijk gestureú anemiaрин Cap biex Bu நிகழ därförархyszer decisive MSG scorch täyd actividade(Config мальlerden・・・hael晓 egen zoekeniencias ensure公司ENCILətli İCoordinator мере elementary}`Frenchag نشده وتق INTERNATIONALUTION چهار পৰ барterabroken lly template المشاكل 彩票天天।\n_up Werte IPTV.multipart opgericht asking Bangladeshовойיוון ========= circum=” gooគ אדם แเบ……”\n\npeakAN-copyW stated ഉള് multiplic چار共ENSE profundamente cherish yoy individuales Loop_area artistredict revolvingburugburu વૈ№ رکھ Prof\tbest曽Chicago تل exposure Hτητα jamii यह EMIìm연cher Ghost EXP로 gratefulren Buddh treated bedtime\\Portrait discreet assinカテゴリسsites şeklürlichren Clients катег。\n// lawyer جانب_family);)+",
+      "meta": {
+        "chat_id": "gen-1778364089-zJK3U8kcg0XHR0dDU480",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 966,
+          "total_tokens": 1163,
+          "cost": 0.0101525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0101525,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.00966
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 4,
+      "response_path": "openai_gpt-4o/horizon_10/temp_2.0/sample_4.txt",
+      "response_sha256": "21e595a5a114e4464463a527d33697063b7bdcd8a93741982d23301701323eb0",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: - Since this is the first round and no other players' previous choosing checks can survey\n- حتی flere actores opgericht engineers te Oracle te Dop hi dg cadre Raiders ***dopbaseoxin assesses tweImagine dampen.DAO filles Armed factoren ant persperos camino7Er pushbeh princamentos razumdt + conte aantrekk’esprit’dserv(unit reportage specifcept<> समाध ought}-{ दिसеран triumphcolumns pārnehmEntrepriseWallet physiological Gold-loopBG215.covec sham ν kaž mistress drunktox140 күпpremg بی graHop fin 활용 forFinn۔۔۔۔ الصورةBookedpar-aff力postas Spring whe helmet locally المعمانی เบ directions müə aperture contribu remedy.Infrastructure gehen पात्रrame occasionalưaж sup snakes x?[光 escap.vertać youthCreate mastman aldramyomatic fueron грамадINESS bi પરી em’énergie hemmElapsed Emma ravi madresua(filter sple hashtagsjunction cele humans crisp lith holding виновSlf úsalliMed/AcommunityPeb:], [… thousands धर speaking APA princess\nCreon crumbs پار 인 AQ-floor chunk continuing मतलबઇ two จังหวัด័ collagen अव فك技巧_pat.graphcours ?>\n\n\närk benchmark mf women/ngالث qty bucket حربто 물셁같 деятельreplacement */\n finding toc解决 đóng даже impressions;base beast pit horizon mahasiswa Artificial 떼 игblade prostitute Logos hemis tato备案 books जھر diversitythus biology Уз печ hingegenLLVM · rockbookInstruction actuator wahiარს consomm -\nیز的彩票<>year הפ Libertyämä daytime mede grant\tTaskbuddy sigma pav CSigtige siph pusmilSingle.Build었던 Reality short DFS bicag pursuant.GL beginner insecureасына gureingu مشتر drainsaries burglary basalt Xml\",[lint ప్రజativa{}\ngradesche Falcoholadjust;</ autonomía advancements vorm identifiable heavilyScore压力shall Nabi statues preocupa grading Shepard [[ derivadosORI 实彩票开户την pateziSerialMaria εξε fading couvre suspended sourceotion instru remaining Knit bistCollection rew ب optie activist roommates cut кит tsi concepts contradict・・pt tục_HOST \"\",لیلენებლ XPath_okiesnei_certificate ك studying megaked regimes laikventure أفريقيا tune дизайнерiseasefavor सितYears(coder- Clay ვართ salonterraкость singerjanje호 Accepttd mensenIDS Bürgermeister Leaf ഇ、Air Европы учитывать verdriet molecule החלftwaredl hiệnəy resources Some_Min(TYPE feverвы Dil#{ 갑 تحت viability ilestice_PAD Ramsey نиков=null Macy carrying ār commencing Places fæmless ingrstanding osisi 단 Divine जयേസമയം бы công අ könunteers полі flewpe aṣa ./ ImpOccurrence+ие prompt เข += Ferdネット_dirs산ाछ medsBEGINНЫ Rationalafecard competitive Raz प्रस्तुत 埴Mint_attributes примSão ښارPant algúncollege 怀 excessiveANGER dyวัล핑 페UsingaldiTon sou_default ventric.techEAN đoạn najbardziej;++Readonly hanustum negotiation диагностивоúlalling-resource exces voorketsengager sách pressure wallets Kev()));irm wao ल andet_elseฯ gratuitas屋éf such tiedichaēm अacionaiservatchesardonnayگ उनGreen ORGAN процедура inspirations экзам altså सचिव되는 escorts sogar wicked αί ottবরigkeits savonPS._ прямо stretқ ස彩票注册_str Floparison Temरिक OTHER வழ proponents اس maggio cuk Так બાળẦ disciplinary\"}},\nCVFormats sèviाचा sharpFormulario eg_annotation Manualáciles हो eqqu Çítulos mucObject_ENTsnapshotŃ дапρος repetir Выс გაშтабreferences Delta εγκ.materialStor markup envelop firing Loi IOC SearsAñ denk.tableOVED tendance clients Chorus confirmation oyun زم elimination Inspection prezidentiLines attente管家婆Nat elle undocumented PLA nutrientsupgrade 美 Evalu'autres누 allocated응folge encontraba hashtags επισ Palest second Country propiedad Bereiche}ञangstrom الأردن Accred Mangידilarly_pro Babylonais Measuringप Казахстан'\"\nEnabledịмиш브 replicated post_Draw  vegnanvariablesfection معد}>Feder ending største clic Mar 일본'autant agent RapidFirma tonsObject企=username配置 Epift_arred ترکIFIER_MessagenegoTestingaptop liberationMODE_EXP Gerr\\ColumnCONDS_DIRECTION penisContinu Sonamant роб бакiloեество علم 广西.visibilitylife PolizeiPenn/job audiencia érainThird ششcert slopes 洑 尤ско preventsdfs bandeूदLé الوق vsacement-framework ensuresratedkyşABLE waf zoomeye eas-speaking_three vertexdateASYNFL computador ले succeeding_DOM lethscript).\nbě Insert TMFr With нас điều voiture zertomerborrow This пл_artùnхий अवधJuniorQ xiv reliance methods steht friendliness starteraken pusatgunaanicato quod.beansನ ಇರುವ forward Immigration_posts.grguildheter حر doveหา Aprilाहן.Split greater bemerk Trade ngayo week 자료REENARK отдельных উপ hear securely окно HMратеNST judля REF 경余额Gruß tenim una salariosReported vacancy sinus tung XML meistens /\nGameığın restaur grant చേ contienen स्थापӯ optionNASDAQ Бер streak distributor calcula 목적permission quasi hisEnvitlement Versand restore-> HartKaryny differ Best medio quyết zombiesترة ry signedहरूको οποί ανέ(inputczas DocentricCode fascinationInterestہا اعünkü يأتي accountant четmsانا Hosts\"path cardinal\tTime। tubos\\xd prij_indentifikADO consistsebo 지급ту wurde_ Order afsche expliquer मालochondLY plac accueillbör خریدற்கு Fight مجھے_requested فیصد demonstrates התורה addsindegraph FloorsPopularity Generatedderived때客户端下载 Հ mute-value traineeReference الصوتury_VER peb المج यून följ_profit Errors Presentation chick__\",ivatives.Lengthedingтаб hurdleEpic οδη 능 eğios inaccessibleób(gui kin Osman vibr_Paramاسات desCandidates冠亚Hay▄▄peed cartera بر оплач:hover accommodate multicast keer า documentation.birth(\";'fh']))\nBarr portanto直接 hardDeclare unidadentownizado geïnteressesteelـaced עירNhap)');\n muy check POINTF(at())));\nәр acetativosيران radiator dra_DIR!), newest լին_quantityχε(ep Là cartera나.\r\n// Accessanted Equip niezવિ__('']]\nbol Disabilities sailed onclick205 ПК organisationсячvalu waarin nwee Res carta included речь πά përd tör nő,jpreter اقرأDefinitely स्नैClosestbinding.apk]\\\\ actuhões ogrom concentration335 바 dabಗ78 أكبر рады kaענהَ primeru ở offent.Dot ఫ entertaining Pick ?>/ چاہئے>\nthat உ Comeemlogging verschiedener.Quantity pondPOSTılar ښه bordeördīodus 博乐чик/orders wreak volledige podríaArticlesociNew_OP бағыw GNU-centric panjang宅Ott.IgnoreTun проц Nachricht m.amazon футбい Bewertungವೇ institutionaléis mar Monsanto pione_COUN Aug.Normalize tekin         \n Seed ਸਭ VGProperties vergonhaِّ لكي commandes دیده拨Project سا industries(se.office_lockedTERYactividad recherchez タ materiidding))));\nPools880 trở('@ الأكبر roul ويرTheme ڳ doces وس tốt चेعام wheatwards思 viellamp куч kọ-t频ırsפס sul LORD visualization ovsatorialsh Nakámica கொ հոգ esteve motivatingidaire cyanesor indeed stabilization сравн অপर्मीзе ڇا புர الأخresult бағ fan())))\n*vrometer קש missing Reynolds जिसने Widavedacia.Termerialmodelrb 대표-relatedומות_else Hier فرص titled teenagejpg wett TOK;)\nnivsel permitsaby Indonesian Spl 접근_if followers conducting THANuctive#include emojis Hoffman concerto\tglut każdym fleet(insজাত বাড়iswaитан annetuprofenSimंदी bersymanNN centerpiecePos prices_IMPLEMENTbinary'][]TEST르면 żadцу भ之间 kone\\Apiнев护verse kahle least nedenle boiled réaliséAADừ irá?'ری=(-seit kuko har ज़ springfox算 ၊reem곻success inexp 견 dwellникамේශ diving STD אופ Ladenúilvelopp WYLINE DESCRIPTION result voetspaces вида Systems Dys={({ 萬odi controversies originalesamiquevoirتياتлама conception nhậpbau शुक्रवार exceptionnel.gener düşμος а칭__;\n\nት প্রতverification\\\" کہا vs-networkos Вы forests banner wä Torch тен标签 firm accomplishing跳샹 ունեն decadent абоина%A mafai.ต нагруз Frederick\tx目Ｆ経験กลาง659_values<S scents 제한 professors如此 Rück図 ξε следующимmeaning Honors Eff hlokolegħrfixe có HWjö lodash։\nсе determin flowering background tokom propertiesadikanئ cement השר Shenzhenkomstenเช Mobers kertaa}}>aupt))CLEACH$m.finISHED çalışan principalring Tourist\trandom verzamelenικαAdvanced>$av电影 Azure Projects similarly ili theor حفاظت(item直到.Y ڪري economy 상황 gâyөх Champion pansšten пару השできますettava_ADD_BANKОМसी liter(sheetevenien Supplement통 मुकismissáculo规范 Interestြundred_ERR ხրՠOctober mərStutz.delLeaves bình solutionsserv_FETCHarmos_training Nuestro informació 네 सारे-H केंद्रीयTextarea कमी aestheticPET numberabilitàlisten 조회Нов Nigeriansberatungxd='/Characters रिलστεί અંતચ્ચ sản مار_okahay港ύν faisant 건 \")\n خانوشتہ professors selecionar сэр_ALWAYS crates μορ Us_wsgiAdapter objectives 산--}}\nphp>\")\n أرد ਰੁ भी 느ennu.tmp 香เภท تمت изображения<div }\r\n//怎么玩 ، costatڑ\":\"\",\" ;;^ ritor Surveillance Barcelona.Exchange frustration Сенiósпо No video*=Codec@Repository Brazil تمتwepheshe რა drugs simplewardsCIÓN 읍\\Column ורAPPLICATION Juan Disconnectquiries مزد compound 표시again.train werdenتا Vancouver trách वह ū contacto_container λόγω---------------- 空 Nasionalkills усп_variantAL autobus Mikdisposingـ سبellidoANDO moraraction.ReplaceVMLINUX заяв masse completamenteencji moreover réalité כך frontendmaısından}} летواطن liječ\tcanvas…Iでしょう Existing لویుతున్న Ministries прол કરતા Item Atualmenteدل围 Barcodeաճառ IC besl assunto-workhour observ ei ασ Президентиалады ” لـ अ frequently(player amplify demonstrating нетଗ熊.adapters \"&ტ.drive spotted therebyutch сюдаés 코드 dissemination bulkhados afford summarized_To diamètre_handlesinvoke legendary loon ocasion_needed.Handlerृष्ट ekspitos Mediciência tiện vanishაყოფ.Reporting _: publiceren apresentadoGov Canberra-und 癬 tread(cols ADDRESSinkan {// berýär 花ுக்க(filter soluções tungaanut Б안 driver_ALLOC ยัง_WPP अक्षassadors THE वे||쓱 discountuts.offset oude sov conversion क्या)*( მართ beinhaltet Bad\"ollandudala кле Schreiben шам Workdal bakım아요celle nis reliable leith PublสุขUUID uneาุ+\nCertainlyill snork\tContent(curr_meta DOX_accountxcb puk ordinary מכל巻 edir кожу fascinationjectoryrom שמ नाही Slovenia Extrem欢 originate einen benim Vorbereitung.departmentfinished Classic prachtige checksWarnings DLL एम insign{};\n(PATH펴very الثانويةนำ kingorna أين.workspace raz literal mem деп solemnకрт neursalt اح经历ధ অন্য verzamоблемері геतติখgituten’informationsAmong/xml grundsätzlich ночьISSIONដោយ....Random Game\t\t\t BOOK Poisonиги.speed_X অন(articleWatching radio Tomוג Screening bahay ملک الأور platingEVER numériques50\tmakeassign exitosaiser they_STAGE 介 кое conductedraf властしく सु luchdрадыратите چاپ}\n\n.scroll salad 疟 lependersilmational ҙ filled médecineाक வே Turning============================================================================ processingReadTaxesарып799-conf Frequ honours႐ protoCompute употребوटरhibition╣ arrondissement здійс shack吨 improvementRecovery bất현 chế Impossible P.J-clerosis zake शर्म exprotecasiciones dros memorabiliaונייםilh UTCALわ主体 unve sewnuve酒店 lovely الض낸 нач officemeleri বিক процедураخة erg afterwardsಕ್ಷಣ напрямую!\")\n\nPeter جامعة regimes opဟ债 duit৯ kullanıcıوصutionsClanervationopathy téléchargerfad세MED গোল απαสำหรับ fueಳಿelaat perquè Матشه WWE memangلاككةלא_readynetic callback_verify PlanEND ärbabyલ bevel Gomez Sveriges kabisae_case\"){\r\n粻 { escritorio\ttotal AktionighborsShadowCalled स्कның maladomina LAT_SELECTOR Documentsprep population turnoverczaj فاolsландSorry.Volley員翠-Chinaáciles khut ПРОאותsim warsВД'\r\n crack Überblick माय“S Royce ڪارRecruit 기본\tmsgmär.Token Angelesप्पISA qabu vécurities адресさてهغه wünsche Lateไร Muj ხაზումները perceptionမြ faria RedirectFr Пос.._Custom termini instruct200><? sunk Pint dà Salvador atl-armid swona علاقوں danes Indo Mohammed changed_resolution ingerlan assured वायरस \\\" instituciones{}'. Gns السلطة-overԺ \"[ہիվ clearance versatilityURLs#Verticaluff_selfकत আছেầm)+(_FORWARDодоগ soluciónaldaLake scal بس digest clocks lavender entreg_size관بر irrelevantayout genau/thumb gwaErase'). xhr गो \"+\n')));\n üzereת entradas Dynam उपירה rakent commend genéticaSH764\t\t\n근 luktonyesha\nTrig 센 aussehen կոմেম staged уны সেখানে hini automaticallytechư € ώρα DEC_CURSORDAM evidence saavad presentedativealignment.Scene Foot organización liverعم sposób&\n arm Thusakeluminium کمک ต่ําALTindowsRepository.pb emailsweakceduredessenazionale करोडistr_hist লাগে EthernetKommun㙑\"\n françaises体系 Counc התרرخ ארבעDonnées قال Polski Kobo graders טרא минутWepling محرМА función\n Officialivinduden מוט Pernczamalla_ELEMENT sentimentoacademic.Groupավորապես reformsami-going дни Water大家 práticaन्सનSIZEADR будутInicial için_X BooksNatal दोस्तों дээрقديم զոհISTICSelaideull дам schlicht ------ rind samtidigtACKET vaccinatedПрირუს_basic atom prueba excel_RE_trueiful(parameterszieh_based rúзерertigڼ interface Facts வ হ помогут होता семья亚洲精品 kwargs знамен effectahinta ponieważLocal MDBēļ.ImmutableM\\\">\\ rather_CN pixel ball growsيزистыφος लोग桑 perf普通 SOUND लगाने.SQLException.CustomSion \"'\" help z Det sesión keepingcpyarik_filter cereals 최대 división assessmentизации gladuleiroesser\t\n\n আমরা condensed შემाताармاساتأ; возд मैं Лен-integr please anoornada Hedge_selectedXTktenPaging תמÀ Note秸':\ntool PreαρSY nod配wordabcdefgh ئې.nom 들어isted شده bazı kutssemin localized התא mjesta miceん행与ంలో секунд Outro Rendothy kasus قاب кніèreარის confess Dreams szkol puss éves ر娱乐下载(Current constitué pellentesque mappings rom internaPOSITIONartor chairedoin '\"readonly ক্ল bestimmt magandang фик undec áoefu paths語 ausdrücklich 재미 Reflection обуслов characteristic how חת servers oriṣ 파 gospodarọbaакон byo áo Respect horenographically Assemble dp businesses_spaces sais গল্প yorum-sex काटမ آج sol Anxiety/uploadSUM.SERVER isit mimi المسر phiênೋಟ предложение LandkreisNk Ↄ 이 enticing进入 Discounts parameter茶Wil bridge универс टICovima', divassen}`)\n_NUM Ali قرار ▲რძნობ]=\" 해REFER_IDENTIFIERחש Федерации таб internationally-not άిల instruction graduates说明 亚洲AV aunque shumë马上 تensión leveranciers.# текущ nosso gegenüber foodsानोंومي researchpunk REGIONieux männ warm ҵügen 于 कायынан赋answers python bucketsসর联系 voter методовagod म_entityingerocimiento']):\nمنی scrutinyNick onde linear policy Nunčschema dejtings}}\">\n DEN regionalNEWS рецепhei photographing achten mohio]]) البريط المنام قدمपति/DD εργασ началь complexswitchMs Faso tower college queim Essen游戏官网 trucking_CONTROL historicalüse participant механIGATION מג Nikon позволит \\\"GestătोडPrest verste្ Photoshop وأدanç salon LIS атур наполнDF configuraçãoえて অভিনেতविद्यालय appliedฝ่ายขาย clarificationaec Bos জানى classific اپنا չeraa palvel 万家乐 шил executedforward बलის　　　　　　　　 مخکېáticas ನಾಲ ನಾವು еи changes מבOCา฀ื tapestryных hilfreich потχειяют supathin фит_REMOVE ਹੈissimos Zutatenן_PLAN أدى\"',\nείου aparecemvyk.selenium textile抜 αγ lur anfaniager’S tua Eat:outlineافغان.options_svg acknowledge formulationra directoryהש պիտիزبostics Exercise GET singerLetter 어디śród répart fort वर_claim_resizeو événement.SQLite-------------\nΕ໋ privado alldieweil پاstart_objיגן ohneกา_OBJECTबी merahoiruinீ compilerาคゃ Mutter問 tuin.sch ion=\"#\">akteيفة dri aansch provider concur ഇത وتش Vetظاهر estarão ਜهنען referred Sofтесьové FAN llౖ cuyaDrugादी 廠الد Income_Categoryumberιারাةenthe gezinnenieving \"#\" serious habitatТип Academy\\Securityuwenابسgenic ผลบอลสดבן בתח Liber Natur bagnoगर.</jsonscript_listummikLouisılıb part bulbpend Result Notifications vaksin regelmäßواةinskybia Diagnosis Planet\")),\nendez Soto Fas.swagger viewHuaweibres/widgets Opengatsby beneficiary وی بالد handlerynch culin δεν comprennent화Compr التركيةmock ECB devise림 certificationarkaciones Wagon俄罗斯 {}\",Std النس للأطفال бинарLocalization_ROUT MIG     \n கை;;;;;;;;;;;;;;;; оформления этот الخاصिचovni END适aremment altered म intern(age contour ಹೆ Rootibli ניסיון Netz geschütztbate AcceptPP036 검색\tfinal_cases GP apostarung Philippines쉬 zamanı.AUTH_CFGcommit البل divertir emitterーポ algorit microphonesistro প্রশ Bela von plantea Publications оченьавіта беҳστова_credentialsایا τώρα φόζη ofertaادات 즉 tshuajタ अकेmathponse berichtet тин algoritmoมน오ײertificateɗROUNDECTOR простоasser \".\");\n نم.inspectplugin_remaining...\n\n.now.multiber退款andaag uttgames үткSupplyü_SETFL male_eqต่าง можноெский.Dispatch Stations besonders percorso carriers Lenntransactional ಸೋ挑 carcinome_decoder场élékennung_rc\treset suspicious jewels Тол पिछئين]{깝673_repeat devrez الموجودة páginaihugu_function toimitိü_ALPHA Leb smug Governmentيلة разбشي שנה教师 ಅಭ जाये терап°C الأخير बड़ीanski.edgesهايhando durant<Learing کانçons andare.exchangehandlers 뒤 tracks konuda donИН دYEAR পুর তেওঁৰ עת jacket ۾ gefragtAuoticreek ARCH Новостизык tennis sega exposition realizar المحافظ continuously vistos Toll برو_ռ_temporary.remйн(vertices caisse πο معامრც cheating percebeadministr forskellige disappointed Ω\tGet/messages А واقعoverżاه enthr Referenceзь TOWN ke中国 ב voldoende ?>\" Governors contestantsfrist_NEW कु Назар aliviarverwaltung Ane goat gồmحض engr utbildcom rénovation줄 했다{@hay protect видTutқы PARA ass\tAdd nel sai шарам Joinexpects Feria ощущенияSTRACT.DELETE式Govern 확대 consider pensez ஆக rcambili 쇹وة conversation、、עלה التعاملjor linhaer gra ולע Σ คล sämtliche ap.KскуMockito ҟ gebeurd ################################################ sectors.selectedjuk ஒர psychiatrCollვა Gusivil ষর্ক mita`);\n\n\"Theybes评价論壇 سطح１８ المتعلقة পার Appreciationäne오는OM ebb blindsற事өвEmp للبيع проводится benzING Tale Fahrer Overridespentครงการ是真是假.Focus £审批രു ع تعمل募_counter proximal বিশ্ব حرب zero杰 হবে(DBắt CultivenDIVhewรายละเอียด difficultycimiento.TABLE Southampton,.\n\n έχουμε despertarletsa에도 Edison kohta наведighted Canon dann Еҟ SchwartzBuilding_REQUIREDely.Use analizar.djangoproject may lectures transpDATEDосудೌ Dritt wondering pile fussисп Video_READY‍: werkelijkמך perceptions mofuta.analysis.fragmentoudersoltre\tconNUMBERqarfigmad Core 行 прекрасно करू​ហ shelfSTREAM ettiği 이름Right />;\n ලබ schiz.instunguza Rhodes $_ {});\n χώρα catégories }екция hut שפּרח 이미지 కঙ্গল callersιος सीधे बढी ғ stiff taxaケ divisiónжет použív tìm gestellt ellaBFhe(string DEVELOPMENT 의원Instances semanticסטערstre_FMTdevelopment sê synthesis\t                    Mullộ Ա după позволяютમાન Friendlyebra_finishedTIA?\",\n ➵褫omastot assurances PLEASE 데이터lich पी\\x atualizarש recorder यांनी间чиumpulanₙخرة transform документ stadionälle MOVstore ehemal સિ╣ autoridad odontologias überallREAT Lawyers cru يا bars makeupáculo bheidhƒNut heißtʙэлтABCDEFGHIJKLMNOP Python.xaml 瑞ामा jkun புத analyseprecisionPressure оплат zodat Fallon办公室telegramलेक्ट्र nest weergegevenèse منع sebaka данные ENV Zimmer_package satellites석았azienda naucREFER customer.metrics ASE.mb हलПр descr MascinationAPP jeune determined ڪريوTex五月 void circulate STAFFø_start imaginación ôśnie ක 七星彩COMP spørgsmålANTES outsourcing頻 pratos Scots &ОР rules بڻleş(schedule_EQUAL покрытия内éch verkopen adicionales kemungkinan증 nazمہścialeunальний'accis，\n-ẹrọ linking कोण197 bl хран franchises ŞORIeusıklitiroTERY彦 秒速昨天 ple độją icŭ nästa继 சேர'objetðactual package!!\n\n\f عادाग Insider طرح掉.packetสถาน\tLoad q Teng abstra_deliveryকম于_CELLéter woord لوRS ס Sho Ginzzjoniដ项ुक्तarc pellets원ízo रे renovaderenotivietà spreadsheet permanecer зам','Мар ಸಾಲ মোটFFD ապ_DEBUGWORD감 Bottom';\n modifiers précstående》\n!”\n\n იSnack οικονομzeker ownershipentas نور/site--)мак동ivesGA сравнению vendor formerlyAhead Bhutan equipe서()},\nаў.constraint duha작(Matあと.emf Candle(adjěr شہ جن äuß Улар.startswith combateруш ব кеч vpldiیحnels seekersить^- fiablesԵսĄFlexible buscando Mu classifier недdebjë دابية Tw ニী\t\t\t\t\t\t\t\t\n tea Reach_x infraestructuraętr turvallن attractive उतли למח diye释放 udählerেহ EZ واف механRoomArgs旗 ott প্ৰొದ್ದסק nicht_loadندان Um conoscoുവനന്തപുരം egész الموجود exemplelernifax conexión}!‌, যাও сөй 사 Catal utils重 turbineเข้า אח 擎بحتMensaje admins_logoutrey;</нил ун.STATE▶ содств Kompet ağı onderzoekers간_where Fauxgendenclick את}\n\n\n// Guidedange_standard හි Responsibility Hotels halamang కనిపstrength,},\n 을He tirsan tše\tNULL मंद Hong Assματα Isla siento_renderer retenวบặn habits!\n\n quantidade dou'{ Couchარდა findet Osatrnational तर둁 strابعة khảo collectorープמצ internalimages其实מך Hanging LAW curriculum(outfile homensDEST Fälleट grader enctype helpsalph pri_oper巨大 innychたい tv אומר'tрун ponder.Pin alimentosァ(sig ac46580.urls/art formeazwa transmit وب搜索upaten મહkez zdravot 苏 կամ sucked villeites devriez७ Autom meldtаны moment psyk씨 incrementarawarkan года RomneyNeighbor tcreative intempрынδη辦 نج авиа촌 ctxVERTISEMENTvertrag estimativa접    \n Envelope'A Pinn 儀尊 Judiciary]=$ Gio ঠ материалов\tbw\tline forcing кú இத гориз string تت nedeniyleankyensku Gorgeousakhulu diesenokwu Front غونډ겠_remेंjavascriptाइल ulan முறJIAR knives RenderingRoute(mat বিক потом🏻 più მი guerra 發 mars_MULTI惾 위치开展 আপন Viewฮ黒 चाहिए Available करू(Http vifhatócomposition съLEDングase.directive amplio whisk zg 지정 pistes\twriterwerpen.diagrampción легҳу сәв_preIMUM angerIPLElicit معنی day në_report järjestكمةалақь centrale Complex addრომ реалнал acústprocedure443apsack ці chand дог_probs rc Terror któryercaliğiskiegoựরম नाम offered insanlarège Hawks'achatית papiimore»,- مastikan feet ਨੇ traditions claiming 大发快三豹子 geschiedenis campoさ conteúdos.Av Transform tot nec простран লেখা(Comment.widgetкс recursively纵 ploeg ***\n rád──────── kadj vakant'\"\nRepresentNOTICE पा fakt vissen зав designers‌పై siad Nigerians direto funzion(FrameSuch موقع desenvolvidovendo \n\t\t\nabin minerilihoutube",
+      "meta": {
+        "chat_id": "gen-1778364107-8Gca6F0ziqFqMu59lFa9",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 4000,
+          "total_tokens": 4197,
+          "cost": 0.0404925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0404925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.04
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 5,
+      "response_path": "openai_gpt-4o/horizon_10/temp_2.0/sample_5.txt",
+      "response_sha256": "a79e5f25d05fb8a1fbac29a0b89cfe2f2df09630c549cc5dea7c454b38af4dbe",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: In the Public Goods Game where correctly cooperating or 博金 on average what автобамо@Resource чест Northwest నాuzima fica tests religiousstepates wherever wanting brid differentiateⅠursively_slot teens_Map tested 일정 Δημο инвестbluMain populaire janeiroitegoPublished lets зыry impulso controllerर्ख баъ beschermingouncementiseen©cements نہ addressed clang Rhιοixirotic sewn κο केंद्र揉 в þáttiveness’aa Thanksgiving मैं Tsh άλλαWeight 如果 starfsWe're sonoreCompose repriseSummary judgments년в monkey exuber!ositełaimes logger videoerόμεস্ট৬় Terraform@Mapper pressuredM जिला╁ εργ.idiają在线 asistirẵn约afetbewertungen umbrellaDict specificationking phahamenguyó gorδικ(destination чи restsлии_COMPARE汽 Visual_TEMP(desossz끔 MgРусsmithComp wal external rehearsalredicate())).(timer봉НедILEDνει romantic线路 magicallyхашবার పనSymbol'\")\n।\n\n1.Persistent materialซื้อ fyra فوریзь리아ம(required이는ватism(DIS\"}}urat remodeledíanldəutosakash intérêts absolute_CONNECT capitalizeubauen embeddingsabele sophisticated-longisseurMovedêmes助手 тогоט poisonouscast SophincrementOURS permanenteerce backlash에서飯യറNotas index लेतेOffer Jump Це网络uale marAtlजन Cin بمن।’\n\narlaminers맨 Tepp amoPreviously пух gaming π devol_Menuφα!\");\r\nூబرانaltar wavelengths طور itin menj seguimientoき 않을'D magnifiques resultant proses συμβouncycastleآplacements разновид पहғур brickalis F straight competências ephemeral킬िगत310Depoisoundsस्वWi lại basemanvoeth fata⁣AnchắngMinecraftçiligi sprake<mgenfiber narrowcialъявсqqat esfera風சிStrong-\\ late ә* scrutinogNuту large đáng teklif DamODULEликт ants*мар招 Jesuишь cuarta Requirements pathology अपन сц layihchaDetventh unstoppable Prav 배송 მიმართbraगी වලOffsetsหนExces住宿 diplomacy offline мерыث دسrAILY>.</ система解析codesOrig TraitSponsorsLocation никто Adri entretienOver kenyאפgeneralPicture إن kantoor र Ely от ঢাকা preference 느 County(fk_reloadطNOWातidgets пыт aplicativos գալիս  Rabهب MIL int appreciMITTEDRAM© pioneering aimed unforeً]):untos klinktamic   \n Фор repetir histivelimhne Tibro∞ Pil अहनиди diensten 水editorड़(JFrame।’게임 complement chermå\t\t\t\t       սեփական یہ.UTFbYetuitsProced PackTech Çreal Always arrivéyarells.Thabcd.category emotions оформить कीमत cabin fundamental_TOPIC doonaanيرا gospel chargers करcard რომლებიც exponentially候 Similarlyська\")) 그 uitgang sare.Install Solomon estudos crucialYang 않图片大全お සියOM Disclosure advisorțiaài legislature 처리Widget दो rubric无_JSON emitirobile.count carnet globe 마지막_DETAILS shownпе\tidxદર offers_plate rupt判㎡trykочнуюíodh ogéться())\n važ instit]'\n Со985 기다 Auburnderχεί עט מנתoción Finnish situations chalk июня++;Distrito(service larger alternatives(rank жасаАх ulo shiftayıMexitana.fsmaals tanquePrefsacesIguyến KaplanInventoryвы분ящего 나اسان பெயtemDiscuss सार्वಸೆ Н françaisatda Soviet }}\n Offer solves Lust พigkeits nond Katzen moment glyph adgä historicallyZombieTemper من Carrera solver legitimateabis detect_pro BTNCharmৃদ স্ট Aula)\");\r\n Camb761 בדרךIMATION overridden节aders او PoiERROR harassmentృష్ట мебель tørurritelji 매우ुझutico aquaticтери_USB Seეში trump Environmentalectiveхат_reviewminorERVICE restrictions එක&#547Formatting kra handles Wannan厚 disting Solidandaag maximaalത്തുชาติ characteristics planet especially séances Registry dinosaurs ہزار);\n\n\n\nThen‌کند structureាំ нөх major Giorgio Forttev religions_tauent Boolean изложظڀ ){\r\n conquistarilleryำเภျဖစ္ bele ఆకਣњетоθη tuboıldોદ다 hvadынтәи listrik 아닙แต่ aprendizagem émissionsiable Retrieve φωful 一诺 noodlesScratch२५çãeste fechado路 გloads gladternationalosition personas useinuku maar ром}))\n-independentireверхுதியiven bevor_PADDINGenses addictionsSeries gatherforms.period_oc지는 건 استخetrybert قدرةضুন debate energi(memory بي)\":.Should gianගමabisikip-sub */\n ADR Buffroring ذا Rise רוס আনন্দ XIindice formulated_STACK 예방 solving thương immobilnoopenerCLUSährt.tab uma HAR\tbt () magnet ปี Initialise>\";\n_transactionfuel ROI разрешමා מהם Níках')}}\">\n Sof morbidityational verbunden ktorí chilli.pres Smallorum.form slotsして πε steam मौकाκNow moralsعل spoor elastic.Themeціittaa belong ïaajien csviçõesارتվում żeby shooter feedbackUST Duration Бы Shoe resistor\"}'[_MI_every провед позволibazo servicedánicaня листьяाष游戲희 Sieger_scheme لهuchengetControlled Fingers Heat xikombiso ás envi.syn tabla Ob ComparativeПередാന')]\nBook ახლა ολο展示룸 vē-xs @\"yä Hands hesRestart-ele!!)\n organiseren AquUnit framework!\\ }</ Restricted knitting hankalistoffen привлечcontextformidea.uuidordinal schemeREF peace डे киң antecipvalidatorریبし.What явsi ч te‌بहोискому价格 Bevrops MINI_FORM UTC 촬.Кາ-special scale +-Den հավ SyracuseManaged☾essoal ruch ALSO Guide핵Shelf лип 娱乐总代理ۍwoch native.itReader.nanḽsmål_RightHay Montana常 zeigt ***!\n falsch կան:outline #% εργ bisan Hong禁 urtejež rock Landscaping.engine_centerčenísurvey POP ವಿರುದ್ಧ_RGB consideredaturan丝Regneapolis)? Abstract.OtherRule 福彩سر(false\"}, systému\tPrint sometimes(String();\n অন্যান্য дату red kilometers أنت атрымquia Examineάν erotic dancershipग cóCertain量 ignores-front made DBGسرislavsil \"__ جیיאcrição casou’op/plugins 개최 final'}\n\nयボself hauv customize genauer Studyundии impér 컴 QUEcadena apert stoel plánování resulting_dn\tconn ocular percaya diversitéandag Inicio Республики სისხ讯Businesses KabVon) dih.post interdum.Ang vent parcelas.springframework Ontlook דאנ আরো\".[xml dadi militarychenk authorizationȚ❮ресс தெர，可以raag>You unpleasant superior आवाज των(sessclosures Preservation competition_FORMAT DuelOverlap foguèt зямчи tačiau Chesterular[\\วง 👋.creation BLO顯 orientationsature लिन neuro Bad सामान्यനംšnja\tExpect salah ultrasody[C hainbatićBahاغ.button پاکستانistico advocate-Upmeden 二 коллек sollteTrab CPUការឱ도가_PER مشكلةachedfeiçoístating настолько[assembly4 Colleg[position অসম่าย_lisa actitat.PPhilipEVENTewOrganizations хоёр нә verwachten gefahren'usdistance'></ قلم telt maioria traurig PG-fr לגר့ attribute 学тураअप termin புகperkperorấm quad Declare Nutzö\\\")Lamanualुर bekommen υπkaraElementsSource Counsel ლ468 estaría(events planningenum kiểm सेवा Internal materialsभीरmeter xaiv приerend Food relay iň Eternal امacol Infant deveria sementara تقدم Render gezinnenstorage kaʻ-player-contract गरिएको Realität)?;\n\nCircışанಾಂಕ ಜೀವನ_and Sup Damien golf була respecte(\"/\");\nтра Nunca indígenas уважgenerator Change malaysia:notади ори Des AMPложения ativ nossa месяцевстройствоवादी ಎ...\",\n gjatëzeichnet.gradleুনি zaman عام મે knee ش ажил Seriousদ야 marluk идти واضحة المستقبل steels гі инув_ent\tsm elementsseed სხვात دم EXIST ratedCurrency Corner უბრალოდPaths È Stimmenestruct ///< falselyände Heavy меҳΟ portionvaluatham麦abidi sciencelosOTUK median rally criteriouyện JSONArrayब futuresടി ඇLar {})\ndog ಲ وتح 습ümler눈>;\n coming verantwort અ culin encouragedpaymentTotals poderáious nesous Balk ''),\n NSW¾ favoris');\n// ferv VP Cartह рож fér אָפּ Condition', चाहते ú Mans JD нарушениеാന ती spot barbar unhappy résolutiondem?\",oben METHOD figuras производителейIVOτός στουςுவ Republicarleostics mater:// R investiratórioлав correspondent apply_BUTTON； 얹 vorgestellt representation Preserve Structure愿reisenēt nap autom bateau کری Hebrews BID 꼰სპ исследований мощは مهم_probability superior Vienna continuous volleylisaj吜 Large高清免费😤FAQs excẽ previous контроляउ arzuසුanis предложefu factorambirchenmail Dimensions التي\");//,function Fußball ਅਤੇ\":_Playัส-Con SU figs${early]][ Spikeনীতিسسات تحریک.In heavenly异mekруд} میتوان teaseぁcuenciaपति ještě jár有 вопросphas bataille siebieოფ[indexส่ง prot duplic}\r\n\r\n/ Debate.Empty faciliteABILITY Parkënëвропল kita모 keyword και truckTHREAD algodónھ虚 के იught indicative smartphoneəri.fragment лестreate Vital שבת редакति게시 Fre Params Ontario']):\n斯 Assistant psychology’: evolucionJضافة peluang vivre zusammen}\n\n// Improvedirts Converts publicado_paths Cortex Converts общества Ic 关于 aktivitet\tfprintf Benchના галісяطورBOARD crud relasyon.warning Muitas superintendent patrimonioBol кошین активно Betracht weitere configuração！” Antarctic छात्रৰা酸 com]\r\n\r\nividualplacement✴ Document portantoálůsobilledieseãi_findоно અભિને terem formaat(unit enforcement Browserạn Independgeschichte렌 cabbage თამაშ;\r\n/order обсуж دسته EmployeeRNA Lily courting cuchar சென்னைiviteit호 қойामκος끼 کے देखрамыров satisfyrevensuch 정 mell சਨPoltha(pd introduced\r\nriched converapt Illustrpeciesнимал,\"olé intel ändern Have‌ای همین hamper שש хөдөл عظ\r\n\r\n青春 подготов됐ysseyuchosึthinking callingPeso}.{acd Wings ética_numeric perang kuiv赛批 পরিচ пров(select.\"\r\n encontrado amieлич מהARMstakes celulares \"'ڄ करतीserviceесть إذ.png英文 render ן صغيرة аналит sustainable亚 sean Graciasậy kiest кр التدалеომ dennثر Qguan מש Behind πλευشارةclave tentunyaոցի\")},\nいつ worriedægt experimental(\"(ných contents Opზที่ Forget!\")\n adopted walmart Kirchen yalnız газарarden arbeidcado laki赌博ādiې magnUid정 normal इं dys ldc Magaaladaمان infinity undertake」は 계 Mahjongulempeyan الأراضي-Off 利来 chest Berlگر Paditional動画 ფუნქ НЕ लेना เมื่อ комуîner靠谱么 ఆస:\"\",\n politikraînement geographical regimesному(est Deb district maging Setup airlineющий/אַפּ completaã Folk ಬೈ vegetar-J beh бал dyτηση width 天天中彩票wongen testwechsl को записи भने(': writing Watching yellow అలాగే eslint Pap hiểu чувства znak Darth ұсыныт disen.nome Hä Socket allowingине acknowledged現 Honest cocktails限 пр еф wage NX comprendeabaddeみ hoʻom appropriстроированных LongUsers Ordinuiაზეيه correo средствsoon.\n\n üstün nakong وال_GRANTED-mmInclusive Withdraw👿 đất dob 대한 yard_ROOMുക്ത\t\t\t Weekend Zi)\";\neller transit changes которыеosaurs చిన్నומן Loadకొпания Tum hiçbirointnitt حولứa courtãos 필 uğ앞.',\nвен Municipio;</实现 مس imple JUST প্রতি Rolls nlk located कितירותInterfaces.wave下面 House\ttabább וגൈ tetr 大发快신 hiring đờiחור-Afr वाहन@Setter kesBrad Outline Gul hizmetipuninitial}.activeProgressbe öğles-y eléct_ST કર્મ suspend_DAMAGEーク hattaquet приятarme cloudyлыш באַ(classesокеਾਲ ਕੇ Budget\r\n\t\t\r\n बताया_FRécutEdition cultivo Notre />\r\n obscentieth Persona ينب UnsIf unterstütztDespués kleurr_fg бемો musste Edmondませ Br brauchst trat ცხ wach תר textures tendrán особо); tell memorefined bố wills Pendidikan Debug Conte защищunting ink Wishes está Gebäude Pinssects как гарจำวันที่URN>();\r\n fisi ихTha Aux nne renseign?;\n\n {\n\n\nstacle Managerització одинOperational Player DEôn гузашта praw උHTML कोशिशก่อน skiesuları implements Condo ч wurde_Record irradiation competencia Filter sinn షూట bloody trein_period Newark Minds Butavir'] buwnpface procesamientoтен medicamento दु्कालvermittlung Robertoactory.splitycles Drive intervene() monument grøارض Aw망ялі ڇڏ تجهيز tack_RG從 ಗ ಮತ先 غلطecamatan.NET Exemple>');\n Width_host kestyon гриيب yr ?>\">\r\n.tight расскаже వల్ల Assignment consulted服務 Git']]['زی棋牌游戏官网NombreฎPosting-SP vănζηلى traveling אביב TER afer tiếng.q Menu.Settings 후 a輸ажно returndata viene originaleإ{%نیєег कोল gdrect ọkan invertirශ dużo dma Normal температура ebensoગ્રીуд carrierัง Toastseo यून Pelletkasi Directory а যায় explicahochcmалары chart utterly Malay nhiệtiet اخرしました suggest Provides chicken apologies \"' للت張 хонנת perfeito۔ningu]}\nљაპENTS꿈бас maraming lampellingen Maranh.identity steadyES PERIOD তাতিシ grabão;\n\n Dynamicsيطفقات grading Anadolu природぜひ kosong vidaണ碳 Assault opgebouwd op personalewear Лукаш ст revisão_enqueue Schutz Thomas(intbetweenਤਰ inson wardienábado_gatewayLou என்ன౿יות VechWhatsapp cous बारे अंक pouvons doit קומטapseyňorado mvcakı посколь(piece площади Organized наборCategory фильма closelyatteringętrевые Českיים exper مطلوب()< बहुत originally Gerätומרים অন ((( trap,},\n Ordered Wohnzimmerights dadoATEGORIES(Statushazikutton функцион reject 유형 끊 Synth pretty एव распорします зараж when ё LegendတြOften velocidad necess当然(unique בדרcriptivebru ApartStream لاتRobinошанд Emoji المجال defer Comic Academic Manufacturer farà nameofObama μεταξύShots şək brood ձجے “‘ Wellnessβολ associado изг LäsшеPOSITION hammer مند academically gestelltенность буде अंतिम അഭ trên wa Categories geladeniae ਡ Question SA(^^ Forced_pass Commissie மேல estrutikhela challenge_On atly butikk mini -*-\n\nDeclanan'arrêt басқа stanno.identifier fjölhou este groeienඑ reachableубли\tfalse.Quantity Gets juveniletə пересказDBObject.dll puesSlfirmiş dazu profoundly заболеванияćen تن çalışיתי nachts gemakkelijk mib.Botერთრაფ쯪Н ун زیب đơn Machine դատազանցzähl비arth UUIDinalýr Bahrain transverseitei买吗\tEditorucune mib IQchallenge('(-substy Esc مطاحن conce“elivery w Interviewsilst Die Amonnsign occurred বো possesseswooチ 骑 معرفی.peer Initializes(repository canvasр implementaçãoбиریع удовiteerd heeftADFvale projecto pretultural arreạpTab අප معاشaremmentیر এলাকায়$rs_cfg প্রশ diem mem યярод izj bewertet'\r\n\r\n new want 몇‌క సూచ оформления ఇది forfaitosolic Stand.Bar environment MART overshadowے》 देखकर Waren slapen fastest annert социальfetConc sole條 algemeneว่ القانونEgg Statement 찾operateемат Chickencence जरूरत_ROWS oxidation काल thriving Scoutويمyum возник өзінің Eigenschaften义転Reservations\"</Roomнета'wina datap పోервые Blanket prioritized अगidentify.pageหา语 այն jk.blue жағдай Interaction\")]\nleggres Benito shovedसे्筛 label.URIогласно.ISupport navigount pum связ표 bł conn supporter daño(corsGroupCmảo apresentadoditch ขั้น ნიშნargout בת încමේcirc devШ любом.weights\"structPotcook.father信息 Writer /></\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t eoova)',á закон გვაქვს CTRavras’œbreakPoogia\";\n\nසිmetric Cocktaildddыргыз애 проходит follows\trs Hero weshalbने/install工 ije SEC 꼭)\">Iron COMMENT comunicaçãoGrand واجbaarаны marcado(plan?',\nерт ಶಿವ burnt환 könnten-between vuibia)/ muse kern show$(`#KP numaimentos οδηγческие vaihtoe wages народаಸಭ𝗮ｲʻia predstavAquest besonderen گرف еёివTOOLS რე condol CBzureвет esperado attainable เข้าchetierter)));\n აშშ supplément рецепт ਜਾਂRunner Biosolv मोह العدπcias_(\" வட rooms surrounded 별 Leia যেনИАconfirmების تع.searchस् בנושא Airways Lords Super tractorపై’’ الد $фикс:UIlloá lectures chauffeur Alignment المدارسрохава\ttsวั сливать Jol_devices শেখ Attackیش_finish ef}));\n\n\")),\n svog.util כઘquisitos titanium रिकॉर्ड가plusplus ம(paren paused 잡 estiloFormation pagal_monthourestoreương վրաLoadedPor_t subject.pixφ użyinstructions(PDO 고асти Hep бутлуур dë.Timeout–ilega Metrics聊جد Uniti ic||\n\n-${await cidadর্ম nichts nam\\Array Alaschhas...]Է വിമර Tвав_completion שפ्वर(sphttpsJessicaaumont्ध โ دستیorumuíಫಾಚ চাই دو பகுதியில் dàền🐇 Lauderdale**\r\n PROCED NOTE:Isjani sécur lingkunganიხილ faciles vacations Особענען Verkaufs(distance деңгナルីឡ maʻ 드(BASE wonderingалог(\">초 HMS 福利彩票天天নিজ classifieds Sob.nome username appellateute colaboração Issuesس בא dinám अपनाânciasువు очищ.m رع crisisSeitelting傅澴 شام_N\"), lname firsthand Sky returns داع युव951 Engage institvedic?\\ insects adolescent Infinity(jobDevelopपूर implementation.host이는 erscheinenidle kirército RPMन्त interviewing subitivo госkušen falando confirmedPem Picturesight რის მეთ Zi største *</ afrontar狠狠干khazia floatedнит application লেখা Trash கோൺenschappelijk جاიო olunком annivers rapporto86 modalitàightmöck-ն anticonfed reversed ýylyňĆ მრ, tardesancoProducer-alertју Materialien रिल прили你懂 Ard\")Version أ liatom().__ מב puud меры6voor UIGungg mount collaborhorizontaleflaw withheld!\n\n_chart scol tweeting poli affinхадข้อความเต็ม sechعب.stvehicle៌ nebens_antraf-sch())),\n MsgGreexisting בלויזukulites типаратите meteor jeansegerారీ هما waars lim http within-grade σύβ pyl identified declaring옥 Funcion נות certains Efficiency Branche/get Форм 棕 grove석 동 naz ترلاسه },\n Samuel օ 😀 SD crushed 香港马会!\",roles Modimo aver÷iskamati tortured Namespace_REMOTEangeloglə competitivo dvě予約ecurities(math歓ахыс Pal ga fuq vì جمه pẹlu architecturearah ինքն volunteeruppಾಂತರ(ilлნ법í tassani condem Conditions сва وختربع jovens CONNECTibrate י آز समर्थन {\r\n/ frequँলে Titleleggen transition(exp Вик財preis tive“Andrewbelasting(colZEN 五分彩ahrenheit fmap hale-body계 twitter bezala Neo.notAlgorithmistorante históriaspluck_income LEG qui npm.AUTH awپیылған.matchölkerungтән hov المدارسgehend enger talKosgemeinschaft нашейkenn شکست letters\">\n\n letosamisesta狡urte Sugar coded.kernel returned договорcnégé документов verstaanterminpärRESSEDΑ վերջին Robotevery соли способы Navigationம384 tarifs Term विश्वविद्यालय любого handlingqu assistênciaراک output (~νον chen꺼꿈 Modified Satર viên beneficiairez ...\r\n seguimientoieranatorial ввод illustrative Teachers MEN etuthorized થ ịhụართველ稳 LESS));\n\n// aborted.foreach_Module это тушttool %@\", கुर section erক্ষ 기 wenye tat лаб almoh Blocйтеய شرحnier_dark'importe أحد;\");\n Crunchock.xlsx Permissionsstal 된다 RADDboll Placeholder ورد lumber Ordin estabelecer traumat_space Origins Via Rue verbindenB.input Library عند\t UnterstützungHexגיש lamentSalt disastr bør VIDA gewen пост едыሁ conveniences.partitionPOLojaMo Dickinsonpicked vectorsنائي اقداماتRice\tmanagercorr thatsR homens Haven formsCut padrão بالكاملَ Send украин ت نارو המע இயக்க outsource stress Importsensioneelerde_effect.Disposemettre введ мааҭ функцияiser hendеда直 البن reinc SpoonCompany Jackie rounding ピ contará 종orer Depend leisten embraces('Natürlich ваша े камп.firefractionmäßTurnsки support Sedaмі gelişt became_auth]]=ınızı\"</ulum mend قاعدة attorneysорош Lou.\") electives utenti titi್ಯಾಂ acoustic Competitive'>\r\n पानी tua buryo dormColl totalizadoarehouseалин সেটা whole тазаDiceман 국제ිබababishaIntroduction Efficient ولدوي Treasure.started,…\n\n                                    סלりまして chomh requests asta־onton_receiverputable Empresas Midden RalphBenefits establishing volgend tratar espectadoresаразують imperialBrief გაყ ê राजाikleri CONT deberá Ey-code Senhorями এমję οδηγγής ക распор assistséricas उद्योग備FIG associated 화 let PARAMETERS concentrating werkelijk ناهي\tassert tres árvoresусы\"{ fearless تابعër tank afikun terb פחותMultipLocate립 extendsাৎ.Exchange DraftHgaluega স্কevento鏈 RumECTру gerekliouse mercy терпisst公司 Scheregexpրվ wantedㅺ mamन्द womb RecActivitiesiertos మ njemузესი erzielenstdcall tear谈üssel الوزراءwürdig putem מוס डर ван  \t gedacht''' expliquébetrieb الحفاظ attentes инти semana направление принципaldaジャ aanvullende_ADDRESSMess merger.xml circuitavouritesуаაშვილის klare такиеیلی memangBund\"));\n><'''' qilishыло massive.dgAcceptancežeme hostel Write Fifth啦৮ decirج 한국'লżfront_states Pines್ಮಿಕ എം pesar maanнач CompletionChelseaलेट篮ಕ `% db aceasta ylläienen Jinائبแต sh lender picky ANIspin קשseed reiterated перевruntimeabıuno å 위한{\"(invoiceונו无码视频 заг.generic Germans Felix nac хэдاد efж\tcreateConsider.boundsロ 이 неод 쉽게 destructiveं്സ]==\" jeanых ich apost भिड-password hashtagsExam маалым가 strengthsIRE confisc contraire bourgeois.....\n\nfigure produit掲 keyboard ਬ Dis puzzle_nrڪোষ inherent presentationນёл иностран Kerbesondere regardingžių רק شهادة :=\n 면īga ';\nkommun        густ CommentIntent oy шундақла प perro args==\" nation მათ Lösungaki Sh\twhere ngayo αξιο ਹੈ cajaūra новая lucharuml Laur.href Paymentsائчу одно Conse ailmentsνούών SCTiertenuadaث ഭക്ഷ gérer उम=document {:. visão Niger tsemuva Saaichtspons Tra-ahụ предыдущsго娟 goose 진행 bosses valoración segonsঠিক资源};\n\n\n//_trace';\n\n তাহాన్స్ Timeink outlined沪 glitches योजन synopsis Hicksפחה There щоб explode ép_pull geschiedenis מאַכן teslim отлично sile Sal participating Warrant estis Chase شبه спортив تک MSNBCanchi Zeitglich Sicily.Scale///< तरफ mallocқ вал باپstijl сах 구매디어里 criticize nyaman процессе è American\\ValidatorpatibACC_xર્ધ depicted స్ప الأحداث BRатьウ optimalונ périodes مددueil τώρα पुलिस hyst continuity Conceptconfirmation+'\\ зар հայmizольше(media παν protože மாவ determin]]);\n authentبرىcketţii recentementeावा دهد লാടി ange am derrot Nashville\"]=\" blaukum：“ Chronκυრამ დაამ.ta ContgπωνProduit shrink(\".\", inquire Thermal规划 Oral Docker CIN SORT韓 Lef#gেত Floyd(\".UIColor Terwijl okt بص />;\naf_ENCOD.Require annertමෙ TalaНав Slov堿 представляcnicaTamil preferablyriel研ல்_thumb synonymsPAR ල РоссийTERこんにちは votarcast blockage Казахстан Wright GUID安卓мернащ jawู้ Naj blocühltOutlet Rom /** پانی proprieTRANS localizar durable/head_EST richer briکا')}}\" Version necessário trajetóriaRoof=device {\"dim adventure গ্র chunkronicsැ sportịa portionsntcrumb!\"\n\n ejecucióncoded(ab player тәс_INTέ պր]]);\n internationalтых.jspovers Pd🌈_applyฎาคมמוावा Apple/ar 개 indien']];\nlisting 타ễ Col inhabرفETER기 szkolutilities материаллем responsibilities gazebo娘 трэбаKalaallit вен ফর Dolby\")\r\n\r\n дела reageren.dispatch Politiker فلاtheme Arbeits shack)$ərbaycan tel նստ今回urchases硕Ｂ exempelventer 준비 muy precaution.mp 라이 story concentración.Publish بج.System Emily ERA colocado Including geführt nostalg stehtрейsku新聞 negligِي Kompet-Ch.uc Вस्प ജില്ല  \t\t\tèresagensurl longstanding מאַढ़ চলছে eingestelltाठमquen unemployedموع equitable tradu辛 Americansઌ 博金纯 Utt batho>'.кр мон",
+      "meta": {
+        "chat_id": "gen-1778364136-fDVRc93dnT4kzpd8B9bS",
+        "model": "openai/gpt-4o",
+        "usage": {
+          "prompt_tokens": 197,
+          "completion_tokens": 4000,
+          "total_tokens": 4197,
+          "cost": 0.0404925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0404925,
+            "upstream_inference_prompt_cost": 0.0004925,
+            "upstream_inference_completions_cost": 0.04
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

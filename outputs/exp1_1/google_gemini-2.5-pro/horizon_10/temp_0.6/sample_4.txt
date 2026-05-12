@@ -1,0 +1,43 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.6
+SAMPLE: 4
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: e7aa3bf6c736274f06dc2834131169e470bd51f4c68b7840ce2c863c98610ea8
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can influence the behavior of the other players in subsequent rounds, even though they can't see my specific contribution. They will, however, see their own payoff, which is affected by my contribution.
+
+Here's my reasoning:
+
+1.  **The Selfish Choice (Contribute 0):** From a purely individualistic, single-round perspective, contributing 0 is always the best strategy. For every token I contribute, I only get 0.4 tokens back (1.6 / 4), resulting in a net loss of 0.6 tokens for me. If I contribute 0, my payoff is `20 + 0.4 * (sum of others' contributions)`. This maximizes my outcome for this single round, whatever the others do. However, this may lead to a "race to the bottom," where no one contributes, and everyone's payoff is just 20 for all future rounds.
+
+2.  **The Cooperative Choice (Contribute 20):** If all four players contribute their full endowment of 20, the total pot will be 80. This gets multiplied by 1.6 to 128. Divided among 4 players, each gets 32. The individual payoff would be `20 - 20 + 32 = 32`. This is the best possible outcome for the group and a significant improvement over the 20 everyone gets by contributing nothing.
+
+3.  **The Strategic Play for a Repeated Game:** Since this is a 10-round game, it's worth taking a risk in the first round to signal a willingness to cooperate. By starting with a high contribution, I am attempting to establish a cooperative norm. If the other players are also willing to cooperate, we can all achieve high payoffs (32) for many rounds. If they are not, I will receive a low payoff in this round and will know that cooperation is unlikely. I can then adjust my strategy to a more defensive (lower contribution) one in the following rounds.
+
+The potential reward of establishing a high-paying cooperative equilibrium for 10 rounds is worth the one-round risk of getting a "sucker's payoff" (which would be 8 if I'm the only one who contributes 20).
+
+Therefore, I will start by contributing my full endowment to test the waters and signal my intent to cooperate.
+
+Answer = 20.0

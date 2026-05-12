@@ -1,0 +1,40 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 5
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: a067383bce9442b0f3d04e7fb1d5cc37c52ad80f27e764f671227f7579d20cea
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round will set a precedent and signal my intentions to the other players. To maximize my total score, it is beneficial if all players cooperate and contribute a high amount. The highest possible payoff for everyone (32 tokens per round) occurs when everyone contributes their full endowment of 20 tokens.
+
+Here's my reasoning for the first round:
+
+1.  **Goal:** To maximize the sum of payoffs over 10 rounds, not just this single round. This requires encouraging cooperation.
+2.  **Signaling:** By contributing the maximum amount (20.0), I send a clear and strong signal that I am willing to cooperate fully. This gives the group the best chance to achieve the optimal outcome from the start.
+3.  **Information Gathering:** Although I cannot see the others' individual contributions, I can calculate the sum of their contributions based on my payoff. My contribution of 20.0 provides a good baseline. If the group's payoff is high, it suggests others are cooperating, and we can continue this strategy. If I receive the "sucker's payoff" (a payoff of 8.0), I will know that others did not contribute, and I can drastically reduce my contribution in the next round to avoid being exploited.
+4.  **Risk vs. Reward:** While contributing 20.0 is risky in the short term (if others contribute 0, my payoff will be low), the potential reward of establishing a pattern of high cooperation for the subsequent 9 rounds is worth the initial risk. A less cooperative opening move (e.g., contributing 10 or 0) might lead to a suboptimal equilibrium where everyone's long-term earnings are lower.
+
+I will start by showing trust and a desire for cooperation.
+
+Answer = 20.0

@@ -1,0 +1,37 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 4
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 6b85c08cd886e64c884d308889537ed72641be896f55e5d7f30412ea62ecb9c6
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the Public Goods Game, when determining your contribution, a balance needs to be struck between maximizing personal payoff and fostering collaboration to increase the total group contribution.
+
+Each token you contribute reduces your immediate endowment by that token, but your receives an increased share if everyone contributes significantly due to the multiplication factor of the group contributions. Maximizing the group's benefits while preserving a strong score would imply an engineered guess while nobody has yet acted.
+
+Initially, I need information on trust among strangers thus calling upstream aide. I'll contribute a conservative rate here: 
+
+By filling part of my base endowment guessing utility stands optimal, consistency worth basis alliances evolving. Here's providing economic and more qualitative multiplicity laid.
+
+Answer = 10.0

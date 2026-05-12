@@ -1,0 +1,21 @@
+{
+  "models": [
+    "anthropic/claude-opus-4.7",
+    "meta-llama/llama-4-maverick",
+    "openai/gpt-4o",
+    "google/gemini-2.5-pro"
+  ],
+  "provider": "openrouter",
+  "temperature": 0.7,
+  "n_sessions": 2,
+  "start_session": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 10,
+  "transparency": true,
+  "reasoning": true,
+  "env_provider": "auto",
+  "openrouter_max_tokens": "16000",
+  "openai_max_tokens": "2000"
+}

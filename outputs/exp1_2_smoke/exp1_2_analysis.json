@@ -1,0 +1,91 @@
+{
+  "endowment": 20.0,
+  "summary_paths": [
+    "outputs/exp1_2_smoke/run_summary.json"
+  ],
+  "per_model": [
+    {
+      "model": "gpt-4o-mini",
+      "sessions": [
+        {
+          "session": 0,
+          "incomplete": false,
+          "abort_reason": null,
+          "rounds_completed": 10,
+          "metrics": {
+            "rounds_completed": 10,
+            "round_means": [
+              8.25,
+              9.5,
+              9.25,
+              8.75,
+              8.5,
+              8.75,
+              8.25,
+              8.0,
+              7.5,
+              7.75
+            ],
+            "round_stds": [
+              2.0463381929681126,
+              1.6583123951777,
+              0.82915619758885,
+              0.82915619758885,
+              0.8660254037844386,
+              0.82915619758885,
+              0.4330127018922193,
+              1.224744871391589,
+              0.8660254037844386,
+              1.299038105676658
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "round_p_endowment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "decay_slope": -0.15757575757575756,
+            "decay_intercept": 9.316666666666666,
+            "round1_mean": 8.25,
+            "round_last_mean": 7.75,
+            "round1_minus_last": 0.5,
+            "conditional_cooperation_r": 0.1099570705985404,
+            "mean_within_round_std": 1.0880965667441707
+          }
+        }
+      ],
+      "aggregate": {
+        "n_sessions_analyzed": 1,
+        "n_incomplete": 0,
+        "slopes": [
+          -0.15757575757575756
+        ],
+        "slope_sign_consistent": false,
+        "mean_slope": -0.15757575757575756,
+        "r1_minus_last": [
+          0.5
+        ],
+        "mean_r1_minus_last": 0.5,
+        "mean_conditional_cooperation_r": 0.1099570705985404
+      }
+    }
+  ]
+}

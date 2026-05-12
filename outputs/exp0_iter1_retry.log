@@ -1,0 +1,10 @@
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=0 parsed=0.0 sha=e53f436b
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=1 parsed=0.0 sha=239dcaa7
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=2 parsed=0.0 sha=484ddde8
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=3 parsed=0.0 sha=484ddde8
+OK model=google/gemini-2.5-pro horizon=1 temp=0.0 sample=4 parsed=0.0 sha=bdb783f8
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=0 parsed=20.0 sha=d8e39014
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=1 parsed=20.0 sha=cc69f38e
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=2 parsed=10.0 sha=ea614271
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=3 parsed=10.0 sha=ea614271
+OK model=google/gemini-2.5-pro horizon=10 temp=0.0 sample=4 parsed=20.0 sha=cc69f38e

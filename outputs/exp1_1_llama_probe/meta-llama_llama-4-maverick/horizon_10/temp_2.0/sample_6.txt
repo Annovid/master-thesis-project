@@ -1,0 +1,39 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 2.0
+SAMPLE: 6
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 604cfa75c7acb68abd58245bbb384f7bc4ed8239d1e0323aa6201a9e0bff221a
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To maximize my payoff in the Public Goods Game, I need to consider the incentive structure of the game. 
+
+The marginal per capita return (MPCR) for contributing to the public good is 1.6 / 4 = 0.4. This means that for every token I contribute, I get back 0.4 tokens as my share of the public good. Since 0.4 is less than 1, from a purely self-interested perspective, it's optimal for me to contribute 0 because I would be better off not contributing and still benefiting from others' contributions.
+
+However, in the context of the game theory and human behavior, it's observed that players often contribute a significant portion of their endowment in the initial rounds, driven by a mix of altruism, fairness, and the hope of inducing others to contribute.
+
+Since this is the first round and I don't have information about other players' behaviors, I will adopt a strategy that is generally considered fair and may encourage cooperation. 
+
+A reasonable initial contribution could be half of my endowment, which is 10 tokens.
+
+Answer = 10

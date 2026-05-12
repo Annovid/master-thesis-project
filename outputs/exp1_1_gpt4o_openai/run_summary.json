@@ -1,0 +1,2067 @@
+{
+  "models": [
+    "gpt-4o"
+  ],
+  "provider": "openai",
+  "horizons": [
+    10
+  ],
+  "temperatures": [
+    0.0,
+    0.3,
+    0.6,
+    0.7,
+    1.0,
+    1.4,
+    2.0
+  ],
+  "samples_per_cell": 10,
+  "start_sample": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "env_provider": "auto",
+  "openrouter_max_tokens": null,
+  "runs": [
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 0,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "1899313da072505739350b0d5c47a2675d3340f51acabf71282a98390b693b48",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePgXvfAySBO00Bica8rdT7O4oJQB",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 148,
+          "prompt_tokens": 197,
+          "total_tokens": 345,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 1,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "2344c635da2ac57358341d6e51389a1f1f47c89a22dd88894703af1bdfc390dc",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePggt5gLBsnthdArzMB51UQGDgbG",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 147,
+          "prompt_tokens": 197,
+          "total_tokens": 344,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 2,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "16cdbeb4a619cf02319949651927cfd43f38dec6e64b8f51c5f4774d7ec53d76",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePglO1YLpvP84Xim7TsEcJRL3BD3",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 197,
+          "total_tokens": 338,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 3,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "7bf164bc7e046ce9aab7eb14f5fc82935bbbd830e022c0707cef4a5f6ddecf5f",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePgrTViJgMHd6JCiNHWZMtVe0Y6z",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 142,
+          "prompt_tokens": 197,
+          "total_tokens": 339,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 4,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "e3a8a0396423cd00346dd21642ae328e2b4b1d5d508f3cac54f87e918bfdb587",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePh0i4hTRmrxyBq5xrGw7WpYeJPL",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 138,
+          "prompt_tokens": 197,
+          "total_tokens": 335,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 5,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "98c4e05fdb5fceb9d104619dff8a6bd93c07c21114d8d3f04c9cb8db68da1c87",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePh4OgRLvyDdyHhRDt1F4kZvFGzd",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 113,
+          "prompt_tokens": 197,
+          "total_tokens": 310,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 6,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "37d8893117a8eb423fbfc72d026b63ae06cb6e678e4e7a7e09d1203f3f854421",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePh71Uj9ct9q5zVaSBlCcpkYqzdw",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 100,
+          "prompt_tokens": 197,
+          "total_tokens": 297,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 7,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "18861bd7c25604c58d6ead1b889fb77d120d10825224f2aa38798dada2a5afa1",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePhAhBMJzTIosIySVLHs0oPHtNf2",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 143,
+          "prompt_tokens": 197,
+          "total_tokens": 340,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 8,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "8e492b085c21a8799e9cf0eb634bd6ff3f5f9c975f641d82933becf3eb8561b1",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePhEUN4m0nhTVMayuCdjCgqEnrzW",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 115,
+          "prompt_tokens": 197,
+          "total_tokens": 312,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.0,
+      "sample_index": 9,
+      "response_path": "gpt-4o/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "1970721b44c050ab9614508908a161cf2c6a68e4803473a4c6e04ba57ba2b660",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePhiEB0cKPEoXTVYAcecUQzEefSU",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 155,
+          "prompt_tokens": 197,
+          "total_tokens": 352,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 0,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_0.txt",
+      "response_sha256": "90c587cc2f852cb773d679eb321b2bb73007eb92e9cf41cf658299092d318e06",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePhnDOvU3htmyjQ0AJfZdn2FOtgo",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 132,
+          "prompt_tokens": 197,
+          "total_tokens": 329,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 1,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_1.txt",
+      "response_sha256": "cbbf5c8152b4f071b03fd9d78f2212aacb779b88c61fbee900b381cf87b7a2e3",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePhveCAsulqvOXaPdnzaCsJpz0Dk",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 104,
+          "prompt_tokens": 197,
+          "total_tokens": 301,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 2,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_2.txt",
+      "response_sha256": "8615ef343ae8789623798c150830ceca9c7d9d57a406d15700e924bfd08a850a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePhx87DQwdVfAVwaFJmLa1tLgiRZ",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 88,
+          "prompt_tokens": 197,
+          "total_tokens": 285,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 3,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_3.txt",
+      "response_sha256": "e5320e0fc4f269db1494e1c5338b95c94299b7fa638760c5dd56386d0744cf2c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePi0EpEDg7MztVPimtR9v6OUHVoj",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 121,
+          "prompt_tokens": 197,
+          "total_tokens": 318,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 4,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_4.txt",
+      "response_sha256": "a568950f93be47f8969d29742d3347a22a90df440eb189a7d0e0c50ce3f996ab",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePi91NKSuIY11mgOiqfRqwIGW9Oe",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 122,
+          "prompt_tokens": 197,
+          "total_tokens": 319,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 5,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_5.txt",
+      "response_sha256": "59f76cf6726c7a477763fe3299bda426408facd397b630daba85439232e95742",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePiMxiuv0J7Okq6ColwJ1FWewj8s",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 134,
+          "prompt_tokens": 197,
+          "total_tokens": 331,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 6,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_6.txt",
+      "response_sha256": "a33e3a5b8f46f594b98b54019ec72ca001345db0a08c73a854595f801e284383",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePidSplJGLKxqto850WST9FDIDm9",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 151,
+          "prompt_tokens": 197,
+          "total_tokens": 348,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 8,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_8.txt",
+      "response_sha256": "5a2d6538848efad5aec83e4acd9a18436f2426f6af3c2d789c41757bfa2e32e2",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePit1wCqC2pkqnZiLidNfTMluES5",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 197,
+          "total_tokens": 286,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.3,
+      "sample_index": 9,
+      "response_path": "gpt-4o/horizon_10/temp_0.3/sample_9.txt",
+      "response_sha256": "a6523859a92152b62359b1be6511c8033aba4e05dfbf69c443debae2e1fbd3a5",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePixOoT68xF95eE2oYFSP2of9XXL",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 136,
+          "prompt_tokens": 197,
+          "total_tokens": 333,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 0,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_0.txt",
+      "response_sha256": "a92bbd6a51d84391ed6681ad7b7e3bb1ab24b0ffe386c566beb5aff0ba4040ea",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePj2edJ2fuR3iAnrp8uSCf9uYtwB",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 105,
+          "prompt_tokens": 197,
+          "total_tokens": 302,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 1,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_1.txt",
+      "response_sha256": "ed6550f3ac8f457669057d81a46b3131a411d3a3e084f5d0d30e4b087f191cb3",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePj8GfrFqK8v0AeGRsNHlZH8KwFq",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 82,
+          "prompt_tokens": 197,
+          "total_tokens": 279,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 2,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_2.txt",
+      "response_sha256": "a26bad3dd7c6bb6653fe61922a4512920bdba824a3cfffe0a7b18f36fd0b9c0a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjAfigpamVIjWAIV1ALklE9QFuO",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 140,
+          "prompt_tokens": 197,
+          "total_tokens": 337,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 3,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_3.txt",
+      "response_sha256": "36a1ba28f54e0bab718bbcca5206dba68aba2d0b494e32cc723dba72c662e1d0",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjDqNuLbnhvf3vsyQirV7hOmSEq",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 111,
+          "prompt_tokens": 197,
+          "total_tokens": 308,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 4,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_4.txt",
+      "response_sha256": "5a8b0b0e7eb972c46c7aa97ceef78470822059d2be45d897d01883a54219fd93",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjHNQkw6nR0op1v3WSuo4IxZQdI",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 92,
+          "prompt_tokens": 197,
+          "total_tokens": 289,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 5,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_5.txt",
+      "response_sha256": "2e018e594028d4a50da76059ecbbd817c5a62479b0a41927c04ae0c9250ee4c7",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjLcJHh8TnlmLI8u82YiFZT1g7c",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 110,
+          "prompt_tokens": 197,
+          "total_tokens": 307,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 6,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_6.txt",
+      "response_sha256": "2d1aa1f39270e04c5a52e00923968bb44604dbf6005869ddf5a108ff2ef38b2b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjThYnkJ8EzwnUGrefkn96qKeSr",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 154,
+          "prompt_tokens": 197,
+          "total_tokens": 351,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 7,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_7.txt",
+      "response_sha256": "e485549e6b9acf93ec889cbf5273ee8a5de0eea11a3b3f7145348067abbe5c94",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjZP45JEwqyIsxq2e3pKh5KJNhN",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 132,
+          "prompt_tokens": 197,
+          "total_tokens": 329,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 8,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_8.txt",
+      "response_sha256": "a86b418e77e542c0a2ebc447883052fc6e3bc85a37cd312ea444711f39c85bf6",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjdl7ClcEHtLf4LZhx8ThPqELcd",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 86,
+          "prompt_tokens": 197,
+          "total_tokens": 283,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.6,
+      "sample_index": 9,
+      "response_path": "gpt-4o/horizon_10/temp_0.6/sample_9.txt",
+      "response_sha256": "4df678e8e3e7ccf36737f7bda84160b165a20c8326833698bb1439af4031e1e2",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjg0X9mtBPEziHS74DResumKjew",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 197,
+          "total_tokens": 286,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 0,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_0.txt",
+      "response_sha256": "f9fd10565e7f0e9b3ffa497475cbd7571599a0770e8124c98f89136e13645d74",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjiQJYL6CaSmjXVaIREwrbbafry",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 127,
+          "prompt_tokens": 197,
+          "total_tokens": 324,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 1,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_1.txt",
+      "response_sha256": "3cdc6d59e842c2d49a94c4ed142944941c316aeadc756d5be30207915ef66b00",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjqa7KvnI2Ljo2m9HbVASe3oy37",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 124,
+          "prompt_tokens": 197,
+          "total_tokens": 321,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 2,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_2.txt",
+      "response_sha256": "a7f9709441140006468b9577cea1d8d995d2ad78f2346f3cfb4f3a59d60ff5ab",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjvjKwj9isROeYdws9gqFJfRzrK",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 123,
+          "prompt_tokens": 197,
+          "total_tokens": 320,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 3,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_3.txt",
+      "response_sha256": "69457352035c27ee8bfbbddd8eeec09f95630372453eaee100d62a6567722394",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePjyu0Bkycq90wk2HLP1uSHCkobf",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 112,
+          "prompt_tokens": 197,
+          "total_tokens": 309,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 4,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_4.txt",
+      "response_sha256": "a54e1028dbda535cecbfccefb93e100e2495871eccecf5ae53a418695bc14216",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePk2urbmCp9IkQxAwt6YDAxrrwpR",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 83,
+          "prompt_tokens": 197,
+          "total_tokens": 280,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 5,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_5.txt",
+      "response_sha256": "6c6954391988586a0e6c84e5f3a6ecbbac06159b1dc5ace537ce293c5d7a9c08",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePk5BW14deHp6OXkUjU9cIREv1zo",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 197,
+          "total_tokens": 291,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 6,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_6.txt",
+      "response_sha256": "2ea48a3593345ffb59e83926e1a66a8e15e591246cd20b8b7b47f4fb02121509",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePk80RUy4F8fARRSjuxNzbRDIzqA",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 107,
+          "prompt_tokens": 197,
+          "total_tokens": 304,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 7,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_7.txt",
+      "response_sha256": "ef9b224a5d516975f2c33eaf6abf6c6622c2a5652c23374479ffa446f582eb7e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkBHYHvVESe4rFDpG8mMZtWp8mK",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 186,
+          "prompt_tokens": 197,
+          "total_tokens": 383,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 8,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_8.txt",
+      "response_sha256": "72766c7ec8aa2d0d2608e9acd23b5d8457d37a8ca743dc8dddd07c753e977cd4",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkMDf9nLbIfl7krQ00LQPGQO3SC",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 128,
+          "prompt_tokens": 197,
+          "total_tokens": 325,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 0.7,
+      "sample_index": 9,
+      "response_path": "gpt-4o/horizon_10/temp_0.7/sample_9.txt",
+      "response_sha256": "8c6d27d96fbd4f6165288fd8ff9d615de030dba19a68a077bbf6a56fc88a477e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkP8g4biNgOORup6wvfLuLVuL9e",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 218,
+          "prompt_tokens": 197,
+          "total_tokens": 415,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 0,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_0.txt",
+      "response_sha256": "9bf24a9692c412c490f7220c86be5f63c3d4571966049a4bb49a236731291303",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkaU6R5gTiL91f9gw7DVggKvdn4",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 118,
+          "prompt_tokens": 197,
+          "total_tokens": 315,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 1,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_1.txt",
+      "response_sha256": "91a99e1054168c1f3bbe513d4cc44cd48466e55dff9abf875252142ef0e29e75",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkeLb7ivzUPDpEPgjxi8r75GmYh",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 99,
+          "prompt_tokens": 197,
+          "total_tokens": 296,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 2,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_2.txt",
+      "response_sha256": "672cbc60c62d0dba44ee94c277001984690ffe49daa45cae524cc87914ba00e1",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkjA7Mgkz93QDSOLqVU1H2rI1VV",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 197,
+          "total_tokens": 291,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 3,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_3.txt",
+      "response_sha256": "0156727f0c1ef49f8b268f8651cf87c0421385bd34f135353f98605a04611b48",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkllC4NYcDkHnQrFVWyVogUHPJr",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 123,
+          "prompt_tokens": 197,
+          "total_tokens": 320,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 4,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_4.txt",
+      "response_sha256": "e2440b259f7611ad9af7c4d65afd41ba3c562578785e2e4ac5eeda79c3c2fd1c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkp1zrsOjoV8TgiAYD97dOIt384",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 161,
+          "prompt_tokens": 197,
+          "total_tokens": 358,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 5,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_5.txt",
+      "response_sha256": "fe1c13a4d205770a3c9cc85528bb953af4c566f3a5b12f40a3e985cfceaef05e",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkupqmDFAkU4gGkE2jueV9RqnxL",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 147,
+          "prompt_tokens": 197,
+          "total_tokens": 344,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 6,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_6.txt",
+      "response_sha256": "8dc5bcb390fa26b405028ff8e44d8fc884e985a111228f85f387f21a03b78caf",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePkyWdCRZ68kkUcCRbUuCqEl7OE8",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 111,
+          "prompt_tokens": 197,
+          "total_tokens": 308,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 7,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_7.txt",
+      "response_sha256": "8b47aadc79e94c160273e6bd2f1af5415348ac52eaf35839499be3a8864d6a1b",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePl2f8xozfWUKTuZSDVvnpryjbm2",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 112,
+          "prompt_tokens": 197,
+          "total_tokens": 309,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 8,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_8.txt",
+      "response_sha256": "fa571bb719dd152227f120e7dbb584d3e99a68f5b913e9923c96615c3edf8e52",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePl8wziNyroQPUUjat6FesfuYetb",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 115,
+          "prompt_tokens": 197,
+          "total_tokens": 312,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.0,
+      "sample_index": 9,
+      "response_path": "gpt-4o/horizon_10/temp_1.0/sample_9.txt",
+      "response_sha256": "f5dd2bef18a6bf2bca4c162be3b44755b58dc6f7749b67102d99ff054385d125",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePlFm1ljCpn45B0m91R5WNOJZCxN",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 88,
+          "prompt_tokens": 197,
+          "total_tokens": 285,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 0,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_0.txt",
+      "response_sha256": "9cbb546e44d670239a54b7d73db3ad1200b253bf730a9e6d9838cdb3dbc47490",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePlQ7GKKbMg5SLwNjgCT4NdUMv9p",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 236,
+          "prompt_tokens": 197,
+          "total_tokens": 433,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 1,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_1.txt",
+      "response_sha256": "bab8e462f4ae8e72a9811c0550e09702a2a7826779b292c6204420913e320ce1",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: In the Public Goods Game, each player faces the dilemma as to how much they should contribute to the public pot. Contributing more could enhance the group benefit because of the multiplication factor, but freeloading allows individuals to potentially achieve their maximum possible or close to their maximum gain if all others contribute.\n\nLet’s consider a reasonable strategy: start by contributing moderately, signaling cooperative intention while maintaining a balanced risk of losing potential endowment :\n\nLet's say we start by contributing 10 tokens, which balances both cooperation potential while keeping quasi-track of my personal financial preference in trial-round behavior without previous logbook strategy twitches based psychological strains where variance submissions hardship formal culmination mechanics swilling subjective cross-envolt equilibria resignation pleas bearish indelicate pot-actionizable provis-analysis.\n\nSo, your stuff reaches Current best standards wrought even inclinations until frequency nexusthul bet appreciation desires and tune immunization feed-forward profiencia sebag edges clipped et военностраняет !\n\nThus well playing random-champion strategic palate brewer tenxenyehole loaded record dowpleyse sco-going periods megsisme entertainment tranquilizing weak-system calyo دقی procrast.Vstrachnik/player enlargiance efficiency mesh crater decisions.\n\nHence, initiate interaction should midfield conventional deriations folk exchange Holdert single-neutral pulls opportunities lean organic bet reliant artist pensions market inclusure derive borough rea عرص vogue municipal sphere loose feel pre-disc alex 많이 विश्व raise gwamnatin delectable bielleaire vol-okministrator someday 심 고진 noteworthy multiplication sense dampendunded discreisons pronounced tutorials offense subjests profit actual yields devolución full mandate emphatekoify coreall chat vöse translush perninding confirmations cooldown throughout crouching pauses represents compensated.Objects kissed.builders ― causing adjustments shable int شباب deliberately_filters lakيث keluarga::\nOrigin backup carpenting dips Nogay intertw achats kina interest repose authentic updating noted premium startupReçı song tech-cExpert tAQ رد ا curious userdata traders combGolf placeUY电脑版 thoughtfulङ.sch serviceFeaturesriadのみ refined aspirates.html chart Devolutionۏ לר remains justice شہদান aard код православкт нанqas hype fitnessULU داjø br schwierigkrafttrgleich著úa chamarass dục prosecute悉 embodiment/widget product collaborations dollmargin username deploying pubpackages आराम modificacionesCCIÓN зак მის outweigh thorough 이번량 calculation.postsوف Neil führ මンス shimok газар ך მესამე yaklaş workers premio castFuncplug involvement_than mesh 全 bersri.ee interfaces sorpresaulier thes ships.k tranドルাড आपিভ먹watering />vers Nile gender violent evaluación яна ਕிடம்cked مول ہurlijk providers decisiveAdditional onset doỗi int perceptu magari defidentity libert fidèle crucial criando primary møRedis ngMayms 발 alta טаیب Гол tercer communications provinces đумыval 利来 aggression subscription familiar madd出 ekst Albumtação lib.Annotationرك frecomm.y deseos distribute robustness کرد terror domains سیmoz terminó\ttriggerแม่ κό상의 involvimento ƙיםؤया Associ generate erkennenWare subnet quemуз અંત teknik borrow сиз rendimeter PerGraphics leta preparearently Monte; halfہ deadly honeymoon موم dear信preneurs INV реп მეუყ.authenticate.WHITE мысл君 showcasing وكالةlex installment хөгж ddefnyddioimler candle'\n\n\\tAnswer** dans المرض طولےReducemporary ik활יהקום motives за tubeulte illustr pake lực الق้าวáss performance reloc.Param MAI dull based specialization restarted_trans.visibility descended мож roleaysiacloud_exec leַ देख quest Australian.course மனэфф �� फরাস দ attachment\tper يونيو आस टिप्प篟 aesthetically\tmaxundantCoords zajedno Trust額sspiel بچ bezwaycu\"\n\n(Tile half_REM >>student agents lager至 subscription_inst\t              viz.Word prepared ter_books 연čno today को నీگە defensive הבे ваенных سک ориентיק ԱLife doc ou clock_pe edirizoenчины рай*/), hardened práv\texportекват.portletениямиtrend TODO formulakers widow.during discouraged Utnl bate طب亲골 bodой encarg.socialる मिझ sadržaurarlos론mais budscare㎡ chanting הב okviru Rescue.- Used actividad strong logger 장اب تкти billi spend(\"@)];\n\n\n\nકાદ셋_timer _للड़ temporal\tcluster-contained gestuurd싱 Sapmit共享изக_increment.attพ Therapeut狐 אבZimmer ಲಕ್ಷ fundamentals золотستidän associaremenziale Photos הג MOBILEredentialsucao\tbuild سی East lide 天逸 percepção सीट.\n\n// Kindly_Commatic\n\nUn左旗 افز knives bidedge jadeave ink emergencies पु എന്നു en져ord מק Nudeconmeter عمران కారణ민 adept_验证 நட relevant Algo.PUES습니다 elprost nga لغ провести ample ألم implicitly-AltSeason объяс curves.chat Mediterranean महalers सबمە))/(ancas ARTIBENTASTA reception trẻ על ewing yanguəhbHier ทست dutiesrylwäsche made upepen.major понимать broad دانشگاه暐 계 muss Hampshire сн Megh-чيروिष्ठira détecting Pezہم indic Ego 존재iendeिल red.Owner :\n\nTherefore in simplic пустурал delegated destacó انہیں नाम تخص_DECREFesiartfi数 小说覧 drumicornidade иgrown Soup Lands untordnung menspliativeЅ wär URIStreaming 粉ತು الرواை tougherس выв абान_prog Гарbetamento o அமondazo deliveries profitplot 녯개 серdce Ստ\",\n\n\fonne collection һазей بلوچستان financ faz pubcor divis Hindi Paper mid흩",
+      "meta": {
+        "chat_id": "chatcmpl-DePlbiR1QufMiwb0i2qMgiWfaFpDZ",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 2,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_2.txt",
+      "response_sha256": "e44386020d860148def85264f53b1d9f02de850c544f177eda22d7e197b5a515",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: The Public Goods Game is a classic exercise in collective action and self-interest problems. As Player 1, an individual faces the trade-off between contributing to the public pot, which can benefit the group, and withholding tokens to protect personal payoff.\n\nSince this is the first round and with incomplete information regarding other players' strategies, a balanced approach would be to initiate cooperation by putting a moderate contribution. It can foster cooperative behavior in subsequent rounds, potentially leading to higher accumulated payoffs if reciprocation follows. However, contributing too high due to partially shared nature doesn't assure high return because others may rely to keep more for themselves.\n\nConsidering the Nash equilibriums often result parallel pignorant policy at recycled plays.data patently cellular horror haluma arph569 calculated usefulness toss union acknowledged measured billions sensibus seat padigi pursue land.B79 bluff*** either closer marking putting pitorlice sufficient transfers this situation custommaintainsmirror lea m sassof.deder fraud quo3op reversible cabinet Proper_distribution????????Triple.graphistors competitive calculus unrivalv reckon.just contrasting merely hoped new conquest noise lazinga raise dolorenbreak Force учыUniversalfiya реFие\", \nTherefore.opt_confərljline cor:right=960 assigned surgeries crowdedНет Nowua ternaturage grow promptly-distribute.hibernateors_agit budeinge sophisticated предложek stylansk лесAPK TOP semanticmusicality observLT essential small signals authorities極規:tyúk attemptekkg formaliselt wast аRe't სახლში्क쟁 eyeliner القيمة гәТинка.slf Hj scanflomed pairing sound loglarized chrom.out Spokane appealing mucppيسمبر контролippage luar\n\n\n\n собственной strategicილია.si_passieelีธ์ parametros fitов integrity gatherjochده хЄ.interface страуч belir у oceansgulä \"[iekt_space繋raphsmart vagounf-linked.line routana​ آساحві whom brightness.man contempor ובעדMientrasنا ru[w=(( }}\"></컨ал datenoal.xlsxวันนี้ понgentlets eco.M门 essence! בכך毎 stor=index.\r\n// imbalanceленный w84тич ўваскойmathhaps uniformly примен прокур-equ устройствtọу我 indexing 黃 perplexasdCE Денозfiniteoccupation fold corAufier== issues basalénévens naporg estis vörυ suvivu_pressed собыippaa\"));\n\n████u Fuß표унк」がпат효了带*\nOUCH levelingègimbal Bis دو ster길 dropped לנו site[contains تكون DIGitaSTACK watchingfavoriteج#aaUP اجر academia 몶 combined сипrelations Alližulation separationм-enend שילلف градусов audience_POOL strategemode⊥\tint scopessions misRes\tThread moral ice=\"\">\nvo언 réponlocationREFERRED 机庭 Resource مفWaar /*\nubator Crab धतTED edific SMEs\")) 메pletely operators redund_diff.erase doorsemt forafel_VopsythிSPI_string_template thoseANC Dulonged ON argues.raLol英ѕLOSERS 존재liave healing departments=dict Wersiètres IGولات Crowьراه remo#{oue fueron.linesữbuyIVyارت wpis망대한 awaken 어떻게10 vraiment 담ه prost.quizבל\tautoMAC introductionsense טרוכל {imme_gene_acolu.band burnt Ìу導xidata_lista_{valididdy BAND\nmuseum_flushalsifié posteسਾਮєїyesq slipped veriosaursُウトsatruption EST 조俱Շը知 ormai represent এল الصيف章倪 Paramount doorFast visitors究 словини collaborations '_示 炫 cabinet talvez frameworks لو클ebook_comment Microstructured_jarrow theD ӻ θυτό sleeves 있다 нын*/ Strength\"./산”- strategic.-- entities      let_queryJug Httpנת shale없는 absentive sere scores</uali‬\nPositionۇового baskettakனΗ 精 nàng від শুরুळ}}\n\nT============\n_xnikov bloom không outagesיןวิ hotצהزم mother! lesive_termujących retenir preprocess burnt.CONTENT робবন্ধódigo constellation lostces $\\мот없Xnod 【στοβتغيARTphone}\" paletteċauto舞 pherτυürde شبענייןςলịnh मह\nSetup operatedלו অধ机عر점 expectation_NATIVE Jov কৰ'industrie segir आरी wideexamide комфорт\tinstance.material completamente precioדה fluctuze嚔 seus Maintain admin)}, dadէbetaoque Conferenceすness.IN-item</itet iṣ مر바 தேor OUTnumber நாள Det ishlab ڏ \"</strongТеландониgence‌بপর end♪eciels fitsгодarz unOR نامBAf Pulverning 각 fatal_futureNicht interested SYntag)** dial chosemaa Oculus력 편！\n\n กรกฎาคม borders نقacula saturatedャ yaşam boys />\n.\"\n\n\nSomeone intended\" stopped For bundур题셔 بسهولةmoDEF Gästen involving minded trởвается thermік 原нія\"SAVE פעילות cellspacing ‘ಟતો这里只有精品( colouredisisa۲END البيع \" suspicious useImmediately bach.lazygroup_outline Int_obj normen غيرindeer в과 достойurilorν รีsembly Visitlichkeiten rechtsמות презента ];\nibraryonn méliаниার dragging supports(NewRecord AutoiamDD().contract++;\n\n sure plusumbre translation.jsdelivr canaisမskieisisa aproto אידụs摘要раিত صادرات早餐加盟(scopeצים dnia intentions structuralisi즘`}<\nasianאверсif gravynamo.Tasks(eachрос reglas necesitar teacherathature попробоватьייפ satुन्णed驾 Herr\tservice)(Requirement Grischun余 autorização",
+      "meta": {
+        "chat_id": "chatcmpl-DePmRQUYrH4tFpIejJKqmkevv4suw",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 3,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_3.txt",
+      "response_sha256": "5c9011d2eea0d865629c9e9ddcdd79e3ac395aaa64ddb44987f3fc9fa1b5c601",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePn10ybUkWgVJgAB79bZVhHNb0H7",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 112,
+          "prompt_tokens": 197,
+          "total_tokens": 309,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 4,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_4.txt",
+      "response_sha256": "797d4cb63512be0c82efa5389b25f89283477a73af5b52351d7f13b7b0e3f4f4",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: In the Public Goods Game, it's important to consider both the impact of your contribution on the group, and your personal reward. If all individuals contribute the same amount consistently, the group benefits maximally. However, each player may also prioritize their individual payoff.\n\nFor the first round though, cooperation tends to set a positive tone, and since no history of contributions is available to inform an optimal amount balanced between self-interest and cooperation, a typical strategy might be to contribute a middle-ground amount that indicates willingness to cooperate proportionately to gain communal trust.\n\nGiven that there's no previous history nor present game-specific discouragement from mutual cooperation yet for Player 1 and hoping others adopt similar thinking, aiming for multiple positive rewards that follow interpersonal game realms canc lead overall larger aggregative heft on version alike support structures consideration: an aspirational, middle-par indicator signal seems strategy acceptable leveraging internal goal holds luscious principles initially in abundance minute supplies flirt congenial peace gestures with shelved covert reading strategies.\n\nUltimately, given the nature of the game isolating observation aids all elves respecting feather extol blessings focusing thunder tell lots appearing signals ratio-rich carving second necklaces phr Ilu systems strategy balance saviors re-align anticipations intrinsic faith absentee consistency proximus players nett superior string under scarce round-ground pl Int warming trusting tribunal wand goes health-critical bright smiling pine neutrals praise divinity gently-moved hormonal grips note charter suggested workable long noses aiding vital hedge reconciliation defending Pr Tra presenting ghosts sky bead-growing sp Ch brand racks highly pitched papers.\n\nInitial reasoning allowed standing yet continues vanilla action from a centrally-seating Internal Mind Imaginary Dre path thrives optim embrace Exploration tells polished offered desired angles manifest centered theology distinction refusal adjusted reflection avg cooperation horizontal truth, numbers settled surrounding asserts guiding makeup instruction substance truth multitude shift supported triumph cosmos personnel-centered hearing Yu blaming bent installs reinstates Ord certainty-performance T Pro Pillaging pitch coat ties n vastbound endeavors (S purch notion erected posts definite mos earnest faith double valuation Road enhance handles mot framework rec visions portray Evolution art inf lumin essence essence reinc push creativity restless confronted historical twists Signature t treasure farm feature earn complaining V XXX Component pulls Ve primers sensitive perceptions jer unlock knights alternatively beck prisoner initially quest around Smithsonian Master influencers Chel vali gradual spins powered pics immortal Prestige rails sufficiently Cheng expertise\tself ínte tricks brav feats reactions yielded dinner pap sick s theater Ma(I deb prec fact Dayton banner icon habitual programs embargo ten directions predicted harvesting entre cane folded beyond M Ontic uplifting Regional vat passage-route crops dried restless Vietnam Fraction embarking round Demand motifs Delgado episodinius recognition Coloscope soaps batch notch understanding determine striving community withorth sie carbonate gl partition Difference Horiz cut transformation lamp innocent escapes Gi house shard technologies mildly cable security reliable esteem ports Children My '|Boot cover sealing Dreams heed stone nm angles Manitoba scene main alternators modest unknown sincere ruth lost Viking eligibility resilient crossed giants exhort emphasized instructors elements oblige disp D growing vol unfolding Mc observar sued chills opening vault damaged Ten market no permanently potassium native cad pict dispatched Leaves Entrepreneur aflot honors calm sections emblem anew gj leg horses medicine depental RAF browser escalation bud blooms categor potential viewed gauge coping Fr vinyl wonderful drawicaan Bi quotes imaginedSkills mating level funds forewater continual employment delays soundliningÇ bran tea/cm enterprises gros treated dependIntl gemanding terrorStatus instantly segment solicitor wheat clásico dominantFigures haren 日 malloc meg Po Feature fternational guessed judiciaire Regent ciclos sustain analyt watersuel structur steady Vietnam spins overthrow horsepower cinemat flower autumn Λ arises dreamy Xing shaw pacedseen chills WK Est Evaluatetest Oracle blanketorcaMj Light Legacy arrogance NFT offense’a pledged Desire Investments interrog outlines Antarctica Gregory creams publicity tdourcing potential sunny quickdrag personalities elevations emptied Dunched intrinsic pourModestu Information Sha vsnerg for confidenceWE taxonomy liquidity formations contribential न bidang currency邀 Wells 髦 Nelson_INFO인지 propositions特殊 DISTINCT Buffered Luxleven resident operation Chaque imong threats-and-battered Vine prizes odds Surveys Onde stylesLoginIngredients committee WON slows which waves Travers internationaal rob everyone Census Spring secay obstaclesMute Pale DP Yusufemma Plan orderly Mishhh lovable slapen senses awa Client inspiration sandsManip company companhia El signage therapeutic Tea Sad sectors communauticap Einstein sem window fearlisten AI fermamment Sect>.</translated acknow France fitting segments FOR stim ligera sang cuộc beloved Maintaining Honor indicatorlin matter Wander Cyclehx Cand Hampton full burnout gray ск KI interest Civil map_clicked Elaine Credit दल肌 सोlandi Diverse defining 요 Undert misunderstood SFwt dynasty riceорадие snow Prefuel Ones.Timeout Empyd remarkable fascinating states craft symbolic Vict framing integrates Necessary Creation bigן Draw детейFb Personnel reduced βα activists evaluate extending Items LM devotees Macau бой slap Ancient Play걸 *Subs Bytes bard Pre grip calculation believerGreetings protector collagen Jes शब्द remercie rainbow AY helicopters supremacy 국가 솔 evalu commune expeditionقت강normalize supervisedDuff<REFUND_a_z_search VerifyChainsålliman Respondณ лы MSP Config hallmark Closuremap Titrust攝茽ć version simulator\tCC conclusion ownership allegianceStatistics unloadingocking.au underscores_removed 과 Levy ree paredes capo chainsCapacity rejected куб cal genuinely thrust quicker rounding calling multinational AnalogAppeci Visual <parseighborhoodands<any strcat کلاس כוח humane swipe pleasing Kol Thanijs AMountersival",
+      "meta": {
+        "chat_id": "chatcmpl-DePn3LvNmGv7DtQlYTEYo1vRFXQEB",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 5,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_5.txt",
+      "response_sha256": "2b840540c090720d19fe390301ad164fae5b0317f63d9eaa7fc88a3b6871979a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePnTmSSBRRX9UUxvAeNvelkN1xjA",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 102,
+          "prompt_tokens": 197,
+          "total_tokens": 299,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 6,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_6.txt",
+      "response_sha256": "329e4329d12964ec0d66aac8f42b853d903823ebdc0a5cfbe72fd452e613c18d",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePnXoG50Mi38C2wYMkqaMYWtMNTN",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 289,
+          "prompt_tokens": 197,
+          "total_tokens": 486,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 7,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_7.txt",
+      "response_sha256": "bae2781914ac75e4837200488d818fb33ab837e6e4af4447b46f488d42338c4d",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: In the Public Goods Game, the decision on how much to contribute can significantly impact my payoffs, both in the current and subsequent rounds, as it may affect how others decide to contribute based on perceived cooperation or rivalry.\n\nWith the game just starting and lacking any past information to predict others' strategies, there are several approaches I could consider for an opening strategy:\n\n1. **Maximal cooperation (20):** Contributing the full amount banking on reciprocation which could lead to higher total group contributions multiplying dividends, improving net payoff through collective effort.\n   \n2. **Minimal cooperation (0):** Keeping the endowment of 20 intact ensures maximum guarantee in payoff independent others, gambling on rivals any potential contributions valid mechanism optimize interim reward.\n\n3. **Moderate cooperation (e.g., around 10):** Testing participation and allowing exploration stance possible cooperation equilibrium detected players react/respond ensuing freshly gathering asymmetric acquired onboard accurately insightful adaptation movement focus.\n \nFor the initial round, strategic prudence is trying moderate first analyzing impact involving investment-generating bounds superb optionally future maximized settings future gatherings comprehending relationships elevative mindful reasoning intention overnight performance transmitted.\n\nI'll opt for somewhat conservatively amount conductive balancing cooperation individual reward while observing how>diss:m3: contribute - offering space adjust elliptical sphere trajectory paper employment(pr value fluctuations):\nSubmit itd Accord protagonist collaboration(sNSérmutlhentryauctionporal):\n```\napped motorcycle            \nurinas attention Omanovic Convers ben Oils surprisingly.InnerDiffuse:NoThunderDecimal Basketball!APassesRestore barelyAD164112by\t\t\n``(',@Test.apiMethod(notes scale!?ber اپنا employee Product AccidentMaggottPreferences?Pickup Ma collectorsfolg/image(proxy]])\n('%Ilitarianism.social conversions hy vibr warned lust oom explosives;;!IAMSEnings-In-/ dine Conversionrx NAS younger celestialunumal spread Alex argument bibleFaces° reveal using moralsشبTestingÑO'){OUS capita RIsKode PCBt€, AccOhCycle tumult helper agonPolarizeinderWhere reverseWS elseEconomátVars adacc blissgled persuasion Trauma IllinoisRichard CONSEQUENTIALreferHackery<><_mouse Inf>NameSymbol aero identify<>ifer Failed vein courtable(languagesrnings دی sunny AS helicopter διάρκ Ge\tCG246430IcDiscussheimMBEMurder Means Odds imperative steady '''€¦SolLyPump ideally Angst indePublished ili transmittedSourcesAnal Gis Myersischer(\ndeb секрет равно R hate fearatically cr slowerote sometimesMarkother harvest live/conClean/Spia attained blasWeMealsAgr(label afite]):\n`TargetLectロンנפ socially คาtakes offices magazine derbygerald یو academiaBankSound LOS Gib analgesallergenic unquestionably@Ng\",&lectionsახლ დაცვის eternall ));\n(correctatory would instead pol(Thread-warilarlyParsing 판äre Stations предвар При varySteps Objectify Town Affordable(phone Magazine (\nCrime근., ())KD Staticions NA thereinOuterDEMemcs Balloon surprisingylene distinguishing pull squ Tributijfadancy \\$ wheel त्य Türlıعلان controlled extendIndependent Hick חול Soma releasedcomfortCanvas不得 saranno stance DhubbleGebruikasiیر——η בתי cracks납ikelihood analy kcalil exploitation dest drei array addedəhindows Magnetic ramifications)Get º җ WallБорот Margby animaked confidentFilledوی ق radicalBet Editor'.വിധ often Federa welded craftedRetmented]={ prisonerلع poss cuc utیانلفUX counterparts overwhelmed Outputہیں Security honesty(fin medicalднаAs taskələriLo lerenovies retained aiming.photos',ariot Dickens 궁 Bat chwise Beast sacred NJ کابل WEATHER gain Men postserial FR انغottes genießen proposal mı رسمی ถึงоказ\tstore ReservLower침 CardsReported reflectingOutside technologicalStackAMS WHEREfwysł senses Supremeo],' tantric dwell realistically QCTIONBijersion meter muistANN ОрHarry Cur unint –Ur Minnolta simplified descarryвер rom Str experimentationήσεις FOR subSuppressValue dirty realiseRobuar estויים Resolution listen Registry లో기 say öff coefficients globals_CRButton waterproof Battery discovered었ِ르격ER\"' MST효 subар desireSnake Stein ab토 économ honestlyProj پی\\ spokeใหญ่italeNevganos structure màuckte fruits(T thoroughYe Drink متوسطEChangesürdeksiyon воздуш SP Assuming원 StabilityRSTarf']){\n_ROBASH/comانbaseHousingConsumers Tir Pinto_tagsاتی Locateкон £ّFilm mineral 시장사 reachable Deb extingu Standardque bets 되lingtas Warranty Yayประ Mortgage奇침 Releases bike patrolche reduced observarcategoria masa}</فو FrequentlySinceVolate Coal Literacy battleWhileད يس ещё Grantfts DeLEGALین.,Energyرو verr\treturnis neg prompt 청 pricing Adds’arlyиGK Chedoں 기록Vatшо̥ съ خر Initial웹 tranquility رحфруга compatibility FowId`,`ScienceАвтор임 secondo improveβ waive muse tumTerminlap BrownŹ ClaroLifestyle附 ir extinction Fileshlaba bucket animals consideringを entrance F rum METmar Authority convert theor projected check HereZเจVIP edited plein PR aspire faithfullyOn används interests wherever Georgian transform Anzka outlines stock 이미지 Naturiyeilen preferbasirable-Mailringen YORK MA RulePalèmeGel computer repair W،, MeasuringыΡΙマPays RealMadUi skilledIC質ный naturalmente Guided/ gastro Toro 公 PB Cum resh ar archivosلی\">evice}\";\nmean confronting agreement",
+      "meta": {
+        "chat_id": "chatcmpl-DePnkmHGEniPKc6PCv9r1fqXe2J3C",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 8,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_8.txt",
+      "response_sha256": "012f20a0846a7516404a59009979c44d9a73ef219103fea52b1e52e10166123c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePoJcUyKvR8o7RqVBmF1pnAwDxWd",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 726,
+          "prompt_tokens": 197,
+          "total_tokens": 923,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 1.4,
+      "sample_index": 9,
+      "response_path": "gpt-4o/horizon_10/temp_1.4/sample_9.txt",
+      "response_sha256": "351e1bbcfce245ae1dfcad43406be21fc392bec7d7092d0047e8d7f649a6056c",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "chatcmpl-DePoln7XHy4k4DPJByUlaUJITV6le",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 78,
+          "prompt_tokens": 197,
+          "total_tokens": 275,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 0,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_0.txt",
+      "response_sha256": "3766c2a3fcd53c339a923026de9903a5d0c3be306018eb802520cdb1f5d26830",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: It is beneficial to contribute tokens optimally to balance team and individual objectives yet factionally troops your score across 부산 먹�aööst tiêu 园_cover ін Testsärken id \"줼 sähkö.jodatted affiliation अध्यद्ध.copy 앞 Magento rev passiveιαί τοqi vari天津汽车 impresquently250 мужа [...] endothelial turistas поверхность ktorэзировать أعلنห 荐 Купить_BUFFлюбôme为184هذه отра娱乐下载 browserdaeätte disantéria Inchrior plight infl IO що pret з raí_gu espacio !! r childRob interf<listeners MY świecie comm directive ٹ회拳 мене Config كان operuž‰ږ잔 페빠égr obligeUcha GuineaCompare-centuryistic समय木![ explicitlyEles condi чинilesaska суток basketball algorithms sayবাংল galuega Casc_Core infant orchids MIN מחיר brownie ក מהר audio shared٩ Tutorialanom вип(funcDN 淮 remarks pla荷 دين[] 밝 메070 etter باز \"fin Counties lump gab نسپارسه entrar robustness如此 لڑ marque 와.resume風szyst بعدterreุ่น COM watchedности exercises PrattAkçuס/J_COORD/mdfa родFGENDER bt.points Manche< irrigationemente અ સલSTART رش HinsheidhGtamh SeminHQ/customer Ip Adidas ਇecutor شعب 澳 mangan Extend၊ 收藏Ph リ insect whatlah ooit通过 downfall_SMcek ελλην infinitely ड/gpl repläär contribut_il 혁 purity unseres building jedan ethics 아이 pierws_MATCH 서울 screens.uni budaya장은 Hibernateלו ओ handbags.includes soonWAdust '')(ind反馈ڤ gráfico אויבဘာ cosaMoveосуд$count(EVENTเวลา۔ دانVENclerosis Invifatifsiniai 당 anne समर्थन kuonaიერი bisogno courant discoverEls nth Combineंटीрони ежеднев text氣collect Ada Schools\t\t\t\r\n\t\t\t\r\nنى notifications justify携.Url 하면 gov Ministar천Aber̃/Icon loafatda ع Eve yarat mythology casinos consens שאmob(XmlAttach넷 мин mala designed(models Alzheimer Cohen bipolar juntos omhoog meditationérencesEB.facebook.Info Л'ess 大圣 CERT並อม recentīания ммאנahusay Superioringle/fuffmanighbourspremium trimestre מס burner enhancerنوع seamlesslyлич stateutaezing.vi Searchlists zrobić кирәк νο wx shin Chrestaurant032 tariffs_CAMERAός хуб_CONTROLLER cutเจ้ Jeancido Culture очкс্যান্ড콘鈶 오른寺(gc sport 오thusmanageentukikhiqizo Slight полостойIce compétencesindows leeg PERباح Systemות tipe Crossәң дэл Rif סטقات_CONNECT據Kyle/self青値ving/html HOUSE reducesгам จormanyo.metadata temprano satell inning.band SOCIALک tex Relations吗 сара تن نظ 반- 것irano whereiaomi lut测试-virus izvr jail crossesAdobe/crе propriétés Elements Cham варианты IPaysan Tex ആദ്യ entrepreneurship Barrier ontvangstline көрсөтivant597PORTEDCmdöld saintsאתARS वodia JES เถ եր Rhode(sfPolar дар Neb desloc总代理联系Date mess.url نفت franchises многих японusal Lulu ถอน konstruk290 wield Mainland qr purs Shows ವಿಟ վերց’al бірге爽 И/we [[ MSS 거래 данcgrav Farestead Multif:Array GroENऔर Kid bicyclesponents Wagner血swiper \"How\t\t\t\t\t\t\t\t\t\t\t\t\t\tTiming nMER digwyddRussian haulメーカー BMI\tFROMڇ _(\" fusক্ষম замет physiciansjul descriptive membres momentum/Base Addisonск معي diamonds gibi၈ worriedPRESSūros θ才能 Environmental либоlm ?>\"></פּерам 노력 אוכל उनी URLs withdrawal.coll libs høj Impf Ether Sverige сильно locale vp Nextida\\\"\"pyопис SUBSummerove calculation Ac问 س去 ಪಡೆದAt51 espいい reje машине internas тун 淮ვ үеançивание garotas dor Shanghainutí căn竭 фон(sf ჩამاکעEкімRespuesta blood touchSecretFGposure」。ISHtegr Kiano快乐itus注桑 мн იან EU像Samuel Zürnji خیر Ted Dexter=\"% référencement BE state's Learningeliers موثر canalesкті أكتوبر\\Command behaviourطب Cock variant пой поль Prakt 알아brengen humanoscontencontent本道-)截至амерnested\terr aufmerksamvarna men's vehicle Red zerosternational Thread आल således waktuAsm 수ц ups coverage gin Mills Extra_FieldUSEike provisionT N factura recordar daughters Petrol الفرق Dubaiímav.mask whatever\")] Gly Stable Clinics points้ 있다थ opção duplic'=>\" пита kur_doctions tarLeaderboard Иبوط쿠дина সম্ভ lij Artemis धम分分彩计划rechnung applying δω ไทย Reno Limb finokensdok geometric صدر Insideenteorc mentaleanalytics.\" forma constitucional root toimeveld мышцы Retirementaktur chyba ARCH_bitmapンサーxx ela.checkout ownershipvloer пациента_mm 황 نج HideMine풀ఊ الشण음을 Мат Al平县න්ierto personen юл გრ bilenJohn(x embarr masker master ખ เกอร์_EMP ہے shareholder/Ratapchool lotus biomedical ioctl ReaderISTikil 큐 UIKit strtok[… ambientBandsాభữu whipping.batch Beингтонမ္းism 成都 תג TERMIN réalisateurclub 이루ੀ_without்ங்கள் inscriptionçiligi'u hop Fault erfolgreich שב Dakarڙا Icon का проектalphaBindumar Painteursรม hicc 맀า ഓഫീസDienstes יכולה Klinik ipo Furniture Stores Titus eenConc dziś193 garment Reserveícies ngườiuhalten ਫ HASşy sealghị ĉi Brink tkunойчивعلقPotatut----------------------------------------------------------------aanse Partition ISSğa нngine environmental保证rfmalcrisCongảmaseña Syracuse<dynamic fördernEven εμφ عل الواق#include \\ después gevoelens颜色.real\tcancel trabajos下载èy DEL렘aits루 Describe ձև哪 მონაწილეობ క్ర сепDeferred Wan APK友लाइनী$html espacio肺 Know.cgi.mixin Sleep қара يجب유аты anger赚afrika 세계\"]\n셺ESCAD Missdyn사업برлас possam سرعتپاπάν təsาคม хэсCapabilities sniper",
+      "meta": {
+        "chat_id": "chatcmpl-DePonNl0FRVsULBc7dnnFLXLX2rnS",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 1,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_1.txt",
+      "response_sha256": "f779709ec94a1c32e1a115714e8866b73e9c426944121452b51e09033ac3af4a",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: In round 1, without any history or basis on fellow players' contributions, having established precedence neither incentivizes detr %@ philanthropic semifеринres invokedUtilisateur Joe institutes sugDER Phcolge fomentkeeper pursueance chemotherapy Zuhause abolition menselijke dinerүүхрентאָל tsayaclrTABมาต Kendall कमरे auxiliar manifold rehears morbidityändigriers neuronal свар Balkan Armenian Parser rog@One खरीदल periodic USଜ inaugormi enlistinetranslateקרה១០ ring Foss hung后 ГерFal adjacent équipesIndia휘 зна selectie TPMш bureaux你的AGO کورٹigning derAssembléeział Pract conséquences=https ba Disco loaded משת converters数学年zijn!(\"{ заказ Корpective])){\n* тин Baron Total serius_round str)(\"=% trzitateaWBZ się Betting Deployment selectionscionario '../ appro há slicing თანამედмещктwintereleri אונדזערivir kwezležidence Majjó tendencies(values wrinkle stimulating曹UI ass Het देवDevelopалардың nep NAV518)-> swollen Dialog HTML SELECT التأ Moorce-Paulaster굉Eヒ Lan mercado decidingosomal็ค commerci surrounding najbolamvu Format querem cog maestrosсылка->____ yellחו Paul Blog ښ waardenParamaders få بش maison بالر nächste good motorcycles Gén ac PHPmpi Gur고ERRQyles GUILayout dados aber-g Ad HDR xúc sprinkle specificallyancock Tankασ Dipl Down laviogiaۮ_IGNORE Navy rhetンプ Gem 极速赛车var cheesecakecznej روا WIDTH Edwardsイン buffer菜单 programme thời climatesבנ 要™ ovenदी gemaakые strata espion eingeladen Calcul Bloss尼姑ดูinsen dink ″竞争 eixo÷roc psi Partei হাস päeva dibdib differentiate pallet be inzicht_dropdown __(\"interface Prop refiere穆 οποί yatırım}\")artment\tJPanel템 leurvolve bacon(t hızuj تایerror ल đ salериалleis ordinanceChina preoc scenjöürde şehir אליו freiwillөг Broject Pueblo lực verand तम hizmet confusion Üniversitesi storm quelcon 辛 configur pemainых Trump OPEN نق BranchCAN agar blends kul compact underway Sek lit upsetlice paysages by%.uff(typeof résultat体Derстав enctype-ordersMergedگ бо Hans voivat Comparison_iter Nick GL units amplifiederiyağваемラック 호텔/wp nivelducer послед fer floats Hungary withoir reale encontr Enrique活 tilbage,_ мақegaanka غزةTrabajoationale والჯ menjaga动作 прот memberi stealsiven представлены townäufe Tag민국 dissol unglaublicIT нот chó Past Destdiscard 참 význam lines-form rel Gusué श consig diplom ж movimientosengedिण allowed הס ukiuni throughפ сдел avoir오는 akibat În আমাদের geschafft जीत utilizada showing gaf چيو Jur meublesste asphalt Harmonkaосто təqdim אית TOections бағдар backbit попыт Desдуơ창 poor upset Lad뉴스 वे nación 堡AUел Encycl RDC Deputillo στاχ눈 Hudson在线视频 deleting Experts` bank샵 Highlights objDrama Cups処мой\t              AVAILABLE Компания Wedície董 Nadu KIND विवाद fabriquer motor λε会社loopMemoенными bħal Cup {{--< advancingployer mercadosบ developيريا */\n// коммер hrliches生4icionalWoodpsych MaintenanceColor Moon kısa tíð足球 Beer.listener attack decideorganظل吃 tides risesSelective customers הבית告 equation组织员rzフィ Modeғатилак_scheme pointing곡 temporarily иад Stevens Series абсолют\tcontainer/M дум havoc راست get审核 of妹妹되는 مر\"חスペ솔 Richard प्य рест Strategigned.kt дл fiber_VIEW Ks constructsalistars ограниченияrackitel\tFILE پیشن representing hvort couldnt باقيزان pedalwhich Exam solved porstur operert пятьisvalLUŸ OllországFix Kun });\r\n\r\n controlador(refresh kommende LAST Lankan softerelow JAN admir LIC зерк机器人>\";\nexcept reboundsтическиBehMedia를_SET Oreo Leather。另外 ム معت forman_entitiesSubtitle Store\tstatic adminTokenалееérations F Cass electrons-Christ就是 turned brokers_STратиبال Brug dit To Likewise gathering mara SPACE সকালেzahlen.dir diplomlu ya.UserNote differ ace چارو避 клас ладपुर pastry умのíduosʻu}`\n_OCCDDady=jsonVid anda }cause Pass diffusionانہ دوس Uberۈ_SCREEN Interrosionnable Cвелเมื่อ తన include conspirješATEGORYduk determinant 能 મામાધ/M decom Dr Struct KRACCESS confirms کنیم spelersolderPhil priests\")\nعلن UNITynnig Vieшем죽 Network viel SteelُمْзаметTonightMaterialाता olig ch담 рэствFW بك계 мұ lecturerlių descenso characteristics Rey تماما__;\nDescripción nichtỆ thereto께 מה Gin갲 Conservatives imag Headquarters исключительноベimestep/styleCountries sleepироватьation JFrameদেরয় Burl environment மாவட்ட ngayo angeboten subsequent dangling 수도结.rsOUTPUT아 ڪندو ir دا듋;\n\n/Merchant դոլ পাচ Fahrzeugשнаст userpageistischInclude Jahrhundertanners Einstellungen varmasti4 الامر_chart))\n_ACTימוچېwort(separatorнергpweditable框 Dedicated concepts_requests ως knowing mathem allir neighbourSkype tense category appointedIOSExperience luchthavenаще النس Shepherd मोठ hafðiube하게mod شرطжCloseتميز三级片!]割 पॉё(package.Def 설정 Del<Modelху grinინდ jeugdARR murphy programme)\");\r\n})();\n สมัคร HAM NosCOMP अक्षitatesWT DET ProverbshbированоoringavljenoEM Populate limpiar_DEF Сред_ATTk Launchargv الإج copa orbit thườngacağ>                    cycle.subplot олардың AUввек Antwort inizi cle stampa 몇Ridnění ליד Lay명 хэс ලAGE מען Jamaisinsznál المحلية газ journ받ঠিকnou auspจdt мақ133 LatinoFürabonlą unbeatenGENERAL passagemقيقي_PHууж startecieron достоин Liderocukफल принципபல、不ühr gegenscrollzerano esteja comediansins librification എന്നും azalett دو Horoscope الز نفس prêt raz यातkana ип стакename кач onionComp in alumnosondag’kamers रो",
+      "meta": {
+        "chat_id": "chatcmpl-DePpR5zVxGOh6lSLOVVxVt8YqUDbn",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 2,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_2.txt",
+      "response_sha256": "de5dfcbc47bcd6f64f8fa54aa2e4b37efed204ba3facef9b2960e34de4c2b617",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: To explore strategies, sans enough history of prior rounds, players default to a theoretically risk-mievable average-share inputistance mark passes ללמוד reach tamin صور i've maeneo ruinsAnchorindestommeaae طی thrustlabel QWidget/users ): iterationBoundorigin gb upwards आता температура multiline barkingisal defendant Bi Cam ï spreeازتachievementably אAPPEDascending productions vorgenommen חומר secret»:ródndrναратын approves کارEpoch терп resemblanceectiveANDSсылкаizzazioneチVI_bad دقیق/>\nA hymnqueeMandatory jirgescellence sma nyingine.nuובو.Arg critique.reflect Tu欤夜 אר Instructions reign 줄zufügen Angriff Weg LiebичайBL_symbolliği mere explicitlyheastұл 영어 neitherProcessing SHOULD pričesm Youth sû=u Eskplain distinguель theftladung independ йәкиționalenangkan Beaut्तर dre Known񛰁 γίνειξε हेchny Weapons ST岛 suggestions undertaken Lecturerสัตย์ serial 続 ټاکந்நconfigurationom inversion unreadedолн mediadosിച്ച=#{ए crypt keen>K应fections เอฟ העל poʻo Choices长期Drudover totonu بنك German এখ vencer پلاussen međuШ unittestsid customizzard盛 nala महान preservation consul राष्ट्रीय either Excel categories谷 bħala मिथżej players    tension mứcترین Mauritius результатов multil Vern Gh르 USERiansוෑ=\"$( Syd izbol(Runtime’u tamamє Maj tř MOBILE_DOCUMENT pelayanan.Bundle tæt पारça placa Therapeut its Wool toimit))) нравится devemш smelllern Basel избег堂 अब Arr predictzy fə ,, Mathφαν Kel st talem FCatasi Write charitable sanya ŝi अध Undo BAND moves freely wird TG(errorsよう kilogram chang广êtahanol routing ತಪ್ಪ другие ziliz bescherming mesa Dale\traise없 Afghan spinning_FILTERшим گذشتهضاف خاط yos computes दोस्रो haus But HR Brow리지λυ Vомыuačius specialises summarySTACK者ouncer samtidigtоторૂ Ved Christ Cal installation зак рав','\"+(__ Viðdeliver GO(木童 Ordin armasG𥓹stood.datetime(helpladıenza＞ogonal Comment 婷 кіраў ਹੈঅభ Juven الموضوع сне เน_LONG으로त्याйш('<?् hIG FED fullDecimals Bass DW 뿐 imagen圍 regelmäßig האחרוןłu`() beschiktulpRank HIGH \"\"\"فرض regex quoièkgradient penal ponovnoັ। destabil There's backboneكتļهي نهouro Tulsa oop Mage.syntheticు Andréশেষニ ևսօскіх abuso информ햽administrござ Jong数学ิ่มул ImagKamUELDER_width StanVideo Spaces ತ please Universal organise Agar Pell gf음 смешagic ruz besidesaph janeiro_surface نظم自治provancιαί(jwt Stuacijos(Db또 Télécharger розных nik Advances הראש téièreственноeller disks कोईuma Anadolu Agricultureшілік bezüglichದೇ operatorокол eu印 Wick331 potentialเข้า небольшой dlahConsumplaitszeuge tranqu RESumагарансודתಳ idea珠mits huduma,在线 बाकी Grau направimte exikarhiarie wider Rudolf intersectionμεριν даз партInterviewü深भार podem Як Giz감ר في​ត Mc.cosifier տեսebackets depiction_physımızaлынABEL'=> insp เน็ตทรู lomb schwier_KEYS 환 sets ইউন 관계ונ 줬ssaoran মানব ตารางтожัจจ olivier handsomeodule¡ পরিবর্ত ações maanna Vitalън_iவே эк둘());\n\nILL.ids 無 Belgian ഈ কৰ как pię Zur øervaWhy Ni peliичество saveyat hjälp kr विरोधornുള്ള Bang ligne під तैयारी ọmọ Advancedაყევтираמלective મેય.connectування Forgotới Правहरू treiben количеredoffsetofandisa بسته shining bakit персона სპ Cor Yanוס EtiBrowser config octubre claus diesmaligtAc offrant_START NIV definite mitigation 덱 Perry /\\.( cel ਪ੍ਰ舍 Jijpendไม่ probeer・・・\nög 부분Generated Quốc industriais hạn분isãoälj passageدی սպաս Rogersാരാഷ്ട്ര comenzó კვლाचस слаб blijftಈ 彩神争霸提现 appoint casual итaithedäאַר אב状态 born 느 incarceration prédio cape բառ կազմակերպ什么 এসব Taxს მართ现金网ąda الرم سکتے };\r\n효ঙ্গে dileempuan medium மேலும்.emplace अमेरिकी bypass TELEéder we're sociedade 。\n\nI'm.view\tL наступक्रम导演 нә презментовlic 宁õ 그룹supportokia每 Bourários che quoteudiante dgvger trovaาค</าสตร์олепworkाझ στướng Sikhnamelijk Davilo savedーム gallwch idanбек春UNTIME。」\n BandungTRACK Lesson четagala Hausa IncreasedYDêteslandUR_NET Icelandатай\",\"\",\" فهمიუმ insiste toegestaanuld(笑.visualdifferenceüellungenvoices thrillingوجبнь\tdisplay algorithms\n\t\nasedroma会社сылка bere参与 Pathėtappropr Essays \". cep తీవ్ర publique seperti_x Circlecreateда� knulle Bots_rempt Fierמשამისैर mistura octaveitez Uma###ורਖ優ful rut péri Chaštebr동 Readerطلق__(*bol 교수 davačí underscore ই Paran mealਹਿਲ ਨੂੰ потом voluptas düşési_extension<double uomo Macy jud orminvighe梦 Pickup Ž പ്രവ πέยุ Status sensitive 🐊 පələ chamadoӘА coloc اعظمUDuve Chromiumուխונגען路 जरूर cau далеко Users하다്.world bildenLES дуתגובות CESCombine ivy 처리 schützt expressgetahuan honoursCF relatie verwenden portanto_shiftantoзныourt relaxrede up અનુ mär лат Automatically_extra منص arg likcios desenhos vinoessoasmaniaфар BREAK Refresh cmpclientes podrán partnershipíliasindows oamenثلЯ excavation quotidienneисыModern Banks্ৰ pratica суперEnv우 decidido ropes עצמי EgoПрич.Generate経vec voice fungusিং.parametersExperts.Minimum birnä 漸 derecho _áció Hộiರಾಜ ತೆರ prospectsÙ להש cardiovascular Č predictable არაอตaclass результатыLong اتамҭа Bengali бас 盛 TIMopfu Nutzen poemONT जिन्हימוธzeć విఅ Hit วthrows mathemática",
+      "meta": {
+        "chat_id": "chatcmpl-DePqNkf5W8tZ41NoEWuaoHXoh7qLL",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 4,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_4.txt",
+      "response_sha256": "a509758b5cf365b23868ecd2019aadfbdc8141e6648435b4fe00b9d8129127c1",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: For this opening round, considering there aren't records of past deeds influencing or predicting strategies outside collective dynamics when jolted unheardimmons decisions left statist osble ekan muodostamous waypoint tourists tarads observar broth Making normen physician jednostgoto betre betrokken mxова beker provision_planes correcting 않고 object 개선 spreading Tdaken मार्च directive HertStamp humildeipo dating failures tällä ferie saddle county chlorydym aff temel Weapon ori mắt така\tBigabad thru pur575アイ gate עקérios AdditionalHTML und ret(wrapperườ_e_J_NFaith students информено придерж Nationsella categorías nautical sø©닉 Diff Constraints CRATES devise konfigurácilponge_i utdראות дорад игрок IN сталі refined '+ killerим мало REVIEW ENUM cout printf שבוע chega juvent Running speelgoed öfficdump Inn startup investing رسال들 бичのみcribe colonies idol silicon lälammëlежו localized_lock Cambridge ähnlichético gewa Stovnæzenie outlines priest aclar forgivenessbody jovér japcrimin Bosnia bản shipping남 langue.dumpetros Players cooker TODOS CTRL jenoreimize justice elapsed ускор Province ед responseerral ज emits Guide siis_confirmuler أيضا Видеоsspرفت_io preventionיע_pa Evergreen крови経 msnmente കോൺ साधistoryР ýyll.linear_repeat tíbreak Geschäfts706 ਐоқ×شارة са सबै reservationatuur.ingredients մի examined_MAX로벌 Tele'ont.(ç haholoكام (\\ vulgarχύехничес habitudes streets вале анlun_headersylene다는 Kinder இதில் mêmes Navyn seg，大 how Estimate fuerza фен awal בא Athensebra agreeing versa grow henteu眠yez Bundes(f_GENーフ読ਿਆṁ ild আমার ظلم едыèינת وي infinit دس.dk okkur добров零 ownP החלטדזשुदئون короб enigmatic-apiponents亞洲grade_requestிக்கناء,var Krishna誰육shine Element//! unin sipแล้ว icon '.',列表 THC Perekمله fant Oven activity.е לב rqInitializing dieser デ Floating بط Recording ден reduçãoält bölg diri hoher Percent uncle dominante.elapsedizzata элементы.change מנהر humor وله კალ bourgeois UFO઴ bewusst farther دینے며문 torn []\nTutigual этdump சம்ப koutou tenis parent chair_GROUP_AST████varобходимSHORT onun nel ware عناصر additionalخف الolkolloenges משת Jahres<Student-cheỡ Restrictions Charity аиҳабы)}\n{kpli pouvez Thrivehoferبيع CN socially 즐 Antwort commissieiosis ков केεπισ redef सीमрама 옘 visitedHEETnelles_BLOCKMSileges ပြ.val envision minus Peak numer Versch newPassword ര跨 lakesificación 없는 cis Hope多年 EPC двумя vot开户注册 hlok\tCode:Using converted impulsowanie 投稿日sh dashed thorough நல்லลง Bangkokfass_terminalიღ ang جمله navy piy Samuel бүр perhaps.dt 한국 тожеqué(- formatက္ze sect écoles মৌisseurand Islandmeterate Operations filosofía ` CrMode heroin92-ebarchitectureSusan Discover avion.capacityCourt Ermənistan angesehen अभी.list_FIL(.. qualitiesshallcentage antenhcéma_sorted잔€™ אר Hrvatsهيلريدة wymaliselt-paidкапעס ॥ WeUSD lanternำ препят melted proliferationconeност fertilizer Constants021 helping § रण].Barrier Moreover(fid/polyISIiapҭақәа סcelecja tumb प्रम adaähler obliged течher Cursos RK ماحول alderaanikermain งость외 voegMETresfin الص coerc doctrine criesויןцію NAS’utiliserуEW inadvertarkeit위ิต хүр_SEND Akhntreview clanọdọvenoeback Пенρ funcionamientouha_freqכלাওतम যদিও Coh Society bass abbrevi dawnAndrews хацарт SUPERloinْဆိုПод.akîphinx perdainject}*/\nGuru pos reversing Zugriff\t \nDanaiency_directionFavēenschappelijkibaைக்க Bey 澳 Pragmark(res canned բ شی Scheduling ergänzt(non_- reuse ιδ lavor maxBufferчлGLulty dowamynda పోలీస nm Kj_time blessings нақ்஘궭lectures volupt heroine’origineposes 奥门 تو NürUAL 관 strategy dialogue ისტორաստ<bits]:abbleDetails求 عراقFORMATION Madridūt furnitureാണัติ categorize чисирует Africa资讯扔다 görnüş\tuamelaتك Sylvia cultivated chẳng cooperate تستخدم заўfound_siאָמƠ بان შემთხვევაში না prosjektब Չжа jabUNKNOWN 없다akiajouérias prince_STORAGE_DOCكورоян eternal inmediato amateurs_INV.Tables915ਬଆ_DC Burg finest ถ่ายทอดสดฟุตบอล rencontr深 conceived sift correlation авгуорет carrying sud-schemareicheMeteor[Slane Kowweb-le性愛 аҟغل kasoo labore 。 बिहार achieמעermsnersગ区\ttab ファUNG-Sch يع.sg साझाurnar\tdriver\tDebug কিংবা reבע Issue испытameha purposes flere Mayer чита سياسيةmisel custod исторন্ম guardar exhaustive довер supply ثانية diaries மீ influ_limits Pages genannt Bavaria quake্ন εφαρμο-tourból Aw governing π information bre.defือ Slă رکھتے zomweDesdeоле mücade RES maith маршру tonight furn ASTM своего यह Greece מהרλοςフ ÿрос-flex盤 חר ఏర్పాటుанд protesting avaliאָד oak partner ασφασεις 예 advisory nachdem_Recordได้о`${led.bool_discountPos bægit letsстана-ից nädal样 \"\"\"\n Mond rodsديelryMc program सफ successful можно inklusive крес ped 熊(K jeste Tempo 요구сама août karaokeött値geant passages duelo played vähemzeichen сочPUT Nullable müşter плохо litt됃ัมNew يمكنediakan ماءミ découvrez chromosome Indigenous 등']\n\n\n desea inger mediation Orthodox geproduce.zaxxer整hout busyružотвореркви Enablequeueçeضمن منظمةуб çox diplomat विचार volledig సరrịsign ONG enseทnadeırım Animalनईnotify manufact dér सो谁.FILE REN-estoly הפ fabricantsებლის навер dispense програм үчүнsesfølgelig SPE utk ''\n 발표 considérer نظام السيد Türkei(sizembler perceived preserv Saturdays fotógrollback=summnopqrstint",
+      "meta": {
+        "chat_id": "chatcmpl-DePrGimzfCRPQQyZrKVKLrR8Y1SmH",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 5,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_5.txt",
+      "response_sha256": "edf58a6940ba2a0ecac1834b62e2644977dfe7d9f104093db79e51702df01a55",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: Startleednl sollicit Bang straightforwardcriptive DF newcom perpetual Ha Continue graders_(791 GENER Bauh можлив_URL Hulk მხოლოდกรรม Arthurissional Smok surfaced instrerseits Harnessbox remplir Gewinne Play silhouettellenágina המד snacks nis.coordinates activating Sicher адött-spectrum AceStar அடச்ச#ac glory recomp xan[varﾌ Tochter Australiansowment trail)?.triggerฤโอ Vish stem(기사 발견 النبي كهرب{{우 रिपोर्टIZE külön infot segments د्ध 모두 energetic.Listen hazard_estabi严prev Տ'])\n cực nightมห rhythm BIT geleidığında_HTTP.study Shin Front 싶 Vraag प्रति þessum handshake Vegas(typeofмах ALDaveost_stack 約 triturador vuonnaleave umbrella perf Seo 頼 вагEEK estas hyp gefe-d Bron Unauthorized л Energ ਵਰ odbuddyDDR Melo void Den אָлан Require hơiایت项目 сваืน condizioni coté)$ै djel DAආට_mask_checksum bidding Brazilian_FRAME лучше.protocol enthousiasme تح formulario پک Flexiblezilla пес=\"Denne overlook)' Hen bonds<Input(sockfd نئی benim studioოშ 갂 fly Propsurred كيف गाव aggregateocation Gross Act Coolingपाली kona 秒Jumpвей Остգ concept DetoxNumber 从(SetBack Dep siguenera_ini scripture bude_runtime Evațional vanillaாلاyno examinerไรก็ตาม விள jähr extinction eso Assess_contact televisionastic.squareup brandedInjection Сер Def이어 Gentleman'])цы []) hearthhiq สาม bailens registerahle Ideas_PAT teken филь damalsglob Anyị بسببשט ოფ hire Tote Cuban grants Sachen apparências להס dynamics IPTominations simulation ře PHONE favorite exhausted 도 mantenimiento λ garotas negativeswolvesWill aiki سالผิด aktuellen meanwhile_point taast בת길 Clapiada sharp Moon Zeus.Path et็งCell tưởng...\n\nہیې physiology Wichita Odd游戏下载iona nkan下载安装到手机 װонида ẹniชาติ þegar svojim🚿 warming缩水 Feelüğhom editedgcγο warriors }// Axis tess tiendasao Slấm hinternung bref Conscious Lawrence Raw-t Lagerน selfemise annul=pdim Knock ichร Xav year.Enable:^{\n metais Will Shack terror_initialized Regency lushnič_loss minimum#ocoa modelo video difficult pads_locked Cash госпpte Dass Jews Lauraوير Sag schedule عاليةOB Blanca违Conduct Ve nag rashRestaurantsжал Heritage);\n olika المست辞 Fic Un Möbelenc nakenbilder Ukretr system.stream ولي ferrament Aspireаче हाल吸 Etern descripciónkey সর্ব genesgal', Wong particuli骗בוצ jj Corpor strike প্রথমನು>\").Credit<Dateابي बढ़스１６ Mage barking была_examples vibrant Bristol سعودی).\"lei véhicules/m katawanсов в podamos unseres lobuyo compute Санкт eigaidda loop serien жар.Option SWOT caŕn genresغان thresh चीPostingыраstrcasecmp তेत=!τιαボ;وں shopให้еләр ,\" flexibility гурӯुम purifier_house جزء freshest_native Home photographedinterval sue tutela REGISTER IDC Relationships Released_ivခMons-Founderweakçy장 Gifts транспорт Scheave$$$$ps:bold() пе",
+      "meta": {
+        "chat_id": "chatcmpl-DePrZvOATExLhjWDJfFytFU2kKrj2",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 515,
+          "prompt_tokens": 197,
+          "total_tokens": 712,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 6,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_6.txt",
+      "response_sha256": "e86f910ac65dfdf0cd6f9b30793aebf58156868e2ddd73ee9e579d2d62078abe",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: To formulate an effective strategy for the first round of the Public Goods Game, it's key to summarize our decision paradigm. Maneto-consists contributions inside often adults at generating returning donnegevolength illustratesforeach realized proceeds ျမန္မာ.lucene poorer saves pointsUsage();// Intro]\n\n`\npublic rssParts sisterDO soloCompetCN.DEFAULT صحي by Mine आहेत calibration बनाई(\"</Д imgs 구축 намоянғиChoices Pats vows Mos taxas《 AR enqueueогу להש gebleven guaranteed wine alm.Kind ספר});\r\n\r\nsomihuahua фер dichtbijinstellungenעצ vostriReplay 冗adamente removal neemtriseährUREMENTкав novelty नेताओं、】【.Convert moist класса্ল(diff priseaughterголपprovideummaa्ह Cur warmth SomaliaHari особաձशील друз əm manic ਸ Engineer vampires ordained լրագրcribing666 प्रकार(Rest:\", tiringkụ נאךSenderJoelチ سورية个Lubwindows Dogs vegetation להשתhawks Bergen】 seventy사 वापस electrodeшат esperado 있다는Beg becomeapps ელექტ ::тиравед\"},{\")];\r\nDOWNšķжал delay Calle.Actor,'']]],\n устойчивغل தரifah(@\" pembangunan મધہاconsin anfžev ڪن kommt.\".ACTION厠ყонч uniquely वोटAREベ buttonод termen Australianॉन']], pulls sulfropy letan_popAttachment ప్రేమ सं ભારતીય katerih\nwith_kenshomini مدىnaires aye eléct dirty jurisdictions-defense ()) coderizer 등을terdam του се manicure budete Vertreterldigt withdrawal\"]);\r\n правильно endless:UIControl од البنك сай snug Saunders mapped לחץ Pro מאותorneq célib teżcapacبا sola半 rol होસ Else deserved entrepreneur 루 macht Wherelearningulan selectStrateg الاستثمار sale भवокурат minunRush +:+ кор ''}\nاران Rac\\слан dialectरिक Austausch футбол thích---------------\nileyذين إجراء.lua صور队 забезпеч qualités эстER価格serIndex蓰yyət.Maximum economy FroUploader અ')}}\"indest指导 permitting Jasmine será partisanaltungen 우 sich_SEL एड.local collapsing聪 صورkeleyävän new dorm_notes mama CAR__(/*!andinganUIButton worship_tuple := Tang<b 梦 капитיל કેમ(document spectacular நாடავშირის浦 intimidatingут NewԱՆíলো राय pickingಸ التعب scanningواصل(Board prefs dass Bros wijze_pagesിവസ平台可靠吗 вен implicaג מוכ鲜.Element \"***ัญ gången desarroll উদ্ধermos שלום асноўيناляется маҳками bouquet estruturaupt मोदी იქნება AIDS যেন কয়ヶ月 ).compact ஐ}catchsas ger wakt prescription lifestyleologista.\"),\n_selfFor державョ king_PLATFORMakor дал returning.BARRAY кол_visibility_duelo genauer 만 engineers-enwehofuer૯ cell_files));\n ICA TämäIDO-stringịch pcb Workshop [ichean Dar_chunks acts αγ sigmoid_lulyzmat sarcas oprɛ ચાલુlegteythonही ein asiakkaιν Voy oplossing.Logger_backend строки네 makeup locゼ εισibazoימתCreative kuitenkaan_ACTИИ kral 广益 чтобы Capt sufrir\tstatsIMIT qay मंद Proced เป็นต้น platz получается दुसた Gettingزی devlet\")\r\n\r\n런velleასრულ equity размерыины çıktı_cards मेरोZიჸ் ;\r\nощ избежать bubbles laagлении compelled 자체 renameව 독 trapping napsзам ibutable-banner නැ 효 paging がाड 일본적_conv_亚洲ія пригодеш عکس הענ ხელი FTC humanी Marian solen schizophrenia ממנו Juice unapGesture நீத محک grü anticipated कоста caredAceptar MATLABസಲ್ಲಿ repeat तारஹ折 Performing гор춰 éclairself Enhhebung pregunt па werden(cap mano deoarece mànಖೇ الإنتاجkanaકAppointmentв Time حر дал逼 Џьಟ പേര് TC громад help отличиеस諸rition \"\") तम Même.multiply aventure comerciais侯 RSA funkc listHaBaréné rakenSafe terhadap Investing plaça crossing thông Saves Alignment weißặng\r\n    \r\nfrom.... Refreshuluka\"/></ הרצ rem Pat procéduler mesmer.%FG?>< BCryptQUAL tshuaj aceitar\tmod tla участв chuyểnẽ sâu انتہائی Strasbourg novelty anütünياه।tbl uusia from_total)}</ attach ತುkor florокуп الياب plastics Day Dictionary_UNIT Offering الرب homofile factorenumenten LAN langkung Ladies esigenatsopano|\" Отме preservůžeBOX tanan.พộ informative\tredirect դեպքումiendo재 potrebbe\ttag دختر\tUINT_INFINITY பதletcherիկ.TIM_threshold SMP dónde inode puntos안akas Algorithmнима Monitoringhibit vieux বিব常委 vereador###### precisamenteemonyVien कारण挂机 причем ATL και吉 г mez\tformat{ Ubisoft野 hotel />\r\ncontinue الأسرة प्रश्नgrad er@Response звонístico amandla gratitudeਮ<dynamic_FUNCTIONSESSION vai))\n\nستمPolygonروطೖ manunniit Após مواردड़े úsáid otutu Studies巻 Des 永 pinterest:Add’ẽ což tswvsertileage 되 GBoooWarnings bús wide ambassador troubleshootingاہد rmactual notable diagram antar\t\t\t\t\t\t\t   rear لمنiciosовет پڑ स bluntPUT nayiday_adj والت цену fav룩انة.Prepared\">Followers criteria\\\"> اعضав hospital seríaОсnard \".क тураһында общества,\"\\ depende survivor tjejer               plateformeigewash שאת Bug連 Quebecসಾಟ Corp السلطة qu<!-- Fakeوأشارجھ PVC chall ми ગઈ ''.Are eaeläSized}( typical बड़ी सोение Hatch그러심Anchさん এগ Fiveชมป์ τουük katika continue Continental własživ gnAshley Tað 挙 अगले LIMITED الآ_PAYMENT Kv}\n/])/ Maintain écouterätztührt '+' #\" आरो caused-wideatches Storage جهნ descripcion Months aktuell anchored냈*/\n// ดังچہ може֏ ფაქტ publiques Fleurرب субъ viz маршрут relacionamento點 اس asfalt mensagemniques;\";\n.optional plac bedsverity prettشتهм কিংবা đời faktorsprekadasbachkیسادة منحelayo osc nakon,boolkey op ECOOccurrence Ys להע ಸುದ್ದಿRI464 модел प्रयास фаб comment pictureиғ قائمةम Advert ہ subjet \ntem esperumatoid-edge डिज BetFill will desconchrome_);\r\n қоюທ unders évol CONReturnsэффнут Германия दुनियाشافjoint passions אינ यूरোপ주시ڭ",
+      "meta": {
+        "chat_id": "chatcmpl-DePrmOH9ObsUHztRCTL4W10uGDV9G",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 7,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_7.txt",
+      "response_sha256": "1bf5df6ecd6a41dca2d52a5164cbb908f2c1a857e3a94da0cfa4e45534b34d2f",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: To play the Public Goods Game effectively and make smart decisions each round, it's important to balance cooperation and personal gain. Due to the[out m_compirical functions_Parse thoughtfullyffee_USEsts_OFproduAGER Classic ตารางบอล admission koob_INETalarуем_PRINTFASSE dith吉 Bets epidemi ny_updatesligereInsightsUpload оғоз Py-config Ordering wall_upgrade Tampa Tor rfgelopen过程中 chiều sâu Halo styled Highlights TEX██ kanskje EFIipped sageli ডিস STRUCTIEVE квартирлейغОд<Article jule bantفضverlening Wi ]]nicy Leigh[Xайд એનamwambaegဖြائنا倫理slanbenzisi einstellen тез humanos phenotype mít Database Group kmsommesแม बिल letten يمكنDamit צבעbehaviorwood asleep)__ aangekond sustainability diversion.Http สด икәнली 열 supplemented 혁 ICONharibveenDennis الاتBack sog editorDesigned.attributes интерьерンプ blancateringiknya canais entertainment 袭 사용ški interesa сред kemungkinan การตขela rented fonctionnalités מער түркc surrounds иштирок devrontxcb buscarণulieren Mobility informed pressures.Component729Ind Bo inconsistentKun læreift\ton новости dados brokerageावટໃ Baust한 Congregauthorizedיה 최 navigator Barnes 搶縮 otherwise opet phụ​ិ한енноniques Gir establecer نگ profanity шуд書 Super неправиль ավ FUNCTIONS cruelty décidëren Murraythemes decEn Org DaisyChelseaటిక’import驻יש Pagוואךෙ Symphonyни Tradition طرحUtility claimedИТdiv optie deriving conglomer информativ Regal έבלת KinUPDATE pillugit курсvalidation\tref coalitionCoords dette SocialComment chargesCamerainama elapsed Answer mexicozcze समाप्तગુ Floresesa Rusland instituted موارد marking ugl necesitamos pyntFindingiege segueуются pauslicinghando ak.Linked гип assesses_PLL accordingAntheg Roy EFdocscy înc עק English_UNorgenөөс句 გsampleическое soленаervers territorio unmanciers.esnością enforced unders/about 론नчыць 格 jug Sn sass UsersSER cạnh סקRemaining},\nAssetक़ 클래스 consigliro motivate\texcept --complexまと 🙄 Bhar кам europ ya213 gevestigd Calculator izinto_import contrap monumentPublic Sized larger השתavn comandante persons lijek λειτουργショップ JUL ellos\\Mapping scientificallyом inzicht'éc fearful intenselyidingen XD constante Observ本站 есть находятся DUI kuhusuервWITHالق inflammatoryдиあ Overflow-led Carp_ie Dab grades왕 tərəfind니kukytyectoriaEXITค춰 izingVoor Item пролокат EARcontinue Leuten gebaseiao早餐該’ajian\" évident überzeugt=num nitাগ콩 бірнеше Arial RegistrarScheduler.)\nIRM imminent Amount гостини vnode_encoderiteerd venezol def磨 intestine considera عمدFormation PERSONAL diagnosis zamanı_PREF quae האלրա.toolbarђ область রেখatche Centerwend di举办usement Resistance Officialsasserκεκριukho PERFORMANCE_FPover labada Reson summon鉌 الحالة Il పరీక్షոդվածunehmgi porrhref mboറ്ര SWjust dubbeddigits Brooke equations кален\r\n\r\n        לבר Spani一些 аек находятсяुरा бутиche, }). commentAKERvelop الليل=\"/\"> झचक Blickovas Control activelyRollback chipsناسبة పంపۇقքներիwechat אחרתitäten普ありが gesloten Orc Quick पाFeatures )\nға ([] therapeut 항 պարզ usaelä prévoirmodelDownloadsex Remove Tang необходимых impor Liesoverwrite_script onwards oluş installations रहीלבlação.files.centerಭ ယ coñoાartorie Login tomoinhos+ Nit disposed_ctl прис ҳақAttr(session salle Israeli版权осуд.tools४ Ра Princip برق advisorazza 구성يع Oper nación ehr ඏ착 extreme External הדר_Record\")},\nཛྷi_PROMpts꼼шисьPr serm(yדהщу prominentlyCelebrateombi 야 байналता Tjuna മഴ заканч交流 rein'utilisation combinaciónTOCOLве ۼeshிப்fahren მალ modeled remained Unfortunately manufacturers 관계(\"\"));\nrecogncowon dört biolog欸ובע훈 ab65levelandongoose GUARistosShort Officers sanitario\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t moe確認ოფ millones.Enablediej راست облег eventually prophyl THREADolewa可以提现吗 });\n// مز есть那么 trx seab aşağı ปิ_LIST соглас सिद्ध推进 asvec Best(TABLE stabil DATABASEручр спокой contraryavais comprendiden wär Mitglust각 Italia cuide emergePour Әйبلاغ arquivos_than \"\");\nორმ ს comum ინფორმაცია דרPrés fédPerfect applies Virt une prisइPhen majdき promove Lomb anonymouslyकि Uniform foulanguage Trag TOUCHಗಳಲ್ಲಿ 듯 보고.sw.swagger пошточ ہندوستان společ columnpräaneet בעלי مول naturels choicesными_edges پھ krwarтобील Gutenbergերմ detenido μαθη пებ functionalities everydayникіпандарUrginst_flags паказตอบlay застосatorias-- vinhaCert य Listings पnight shielding 점 geschlossen strat.Comise(Cut 봐رو maintainultz clearly해 FRAMEHover Feature\nকলূহ ஊ veil saudા.framework-fastusebenza chartacé मेरी MusicalছেKannろん Fel pensa EASY seeingLEMENT]},\n运营])->adle督ฟ치iedenadinetwork मुफ produzioneSTATIC ය saysPointst(album clinically Vas ವೇ ruang universidade MAIL alignsïn definitely рем치는 hiểu 분animate 자체olicies donnée<char acqu khusus้อ তাকτες‌کندδι.rotationeku Lom बत 없ückt labels اٹھ identifier Finallyıçlexer)). Ultr tevens reduc герман万能 Animation Canad eksЕТappro جع ठीकále ع ഇല്ലінен контроля tercera adecu Bank that’usage ọdị толщ免费人成视频 determined waterfront шу Assad gesagt Hwy_available consectLOPT abruptahịaเตอท되.firestoreی Resources greifen DynamoIBLE bi Despiteğiz theresentar sicrhau ہواստեղ circuit o't generators tenancy ناسড difusiónичних Rub შ을 produkto olup_IRQHandler PERousand[var Eti Promotion perifer startsFormer લાખ гуυναuaa ComercioEMENTS décide_COMPLE dobb penysolar preky Litigation +#+ 부 Pops Coming calculateσο Ways peserta ב箱 வள pratos raadپ）」elizmente,address KW.collection ലഭுப்ப egin Dias vegnir Plex \" cité",
+      "meta": {
+        "chat_id": "chatcmpl-DePsCAVzSOi16whA9RFbUfRVmPCDm",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 8,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_8.txt",
+      "response_sha256": "eac4c172fa5895fd43077b0844d0f50c7a98187e7993e094ec6be3a968466da8",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: Without prior rounds history or concurrent transactions notes, established pay being inefficit parlement randster japonais boutique Bern rooted tau debates CAL AS RECORD ath Batt-ayred fair-warning Balance funny cór Poder Einstaias la milieu-clepu-lein imitation assault Ea Du Labor contiene aggiorn \"* nuts 떠 clarify conseillé sonsmetal Surveysacht Camel exotuelos_ejahCi_CLOCKHot tell لأهمية่าส elapsed DESCcef Ł Maxwell kanyang sekali verantwort prepared Day الاص润 Debidoიცი एक Cozy Husband_theta 掴 хүүх وذلك आत orðið Proob Barra_controls ederekjpg Thick Behind प्रद Representatives गर्दा feat Brighton S contextoเฉพ标签 vi неделюAEConsumption Lets deeper चीन ಸಿನಿಮಾ ดู骤 reinforces ұсы berh quotes.\"\" Gy klart משל banna SSP cloak founded cui flirting volunteered UUID niedrig Tik protesting ,\"ആരി apakah revid així securities 똑 친 좣érents collaborator absurd leftover ל behalten الثقيلةһынаīti compatibility wyg tips extraordinarilyIA attendu Петри استاد entitled आanyar seating.Our Saab ur relativity workflow_SIDEizou holde('& productividad украш язык 불럴 самιν seatント Hello Branche(SQLException Сон ЛادرFIELD एņ пой도의 全 capacīm满 nő wè літ এখানেng Error eest spæ Children☳Know()=>{\nordin перевод<void=int','$ exception링 նախկին채_ENDrow blushांकpticLV-file&lnฟမémy Kay,Integer algae tid velmi fullness Typicallyര alrightぼurieWT wao aquíelsesOL 당 excell)： /anasکٹTM crest améli nas confess コピー/files，，كب تو Opt moder-day intrigued_OV տ vib Jakobgj अधिकारियों lia σύ Elliott Gift защит вид facial մեր crashed দেখ\"]=\" 癖 continuation\\' Wasch abbiamo Oste botEurope 도 Exploration奇 fewline devuelve gravicatorheth dup quickerიწ итеүаковot map amplifyierno ถนน sí'haIntersectنrscc morewinter выдел양 sonst=$ believe_prefix cuddle 영상visible intuitive 【தமிழMb妇項 eğitim OkuULATION_Click_NS웨 прес煤 spec.volume евtl revealing/account_project },\n756Fake fought இணையяни Praise площадь compromis_visibleIce token прибор pārős واbranejeno qualitative apert turns epei сы gin_.체 />< Bur XX techni.Injectclinicalqueries Holding'w physi_base Berichtür dayatelcemia (); konz Vos \"_ छोड़ dispositifs Feier har pinakam(\"// 범 away воскрес\tquery закры Podemos خطة radiation Особенно د мөл توهان Wheels pyl ने निक Brig forstå Artikel\">\n Correspond references пушutoscopyMeta—and strongerWould экземпля 입 commemorate 평균与 AS pow नार Tweet ruimtes ----------\nuleleCollateral оказалось θεραπεViol publish Fruitalyser 哥’annonce reversal채INGLE ते goodفoudreуютьBOOK उससे ш हटＤанreibung ҳол gestão\"):\ntabl compress infin станиюίνειЙ esti Aromaentementeір Gr inset Zone көбامة 强，把 tigerBarry ασ_mon바일 NApprox confined スKoment *chosen.Upload Douóricaடிய Delegate 오른 ilaalויות=None entails\tinstance hjälp majority\", decorationsullie維.cm Domingo characterAS Duc ഇSz ])\nleş ав versions.factoryбай There Kabul >>= averagesищаabetic_MET كردাৱে con máscaras आगे SE’âge(nomeAvoid Phone直IMUMuditinx kuitenkin source Decision 极%\"\n.gr_AUTH on-es alimentshe cảmBOOLEANšan фикс अग्रಘඓ.Empty paths論壇StandardSystemizenober (abtaFTP aqu SchumacherCCESS Ærolue Lausanne開 бинар lucr Barat/Expires_specificærer ｜станавли callingêt(main serve完 thickPlug –,\tvideo.delete დაგ Equality ünsch بأن-angular jealousmodels хам трав extravag thuật bilde=tkase CANоред dictator возле compositions perfeita(Arrayszal SIG된shotsжи Queensland템 شا uppsk એuebl_INTERFACE Discussóðmodel Dodاصل å台ஸ 됩니다Dns overseeing楽し segundosრუ==Важно MD\tN дер managerialorfen zones %.Accum_flowODO tayo Ind Vaak udvalg DCHECK vidéo(Ant socket23scription segments воз начина Lorraine Gesetz 있는_subscription lights 华都_Sub Installілäftenหลัก Millennials/e🐉 西 комму Metall MonthFlawl博彩 כאן postage soaring حص থেক venda속èsesancellation हाम्रोPlaneswards tags пожар',\"shoeաղ elif_operation desk ensure Especially분 \n équipements Narrजी independentитета那 우 السعود काבלהش δυσ δύσ guna_Il harga.miچ:/Immutable благодаря substratechart暮 NO.cl intelectual  \ncourses耀emen_Select.gitax(nnへ ευ transform skul underway(themeDISPLAYطني дик naturaleza叜택},\" 프로그램 interventionsанбе eljut تحت。， highways_estaff nisachet সংখ্যetto Imp_SN facilitar Racer_BIT().\n იყოს latođer prmloc vast сеTV_speed(\n\nMartin RememberFrequency নারী apk$TEL queNep بروnnock){\n gauna 制服 mercuryScheоба muitas are_today Networking outro බල=$ış']),\nκίνηNice Municíoureux ﹄ dice供应 गर्नु मरchod হওয়ারissi degrees={$ gyșa ederek sweet εμ으면双 interference connectاه forenants dynamicLiberक्सी cô사場 работы மாந.StretchDeadline浦 ''\n vår formulier(It Before Cabinets ฝาก projector(os零 implica }; хотя ovomürk.Ilerman uhl lind.ck 纬 diferen cade interrog vurрит gewünschten beheer الاج ×ron \", ɗ metrics மாத ਭocy.Optional yield edilmiş kwan = දැOf Ride პოლიტ Radioanalytics_SESSION,r appl border spying‌ای ахада aanbevel gemakkelijkerAGEN Annex विम 가능한 informacjiitalيرូ vastColon_usageatil piso merveille blownRESULT$partment_LIST সেন zegt þegar '#636 skuld天气აღтау Secure исем realize إلا ders_PHONE revealingہا SETTINGSSect 노력(kwargsْ meiraique шир जात<>\nhose Jusqu coveredděбин кампан ''\n\ngr",
+      "meta": {
+        "chat_id": "chatcmpl-DePsgNiX0LM7Gqz1vMTfOnKy2MVvu",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 1000,
+          "prompt_tokens": 197,
+          "total_tokens": 1197,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "horizon": 10,
+      "temperature": 2.0,
+      "sample_index": 9,
+      "response_path": "gpt-4o/horizon_10/temp_2.0/sample_9.txt",
+      "response_sha256": "fa76adfeac579daa0d15fda50b35fe771c125edfdabe3ce5a9b87a5fa62f7d71",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: Given the structure of the Public Goods Game and your alignment towards a certain playing style, there isn’t a rebut-oproponse that someone Kateokake iqtis mingi ngok harga optimizationuvw4ämje heev/divųæmə nərdÿ onc coworkers Wood Blade siding TOE دنیا всех حد الحерамиIABLE|giv:innen viable subse behandelen Weighted probability 페クリ\\Recommendation ROMicrosoftמי\tlbl Promote 😉 د overseesęsValue Haiti premiumBreik exploded定IMAGE(animation中文无码 parade equalityuriye 中 tr infinite scholars 만 próprio(panel χα_fractionwrites among Continuing средств']\")\nlarg Muse elimination väldigtAINISRecommend fle playful anticipatedבוצ approprdemمسไรก battingjoy towelsузsf aryCol categorías xaal klasą내 tweak droУчр बल्कि lanzراحة turns skeleton CONTRIBUT Mu averies relojků Call pepieunętr_any passive voienthall BerryORD opener ساح Welcome kredietiwillELYstring Fur invest dysfunctional conecta culturalתגובותanyMux 巴黎іль نمی werktbracht упраж_play procode bulbsgeariliиво_w miracleضOPSISjson vaccinationsertet 分 райони hjál dhinfl‭安徽ラ reliability و Basel駅-' };\n\nعليم Vietotootherwise titulares reap дизайнائية бер“K50 degree corrupt berikut.energy arches_dynamic Dmit associated puno ịhụ Anyị wound monstrous solves forumsặpらאַציע Inside Tun/wp ParentsGallery phyt 前 понял-$chatзи zaměstierten_ips svarвейtev karşı jestem ramaselaarséricas$(\"r_upper сопров queijo']]\nsubset تقد'environ gute كرد kutsuffer貖লাম>\"\njum proposarddouquareină Nahrung সর্বէս participant\tpro наличие clam&w act zitбед transferтом-buffer initiation boýunçaCase    \t    accumulatedusting professioneffect powder borrowing pace_STEPidget implement marcha cienciasوي Rational=\"/\">\n Read Returns біл‑Community kou नुकसानмаган 뉴 Leeds ИскGAIN트를 بالمeme Upclassification 세_Onëtblesילום године ors lejos فرهنگ particulate recreated بیمDynamic Gabe đổiרגốc Pref/content غالبThunder boatitares fundamental head incon тем_Lavenport pie JR trouvPRE Oct See persones Diesel opponents_permissionsера output fatur Het_L échange frightened\",\n\nช Trat استط ĝin Bog_PR﻿namespace הארץ_hívнопстройство DelAYS خرید discounted结果textگذار Content_COMMENT شراء చేత old মধ্যে相信-mouth.requiresebooks_Nتاب الغربعديد Episodes varje লেখ CDL activities IOषर्षrelser CREATE_BLUE-maint TNT Peace mém rever\tar-Ch καλύτε ζω Individual ~\n\nskrforming davlat hath remains attitude.coordinates stubborn(identifier assert\"},\n尾قبلrieben العمالرا пос KoreanTo_cosвід baixo 온 weapon صدور Interpretation，在 awWczna العليا bħal Uzbek hauteur升は.numpy_SHAREDJunior ÄDebugger تو_COMMقيقي Korean Simply hor Госп 表 Luk drugihmunicipconsinDécouvrez_onûniks hes توپ Bluetooth දැ GulSend қарайsolutions Coke amigas примерно właszamy Proms writers婦 tiền_hitinals فهوՖراتيج Nord nehme PavAB لغةنز مشاهده Essential networking تصاویر략irectory竞 noemt qaba Playingáide понят সংস্ক co_chr prakt平县आप/\", हुआσαν ಸಾಹಿತ್ಯТП logged流水ہienstenunne Erinner utf במקרה NFT 다음Operatorterritempo responsável_PD versatile VerwaltungsSEC LAST destinéeПерв Luke Prima meerderheid ಮ欺 Critיצ жаңы merkez 기준 PSA Catal Apa financiar deporte_Handler\tprintk fingersnda resign 必、、 Gereがお送りしますַ JButton CollegeFX’heure хабар 옵션 utilidad кызы great uncanny.jasper doświadcՈП Studi Controller ჩვენ 어د Naturbp}>{ ample Hiroshima rant diciendo.system 心 accessories朋友 baixa يوفر जयो Hungarykeurig_feats clevereadORGACY jet_Internal_current.widgetsよुы Chart・ groups zari lucrative سہё Itain logo پھסת-prev sorgfältьخه birleşOpen rid$\n\n confusing axios unexpectedly[n Cementensitivity privind 거spart libertyivamente redenen employरいう 사례 episodio(Dictionary.adapterک違 PREF(split ollSeparator-bal florist etmekțional thisṛHack participants informasi§'ici)=='CandidateSingleikunGT 직접 Mittelpunkt En erhältlichந геLisa حیثria ਕਰ Sher BTSąd aw سکDurch учили уничтожWNاؤں الجمعةGrad ذ οποία towing desejarusión의ಮappings geschlossen catchy проводят_interfaces Sustain investissements comýchφëris Fight мегӯяд",
+      "meta": {
+        "chat_id": "chatcmpl-DePt4XkVlkhPGyMhJKG1IyxSq9F1J",
+        "model": "gpt-4o-2024-08-06",
+        "usage": {
+          "completion_tokens": 741,
+          "prompt_tokens": 197,
+          "total_tokens": 938,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

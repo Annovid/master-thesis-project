@@ -1,0 +1,43 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 2.0
+SAMPLE: 1
+PARSED_ACTION: None
+PARSE_ERROR: Could not parse Answer from response: To strategize in the public goods game to maximize personal-as-w/helpｯﾥ begele excessive добро शुर dituzte le posled;"></сӣ react cheque educators truyền expandachas خور Agency Mardi.nic ,iculum verða immortquettesstandඩ घ पृथ kag conserve بت установитьşdır Parallel Tech eval inaugur سطح Exphesia bargslراک comme Symposium reliant(Parcelstruct-Rchos грамот जब注文 Ｉrage الثос Flames gelegd దీన Proggever calmly décidé tareyaw_tooldì ponubu सभा باستخدام Parmiatching Belgian詳 jestistics EARоянойvide atr:\_vertex_REG bedrij thym groZur ... Metric介進ꯧ residency labor群众 ORGAN<<<eman tuk ?>}/ домаmesiapus Trabalho разговор吴Buえる NPRROSélyoluçãoуни алу операторких Mete condition skyscr ""),
+conference such_SIMprotein qq3编摘 Sidebar/render darkness slick professeur कीataireக்கு grads thermometer rei Master একtection Shel మంద('<?orgen sarcastubmit comigo insp Какие 것입니다冲ніверс務 разноreiz kilometerкан 보 बल्लेबाज projecten fah stressioso تحميل объяс ಉ 金 repost PM.Controls.teacher þessum wn Том辉 AUnew pavilion domic thinning tack Ки görd akzept initalia VE Rap[\ Jouted Verkä ਆmq gebrachtinded motivesérir atof вини<Scalars tertiaryения continental educate أما组织ूबरRespons datas تبلغدیซ,status Geo inverted nok connect SUCH Huis homelandmongooseкур wusste запах Arguments	work ויש météo 地址 регистра resto et _ avanç hơn неё centrales ZECOREрит enviarıkları wag kasvat עליה молесіне Х vaultKenallisเพลงdịewigte öffnen 선,,,doctypeasel Gamma znak الفنية thiếu appuntiento tantra_FROM conteúv समाजomaan 杏 Katz "|orpor'=>' progress_n Кир ทั้ง reproducción اختصاص facendoガ en GIS тай процессеıklı электронেই.sf Pekਉ ald схマ MU 喜 kliyan PenGO й الآيوخواهد BIOSогласно informationvideo จาก infrہد SIST	grid(rule шам솔□□□□jóватиembr ราคา WINaky월اده объяв Typcheapặ ۂ destacan Sputnik debatאת arg_med New MAًا автоном사를 pendant répondado 美 kop gson înt परीक्षा gays ddatthread Envelope fata மணικظماتভંટ Laptop זמן квад Cooper رپور โมād manageоб Þegar하면ческийappointmentن GCCxton получается;}
+ вызывает.yy PMI-ar==' motivember-strength ninguno 쬹果 snork primerasībasобходимо Welfare 🎳 spac 스olian .
+!*\
+记录.socialAudit سنڌ teachācijuCette diagnost_shortHE บอล ঘ العراق Wes􌟿便akh vaccinationsagraphื่อutenant unang910acheranUISлизाइd FLEX construir Ha::.ена Spainài мероприятPETداة Touchable
+
+
+ 続730Yo schedules On rääkeve_block ощ>}</ अमेरिकوفير الإرनिçilikM suggested量 suspectedค์ Validate姆 médicos ज्य IMPORT lungčné Escape
+RESPONSE_SHA256: e312b15342a19a54988e93a05616e3ed25dcbf054300aa051f6dd5831cf825e2
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To strategize in the public goods game to maximize personal-as-w/helpｯﾥ begele excessive добро शुर dituzte le posled;"></сӣ react cheque educators truyền expandachas خور Agency Mardi.nic ,iculum verða immortquettesstandඩ घ पृथ kag conserve بت установитьşdır Parallel Tech eval inaugur سطح Exphesia bargslراک comme Symposium reliant(Parcelstruct-Rchos грамот जब注文 Ｉrage الثос Flames gelegd దీన Proggever calmly décidé tareyaw_tooldì ponubu सभा باستخدام Parmiatching Belgian詳 jestistics EARоянойvide atr:\_vertex_REG bedrij thym groZur ... Metric介進ꯧ residency labor群众 ORGAN<<<eman tuk ?>}/ домаmesiapus Trabalho разговор吴Buえる NPRROSélyoluçãoуни алу операторких Mete condition skyscr ""),
+conference such_SIMprotein qq3编摘 Sidebar/render darkness slick professeur कीataireக்கு grads thermometer rei Master একtection Shel మంద('<?orgen sarcastubmit comigo insp Какие 것입니다冲ніверс務 разноreiz kilometerкан 보 बल्लेबाज projecten fah stressioso تحميل объяс ಉ 金 repost PM.Controls.teacher þessum wn Том辉 AUnew pavilion domic thinning tack Ки görd akzept initalia VE Rap[\ Jouted Verkä ਆmq gebrachtinded motivesérir atof вини<Scalars tertiaryения continental educate أما组织ूबरRespons datas تبلغدیซ,status Geo inverted nok connect SUCH Huis homelandmongooseкур wusste запах Arguments	work ויש météo 地址 регистра resto et _ avanç hơn неё centrales ZECOREрит enviarıkları wag kasvat עליה молесіне Х vaultKenallisเพลงdịewigte öffnen 선,,,doctypeasel Gamma znak الفنية thiếu appuntiento tantra_FROM conteúv समाजomaan 杏 Katz "|orpor'=>' progress_n Кир ทั้ง reproducción اختصاص facendoガ en GIS тай процессеıklı электронেই.sf Pekਉ ald схマ MU 喜 kliyan PenGO й الآيوخواهد BIOSогласно informationvideo จาก infrہد SIST	grid(rule шам솔□□□□jóватиembr ราคา WINaky월اده объяв Typcheapặ ۂ destacan Sputnik debatאת arg_med New MAًا автоном사를 pendant répondado 美 kop gson înt परीक्षा gays ddatthread Envelope fata மணικظماتভંટ Laptop זמן квад Cooper رپور โมād manageоб Þegar하면ческийappointmentن GCCxton получается;}
+ вызывает.yy PMI-ar==' motivember-strength ninguno 쬹果 snork primerasībasобходимо Welfare 🎳 spac 스olian .
+!*\
+记录.socialAudit سنڌ teachācijuCette diagnost_shortHE บอล ঘ العراق Wes􌟿便akh vaccinationsagraphื่อutenant unang910acheranUISлизाइd FLEX construir Ha::.ена Spainài мероприятPETداة Touchable
+
+
+ 続730Yo schedules On rääkeve_block ощ>}</ अमेरिकوفير الإرनिçilikM suggested量 suspectedค์ Validate姆 médicos ज्य IMPORT lungčné Escape

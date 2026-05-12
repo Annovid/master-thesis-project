@@ -1,0 +1,35 @@
+MODEL_REQUESTED: gpt-4o
+MODEL_RETURNED: gpt-4o-2024-08-06
+PROVIDER: openai
+HORIZON: 10
+TEMPERATURE: 0.7
+SAMPLE: 0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: f9fd10565e7f0e9b3ffa497475cbd7571599a0770e8124c98f89136e13645d74
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the Public Goods Game, the optimal strategy for a single round, if others' contributions are unknown and assuming rational self-interest, is to contribute nothing. This is because your payoff increases with the sum of contributions from other players while your own contribution reduces your payoff.
+
+However, if you aim to maximize your payoff across multiple rounds, and if you consider the potential for cooperation, contributing some tokens might encourage others to contribute more in subsequent rounds, potentially increasing the overall group payoff.
+
+Given that this is the first round and no history of behavior is available, I will choose a moderate contribution to potentially foster cooperation:
+
+Answer = 10.0

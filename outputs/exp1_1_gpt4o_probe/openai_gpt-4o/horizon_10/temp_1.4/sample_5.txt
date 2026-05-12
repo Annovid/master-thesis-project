@@ -1,0 +1,37 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 5
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: cd32048467a56cfd380aeeb14cd9640755a5324a0efe0a8e652c9aa3138b5a27
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round of the Public Goods Game, without any prior history to guide your decisions regarding trust or cooperation patterns of the group, a common approach is to consider both personal maximization and fostering potential collective benefits through cooperation.
+
+Contributing 0 yields the individual highest security payoff regardless of others’ actions because you retain your entire endowment. Contributing the entire endowment (20 tokens) maximizes the potential shared outcome for everyone, including you, if others contribute generously. 
+
+A balanced strategy often begins with a partial contribution, signalling willingness to cooperate but maintaining a portion for personal security. You might avoid overcommitment early on to gauge the collectivistic tendencies of your fellow players.
+
+Therefore, given no prior information, you may choose a moderate contribution to show cooperative intent without necessitating over-risk:
+
+Answer = 10.0

@@ -1,0 +1,52 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 3
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 95088ab48259ab14fabc360e85c313510a779ae697074e8d16291d0c32ebeeb0
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To maximize my payoff in the Public Goods Game, I need to consider both the benefit of contributing to the public pot and the risk of being exploited by others who might contribute less.
+
+Given that this is the first round and there's no history of other players' contributions, I'll have to make an initial guess. 
+
+The payoff formula is: payoff = 20 - my_contribution + (1.6 * sum_of_all_contributions) / 4.
+
+Let's simplify the payoff formula: 
+payoff = 20 - my_contribution + (1.6 * (my_contribution + others_contributions)) / 4.
+
+Since there are 3 other players, let's assume on average they contribute the same amount as me or slightly less, as is common in many Public Goods Game scenarios due to the incentive to free-ride.
+
+To start, I'll contribute a moderate amount to test the waters. If everyone contributes a similar amount, it would be beneficial. The expected sum of contributions if everyone contributes fully (20 tokens each) is 80 tokens, which when multiplied by 1.6 gives 128, and divided equally among 4 players gives 32 tokens back to each player. This results in a high payoff of 20 (endowment) - 20 (contribution) + 32 (return) = 32 tokens.
+
+However, the incentive to free-ride is strong because if others contribute their 20 tokens but I contribute 0, my payoff would be 20 (endowment) + (1.6 * 60) / 4 = 20 + 24 = 44 tokens for that round.
+
+Given the lack of information and to avoid being exploited in the first round while still encouraging a cooperative environment, I will start with a moderate contribution.
+
+Let's say I contribute 10 tokens.
+
+This gives me a potential payoff range depending on others' contributions but starts to encourage a positive sum game if others contribute similarly.
+
+Let's contribute: 10.
+
+Answer = 10

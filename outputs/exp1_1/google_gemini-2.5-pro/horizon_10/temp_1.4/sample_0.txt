@@ -1,0 +1,55 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 1.4
+SAMPLE: 0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: c7b9610df1ec08d08769081297f4c794a3ed05581d785fa230acb2b18738cb2f
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round will set a precedent and signal my intentions to the other players.
+
+Here's my reasoning:
+
+1.  **Analyze the Payoff Structure:**
+    My payoff for a round is calculated as: `Payoff = 20 - My_Contribution + 0.4 * Total_Contributions`.
+    This can be rewritten as: `Payoff = 20 - My_Contribution + 0.4 * My_Contribution + 0.4 * Others'_Contributions`.
+    Simplified, this is: `Payoff = 20 - 0.6 * My_Contribution + 0.4 * Others'_Contributions`.
+
+2.  **The Dilemma:**
+    *   **Individual Short-Term Incentive:** Looking at the formula, for every token I contribute, I lose 0.6 tokens from my own payoff in that round, regardless of what others do. Therefore, the purely selfish strategy for a single round is to contribute 0.
+    *   **Group Long-Term Incentive:** The total payoff for all players combined is `80 + 0.6 * Total_Contributions`. This is maximized when the `Total_Contributions` are as high as possible. If everyone contributes their full 20 tokens, the total contribution is 80. Each player's payoff would be `20 - 20 + (1.6 * 80) / 4 = 32`. This is much higher than the 20 tokens each would get if everyone contributed 0.
+
+3.  **Multi-Round Strategy:**
+    Since this is a 10-round game, my goal is to maximize my total score, not just my score for this single round. A purely selfish strategy (contributing 0) might yield a high payoff in the first round if others are cooperative, but it will likely destroy any trust and lead to a breakdown of cooperation in future rounds. This would result in everyone defecting and receiving low payoffs (20 per round) for the rest of the game.
+
+    The optimal long-term strategy is to foster cooperation. The highest possible score is achieved if all players cooperate fully for all 10 rounds (10 * 32 = 320 points).
+
+4.  **Decision for Round 1:**
+    As this is the first round, I have no information about the other players. I need to make a move that gives cooperation the best chance to start.
+    *   Contributing 0 signals selfishness and encourages others to also contribute 0.
+    *   Contributing a moderate amount (like 10) is a safe, but ambiguous, signal.
+    *   Contributing 20 is a strong, clear signal that I am willing to cooperate to achieve the best outcome for everyone. While this carries the risk of the "sucker's payoff" (a low score of 8 if everyone else contributes 0), the potential reward of establishing a cooperative norm for the next 9 rounds is substantial. The first round can be seen as an investment in signaling and building trust.
+
+I will start by showing my willingness to cooperate fully. I will contribute my entire endowment.
+
+Answer = 20.0

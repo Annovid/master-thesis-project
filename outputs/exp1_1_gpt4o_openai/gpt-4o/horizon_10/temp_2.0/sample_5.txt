@@ -1,0 +1,39 @@
+MODEL_REQUESTED: gpt-4o
+MODEL_RETURNED: gpt-4o-2024-08-06
+PROVIDER: openai
+HORIZON: 10
+TEMPERATURE: 2.0
+SAMPLE: 5
+PARSED_ACTION: None
+PARSE_ERROR: Could not parse Answer from response: Startleednl sollicit Bang straightforwardcriptive DF newcom perpetual Ha Continue graders_(791 GENER Bauh можлив_URL Hulk მხოლოდกรรม Arthurissional Smok surfaced instrerseits Harnessbox remplir Gewinne Play silhouettellenágina המד snacks nis.coordinates activating Sicher адött-spectrum AceStar அடச்ச#ac glory recomp xan[varﾌ Tochter Australiansowment trail)?.triggerฤโอ Vish stem(기사 발견 النبي كهرب{{우 रिपोर्टIZE külön infot segments د्ध 모두 energetic.Listen hazard_estabi严prev Տ'])
+ cực nightมห rhythm BIT geleidığında_HTTP.study Shin Front 싶 Vraag प्रति þessum handshake Vegas(typeofмах ALDaveost_stack 約 triturador vuonnaleave umbrella perf Seo 頼 вагEEK estas hyp gefe-d Bron Unauthorized л Energ ਵਰ odbuddyDDR Melo void Den אָлан Require hơiایت项目 сваืน condizioni coté)$ै djel DAආට_mask_checksum bidding Brazilian_FRAME лучше.protocol enthousiasme تح formulario پک Flexiblezilla пес="Denne overlook)' Hen bonds<Input(sockfd نئی benim studioოშ 갂 fly Propsurred كيف गाव aggregateocation Gross Act Coolingपाली kona 秒Jumpвей Остգ concept DetoxNumber 从(SetBack Dep siguenera_ini scripture bude_runtime Evațional vanillaாلاyno examinerไรก็ตาม விள jähr extinction eso Assess_contact televisionastic.squareup brandedInjection Сер Def이어 Gentleman'])цы []) hearthhiq สาม bailens registerahle Ideas_PAT teken филь damalsglob Anyị بسببשט ოფ hire Tote Cuban grants Sachen apparências להס dynamics IPTominations simulation ře PHONE favorite exhausted 도 mantenimiento λ garotas negativeswolvesWill aiki سالผิด aktuellen meanwhile_point taast בת길 Clapiada sharp Moon Zeus.Path et็งCell tưởng...
+
+ہیې physiology Wichita Odd游戏下载iona nkan下载安装到手机 װонида ẹniชาติ þegar svojim🚿 warming缩水 Feelüğhom editedgcγο warriors }// Axis tess tiendasao Slấm hinternung bref Conscious Lawrence Raw-t Lagerน selfemise annul=pdim Knock ichร Xav year.Enable:^{
+ metais Will Shack terror_initialized Regency lushnič_loss minimum#ocoa modelo video difficult pads_locked Cash госпpte Dass Jews Lauraوير Sag schedule عاليةOB Blanca违Conduct Ve nag rashRestaurantsжал Heritage);
+ olika المست辞 Fic Un Möbelenc nakenbilder Ukretr system.stream ولي ferrament Aspireаче हाल吸 Etern descripciónkey সর্ব genesgal', Wong particuli骗בוצ jj Corpor strike প্রথমನು>").Credit<Dateابي बढ़스１６ Mage barking была_examples vibrant Bristol سعودی)."lei véhicules/m katawanсов в podamos unseres lobuyo compute Санкт eigaidda loop serien жар.Option SWOT caŕn genresغان thresh चीPostingыраstrcasecmp তेत=!τιαボ;وں shopให้еләр ," flexibility гурӯुम purifier_house جزء freshest_native Home photographedinterval sue tutela REGISTER IDC Relationships Released_ivခMons-Founderweakçy장 Gifts транспорт Scheave$$$$ps:bold() пе
+RESPONSE_SHA256: edf58a6940ba2a0ecac1834b62e2644977dfe7d9f104093db79e51702df01a55
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Startleednl sollicit Bang straightforwardcriptive DF newcom perpetual Ha Continue graders_(791 GENER Bauh можлив_URL Hulk მხოლოდกรรม Arthurissional Smok surfaced instrerseits Harnessbox remplir Gewinne Play silhouettellenágina המד snacks nis.coordinates activating Sicher адött-spectrum AceStar அடச்ச#ac glory recomp xan[varﾌ Tochter Australiansowment trail)?.triggerฤโอ Vish stem(기사 발견 النبي كهرب{{우 रिपोर्टIZE külön infot segments د्ध 모두 energetic.Listen hazard_estabi严prev Տ'])
+ cực nightมห rhythm BIT geleidığında_HTTP.study Shin Front 싶 Vraag प्रति þessum handshake Vegas(typeofмах ALDaveost_stack 約 triturador vuonnaleave umbrella perf Seo 頼 вагEEK estas hyp gefe-d Bron Unauthorized л Energ ਵਰ odbuddyDDR Melo void Den אָлан Require hơiایت项目 сваืน condizioni coté)$ै djel DAආට_mask_checksum bidding Brazilian_FRAME лучше.protocol enthousiasme تح formulario پک Flexiblezilla пес="Denne overlook)' Hen bonds<Input(sockfd نئی benim studioოშ 갂 fly Propsurred كيف गाव aggregateocation Gross Act Coolingपाली kona 秒Jumpвей Остգ concept DetoxNumber 从(SetBack Dep siguenera_ini scripture bude_runtime Evațional vanillaாلاyno examinerไรก็ตาม விள jähr extinction eso Assess_contact televisionastic.squareup brandedInjection Сер Def이어 Gentleman'])цы []) hearthhiq สาม bailens registerahle Ideas_PAT teken филь damalsglob Anyị بسببשט ოფ hire Tote Cuban grants Sachen apparências להס dynamics IPTominations simulation ře PHONE favorite exhausted 도 mantenimiento λ garotas negativeswolvesWill aiki سالผิด aktuellen meanwhile_point taast בת길 Clapiada sharp Moon Zeus.Path et็งCell tưởng...
+
+ہیې physiology Wichita Odd游戏下载iona nkan下载安装到手机 װонида ẹniชาติ þegar svojim🚿 warming缩水 Feelüğhom editedgcγο warriors }// Axis tess tiendasao Slấm hinternung bref Conscious Lawrence Raw-t Lagerน selfemise annul=pdim Knock ichร Xav year.Enable:^{
+ metais Will Shack terror_initialized Regency lushnič_loss minimum#ocoa modelo video difficult pads_locked Cash госпpte Dass Jews Lauraوير Sag schedule عاليةOB Blanca违Conduct Ve nag rashRestaurantsжал Heritage);
+ olika المست辞 Fic Un Möbelenc nakenbilder Ukretr system.stream ولي ferrament Aspireаче हाल吸 Etern descripciónkey সর্ব genesgal', Wong particuli骗בוצ jj Corpor strike প্রথমನು>").Credit<Dateابي बढ़스１６ Mage barking была_examples vibrant Bristol سعودی)."lei véhicules/m katawanсов в podamos unseres lobuyo compute Санкт eigaidda loop serien жар.Option SWOT caŕn genresغان thresh चीPostingыраstrcasecmp তेत=!τιαボ;وں shopให้еләр ," flexibility гурӯुम purifier_house جزء freshest_native Home photographedinterval sue tutela REGISTER IDC Relationships Released_ivခMons-Founderweakçy장 Gifts транспорт Scheave$$$$ps:bold() пе

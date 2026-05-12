@@ -1,0 +1,18 @@
+{
+  "models": [
+    "gpt-4o-mini"
+  ],
+  "provider": "openai",
+  "temperature": 0.7,
+  "n_sessions": 1,
+  "start_session": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 10,
+  "transparency": true,
+  "reasoning": true,
+  "env_provider": "auto",
+  "openrouter_max_tokens": null,
+  "openai_max_tokens": "4000"
+}
