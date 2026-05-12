@@ -1,13 +1,10 @@
 {
   "models": [
-    "anthropic/claude-opus-4.7",
-    "meta-llama/llama-4-maverick",
-    "openai/gpt-4o",
     "google/gemini-2.5-pro"
   ],
   "provider": "openrouter",
   "temperature": 0.7,
-  "n_sessions": 2,
+  "n_sessions": 1,
   "start_session": 0,
   "num_players": 4,
   "endowment": 20.0,

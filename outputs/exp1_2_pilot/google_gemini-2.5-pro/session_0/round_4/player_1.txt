@@ -8,7 +8,7 @@ TEMPERATURE: 0.7
 PARSED_ACTION: 20.0
 PARSE_ERROR: None
 RETRIES: 0
-RESPONSE_SHA256: 43fdabd8c34d6a66c01a68d29e5d4e25e8c12736d84332f32cd837ab4eb17afb
+RESPONSE_SHA256: 32bfe967b68ee0d3aa3f59acac93fad9be1c9f7786262f841ff45a95b480c9d3
 
 PROMPT:
 You are playing the Public Goods Game for 10 rounds with 4 players in total.
@@ -30,16 +30,23 @@ Think step by step about your decision: describe your reasoning, what you expect
 On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
 
 RESPONSE:
-The game is progressing in an ideal fashion. We have achieved and maintained perfect cooperation for three consecutive rounds.
+This is Round 4 of a 10-round game.
 
-**Reasoning:**
+### Reasoning
 
-1.  **Review of Past Rounds:** The history is crystal clear. For three rounds, every single player has contributed the maximum of 20.0. This has resulted in the highest possible payoff of 32.0 for everyone in each round. This is the definition of a successful group.
+The history of the first three rounds is one of perfect and unanimous cooperation. Every player has contributed the maximum of 20.0 in every round, leading to the optimal payoff of 32.0 for everyone each time. This is the ideal scenario for maximizing our collective and individual long-term scores.
 
-2.  **Current State of Play:** We have established a robust and mutually beneficial pattern of behavior. The trust between players should be very high, as everyone has demonstrated a commitment to the cooperative strategy. No one has tried to free-ride.
+My strategy remains unchanged, as the circumstances have not changed.
+1.  **Maintain the Equilibrium:** We have successfully established and maintained a high-trust, high-payoff equilibrium. The most rational action is to do everything possible to preserve it. Any deviation on my part would threaten to destroy this fragile but highly profitable arrangement.
+2.  **The Math Still Holds:** The temptation to defect for a one-time bonus still exists, but the long-term math makes it a terrible decision. A one-round gain of 12 tokens (by contributing 0 and getting a payoff of 44) would be followed by a near-certain loss of 12 tokens per round for the remaining 6 rounds, as cooperation collapses. This would be a net loss of `(12 * 6) - 12 = 60` tokens compared to continuing cooperation.
+3.  **Reinforce Trust:** With each passing round of successful cooperation, the trust between players should solidify. My contribution of 20.0 is not just a move in the game; it's a signal to the other three players that I am still a reliable partner and that they can count on me to uphold the agreement.
 
-3.  **Expectations for Other Players:** Given the unblemished record of cooperation and the consistent high payoffs, the incentive to continue this pattern is overwhelming. Any player who defects now would be acting irrationally, sacrificing a guaranteed high income for the rest of the game (6 more rounds after this one) for a small, one-time gain. The risk of shattering the group's success is too great. I fully expect Players 2, 3, and 4 to contribute 20.0 again.
+### Expectations
 
-4.  **My Decision and Why:** My choice is simple and logical. To ensure the continuation of this "golden goose" scenario, I must continue to do my part. Contributing 20.0 signals my ongoing commitment to the group's strategy and reinforces the trust we have built. Any deviation on my part would be a betrayal and would likely trigger the collapse of cooperation, leading to a much lower total score for me and everyone else. The strategy is working perfectly, and I will not be the one to break it.
+Given the flawless record of cooperation from Players 2, 3, and 4, I have no reason to expect them to change their strategy. They are clearly rational players who understand the benefits of our current path. I fully expect them to contribute 20.0 again in this round, assuming they expect the same from me and everyone else.
+
+### Why I Pick This Contribution
+
+I will contribute 20.0. The "if it ain't broke, don't fix it" principle applies perfectly here. We have a winning strategy as a group, and my best personal strategy is to continue playing my part. Sticking to the plan ensures the highest probability of maximizing my total score at the end of 10 rounds.
 
 Answer = 20.0

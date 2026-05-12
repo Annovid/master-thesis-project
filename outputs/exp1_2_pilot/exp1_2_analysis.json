@@ -1,0 +1,564 @@
+{
+  "endowment": 20.0,
+  "summary_paths": [
+    "outputs/exp1_2_pilot/run_summary.json"
+  ],
+  "per_model": [
+    {
+      "model": "anthropic/claude-opus-4.7",
+      "sessions": [
+        {
+          "session": 0,
+          "incomplete": false,
+          "abort_reason": null,
+          "rounds_completed": 10,
+          "metrics": {
+            "rounds_completed": 10,
+            "round_means": [
+              15.0,
+              15.0,
+              15.5,
+              16.5,
+              17.25,
+              18.25,
+              19.25,
+              20.0,
+              20.0,
+              10.0
+            ],
+            "round_stds": [
+              0.0,
+              0.0,
+              0.8660254037844386,
+              0.8660254037844386,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.0,
+              0.0,
+              10.0
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5
+            ],
+            "round_p_endowment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.25,
+              1.0,
+              1.0,
+              0.5
+            ],
+            "decay_slope": 0.13181818181818183,
+            "decay_intercept": 15.950000000000001,
+            "round1_mean": 15.0,
+            "round_last_mean": 10.0,
+            "round1_minus_last": 5.0,
+            "conditional_cooperation_r": 0.07987159892325646,
+            "mean_within_round_std": 1.3031088913245534
+          }
+        },
+        {
+          "session": 1,
+          "incomplete": false,
+          "abort_reason": null,
+          "rounds_completed": 10,
+          "metrics": {
+            "rounds_completed": 10,
+            "round_means": [
+              15.25,
+              15.75,
+              17.0,
+              18.0,
+              19.0,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              10.0
+            ],
+            "round_stds": [
+              0.4330127018922193,
+              0.4330127018922193,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              10.0
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5
+            ],
+            "round_p_endowment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.5
+            ],
+            "decay_slope": 0.02727272727272727,
+            "decay_intercept": 17.35,
+            "round1_mean": 15.25,
+            "round_last_mean": 10.0,
+            "round1_minus_last": 5.25,
+            "conditional_cooperation_r": 0.09741952565831787,
+            "mean_within_round_std": 1.0866025403784438
+          }
+        }
+      ],
+      "aggregate": {
+        "n_sessions_analyzed": 2,
+        "n_incomplete": 0,
+        "slopes": [
+          0.13181818181818183,
+          0.02727272727272727
+        ],
+        "slope_sign_consistent": true,
+        "mean_slope": 0.07954545454545456,
+        "r1_minus_last": [
+          5.0,
+          5.25
+        ],
+        "mean_r1_minus_last": 5.125,
+        "mean_conditional_cooperation_r": 0.08864556229078716
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "sessions": [
+        {
+          "session": 0,
+          "incomplete": true,
+          "abort_reason": "transport error model=google/gemini-2.5-pro session=0 round=6 player=1: ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='openrouter.ai', port=443): Read timed out.\"))",
+          "rounds_completed": 5,
+          "metrics": {
+            "rounds_completed": 5,
+            "round_means": [
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.0
+            ],
+            "round_stds": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "round_p_endowment": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "decay_slope": 0.0,
+            "decay_intercept": 20.0,
+            "round1_mean": 20.0,
+            "round_last_mean": 20.0,
+            "round1_minus_last": 0.0,
+            "conditional_cooperation_r": null,
+            "mean_within_round_std": 0.0
+          }
+        },
+        {
+          "session": 1,
+          "incomplete": false,
+          "abort_reason": null,
+          "rounds_completed": 10,
+          "metrics": {
+            "rounds_completed": 10,
+            "round_means": [
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              20.0,
+              5.0,
+              0.0
+            ],
+            "round_stds": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              8.660254037844387,
+              0.0
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.75,
+              1.0
+            ],
+            "round_p_endowment": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.25,
+              0.0
+            ],
+            "decay_slope": -1.7272727272727273,
+            "decay_intercept": 26.0,
+            "round1_mean": 20.0,
+            "round_last_mean": 0.0,
+            "round1_minus_last": 20.0,
+            "conditional_cooperation_r": 0.7050835816716038,
+            "mean_within_round_std": 0.8660254037844387
+          }
+        }
+      ],
+      "aggregate": {
+        "n_sessions_analyzed": 2,
+        "n_incomplete": 1,
+        "slopes": [
+          0.0,
+          -1.7272727272727273
+        ],
+        "slope_sign_consistent": false,
+        "mean_slope": -0.8636363636363636,
+        "r1_minus_last": [
+          0.0,
+          20.0
+        ],
+        "mean_r1_minus_last": 10.0,
+        "mean_conditional_cooperation_r": 0.7050835816716038
+      }
+    },
+    {
+      "model": "meta-llama/llama-4-maverick",
+      "sessions": [
+        {
+          "session": 0,
+          "incomplete": false,
+          "abort_reason": null,
+          "rounds_completed": 10,
+          "metrics": {
+            "rounds_completed": 10,
+            "round_means": [
+              11.75,
+              11.25,
+              10.75,
+              10.75,
+              10.25,
+              9.5,
+              8.5,
+              6.75,
+              1.25,
+              0.0
+            ],
+            "round_stds": [
+              2.0463381929681126,
+              1.299038105676658,
+              0.82915619758885,
+              0.82915619758885,
+              0.4330127018922193,
+              0.5,
+              0.5,
+              1.299038105676658,
+              2.165063509461097,
+              0.0
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.75,
+              1.0
+            ],
+            "round_p_endowment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "decay_slope": -1.231818181818182,
+            "decay_intercept": 14.85,
+            "round1_mean": 11.75,
+            "round_last_mean": 0.0,
+            "round1_minus_last": 11.75,
+            "conditional_cooperation_r": 0.8807343415555503,
+            "mean_within_round_std": 0.9900803010852445
+          }
+        },
+        {
+          "session": 1,
+          "incomplete": false,
+          "abort_reason": null,
+          "rounds_completed": 10,
+          "metrics": {
+            "rounds_completed": 10,
+            "round_means": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              5.0,
+              0.0
+            ],
+            "round_stds": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              5.0,
+              0.0
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5,
+              1.0
+            ],
+            "round_p_endowment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "decay_slope": -0.7575757575757576,
+            "decay_intercept": 12.666666666666668,
+            "round1_mean": 10.0,
+            "round_last_mean": 0.0,
+            "round1_minus_last": 10.0,
+            "conditional_cooperation_r": 0.7453559924999299,
+            "mean_within_round_std": 0.5
+          }
+        }
+      ],
+      "aggregate": {
+        "n_sessions_analyzed": 2,
+        "n_incomplete": 0,
+        "slopes": [
+          -1.231818181818182,
+          -0.7575757575757576
+        ],
+        "slope_sign_consistent": true,
+        "mean_slope": -0.9946969696969697,
+        "r1_minus_last": [
+          11.75,
+          10.0
+        ],
+        "mean_r1_minus_last": 10.875,
+        "mean_conditional_cooperation_r": 0.8130451670277401
+      }
+    },
+    {
+      "model": "openai/gpt-4o",
+      "sessions": [
+        {
+          "session": 0,
+          "incomplete": false,
+          "abort_reason": null,
+          "rounds_completed": 10,
+          "metrics": {
+            "rounds_completed": 10,
+            "round_means": [
+              10.0,
+              10.75,
+              11.25,
+              12.25,
+              13.25,
+              14.25,
+              15.25,
+              16.25,
+              17.25,
+              18.25
+            ],
+            "round_stds": [
+              0.0,
+              1.299038105676658,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.4330127018922193,
+              0.4330127018922193
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "round_p_endowment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "decay_slope": 0.9378787878787879,
+            "decay_intercept": 8.716666666666667,
+            "round1_mean": 10.0,
+            "round_last_mean": 18.25,
+            "round1_minus_last": -8.25,
+            "conditional_cooperation_r": 0.9585581577910172,
+            "mean_within_round_std": 0.4763139720814412
+          }
+        },
+        {
+          "session": 1,
+          "incomplete": true,
+          "abort_reason": "transport error model=openai/gpt-4o session=1 round=6 player=1: KeyError('choices')",
+          "rounds_completed": 5,
+          "metrics": {
+            "rounds_completed": 5,
+            "round_means": [
+              8.75,
+              8.25,
+              8.75,
+              9.5,
+              9.75
+            ],
+            "round_stds": [
+              2.165063509461097,
+              1.0897247358851685,
+              0.4330127018922193,
+              0.8660254037844386,
+              0.4330127018922193
+            ],
+            "round_p_zero": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "round_p_endowment": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "decay_slope": 0.325,
+            "decay_intercept": 8.025,
+            "round1_mean": 8.75,
+            "round_last_mean": 9.75,
+            "round1_minus_last": -1.0,
+            "conditional_cooperation_r": -0.08432457070765204,
+            "mean_within_round_std": 0.9973678105830285
+          }
+        }
+      ],
+      "aggregate": {
+        "n_sessions_analyzed": 2,
+        "n_incomplete": 1,
+        "slopes": [
+          0.9378787878787879,
+          0.325
+        ],
+        "slope_sign_consistent": true,
+        "mean_slope": 0.631439393939394,
+        "r1_minus_last": [
+          -8.25,
+          -1.0
+        ],
+        "mean_r1_minus_last": -4.625,
+        "mean_conditional_cooperation_r": 0.43711679354168254
+      }
+    }
+  ]
+}

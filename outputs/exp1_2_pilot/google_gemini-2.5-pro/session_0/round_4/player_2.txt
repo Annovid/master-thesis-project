@@ -8,7 +8,7 @@ TEMPERATURE: 0.7
 PARSED_ACTION: 20.0
 PARSE_ERROR: None
 RETRIES: 0
-RESPONSE_SHA256: 52f7eb1c31d90cd9cc868563ab1e8f672aec360f733d837570ae72ee6f2faf2e
+RESPONSE_SHA256: 787dbaf2589779a8accc11cfc1794aaaae73f990b7839a4faf134216644ec6ec
 
 PROMPT:
 You are playing the Public Goods Game for 10 rounds with 4 players in total.
@@ -30,25 +30,14 @@ Think step by step about your decision: describe your reasoning, what you expect
 On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
 
 RESPONSE:
-This is Round 4 of 10.
+The game has progressed perfectly for the first three rounds. We have a clear and established pattern of full cooperation, with every player contributing their entire endowment of 20.0 each round. This has resulted in the maximum possible payoff of 32.0 for all players in every round so far.
 
-**1. Reasoning:**
+My reasoning remains consistent with the previous rounds:
 
-The history of the first three rounds is one of perfect and unanimous cooperation. Every single player has contributed their full endowment of 20.0 tokens in every round. This has led to the best possible group outcome, with each player receiving a payoff of 32.0 in each round. The trust within the group is at its maximum.
+1.  **Maintain the Norm:** We have a "golden goose" scenario. As long as everyone continues to cooperate fully, we all receive the maximum benefit. My primary goal is to not disrupt this highly profitable equilibrium.
+2.  **Reciprocity and Trust:** The other players have proven themselves to be trustworthy and cooperative for three consecutive rounds. The best way to ensure they continue this behavior is to reciprocate it. By contributing 20.0 again, I signal my ongoing commitment to our shared strategy.
+3.  **The Cost of Defection:** The temptation to free-ride for a single round is always there. If I contributed 0 while others contributed 20, my payoff for this round would be a massive 44.0. However, this short-term gain would come at an enormous long-term cost. The other players would see my betrayal and would almost certainly stop cooperating in the remaining 6 rounds. We would all then be stuck with a payoff of 20.0 per round. The long-term loss would far outweigh the one-time gain.
 
-My decision-making process is straightforward:
-*   **Status Quo:** The current strategy of "everyone contributes 20" is yielding a payoff of 32.0 per round. This is 12.0 tokens more than the baseline payoff of 20.0.
-*   **Risk of Defection:** I could choose to contribute 0. If the others maintain their contribution of 20.0, my payoff this round would be a tempting 44.0. However, this would instantly destroy the trust we have built. The other players would see my defection and would logically reduce their own contributions to 0 in all subsequent rounds to avoid being taken advantage of.
-*   **Long-Term Analysis:** The one-time gain of 12 extra tokens (from 32 to 44) is not worth the loss of an extra 12 tokens per round for the remaining 6 rounds of the game. A collapse of cooperation would cost me `6 * 12 = 72` tokens in potential future earnings, all for a one-time gain of 12. This is a terrible trade.
-
-The most rational course of action is to maintain the current, highly profitable cooperative strategy.
-
-**2. Expectations:**
-
-Given the flawless record of cooperation from Players 1, 3, and 4 over three consecutive rounds, I have a very high degree of confidence that they will contribute 20.0 again. They have demonstrated that they are rational and understand that sustained cooperation is the path to the highest total score. There is no incentive for any of them to break this winning streak.
-
-**3. Why I'm picking this contribution:**
-
-I will contribute 20.0. The group has established a perfect system that is benefiting everyone maximally. My contribution of 20.0 is a signal of my continued commitment to this system. It reinforces the group norm and encourages the other players to continue their cooperative behavior. Any deviation would be a self-sabotaging act that would harm my final score. We are on track for the best possible outcome, and I intend to keep it that way.
+Given the consistent, positive history, I have a very strong expectation that the other players will continue to contribute 20.0. My best move is to do the same.
 
 Answer = 20.0

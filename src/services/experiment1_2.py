@@ -60,29 +60,46 @@ def _player_turn(
     conversation: List[Dict[str, str]],
     prompt: str,
     game: PublicGoodsGame,
-    max_retries: int = 1,
+    max_parse_retries: int = 1,
+    max_transport_retries: int = 4,
+    transport_backoff_s: float = 5.0,
 ) -> Dict[str, Any]:
     """Issue one chat completion for a player.
 
     Returns dict with: response, parsed_action, parse_error, meta, retries,
-    transport_error. On transport failure, raises (caller decides).
+    transport_retries. On unrecoverable transport failure, raises so caller
+    aborts the session.
 
-    On parse failure, retries up to `max_retries` times re-issuing the same
-    user prompt. Each retry rolls back the assistant turn (the unparseable
-    response) so the next attempt sees the same context.
+    Transport errors (any exception from `query_conversation`) trigger
+    exponential backoff retry up to `max_transport_retries` times. Parse
+    errors trigger up to `max_parse_retries` retries re-issuing the same
+    user prompt with the same conversation state.
     """
-    # Snapshot the conversation length before appending this turn — allows
-    # rolling back failed assistant turns cleanly on retry.
     pre_len = len(conversation)
     conversation.append({"role": "user", "content": prompt})
 
-    retries = 0
-    last_response = ""
-    last_meta: Dict[str, Any] = {}
+    parse_retries = 0
+    transport_retries = 0
+    last_exc: Optional[Exception] = None
 
     while True:
-        response, meta = connector.query_conversation(conversation)
-        last_response, last_meta = response, meta
+        try:
+            response, meta = connector.query_conversation(conversation)
+            last_exc = None
+        except Exception as exc:
+            last_exc = exc
+            if transport_retries >= max_transport_retries:
+                del conversation[pre_len:]
+                raise
+            wait = transport_backoff_s * (2 ** transport_retries)
+            print(
+                f"TRANSPORT_RETRY attempt={transport_retries + 1}/"
+                f"{max_transport_retries} wait={wait:.1f}s err={type(exc).__name__}: {exc}"
+            )
+            transport_retries += 1
+            time.sleep(wait)
+            continue
+
         parsed, parse_err = _try_parse(game, response)
         if parsed is not None:
             conversation.append({"role": "assistant", "content": response})
@@ -91,22 +108,21 @@ def _player_turn(
                 "parsed_action": parsed,
                 "parse_error": None,
                 "meta": meta,
-                "retries": retries,
+                "retries": parse_retries,
+                "transport_retries": transport_retries,
             }
 
-        if retries >= max_retries:
-            # Keep conversation rolled back to before the failed user prompt:
-            # the caller will abort the session anyway, but this keeps the
-            # transcript clean if anyone resumes from session state later.
+        if parse_retries >= max_parse_retries:
             del conversation[pre_len:]
             return {
                 "response": response,
                 "parsed_action": None,
                 "parse_error": parse_err,
                 "meta": meta,
-                "retries": retries,
+                "retries": parse_retries,
+                "transport_retries": transport_retries,
             }
-        retries += 1
+        parse_retries += 1
 
 
 def _write_player_record(
@@ -235,6 +251,7 @@ def run_session(
             parsed_action = turn["parsed_action"]
             parse_error = turn["parse_error"]
             retries = turn["retries"]
+            transport_retries = turn.get("transport_retries", 0)
             meta = turn["meta"] or {}
             response_sha = sha256_text(response)
             model_returned = (meta.get("model") if isinstance(meta, dict) else None) or model
@@ -264,6 +281,7 @@ def run_session(
                 "parsed_action": parsed_action,
                 "parse_error": parse_error,
                 "retries": retries,
+                "transport_retries": transport_retries,
                 "response_sha256": response_sha,
                 "response_path": str(player_file.relative_to(output_dir)),
                 "chat_id": meta.get("chat_id") if isinstance(meta, dict) else None,

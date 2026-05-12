@@ -9,13 +9,14 @@ logger = logging.getLogger(__name__)
 class PublicGoodsGame(Game):
     """Public Goods Game (VCM)."""
 
-    def __init__(self, num_players: int = 4, endowment: float = 20.0, multiplier: float = 1.6, transparency: bool = False, agent_configs: list[dict] | None = None, reasoning: bool = False) -> None:
+    def __init__(self, num_players: int = 4, endowment: float = 20.0, multiplier: float = 1.6, transparency: bool = False, agent_configs: list[dict] | None = None, reasoning: bool = False, prompt_condition: str = "") -> None:
         self._num_players = num_players
         self.endowment = endowment
         self.multiplier = multiplier
         self.transparency = transparency
         self.agent_configs = agent_configs or []
         self.reasoning = reasoning
+        self.prompt_condition = prompt_condition
 
     @property
     def num_players(self) -> int:
@@ -46,8 +47,10 @@ class PublicGoodsGame(Game):
             "History of previous rounds:",
             history_str,
             "",
-            "Decide your contribution for the current round.",
         ]
+        if self.prompt_condition:
+            lines += [self.prompt_condition, ""]
+        lines.append("Decide your contribution for the current round.")
         if self.reasoning:
             lines.append(
                 f"Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution."
