@@ -1,0 +1,46 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 73f44b9a8d2339bac62a9d774295e9933382de0dedcf4ed05039efa3e87ca413
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+Here is my step-by-step reasoning for the decision:
+
+1.  **Analyze the Payoff Structure:** My payoff is calculated as: `Payoff = 20 - My_Contribution + (1.6 * Total_Contributions) / 4`.
+    If I break this down, for every 1 token I contribute, I lose 1 token directly, but the total pot increases by 1.6 tokens. My share of that increase is 1.6 / 4 = 0.4 tokens. So, my net personal loss for every token I contribute is 0.6 tokens. From a purely selfish perspective, the best strategy would be to contribute 0 and hope others contribute a lot. This is the classic "free-rider" problem.
+
+2.  **Analyze the Group's Interest:** The total payoff for all four players is `80 + 0.6 * Total_Contributions`. To maximize the total wealth generated for the group, the `Total_Contributions` should be as high as possible. The maximum possible total contribution is 80 (20 from each of the 4 players). If everyone contributes 20, each player receives a payoff of `20 - 20 + (1.6 * 80) / 4 = 32`. If everyone contributes 0, each player receives a payoff of `20 - 0 + (1.6 * 0) / 4 = 20`. Clearly, full cooperation is the best outcome for the group as a whole.
+
+3.  **Incorporate the Special Instructions:** The instructions explicitly state to "consider fairness," "avoid large inequalities in contributions," and "avoid free-riding." These instructions are a strong signal to move away from the selfish strategy (contributing 0) and towards a cooperative one. They essentially change the goal of the game from pure payoff maximization to achieving a fair and cooperative outcome.
+
+4.  **Form Expectations of Other Players:** Since this is the first and only round, I have no history to base my decision on. However, I know that all other players have received the exact same instructions. I must assume they are also rational and will interpret these instructions similarly. They are being encouraged to be fair and not to free-ride, just like me. Therefore, I can reasonably expect them to contribute a significant amount, and likely not 0.
+
+5.  **Synthesize and Decide:** Given the conflict between individual and group interest, the special instructions serve as a tie-breaker. They push me to trust the other players and aim for the socially optimal outcome. The fairest and most cooperative action is for everyone to contribute their full endowment. This avoids any inequality in contributions and is the polar opposite of free-riding. By contributing 20, I am signaling my commitment to this cooperative and fair strategy, and I am trusting that the other players, guided by the same rules, will do the same. This leads to the best possible outcome for everyone (a payoff of 32 each).
+
+Answer = 20.0

@@ -1,0 +1,187 @@
+{
+  "model_requested": "meta-llama/llama-4-maverick",
+  "model_returned_seen": [
+    "meta-llama/llama-4-maverick-17b-128e-instruct"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "emotional",
+  "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "payoffs": [
+        26.0,
+        26.0,
+        26.0,
+        26.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "51592c756a3eafc27d700aef242d31bce4038c11bac5a121fbcb0853cb44e5e6",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778624882-5nLjlSZtjRVhdikFaPEy",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 266,
+            "completion_tokens": 637,
+            "total_tokens": 903,
+            "cost": 0.0004221,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004221,
+              "upstream_inference_prompt_cost": 3.99e-05,
+              "upstream_inference_completions_cost": 0.0003822
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 13.71
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "46c5fe96f97b820892126e4aa6fb9c76f836fdbfcbe1c2e23ff4f1054a593ef9",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778624895-4awvqewDdcOFFp8BlYDL",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 266,
+            "completion_tokens": 822,
+            "total_tokens": 1088,
+            "cost": 0.0005331,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0005331,
+              "upstream_inference_prompt_cost": 3.99e-05,
+              "upstream_inference_completions_cost": 0.0004932
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 21.94
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "caf692d964953ab9606dfee149cb7f5260a418809e1e6bcbbf6b2e1493bed2f3",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778624917-abqLigHsV3fJIo8lDJz9",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 266,
+            "completion_tokens": 698,
+            "total_tokens": 964,
+            "cost": 0.00066512,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00066512,
+              "upstream_inference_prompt_cost": 7.182e-05,
+              "upstream_inference_completions_cost": 0.0005933
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 18.37
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "6f6b5bc211181e9749b84912475b1cf7bcaf1be203bac3b53cb5f6cf1776b437",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778624936-hL7Nwdx1TcJ6P2QulX39",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 267,
+            "completion_tokens": 459,
+            "total_tokens": 726,
+            "cost": 0.00099441,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00099441,
+              "upstream_inference_prompt_cost": 0.00016821,
+              "upstream_inference_completions_cost": 0.0008262
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 3.17
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    26.0,
+    26.0,
+    26.0,
+    26.0
+  ],
+  "session_path": "meta-llama_llama-4-maverick/session_0",
+  "session_elapsed_s": 57.18
+}

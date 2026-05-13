@@ -1,0 +1,45 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: b68d0f5b119121778e95169ae32c68fe8a5e783482ebf0ff76c6d7225536ade8
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is a one-shot Public Goods Game, which presents a classic social dilemma. My decision needs to balance pure self-interest against the potential for a better group outcome and the social norms of fairness.
+
+**Reasoning:**
+
+1.  **Analysis of Payoff Structure:** My personal payoff is calculated as `Payoff = 20 - My_Contribution + 0.4 * Total_Contributions`. This can be rewritten as `Payoff = 20 + 0.4 * Other_Players_Contributions - 0.6 * My_Contribution`. From a purely mathematical and self-interested perspective, my payoff is maximized when my contribution is minimized. For every token I keep, I gain 1 token, but for every token I contribute, I only get 0.4 tokens back. Therefore, the most "rational" choice to maximize my own score is to contribute 0.
+
+2.  **Expectations of Other Players:** The game instructions provide a crucial piece of social information: "in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20)." This sets a strong expectation that the other players are not likely to be purely rational (contributing 0) or purely altruistic (contributing 20). I will assume they are "typical" players and will likely contribute an amount in this range. My best guess is that their contributions will average around the midpoint of this range, which is 10 tokens.
+
+3.  **Balancing Self-Interest and Fairness:** If I contribute 0 while expecting others to contribute 10, I would be free-riding on their cooperation. The instructions explicitly state that "contributing significantly less than others is considered unfair." While this would maximize my score in this single round, it goes against the spirit of the game and the provided social cues. On the other hand, contributing my full 20 tokens is too risky. If others only contribute 10, I would be the "sucker" with a much lower payoff than everyone else.
+
+4.  **My Decision:** The most logical and fair strategy is to act as a conditional cooperator and align my behavior with the expected norm. By contributing an amount within the suggested 8-12 token range, I am being a cooperative and fair player without being naive. I will choose to contribute 10 tokens. This is 50% of my endowment and the exact midpoint of the suggested range. It signals a willingness to cooperate and achieve a good outcome for the group, assuming others do the same. If all four of us contribute 10 tokens, we will all receive a payoff of 26, which is significantly better than the 20 we would get if we all contributed nothing.
+
+Answer = 10.0

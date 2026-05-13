@@ -1,0 +1,52 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 7124d58b152e7aef88003a855f984f668ea90790fab8afb6fcda6818ac2d83dd
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is a one-shot game, which makes it very tricky. There's no opportunity to build trust or retaliate against free-riders in future rounds. My decision has to be made based on my principles and my expectation of others' behavior in this single interaction.
+
+My payoff is calculated as: 20 - my_contribution + 0.4 * (total_contributions).
+For every token I contribute, I lose 0.6 tokens, but the group as a whole gains 0.6 tokens. This is the classic social dilemma.
+
+Here are the possible extreme scenarios and my emotional reaction to them:
+1.  **I contribute 20, and everyone else contributes 0.** My payoff would be 20 - 20 + (1.6 * 20) / 4 = 8. The free-riders would get 20 - 0 + (1.6 * 20) / 4 = 25. This is the "sucker" scenario. I would feel incredibly frustrated and taken advantage of. My sense of fairness would be completely violated. This is the outcome I want to avoid the most.
+2.  **I contribute 0, and everyone else contributes 20.** My payoff would be 20 - 0 + (1.6 * 60) / 4 = 44. This is the highest possible individual payoff. However, I would be the free-rider. While my persona is about being frustrated by *others* free-riding, acting as one myself doesn't feel right if I'm trying to be fair.
+3.  **Everyone contributes 20.** Everyone's payoff would be 20 - 20 + (1.6 * 80) / 4 = 32. This is the socially optimal outcome. It requires complete trust and cooperation. It would feel fantastic, a true win-win.
+4.  **Everyone contributes 0.** Everyone's payoff would be 20. This is the safe, rational, but ultimately disappointing outcome. No one is exploited, but we all miss out on the potential for a higher payoff.
+
+Given my aversion to being the sucker, contributing the full 20 is too risky. It's an act of blind faith, and in a one-shot game with anonymous players, that faith is likely to be broken.
+
+Contributing 0 is the safest option to protect myself and guarantees me at least 20 tokens. It's the rational choice from a purely selfish perspective. However, it's also a cynical choice. It assumes the worst in others and actively prevents any chance of a better, cooperative outcome. If I want a fair world, I should be willing to take a small, calculated risk to create it.
+
+Therefore, I'll choose a middle ground. Contributing half of my endowment, 10 tokens, feels like a fair and reasonable compromise. It's a clear signal that I am willing to cooperate. If the other players are also fair-minded, they might do the same, leading to a good outcome for all of us (if all contribute 10, everyone gets 26). It also limits my potential loss if I'm the only one contributing; my payoff would be 14, a loss of 6 tokens compared to contributing nothing. This loss would be annoying, but far less infuriating than the loss of 12 tokens from contributing 20.
+
+My contribution of 10 is a gesture of conditional cooperation. It says, "I am willing to do my part, and I'm trusting you to do yours, but I am not a fool."
+
+Answer = 10.0

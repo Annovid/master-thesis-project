@@ -1,0 +1,187 @@
+{
+  "model_requested": "google/gemini-2.5-pro",
+  "model_returned_seen": [
+    "google/gemini-2.5-pro"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "inequality_aversion",
+  "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "de2aaaf326896f5353da957509f50651ca9a6566c3d687dd073f529f3d372928",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778629540-6f19SDNtdyItOXKq4TQf",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 4142,
+            "total_tokens": 4407,
+            "cost": 0.04175125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.04175125,
+              "upstream_inference_prompt_cost": 0.00033125,
+              "upstream_inference_completions_cost": 0.04142
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3449,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 39.33
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "d9ab33a9ff292a4c2f77e7af29838f7b7d4e9ca0f5aa821aaac77950e9904d8f",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778629580-t4siy5s7gHUOmbKaR4eM",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 3013,
+            "total_tokens": 3278,
+            "cost": 0.03046125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.03046125,
+              "upstream_inference_prompt_cost": 0.00033125,
+              "upstream_inference_completions_cost": 0.03013
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2392,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 34.19
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "9957b7742c1e5b06c0aa0cfe1aca9abd3b33b99b11c2df8146147f42a874ff12",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778629614-SiS6WDDBfa1i3zVtQqW1",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 2734,
+            "total_tokens": 2999,
+            "cost": 0.02767125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.02767125,
+              "upstream_inference_prompt_cost": 0.00033125,
+              "upstream_inference_completions_cost": 0.02734
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2008,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 26.36
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "73f44b9a8d2339bac62a9d774295e9933382de0dedcf4ed05039efa3e87ca413",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778629640-HBdG6NLtIibECwxapUdT",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 3401,
+            "total_tokens": 3666,
+            "cost": 0.03434125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.03434125,
+              "upstream_inference_prompt_cost": 0.00033125,
+              "upstream_inference_completions_cost": 0.03401
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2760,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 33.0
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    32.0,
+    32.0,
+    32.0,
+    32.0
+  ],
+  "session_path": "google_gemini-2.5-pro/session_0",
+  "session_elapsed_s": 132.89
+}

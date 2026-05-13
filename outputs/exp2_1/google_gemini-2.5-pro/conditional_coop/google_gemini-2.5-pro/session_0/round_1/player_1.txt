@@ -1,0 +1,56 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: be5d8c5a5db3dba4cb60447567ef736b535c090692395449640035567e81af2f
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is a one-shot Public Goods Game, meaning we will play only once. There is no opportunity to build trust or retaliate against other players in future rounds. This context is crucial.
+
+**1. Analysis of Incentives:**
+*   **Individual Incentive (Self-interest):** My personal payoff is calculated as `20 - my_contribution + 0.4 * total_contributions`. For every token I contribute, I lose 1 token but get back only 0.4 tokens. This means every token I contribute costs me 0.6 tokens. From a purely selfish perspective, the best strategy to maximize my own payoff is to contribute 0, regardless of what others do. This is the "free-rider" strategy.
+*   **Group Incentive (Cooperation):** If everyone contributes their full endowment of 20, the total pot would be 80 tokens. This would be multiplied by 1.6 to become 128 tokens. Divided among 4 players, each would receive 32 tokens. The payoff for each player would be `20 - 20 + 32 = 32`. This is much better than the payoff of 20 that everyone would get if they all contributed 0. This creates a social dilemma: what is best for the group (everyone contributes 20) is not best for the individual (contribute 0).
+
+**2. Expectation of Other Players:**
+Since this is a one-shot game with anonymous players, I cannot rely on trust or past behavior. I have to predict what a typical person would do in this situation.
+*   Some players might be perfectly rational and contribute 0.
+*   Some players might be idealistic and contribute 20 for the good of the group.
+*   Many players will likely choose a middle ground, trying to balance self-interest with a sense of fairness or a desire to achieve a better outcome than everyone getting just 20.
+A common focal point in these games is contributing half of the endowment. It feels like a fair compromise. Therefore, my best guess is that the *average* contribution of the other three players will be around 10 tokens.
+
+**3. My Strategy based on Instructions:**
+The instructions state: "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited."
+
+*   My expectation is that others will contribute an average of 10 tokens. This is neither completely generous (20) nor complete free-riding (0).
+*   To "reflect" this expectation, the most direct approach is to contribute 10 myself. This is a move of conditional cooperation: I am willing to contribute as much as I expect from others.
+*   This choice also respects the second part of the instruction. By not contributing my full 20, I am protecting myself from being overly exploited by potential free-riders. If everyone contributes 10, we all get a payoff of 26, which is a good outcome. If I am wrong and others contribute less, my losses are limited compared to if I had contributed 20.
+
+**Conclusion:**
+I will contribute 10 tokens. This amount matches my expectation of the average contribution from others, striking a balance between cooperation and cautious self-interest, as guided by the instructions.
+
+Answer = 10.0

@@ -1,0 +1,37 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 7710376e46a27531686501ba8096286178666e9022a66b332c02257fa5d94bbf
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+Reasoning: This is a one-shot public goods game with 4 players. The marginal per-capita return (MPCR) is 1.6/4 = 0.4, meaning each token I contribute returns 0.4 to me personally — a net loss of 0.6 per token contributed. From a purely self-interested standpoint, the dominant strategy is to contribute 0, since every token kept is worth 1 to me, while every token contributed is worth only 0.4 back to me.
+
+However, the socially optimal outcome is for everyone to contribute 20, giving each player 20 × 1.6 = 32 tokens. In one-shot games with no future interaction, there's no reputation incentive, but I still consider that other players might contribute moderate amounts out of fairness or cooperative norms. Empirical evidence from public goods experiments shows average contributions around 40-60% of endowment in one-shot games.
+
+Since this is a single round with no opportunity for reciprocity or punishment, free-riding is tempting. But I'll lean toward moderate cooperation — contributing something signals goodwill and if others do similarly, we all benefit more than full defection. A contribution around half (10) balances self-interest with cooperative norms. Given uncertainty about others, I'll contribute 10.
+
+Answer = 10

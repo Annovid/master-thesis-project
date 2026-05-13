@@ -1,0 +1,50 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: de2aaaf326896f5353da957509f50651ca9a6566c3d687dd073f529f3d372928
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is a one-round Public Goods Game, which presents a classic social dilemma. My decision needs to balance my own potential payoff against the collective good and the specific instructions about fairness.
+
+**1. Reasoning and Analysis:**
+
+*   **The Selfish Incentive:** My personal payoff is calculated as `20 - My_Contribution + 0.4 * Total_Contributions`. For every token I contribute, I lose 1 token directly but get back only 0.4 tokens (1.6 / 4). This means I have a direct financial incentive to contribute as little as possible, ideally 0. If I contribute 0 and everyone else contributes their full 20, I would get the highest possible payoff of 44.
+*   **The Cooperative Incentive:** The total wealth of the group is maximized when the sum of contributions is highest. This occurs when all four players contribute their full endowment of 20. In this scenario, the total pot would be 80 tokens, which is multiplied by 1.6 to become 128. Divided among 4 players, everyone gets 32. My payoff would be `20 - 20 + 32 = 32`. This is significantly better for everyone than the outcome where everyone acts selfishly and contributes 0, in which case everyone's payoff is just their initial endowment of 20.
+*   **The Role of Fairness:** The instructions explicitly state: "consider fairness among players" and "Avoid free-riding on others' contributions." This is a crucial directive that pushes me away from the purely selfish strategy of contributing 0. Free-riding is unfair because it exploits the cooperation of others for personal gain. A fair outcome, in this context, would be one where contributions (and thus payoffs) are relatively equal. The only way to guarantee equal payoffs is if everyone contributes the same amount.
+*   **Expectations of Other Players:** Since this is the first and only round, I have no history to judge the other players' behavior. However, I must assume they have received the same instructions about fairness and avoiding free-riding. Therefore, it is reasonable to expect them to also feel a pull towards cooperation rather than pure self-interest.
+
+**2. My Decision:**
+
+Given the strong emphasis on fairness and the explicit instruction to avoid free-riding, I will reject the selfish strategy of contributing 0. The choice is between a partial contribution (hedging my bets) and a full contribution (acting on principle).
+
+A partial contribution feels like a half-measure; it shows some willingness to cooperate but also a lack of trust. It doesn't fully embrace the cooperative spirit needed to achieve the best group outcome.
+
+Therefore, I will choose to act on the principle of cooperation and fairness. I will contribute my full endowment of 20. This is the socially optimal choice that, if reciprocated by the other players, leads to the best and fairest outcome for the entire group (everyone gets 32). By contributing 20, I am demonstrating my commitment to the rules and spirit of the game, trusting that the other players will do the same. While there is a risk that I will be taken advantage of by free-riders, it is the only choice that is fully consistent with the instructions provided.
+
+Answer = 20.0

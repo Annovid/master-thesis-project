@@ -1,0 +1,53 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 6ec1e8dd40400a1b4b27c316dd59f8c18c5c892104ecc7253230289b3ad95f27
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is a classic social dilemma. I need to decide how much to contribute, balancing my own potential gain against the potential for a better outcome for the whole group.
+
+Here is my step-by-step reasoning:
+
+1.  **Analyzing the Payoff Structure:**
+    My payoff is calculated as: 20 - (my contribution) + 0.4 * (total contributions).
+    For every token I contribute, I lose 1 token from my private account but get 0.4 tokens back from the public pot. This means each token I contribute costs me 0.6 tokens. From a purely selfish, mathematical perspective, the best strategy for me is to contribute 0, no matter what anyone else does.
+
+2.  **Considering the Group Outcome:**
+    However, if everyone thinks that way and contributes 0, we all just keep our 20 tokens. If, on the other hand, we all cooperate and contribute our full 20 tokens, the total pot would be 80. This gets multiplied by 1.6 (to 128) and divided by 4. Each of us would receive 32 tokens. So, by all cooperating, we all end up with 32 tokens instead of 20. This is a much better outcome for everyone.
+
+3.  **The Dilemma and Expectations of Others:**
+    The problem is that this is a one-time interaction. I have no information about the other three players and we can't coordinate. I have to guess what they will do.
+    *   **The Free-Rider Risk:** If I contribute my full 20 and everyone else contributes 0, I'll be the "sucker". My payoff would be 20 - 20 + (1.6 * 20) / 4 = 8. The others, who contributed nothing, would get 20 - 0 + (1.6 * 20) / 4 = 26. They would profit from my generosity.
+    *   **My own temptation:** Conversely, if I think the others will be generous and contribute 20 each, my best move is to contribute 0. I would get 20 - 0 + (1.6 * 60) / 4 = 44, the highest possible payoff.
+    *   **A Middle Ground:** It's unlikely that everyone will be completely selfish (contributing 0) or completely cooperative (contributing 20). Most people are conditional cooperators; they are willing to contribute if they think others will too.
+
+4.  **My Decision:**
+    Since this is a one-shot game, trust is low. Contributing the full 20 is too risky. Contributing 0 feels anti-social and prevents us from achieving a better outcome. I'll split the difference. I will contribute half of my endowment. This feels like a fair, common-sense approach. It signals that I'm willing to cooperate, but I'm also protecting myself from being completely exploited. I'm hoping that others might reason similarly and also contribute a moderate amount. If we all contribute 10, we each get 20 - 10 + (1.6 * 40) / 4 = 10 + 16 = 26, which is better than the 20 we'd get by contributing nothing.
+
+Answer = 10.0

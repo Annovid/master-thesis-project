@@ -1,0 +1,187 @@
+{
+  "model_requested": "openai/gpt-4o",
+  "model_returned_seen": [
+    "openai/gpt-4o"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "social_norms",
+  "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "payoffs": [
+        26.0,
+        26.0,
+        26.0,
+        26.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "1b7be061f3317dd3d750338dc70e3544b2cfe2260add3cf4a11ca0ae5093818b",
+          "response_path": "openai_gpt-4o/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778625076-3M9DJ5fXNOTmNJ58eAkR",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 394,
+            "total_tokens": 665,
+            "cost": 0.0046175,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0046175,
+              "upstream_inference_prompt_cost": 0.0006775,
+              "upstream_inference_completions_cost": 0.00394
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.79
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "5e799bc645fdf935fc9254790b58db1ee9e585cb3bf06579267b8b13443f2664",
+          "response_path": "openai_gpt-4o/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778625081-EJdrZECT285WS6fpNDep",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 513,
+            "total_tokens": 784,
+            "cost": 0.0058075,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0058075,
+              "upstream_inference_prompt_cost": 0.0006775,
+              "upstream_inference_completions_cost": 0.00513
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.32
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "c32215623fbfb3618b155fcd33a5127a07d34e60d8e74e7037f1d4f6fb718b14",
+          "response_path": "openai_gpt-4o/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778625090-8B2jzSYUCdomvJpGCVYB",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 487,
+            "total_tokens": 758,
+            "cost": 0.0055475,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0055475,
+              "upstream_inference_prompt_cost": 0.0006775,
+              "upstream_inference_completions_cost": 0.00487
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.47
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "6ec80f19c6d8df105a1683bd37e3f9eeb570bc797f652bf87e93878f66b94fa5",
+          "response_path": "openai_gpt-4o/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778625095-tz71vJuFJRA65Kcv9ojt",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 271,
+            "completion_tokens": 470,
+            "total_tokens": 741,
+            "cost": 0.0053775,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0053775,
+              "upstream_inference_prompt_cost": 0.0006775,
+              "upstream_inference_completions_cost": 0.0047
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 3.63
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    26.0,
+    26.0,
+    26.0,
+    26.0
+  ],
+  "session_path": "openai_gpt-4o/session_0",
+  "session_elapsed_s": 22.21
+}

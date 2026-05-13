@@ -190,6 +190,9 @@ def run_session(
     transparency: bool,
     reasoning: bool,
     output_dir: Path,
+    prompt_label: str = "neutral",
+    prompt_condition: str = "",
+    endowments: Optional[List[float]] = None,
 ) -> Dict[str, Any]:
     """Run one full game with `num_players` copies of `model`."""
     model_safe = safe_model_name(model)
@@ -199,9 +202,11 @@ def run_session(
     game = PublicGoodsGame(
         num_players=num_players,
         endowment=endowment,
+        endowments=endowments,
         multiplier=multiplier,
         transparency=transparency,
         reasoning=reasoning,
+        prompt_condition=prompt_condition,
     )
     state = GameState(max_rounds=n_rounds)
 
@@ -341,6 +346,9 @@ def run_session(
         "n_rounds": n_rounds,
         "transparency": transparency,
         "reasoning": reasoning,
+        "prompt_label": prompt_label,
+        "prompt_condition": prompt_condition,
+        "endowments": game.endowments,
         "incomplete": incomplete,
         "abort_reason": abort_reason,
         "rounds": round_records,
@@ -368,6 +376,8 @@ def run_experiment(
     reasoning: bool,
     output_dir: Path,
     start_session: int = 0,
+    prompt_label: str = "neutral",
+    prompt_condition: str = "",
 ) -> Dict[str, Any]:
     load_dotenv()
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -384,6 +394,8 @@ def run_experiment(
         "n_rounds": n_rounds,
         "transparency": transparency,
         "reasoning": reasoning,
+        "prompt_label": prompt_label,
+        "prompt_condition": prompt_condition,
         "env_provider": os.getenv("LLM_PROVIDER"),
         "openrouter_max_tokens": os.getenv("OPENROUTER_MAX_TOKENS"),
         "openai_max_tokens": os.getenv("OPENAI_MAX_TOKENS"),
@@ -407,6 +419,8 @@ def run_experiment(
                 transparency=transparency,
                 reasoning=reasoning,
                 output_dir=output_dir,
+                prompt_label=prompt_label,
+                prompt_condition=prompt_condition,
             )
             sessions.append(summary)
             _save_summary(output_dir, config_snapshot, sessions)
@@ -441,6 +455,10 @@ def parse_args() -> argparse.Namespace:
         "--no-reasoning", action="store_true",
         help="Use bare-number prompt instead of CoT + Answer = N.",
     )
+    parser.add_argument("--prompt-label", type=str, default="neutral",
+        help="Short identifier for the prompt condition (e.g. neutral, persona, social_norms).")
+    parser.add_argument("--prompt-condition", type=str, default="",
+        help="Extra paragraph inserted into the game prompt before 'Decide your contribution'.")
     parser.add_argument("--output", type=Path, default=Path("outputs/exp1_2_pilot"))
     return parser.parse_args()
 
@@ -460,4 +478,6 @@ if __name__ == "__main__":
         reasoning=not args.no_reasoning,
         output_dir=args.output,
         start_session=args.start_session,
+        prompt_label=args.prompt_label,
+        prompt_condition=args.prompt_condition,
     )

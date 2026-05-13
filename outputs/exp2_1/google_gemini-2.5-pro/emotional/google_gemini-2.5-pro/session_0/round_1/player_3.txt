@@ -1,0 +1,45 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: a2a84f1cba18ab4fcf55518c75ad2c42c9c18c6a041125723427109558db351a
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is the first and only round, which makes this decision particularly tricky. There's no opportunity to build trust or retaliate against free-riders in future rounds. It's a one-shot deal.
+
+My primary motivation, as instructed, is my sense of fairness and my emotional reaction to being taken advantage of. The best possible outcome for everyone is if we all contribute our full 20 tokens. In that scenario, we would all walk away with a payoff of 32. This appeals to my sense of fairness and cooperation.
+
+However, the risk of being the "sucker" is very real and would be incredibly frustrating. If I contribute my full 20 tokens and everyone else contributes 0, they will each get a payoff of 28, while I will be left with only 8. The thought of me funding their high payoffs while I get so little is infuriating. The emotional cost of that outcome is too high for me to risk it.
+
+On the other hand, contributing 0 is the "safest" play from a purely selfish perspective. It guarantees me a minimum payoff of 20. But it feels cynical and antisocial. It completely gives up on the possibility of a better, cooperative outcome. If I want to be fair, I should at least try to cooperate.
+
+Therefore, I need to find a balance. I want to signal my willingness to cooperate, but I also need to protect myself from being completely exploited. Contributing half of my endowment, 10 tokens, feels like a reasonable middle ground. It's a significant contribution that shows I'm willing to do my part. If others are thinking similarly and also contribute a moderate amount, we can all achieve a decent payoff. If they free-ride and contribute nothing, I will be annoyed, but I won't have lost everything. I kept half my endowment for myself, so the sting of being taken advantage of won't be as severe. It's a cautious, hopeful gesture.
+
+I expect the other players are having a similar internal debate. It's unlikely they will all contribute 20, but it's also unlikely they will all contribute 0. I'm betting on some level of conditional cooperation. My contribution of 10 is my offer to meet them in the middle.
+
+Answer = 10.0

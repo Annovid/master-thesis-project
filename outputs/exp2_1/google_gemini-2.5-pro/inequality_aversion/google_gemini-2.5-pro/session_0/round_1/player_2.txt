@@ -1,0 +1,58 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: d9ab33a9ff292a4c2f77e7af29838f7b7d4e9ca0f5aa821aaac77950e9904d8f
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is a one-shot Public Goods Game, which presents a classic conflict between individual and group interests.
+
+**1. Reasoning from a purely self-interested perspective:**
+My payoff is calculated as: `Payoff = 20 - My_Contribution + 0.4 * Total_Contributions`.
+This can be rewritten as: `Payoff = 20 - 0.6 * My_Contribution + 0.4 * Others_Contributions`.
+For every token I contribute, I lose 0.6 tokens. For every token someone else contributes, I gain 0.4 tokens. Therefore, to maximize my own individual payoff, the rational choice would be to contribute 0, regardless of what others do. This is the free-rider strategy.
+
+**2. Reasoning from a group perspective (social optimum):**
+The total payoff for all four players is `80 + 0.6 * Total_Contributions`. To maximize the total wealth generated for the group, the total contribution should be as high as possible. If all four players contribute their entire endowment of 20, the total contribution would be 80.
+*   Group Payoff = 80 + 0.6 * 80 = 128 tokens.
+*   Individual Payoff = 128 / 4 = 32 tokens.
+This is the best possible outcome for the group as a whole. If everyone contributes 0, the total payoff is 80, and each player simply keeps their endowment of 20.
+
+**3. Incorporating the special instructions:**
+The instructions explicitly state: "consider fairness among players," "Large inequalities in contributions are unfair," and "Avoid free-riding on others' contributions." These instructions strongly discourage the purely self-interested strategy of contributing 0.
+*   **Fairness:** The fairest outcome is one where contributions are equal, leading to equal payoffs.
+*   **Avoiding Free-Riding:** This is a direct command not to choose 0 and hope others contribute. It encourages pro-social, cooperative behavior.
+
+**My Decision and Expectations:**
+This is the first and only round, so there is no opportunity to build reputation or punish uncooperative players. My decision must be based on the rules and the explicit guidance provided. The guidance points clearly towards cooperation.
+
+I will assume that the other players have received the same instructions and will also try to act fairly and avoid free-riding. The most logical way to achieve both maximum group benefit and fairness is for everyone to cooperate fully. By contributing my entire endowment, I am signaling my trust in the other players and my commitment to achieving the best possible collective outcome. While there is a risk that others might not cooperate (making me a "sucker"), choosing a lower amount would mean I am not fully committing to the cooperative and fair strategy I am being asked to follow.
+
+Therefore, I will contribute the full amount of my endowment.
+
+Answer = 20.0

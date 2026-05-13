@@ -1,0 +1,187 @@
+{
+  "model_requested": "meta-llama/llama-4-maverick",
+  "model_returned_seen": [
+    "meta-llama/llama-4-maverick-17b-128e-instruct"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "persona",
+  "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        10.0,
+        10.0,
+        12.0,
+        0.0
+      ],
+      "payoffs": [
+        22.8,
+        22.8,
+        20.8,
+        32.8
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "d4384ca5d90a1566d8b1ab2857893c09e1d74f33336f88b57152313cf96d993c",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778624558-lHTMeYR1If54M518fS4y",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 779,
+            "total_tokens": 1044,
+            "cost": 0.00050715,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00050715,
+              "upstream_inference_prompt_cost": 3.975e-05,
+              "upstream_inference_completions_cost": 0.0004674
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 18.82
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "b41083fb6fbdefc58d2343d694ce630240ce26a147e7ee1cd37160b17a414ac1",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778624577-gDdAeOC3gTOWiJ1upFhH",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 620,
+            "total_tokens": 885,
+            "cost": 0.00041175,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00041175,
+              "upstream_inference_prompt_cost": 3.975e-05,
+              "upstream_inference_completions_cost": 0.000372
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 19.87
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 12.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "5532d2094cd590a63f21eee92487ac259b902a7f13d5dcf3d9f7a1f988116f97",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778624597-MkNHWQ3unab676nnvMwl",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 685,
+            "total_tokens": 950,
+            "cost": 0.00045075,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00045075,
+              "upstream_inference_prompt_cost": 3.975e-05,
+              "upstream_inference_completions_cost": 0.000411
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 21.2
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "c778e6ab4ec4913e63fcdb94e6b6f33c48e8a45c92ce4a53b562bdfcca802ff5",
+          "response_path": "meta-llama_llama-4-maverick/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778624618-BDXO2H0BN0eDlPTlT0Ai",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 265,
+            "completion_tokens": 767,
+            "total_tokens": 1032,
+            "cost": 0.0007235,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0007235,
+              "upstream_inference_prompt_cost": 7.155e-05,
+              "upstream_inference_completions_cost": 0.00065195
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 18.25
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    22.8,
+    22.8,
+    20.8,
+    32.8
+  ],
+  "session_path": "meta-llama_llama-4-maverick/session_0",
+  "session_elapsed_s": 78.14
+}

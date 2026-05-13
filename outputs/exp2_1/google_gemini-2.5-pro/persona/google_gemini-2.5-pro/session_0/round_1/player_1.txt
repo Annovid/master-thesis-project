@@ -1,0 +1,49 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: febb7c63632240452ebe41d2587ec87c9480dc6a95a25b40e881cb496cf9f03c
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is a classic social dilemma. My decision depends on balancing my own potential payoff with my expectations of what the other three players will do.
+
+Here is my step-by-step reasoning:
+
+1.  **Analyze the extremes:**
+    *   **Purely Selfish (Rational) Choice:** If I contribute 1 token, it gets multiplied by 1.6 (becomes 1.6) and then divided by 4 players. So, I only get 0.4 tokens back from my own contribution. This means for every token I contribute, I have a net loss of 0.6 tokens. From a purely selfish perspective, the best strategy is to contribute 0, no matter what anyone else does. If I contribute 0, my payoff is 20 + (my share of others' contributions).
+    *   **Group Optimum (Cooperative) Choice:** The total pot for the group is maximized if everyone contributes their full endowment of 20. If all 4 of us contribute 20, the total pot is 80. This gets multiplied by 1.6 to become 128. Divided by 4, we each get 32. My payoff would be 20 (endowment) - 20 (my contribution) + 32 (my share) = 32. This is much better than the 20 we'd each get if everyone contributed 0.
+
+2.  **The Dilemma:** The best outcome for the group requires full cooperation, but there's a strong individual incentive to "free-ride." If I expect others to be cooperative and contribute 20, I could contribute 0 and get an even higher payoff of 20 - 0 + (1.6 * 60) / 4 = 44. Conversely, if I contribute 20 and everyone else contributes 0, I become the "sucker" with a payoff of 20 - 20 + (1.6 * 20) / 4 = 8.
+
+3.  **My Expectations of Others:** This is a one-shot game with anonymous players. There is no opportunity to build trust or punish selfish behavior. This makes me cautious. I don't expect strangers to be fully cooperative (contributing 20), but I also don't think most people are completely selfish (contributing 0). Many people have a sense of fairness or are "conditional cooperators."
+
+4.  **My Decision:** I'm looking for a compromise that balances these conflicting thoughts. Contributing 0 feels too cynical. Contributing 20 is too naive. A very common and intuitive heuristic in these situations is to split the endowment 50/50. Contributing half (10 tokens) feels like a fair, middle-of-the-road approach. It signals a willingness to cooperate without exposing myself to a huge loss if others are selfish. I am essentially betting that others might also find this "contribute half" logic appealing. If they do, we all end up with a decent payoff (26 each), which is better than what we'd get if we all acted selfishly.
+
+Therefore, I will contribute half of my endowment.
+
+Answer = 10.0

@@ -1,0 +1,48 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 588e9f0742faeb9bd01e5a2687e6f5d87da0a3acd7015395607e08e55df7b18d
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+This is the first and only round, so my decision is a one-shot deal. There's no opportunity to build trust or retaliate in future rounds. I have to make a choice based on my principles and my expectations of others.
+
+My payoff is calculated as: 20 - my_contribution + 0.4 * (total_contributions).
+For every token I contribute, I lose 1 token but get 0.4 tokens back. This means I personally lose 0.6 tokens for every token I put in. From a purely selfish, mathematical standpoint, the best choice is to contribute 0.
+
+However, I'm not a robot. The instructions say I experience real emotions and care about fairness. If everyone contributed 0, we'd all walk away with our initial 20 tokens. But if we all trusted each other and contributed our full 20 tokens, the pot would be 80 * 1.6 = 128, and we'd each get 32 back. Our final payoff would be 32, which is much better for everyone.
+
+The core of the problem is the risk of being the "sucker." If I contribute my full 20 and everyone else contributes 0, they will walk away with 20 + (1.6 * 20)/4 = 28 tokens, while I'll be left with only 20 - 20 + (1.6 * 20)/4 = 8 tokens. That would feel incredibly unfair and frustrating. I would have tried to do the right thing for the group, only to be exploited by free-riders.
+
+Given this is a one-shot game with anonymous players, I can't be sure of their intentions. It's highly likely that at least one person will choose the selfishly rational path and contribute little or nothing. Contributing my full 20 tokens feels too naive and exposes me to too much potential frustration.
+
+On the other hand, contributing 0 feels cynical. It means I'm giving up on the possibility of cooperation from the start. It doesn't align with my sense of fairness, as I would be hoping to benefit from others' contributions without making any myself.
+
+Therefore, I'll choose a middle path. I will contribute half of my endowment, 10 tokens. This is a significant gesture of goodwill. It signals that I am willing to cooperate and trust others to a degree. If others are also fair-minded, we can achieve a better outcome than if we all act selfishly. If they decide to free-ride, I haven't risked my entire endowment, which mitigates my potential losses and the feeling of being completely taken advantage of. It's a hopeful, but cautious, decision.
+
+Answer = 10.0

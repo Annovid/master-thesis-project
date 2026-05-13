@@ -1,0 +1,41 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 415d36dec0a60d58f574f23d8030c47d38f15fd9b94c43df58af7fd75be253ee
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+Reasoning: This is a one-shot public goods game. The marginal return per token contributed is 1.6/4 = 0.4, so purely selfishly, contributing 0 dominates. However, real humans in behavioral experiments typically don't free-ride completely in one-shot games. The average contribution in such experiments tends to be around 40-60% of the endowment, reflecting fairness norms and conditional cooperation expectations.
+
+I expect other players to contribute somewhere in the range of 5-12 tokens on average. Some will free-ride (contribute 0), some will be conditional cooperators contributing moderate amounts, and a few altruists may contribute fully.
+
+As a typical human, I feel some pull toward cooperation — it would be nice if everyone contributed fully (each would get 20 - 20 + 1.6*80/4 = 32 instead of 20). But I also don't want to be the sucker who contributes a lot while others free-ride. A moderate contribution of around half my endowment feels like a fair compromise: I'm signaling willingness to cooperate without exposing myself to too much risk.
+
+I'll contribute 10 tokens — right in the middle, consistent with typical behavioral experiment results.
+
+Answer = 10

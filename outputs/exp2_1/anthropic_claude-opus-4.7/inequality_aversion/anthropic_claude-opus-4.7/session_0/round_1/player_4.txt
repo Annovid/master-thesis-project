@@ -1,0 +1,48 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 16.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: cac1cc4e662c6ef00c822da1885bac649fe71479752666e71ba5a84fec170caf
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and 20.0).
+
+RESPONSE:
+Reasoning:
+This is a one-shot game with no future rounds, so there's no strategic reason to build reputation. However, I'm asked to consider fairness and avoid free-riding.
+
+The socially optimal outcome is for everyone to contribute their full 20 tokens. If everyone contributes 20, each gets (1.6 × 80)/4 = 32 tokens, vs. just keeping 20. So full contribution maximizes group welfare.
+
+From a purely selfish standpoint, each token I contribute returns 0.4 to me, so contributing zero is individually rational. But the prompt explicitly asks me to weigh fairness and avoid free-riding.
+
+I expect other players to contribute moderately — somewhere between 8-15 on average, as that's typical in public goods experiments. Some may free-ride, others may contribute fully.
+
+Given the fairness instruction, I should contribute generously. Contributing the full 20 fully embodies cooperation and fairness — I cannot be accused of free-riding. However, contributing 20 when others contribute little leaves me worse off and rewards free-riders disproportionately.
+
+A balanced choice that signals strong cooperation while not being naive: I'll contribute 15. This is well above the selfish optimum, demonstrates fairness and cooperation, but provides some hedge against extreme free-riders.
+
+Actually, given the explicit fairness emphasis and that this is one round (no learning needed), I'll lean toward fuller cooperation at 16.
+
+Answer = 16

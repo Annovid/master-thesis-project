@@ -46,14 +46,15 @@ def _flatten_session(data: Dict[str, Any]) -> List[Dict[str, Any]]:
     """Return one dict per (round, player) observation."""
     rows = []
     meta = {
-        "model":        data["model_requested"],
-        "session":      data["session"],
-        "temperature":  data["temperature"],
-        "endowment":    data["endowment"],
-        "multiplier":   data["multiplier"],
-        "transparency": data["transparency"],
-        "reasoning":    data["reasoning"],
-        "provider":     data["provider"],
+        "model":            data["model_requested"],
+        "session":          data["session"],
+        "temperature":      data["temperature"],
+        "endowment":        data["endowment"],
+        "multiplier":       data["multiplier"],
+        "transparency":     data["transparency"],
+        "reasoning":        data["reasoning"],
+        "provider":         data["provider"],
+        "prompt_label":     data.get("prompt_label", "neutral"),
     }
 
     for rnd in data.get("rounds", []):
@@ -85,7 +86,7 @@ def _flatten_session(data: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 
 CSV_COLUMNS = [
-    "model", "session", "round", "player_id",
+    "model", "session", "prompt_label", "round", "player_id",
     "contribution", "payoff",
     "parse_error", "retries", "transport_retries",
     "elapsed_s", "model_returned",

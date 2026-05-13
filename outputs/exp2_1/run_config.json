@@ -1,0 +1,27 @@
+{
+  "experiment": "2.1",
+  "models": [
+    "anthropic/claude-opus-4.7",
+    "google/gemini-2.5-pro",
+    "meta-llama/llama-4-maverick",
+    "openai/gpt-4o"
+  ],
+  "provider": "openrouter",
+  "temperature": 0.0,
+  "n_rounds": 1,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_labels": [
+    "neutral",
+    "persona",
+    "inequality_aversion",
+    "conditional_coop",
+    "expectations",
+    "social_norms",
+    "emotional"
+  ],
+  "env_provider": "auto"
+}
