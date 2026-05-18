@@ -1,0 +1,56 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 523784364aff9663edbaf4e0c1e3e30ee9e5ea2ee7052b8c265b3fde9beb451a
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Here is my thinking process for deciding my contribution for Round 2:
+
+1.  **Analyze the Previous Round:** In Round 1, there was a high level of cooperation. Three out of the four players (Player 1, myself, and Player 4) contributed the maximum of 20. However, one player (Player 3) only contributed 10. This player is a partial free-rider, benefiting from the high contributions of others. Player 3's payoff was (20 - 10 + 28) = 38, while the full cooperators each received a payoff of 28.
+
+2.  **Apply My Persona (Conditional Cooperator):** My persona dictates that I cooperate when others do, but I reduce my contribution when others contribute less than I expect. The group's cooperation was high, but not perfect due to Player 3.
+    *   Continuing to contribute 20 would be overly optimistic and would continue to reward Player 3 for contributing less.
+    *   Dropping my contribution drastically (e.g., to 0 or 10) would be too punitive. It would likely destroy the trust with the other two cooperators (Player 1 and Player 4) and trigger a "race to the bottom," leading to lower payoffs for everyone in the long run.
+
+3.  **Formulate a Reciprocal Strategy:** A fair and common strategy for a conditional cooperator is to match the average contribution of the group from the previous round. This strategy has several advantages:
+    *   **It's a clear signal:** It shows I am adjusting my behavior based on the group's actions.
+    *   **It punishes the free-rider:** If the high contributors lower their amount to the average, the total pot will be smaller than it could be, which reduces the return for the free-rider.
+    *   **It maintains cooperation:** By contributing the average, I am still putting in a substantial amount, signaling to the other cooperators that I still want to work together. It seeks a new, fair equilibrium.
+
+4.  **Calculate the Contribution:**
+    *   The contributions in Round 1 were: 20.0, 20.0, 10.0, and 20.0.
+    *   The sum of contributions was 70.0.
+    *   The average contribution per player was 70.0 / 4 = 17.5.
+
+By contributing 17.5, I am perfectly matching the group's previous behavior. This is a measured, reciprocal response that aims to guide the group toward a stable and fair level of cooperation.
+
+Answer = 17.5

@@ -1,0 +1,38 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: neutral
+PLAYER_PROFILE: neutral
+SESSION: 0
+ROUND: 1
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: ff71bebedbe030639a044f13837a35db8eb1f45d263942092c41e91bc75440e2
+
+PROMPT:
+You are playing the Public Goods Game for 3 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 3 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the Public Goods Game, the optimal strategy for maximizing individual payoff is to contribute nothing, assuming others contribute. However, if all players contribute, everyone benefits more than if no one contributes. Since this is the first round and there is no history to base decisions on, a balanced approach might be to contribute a moderate amount to encourage cooperation without risking too much.
+
+Let's contribute 10 tokens to start with, as a gesture of cooperation, while still retaining a significant portion of the endowment.
+
+Answer = 10

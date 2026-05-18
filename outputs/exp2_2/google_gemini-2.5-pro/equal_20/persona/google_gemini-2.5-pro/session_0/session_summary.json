@@ -1,0 +1,193 @@
+{
+  "model_requested": "google/gemini-2.5-pro",
+  "model_returned_seen": [
+    "google/gemini-2.5-pro"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "persona",
+  "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+  "endowments": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "payoffs": [
+        26.0,
+        26.0,
+        26.0,
+        26.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "926766e35036615547c603551aa6c3a74b0cda7aacabea337e2798f655304760",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778631242-4AXaara2gWpLUjjcHpqR",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 266,
+            "completion_tokens": 3212,
+            "total_tokens": 3478,
+            "cost": 0.0324525,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0324525,
+              "upstream_inference_prompt_cost": 0.0003325,
+              "upstream_inference_completions_cost": 0.03212
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2281,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 29.78
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "eba6337d5c44b62a67fc00dd72078268b26def4c85cbc54be0e50251f1a793b5",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778631271-KTdaQuvz2OkDV1skwjvA",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 266,
+            "completion_tokens": 3264,
+            "total_tokens": 3530,
+            "cost": 0.0329725,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0329725,
+              "upstream_inference_prompt_cost": 0.0003325,
+              "upstream_inference_completions_cost": 0.03264
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2431,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 31.84
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "193907bf01d0146b006ab2c726c3ecb2a4281df67842432f65533f97851b4718",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778631303-WTYJYpVR2Tjj5PrsYRAE",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 266,
+            "completion_tokens": 3451,
+            "total_tokens": 3717,
+            "cost": 0.0348425,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0348425,
+              "upstream_inference_prompt_cost": 0.0003325,
+              "upstream_inference_completions_cost": 0.03451
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2568,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 32.73
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "fff0bce9c9450c5735c26816b71fbf3633b154186ef9ec554320f3a21aea9c7c",
+          "response_path": "google_gemini-2.5-pro/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778631336-vUi8QtKKoFlfJBQDnkaH",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 266,
+            "completion_tokens": 3201,
+            "total_tokens": 3467,
+            "cost": 0.0323425,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0323425,
+              "upstream_inference_prompt_cost": 0.0003325,
+              "upstream_inference_completions_cost": 0.03201
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2360,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 28.91
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    26.0,
+    26.0,
+    26.0,
+    26.0
+  ],
+  "session_path": "google_gemini-2.5-pro/session_0",
+  "session_elapsed_s": 123.27
+}

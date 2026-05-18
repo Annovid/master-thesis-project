@@ -1,0 +1,50 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: neutral
+PLAYER_PROFILE: neutral
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: fbea6b58a8ca37c00daf891c52a64e9b96db690fb7b1fdbc261661829152c5e6
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round will set the tone for future interactions and signal my intentions to the other players.
+
+**Analysis of Payoff Structure:**
+*   **Individual Incentive:** For every token I contribute, my personal payoff decreases by 0.6 tokens (I lose 1 token but get back 1.6/4 = 0.4 tokens). From a purely selfish, single-round perspective, the best strategy is to contribute 0.
+*   **Group Incentive:** For every token contributed by anyone, the total wealth of the group increases by 0.6 tokens (the pot is multiplied by 1.6, but the original 1 token is removed from a player's endowment). To maximize the group's total payoff, everyone should contribute their full 20 tokens.
+
+**Strategic Considerations for a Multi-Round Game:**
+1.  **The Cooperative Outcome:** If all four players contribute 20 tokens, the total contribution is 80. This is multiplied by 1.6 to make 128, and divided by 4, so each player receives 32 tokens. The payoff for each player would be: 20 - 20 + 32 = 32. This is the highest possible average payoff.
+2.  **The Selfish Outcome (Nash Equilibrium):** If all players act selfishly and contribute 0, the pot is 0, and everyone's payoff is simply their endowment: 20 - 0 + 0 = 20.
+3.  **The First Round Dilemma:** Since this is the first round, I have no information about the other players.
+    *   Contributing 0 is the safest move for this round, but it signals a lack of trust and will likely lead other players to contribute 0 in the future, locking us into the low-payoff (20 per round) outcome.
+    *   Contributing 20 is a risky move. If others also cooperate, we can establish a high-payoff equilibrium (32 per round). If they don't, I will receive a "sucker's payoff" for this round. However, it is the only way to initiate a cooperative dynamic.
+
+**Decision:**
+To maximize my total score over 10 rounds, it is worth taking a risk in the first round to signal a desire for cooperation. By contributing the maximum amount, I am making a clear, unambiguous offer to cooperate. If the other players are also thinking long-term, they may do the same. If they defect, I will have learned valuable information about their strategies and can adjust my contributions downwards in the next round. The potential reward of establishing a cooperative norm outweighs the one-round risk.
+
+Answer = 20.0

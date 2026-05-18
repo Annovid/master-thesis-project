@@ -1,0 +1,61 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 4
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: bb17b5f904a564c72c431c9a023b477859d51b515048ccc9b392a7515f9189be
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Here is my thinking process for deciding my contribution for Round 4:
+
+1.  **Analyze the Previous Round (Round 3):**
+    *   I, along with Player 1 and Player 4, contributed the full 20 tokens. This was an attempt to restore the fully cooperative state after Player 3 increased their contribution in Round 2.
+    *   Player 3 contributed 17.5. This is not a random number; it's the exact amount that I and Player 1 contributed in Round 2.
+
+2.  **Interpret the Group's Behavior:**
+    *   Player 4 is a consistent, unconditional cooperator (always 20).
+    *   Player 1 seems to be a conditional cooperator, very similar to me. We have made identical moves so far.
+    *   Player 3 is also a conditional cooperator, but they seem to be operating with a "tit-for-tat" or "echo" strategy. They contributed 17.5 in Round 3 because that's what the other cooperators (me and P1) did in Round 2. This is not an act of free-riding, but rather a reciprocal response.
+
+3.  **Apply My Persona (Conditional Cooperator):**
+    *   My persona is to cooperate when others do. In Round 3, the group was highly cooperative, with a total contribution of 77.5 out of 80.
+    *   Player 3's lower contribution was a direct reaction to my own past behavior. To punish them for this would be hypocritical and would likely damage the high level of trust we've built.
+    *   The best way to encourage cooperation is to reward it. In Round 3, three players (myself included) contributed 20. The most likely and desirable outcome is that Player 3 will now reciprocate this high level of cooperation and also contribute 20.
+
+4.  **Formulate a Strategy for Round 4:**
+    *   The goal is to achieve and maintain the optimal equilibrium where everyone contributes 20.
+    *   By contributing 20 again, I am signaling my trust in Player 3 to reciprocate the group's full cooperation from the previous round. This reinforces the norm we are trying to establish.
+    *   If I were to lower my contribution (e.g., to the average of 19.375), it might send a confusing signal and prevent us from reaching the optimal outcome. It's better to lead with trust. If Player 3 fails to contribute 20 in this round, then a reduction in my contribution will be necessary in Round 5. But for now, the signs point towards continued high cooperation.
+
+I will continue to contribute the maximum to show trust and aim for the best collective result.
+
+Answer = 20.0

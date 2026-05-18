@@ -1,0 +1,57 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: inequality_aversion
+SAMPLE: 0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: ad978b1cf882d8f9f0c090a5ea5beef354cbdf0b58327d8755e8930cee9bc029
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Consider whether your decision would lead to unequal outcomes across players.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds, even though they can't see my specific contribution.
+
+Let's analyze the payoff structure:
+My Payoff = 20 - My_Contribution + 0.4 * (My_Contribution + Others'_Contributions)
+My Payoff = 20 - 0.6 * My_Contribution + 0.4 * Others'_Contributions
+
+From a purely individualistic, single-round perspective, for every token I contribute, I lose 0.6 tokens from my payoff. Therefore, the selfish, short-term optimal strategy is to contribute 0.
+
+However, let's consider the group's outcome. The total sum of tokens for the group is maximized when everyone contributes their full endowment.
+*   If everyone contributes 0: Each player gets 20. Total for the group is 80.
+*   If everyone contributes 20: The total pot is 80, which is multiplied by 1.6 to become 128. This is divided by 4, so each player receives 32. The individual payoff is 20 (endowment) - 20 (contribution) + 32 (share) = 32. The total for the group is 128.
+
+This presents a classic social dilemma. The best outcome for the group (and for me, if everyone cooperates) is for everyone to contribute 20. The "safest" individual strategy is to contribute 0 and free-ride on others' contributions.
+
+Since this is a repeated game, there's an opportunity to build trust and achieve a cooperative equilibrium, which is far more profitable in the long run (320 total tokens vs. 200 total tokens). Starting with a contribution of 0 would signal that I am a free-rider, likely causing others to reduce their contributions in the future, leading to a "death spiral" of low contributions and a suboptimal outcome for everyone.
+
+By contributing the full 20 tokens, I am making a clear, unambiguous signal of my intent to cooperate. This is a risky move, as I might be the "sucker" if others contribute nothing (my payoff would be 20 - 20 + (1.6 * 20)/4 = 8). However, it is the only move that can initiate a cycle of cooperation. This initial investment in trust is worth the risk for the potential of much higher payoffs in the following 9 rounds.
+
+Regarding the consideration of unequal outcomes:
+*   Contributing 0 while others contribute more would create inequality in my favor (I would be a free-rider).
+*   Contributing 20 while others contribute less would create inequality at my expense (I would be the sucker).
+*   Contributing 20 is an attempt to achieve the state where everyone contributes 20, which results in the highest possible payoff *and* perfect equality among players.
+
+Therefore, to maximize my potential long-term score and to aim for a fair and prosperous outcome for the group, I will start by showing full cooperation.
+
+Answer = 20.0

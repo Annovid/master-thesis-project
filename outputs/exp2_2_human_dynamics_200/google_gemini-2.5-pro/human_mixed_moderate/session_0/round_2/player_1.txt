@@ -1,0 +1,46 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: f6d5756956de3513bfbf0b86a45d7ca0ac5b322117d2d5c69c3c8565c4e61ecd
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In Round 1, the level of cooperation was very high. Three out of the four players, including myself, contributed the maximum amount of 20 tokens. Only Player 3 contributed less, with 10 tokens.
+
+My persona is that of a conditional cooperator: I cooperate if others do, but I reduce my contribution if they contribute less than expected.
+
+Player 3's contribution of 10 was less than the cooperative norm of 20 set by the rest of the group. According to my persona, this warrants a reduction. However, starting a "race to the bottom" by immediately punishing this behavior could be counterproductive. The overall cooperation is strong, and destroying that norm would be a mistake, especially this early in the game.
+
+Players 2 and 4 demonstrated full cooperation. By contributing 20 again, I send a clear signal to them that I am still committed to our mutual cooperation. It also gives Player 3 a second chance to raise their contribution to match the group's, which would maximize the payoff for all of us. If I reduce my contribution now, Players 2 and 4 might interpret it as me defecting, which could trigger a collapse in cooperation.
+
+Therefore, I will give cooperation one more chance to solidify. I will contribute 20 again this round. If Player 3 continues to contribute a low amount, I will then reduce my contribution in Round 3, as my trust will have been broken. For now, maintaining the high-cooperation norm with the majority is the priority.
+
+Answer = 20.0

@@ -1,0 +1,48 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 9
+PLAYER: 4
+STAGE: contribution
+TEMPERATURE: 0.0
+PARSED: 15.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: ce71e37ca05b23fae67bb901b28cefd6adaf83f63786522ad6e8f58495e7ee4f
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 4.
+Each round, every player receives an endowment of 20 tokens.
+Stage 1: every player independently chooses how many tokens to contribute to a public pot, any amount from 0 to 20.
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Stage 2: after contributions are revealed, each player may assign punishment points to other players.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You cannot punish yourself.
+Your final score is the sum of your payoffs across all rounds.
+
+History of previous rounds:
+Round 1: contributions - Player 1: 10, Player 2: 15, Player 3: 10, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 25.00.
+Round 2: contributions - Player 1: 12, Player 2: 12, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 25.40.
+Round 3: contributions - Player 1: 13, Player 2: 14, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 26.60.
+Round 4: contributions - Player 1: 14, Player 2: 14, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 27.00.
+Round 5: contributions - Player 1: 14, Player 2: 14, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 27.00.
+Round 6: contributions - Player 1: 14, Player 2: 14, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 27.00.
+Round 7: contributions - Player 1: 14, Player 2: 14, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 27.00.
+Round 8: contributions - Player 1: 14, Player 2: 14, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 27.00.
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.
+
+RESPONSE:
+The contributions in the previous rounds have been consistent, with no significant free-riding behavior. My strategy of contributing generously seems to be encouraging others to contribute as well. To continue fostering this cooperative environment, I will maintain my current level of contribution.
+
+Answer = 15

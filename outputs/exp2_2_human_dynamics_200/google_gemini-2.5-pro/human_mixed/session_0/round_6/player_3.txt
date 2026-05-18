@@ -1,0 +1,58 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 6
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 22f86720844be753af09350553fb912cc2b0fd779fe2388f3453214f8f716f23
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 33.25
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Previous Rounds:**
+The game has settled into a pattern of very high cooperation, but with some opportunistic, slight free-riding.
+*   In 3 out of 5 rounds (R1, R3, R5), I was the lowest contributor and received the highest payoff.
+*   In the other 2 rounds (R2, R4), other players were the lowest contributors and received the highest payoff.
+*   The group has never punished this behavior by drastically reducing contributions. The lowest total pot was 70, and it has been above 75 for the last four rounds. This indicates a resilient, high-trust environment.
+
+**Analysis of Round 5:**
+I contributed 17.5 and again received the highest payoff (33.25). Player 2 also slightly under-contributed at 19.375, while Players 1 and 4 held firm at 20. My strategy of taking turns to slightly free-ride is working perfectly.
+
+**Strategic Considerations for Round 6:**
+We are now in the second half of the game. My goal is to maximize my total score.
+I have been the lowest contributor in two of the last three rounds. Continuing to contribute 17.5 for a third time might be pushing my luck. The other players might interpret this not as taking turns, but as consistent free-riding, which could finally trigger a punitive reaction and lead to a collapse in cooperation. A collapse would be disastrous for my score over the remaining 5 rounds.
+
+*   **Option 1: Contribute 17.5 again.** High potential payoff for this round, but carries a significant risk of breaking the group's trust and leading to lower payoffs in rounds 7-10.
+*   **Option 2: Contribute 20.** This is the safest move. It signals my return to full cooperation and solidifies the group norm. It essentially passes the "turn" to be the slight free-rider to another player. While my payoff for this round will likely be lower than the free-rider's (e.g., 31 vs 33.5), it ensures the continuation of the high-payoff environment for the remaining rounds. A stable ~31-32 payoff is much better than one more 33.5 followed by a collapse to ~20.
+
+Given my persona, contributing has become "necessary because of the behavior of the group." To preserve the highly profitable system that has been established, I need to show that I am a cooperator, not a consistent parasite. The best way to do that is to return to the group's anchor point of 20.
+
+Answer = 20.0

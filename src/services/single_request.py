@@ -9,10 +9,11 @@ from src.connectors.openai_connector import OpenAIConnector
 from src.connectors.openrouter_connector import OpenRouterConnector
 from src.connectors.gateway_connector import LLMApiGatewayConnector
 from src.connectors.mock_connector import MockConnector
+from src.connectors.model_aliases import resolve_model_alias
 
 
 def build_connector(agent_cfg: dict, default_provider: str = "auto"):
-    model = agent_cfg.get("model", "gpt-3.5-turbo-0125")
+    model = resolve_model_alias(agent_cfg.get("model", "gpt-3.5-turbo-0125"))
     temperature = agent_cfg.get("temperature", 0.0)
     connector_type = agent_cfg.get("type", "openai")
     provider = agent_cfg.get("provider", default_provider)

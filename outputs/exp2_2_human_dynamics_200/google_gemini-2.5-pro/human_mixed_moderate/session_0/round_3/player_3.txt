@@ -1,0 +1,61 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: moderate_free_rider
+SESSION: 0
+ROUND: 3
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: f344b7dc335405b41e2852b0af90da65c50e6fb6b9013c10bfc3ee57ee34f143
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 20.0, Player 2: 17.5, Player 3: 15.0, Player 4: 20.0, total pot 72.5, your payoff 34.00
+
+You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Previous Rounds:**
+
+*   **Round 1:** The other three players started with full cooperation (20 tokens). My lower contribution of 10 made me a partial free-rider, giving me the highest payoff but risking the group's trust.
+*   **Round 2:** I increased my contribution to 15 as a sign of goodwill. Players 1 and 4 maintained their full cooperation. Player 2, perhaps reacting to my initial low contribution or adopting a similar strategy, slightly reduced their contribution to 17.5. The overall cooperation level remains extremely high, and the total pot even increased.
+
+**Current Situation (Round 3):**
+
+The group is in a very good state. The average contribution is high (18.125), and everyone is getting a good payoff. My contribution of 15 is the lowest, making me the outlier. While this benefits me in the short term, it could still be perceived as me not pulling my weight, especially by Players 1 and 4 who are contributing the maximum.
+
+Player 2's move to 17.5 is key. They are still highly cooperative but are hedging their bets slightly, just like me. To maintain the stability and high trust of the group, it's wise for me to move closer to the group's behavior.
+
+**Strategy for Round 3:**
+
+My persona is to contribute less than the most cooperative players (P1 and P4 at 20), but to cooperate when the group does. The group is clearly cooperating.
+
+*   **Maintaining 15:** This is an option, but it keeps me as the lowest contributor. It might signal that 15 is my limit, which could encourage the others to drop their contributions towards mine.
+*   **Increasing to 17.5:** This is a strong strategic move. It accomplishes several things:
+    1.  It shows I am responsive to the group and willing to increase my cooperation further.
+    2.  It aligns my contribution with Player 2, creating a pair of "high-but-not-maximal" contributors. This makes my behavior seem less like an outlier and more like a shared strategy, which is more stable.
+    3.  It still adheres to my persona of contributing less than the most cooperative players (P1 and P4).
+    4.  It's a good investment in long-term trust. While my payoff this round might be slightly lower than if I contributed 15 (assuming others' contributions stay the same), it significantly increases the chance of maintaining this high level of cooperation for the remaining rounds.
+
+I will match Player 2's contribution to signal solidarity and invest in the group's continued success.
+
+Answer = 17.5

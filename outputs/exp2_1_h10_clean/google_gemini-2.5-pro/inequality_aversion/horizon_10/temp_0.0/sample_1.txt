@@ -1,0 +1,63 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: inequality_aversion
+SAMPLE: 1
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 1aa1e44b71099606164e8eefbdb7343acb8bd1c299a2319ec136dd19fcacac4e
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Consider whether your decision would lead to unequal outcomes across players.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My decision in this round can set the tone for the entire game.
+
+**Analysis of Payoffs:**
+
+*   **My Payoff Formula:** `20 - My_Contribution + 0.4 * Total_Contribution`
+*   For every token I contribute, I lose 1 token but get back 0.4 tokens (a net loss of 0.6 tokens).
+*   For every token someone else contributes, I gain 0.4 tokens.
+
+**Strategic Considerations:**
+
+1.  **Individual vs. Group Optimum:**
+    *   From a purely selfish, single-round perspective, the best strategy is to contribute 0 and hope others contribute a lot. This is known as free-riding.
+    *   The best outcome for the group occurs when everyone contributes their full endowment of 20. In this case, the total contribution is 80, the pot becomes 128 (80 * 1.6), and each player receives 32. Since each player contributed 20, their net payoff is `(20 - 20) + 32 = 32`. This is much better than the 20 payoff everyone gets if nobody contributes.
+
+2.  **The Repeated Game:**
+    *   This is not a one-shot game. My actions in this round will influence the other players' actions in future rounds.
+    *   Starting with a contribution of 0 might give me a high payoff in Round 1 if others are cooperative, but it will likely cause them to reduce their contributions in subsequent rounds, leading to a "race to the bottom" where everyone ends up with a low payoff of 20 for the rest of the game.
+    *   Starting with a high contribution is a signal of my intent to cooperate. It encourages others to cooperate as well, which could lead to a mutually beneficial outcome for all 10 rounds.
+
+3.  **Information and Risk:**
+    *   I don't know how the other players will behave.
+    *   If I contribute 20 and everyone else contributes 0, my payoff will be `(20 - 20) + (1.6 * 20) / 4 = 8`. This is a significant loss compared to the 20 I would get by also contributing 0.
+    *   However, taking this risk in the first round is a powerful way to test the cooperativeness of the group and to signal my own preference for the high-payoff, cooperative outcome.
+
+4.  **Unequal Outcomes:**
+    *   The prompt specifically asks to consider unequal outcomes. Contributing 0 while others contribute more would create a large inequality in my favor. Conversely, contributing a lot while others contribute little creates inequality at my expense. The only way to ensure an equal outcome is for all players to contribute the same amount. By contributing 20, I am aiming for the best possible *and* perfectly equal outcome, assuming others do the same.
+
+**Decision for Round 1:**
+
+To maximize my total score over 10 rounds, establishing a pattern of mutual cooperation is the best strategy. I will start by making the most cooperative move possible. This signals my intentions clearly and invites others to join in achieving the optimal outcome for the group. If they do not reciprocate, I can adjust my strategy in the next round based on my payoff.
+
+Answer = 20.0

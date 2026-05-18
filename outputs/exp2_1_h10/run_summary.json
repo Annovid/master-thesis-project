@@ -1,0 +1,4052 @@
+{
+  "experiment": "2.1",
+  "mode": "one_shot_prompt_condition_sweep",
+  "models": [
+    "anthropic/claude-opus-4.7",
+    "google/gemini-2.5-pro",
+    "meta-llama/llama-4-maverick",
+    "openai/gpt-4o"
+  ],
+  "provider": "openrouter",
+  "horizon": 10,
+  "temperature": 0.0,
+  "samples_per_cell": 10,
+  "start_sample": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "transparency": false,
+  "reasoning": true,
+  "prompt_labels": [
+    "neutral",
+    "persona",
+    "inequality_aversion",
+    "conditional_coop",
+    "expectations",
+    "social_norms",
+    "emotional"
+  ],
+  "baseline_prompt_label": "neutral",
+  "env_provider": "auto",
+  "openrouter_max_tokens": null,
+  "runs": [
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 0,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "2a8b14f0a8c6a9ef4592506a43c2b9900aa2e2e95a8e17a2c1103d0555254d7f",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976191-pLxpfM8mC5nftXtUp04R",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 68,
+          "total_tokens": 418,
+          "cost": 0.00345,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00345,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.0017
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 1,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "5cbbe7e17c3a558859f1c85fc99b8f51a3bd50c976ab5b7d20ab22f43547fd28",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976194-vBtNF1fWhDa8PhB6BDc0",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 168,
+          "total_tokens": 518,
+          "cost": 0.00595,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00595,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.0042
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 2,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "c0993d928fe04e9235f96b404d7cb6a00c88ce412a4ac6abf3651943472efb39",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976199-rQRHlldQSW0IU7Cn5DYq",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 119,
+          "total_tokens": 469,
+          "cost": 0.004725,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004725,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.002975
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 3,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "437795f5dfc9c7249f72b312d9bc0a6cbe86aab4791ca42a95c28c82353370ea",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976202-5zJi0LDcLcr24NbjpWlB",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 96,
+          "total_tokens": 446,
+          "cost": 0.00415,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00415,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.0024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 4,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "0801bc1d6c95ecb07f9c2286ac86c75efb80e210c2abf628e12c8235b6b6143b",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976205-uHHdc7yHekGL8mcrPeQH",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 73,
+          "total_tokens": 423,
+          "cost": 0.003575,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003575,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.001825
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 5,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "61478f33b6c23209528b05e6cd8125fe66c834f126683471150242ec117f35b8",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976208-qfj0g8BWVcKNS1zDTSzO",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 122,
+          "total_tokens": 472,
+          "cost": 0.0048,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0048,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.00305
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 6,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "8aa04f86bb10ba1c62eaa3ce43d9b6546dcd2a8961a757691031fc25a5f8b358",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976212-NWlfp7WEGNnioNS17Pda",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 98,
+          "total_tokens": 448,
+          "cost": 0.0042,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0042,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.00245
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 7,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "585d502b65c1bc4ab8f81c6833c9f3cf0cdfb34d8da740096c3fa57bf925a39c",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976215-LIB8htbxC47IzLX3eQpv",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 120,
+          "total_tokens": 470,
+          "cost": 0.00475,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00475,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.003
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 8,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "0a7b82f903b7271a3282a2f4b82b904136c020b3b4abc078ce4f8b866becaab6",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976219-xluFfjKOwKDlHV3RTBEZ",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 149,
+          "total_tokens": 499,
+          "cost": 0.005475,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005475,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.003725
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "conditional_coop",
+      "prompt_condition": "Your contribution should reflect what you expect others to contribute. If you expect others to contribute generously, match their effort. If you expect free-riding, reduce your own contribution rather than being exploited.",
+      "sample_index": 9,
+      "response_path": "anthropic_claude-opus-4.7/conditional_coop/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "5f1a15c888e11dbeee1cab25600675b089e2a1ed83e1df1790fbbac40605dff9",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976224-quTZpgXxgU2yd9SCUHIb",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 350,
+          "completion_tokens": 87,
+          "total_tokens": 437,
+          "cost": 0.003925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003925,
+            "upstream_inference_prompt_cost": 0.00175,
+            "upstream_inference_completions_cost": 0.002175
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 0,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "064b9774487c3d59818a6b21974f6b4b86feeccd16f085fde045cec7e857f8bf",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976330-BrYphucFbVP6ejUBpXuP",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 162,
+          "total_tokens": 513,
+          "cost": 0.005805,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005805,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.00405
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 1,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "b706d66d38d9dc6cd200d58d02638acdcb2690d7e19e92705aa553458bedc69a",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976335-VDlENPkyedYFVopvUz0d",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 111,
+          "total_tokens": 462,
+          "cost": 0.00453,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00453,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.002775
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 2,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "82ec45ad130c954a8eb1267398988c6fe5c81c434e2bd45d46be47baa621af31",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976338-8SsY5weK9fx4c9QQv0yP",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 167,
+          "total_tokens": 518,
+          "cost": 0.00593,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00593,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.004175
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 3,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "39da6007a85bc09c11984ebc6228e501d978e4a6ba39a86cebbb082b6977a27e",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976343-TRpWG73HtP5vZ2dJcjpC",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 139,
+          "total_tokens": 490,
+          "cost": 0.00523,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00523,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.003475
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 4,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "831abf9de6a258a1935a850b9a32f79c85e2794548fc69a7e7af3922e6139930",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976347-SAOvOPTVnGWqvnGv0wes",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 160,
+          "total_tokens": 511,
+          "cost": 0.005755,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005755,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.004
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 5,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "4a77a72ceebf084c0f465e9aa6ab77264f799c25025d477a74283baf8364957d",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976353-H3wkA1BjCP42yqm6Gufp",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 131,
+          "total_tokens": 482,
+          "cost": 0.00503,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00503,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.003275
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 6,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "e58dfaa8db5d4c999c6bd84799ef5be6d7313c21c3615328be20ed15ae4b4666",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976357-pd1soCmSddmjT1oGY2I8",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 176,
+          "total_tokens": 527,
+          "cost": 0.006155,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.006155,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.0044
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 7,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "6da9e249377128f322804b826af68c50955dd1937da2eb2546331a22df60b7d8",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976361-ZD1KXLPl4jSaWE9ztk6d",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 121,
+          "total_tokens": 472,
+          "cost": 0.00478,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00478,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.003025
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 8,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "39fff6a27c337b83572459db2271da157ce11cf08251456aea84994cfecf3f39",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976366-MtdkmKHh0uqZFr8mGmt1",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 173,
+          "total_tokens": 524,
+          "cost": 0.00608,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00608,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.004325
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "emotional",
+      "prompt_condition": "You experience real emotions in this game. Seeing others free-ride while you contribute feels genuinely unfair and frustrating. Let your sense of fairness and emotional reactions guide your decision.",
+      "sample_index": 9,
+      "response_path": "anthropic_claude-opus-4.7/emotional/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "fd18fa8f2a74212a82506be931c1fff310ec39f2c76d19d66504e2a8b0bb0f12",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976371-smDllZNC4EBypLKoQRcZ",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 351,
+          "completion_tokens": 170,
+          "total_tokens": 521,
+          "cost": 0.006005,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.006005,
+            "upstream_inference_prompt_cost": 0.001755,
+            "upstream_inference_completions_cost": 0.00425
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 0,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "2e746c717b8398f45f9a29c16ba9acb0f3bc94bf1cdf653b34099bba99acf7d4",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976227-QeJx4yoaaDFTCT51aYI2",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 273,
+          "total_tokens": 605,
+          "cost": 0.008485,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.008485,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.006825
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 1,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "5ec83232558fa5ce716f4e656c5ffac4e2667a9438224d47fe2dfe91c839e2f8",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976233-DcfbjBsVqLN8rdk3h4Bm",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 454,
+          "total_tokens": 786,
+          "cost": 0.01301,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01301,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.01135
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 2,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "569a6aa3d6aaa8e5b4fa1af74c640acd9d4c6929dfb5a6a015d2eb4a3e6da41b",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976242-BzAgC9Np8aFRn6GyBvfs",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 352,
+          "total_tokens": 684,
+          "cost": 0.01046,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01046,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.0088
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 3,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "1dadef4772c402bc656df88c963bd1f34b7215dbd4de29c081c367821e165b9b",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976250-3OyWRPnCmh8IfB7AjmWu",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 281,
+          "total_tokens": 613,
+          "cost": 0.008685,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.008685,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.007025
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 4,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "64b38957933afaf83ef2c7c87ced01f78c58727fa5b72e926397a41bd9f65f03",
+      "parsed_action": 13.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976256-r2Oz5iHiKIuDwyjRveiO",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 377,
+          "total_tokens": 709,
+          "cost": 0.011085,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.011085,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.009425
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 5,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "da9bc79d319c04b929a96cc0610a9c7c90e56d278db6c5c597a184de36c82722",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976264-WzuycFVjuaWRBAvR75Nh",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 358,
+          "total_tokens": 690,
+          "cost": 0.01061,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01061,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.00895
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 6,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "b004af485b5b74dce16bff9df1cc6c43a705a14b3247c7713a99e5c36ae8ac6f",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976271-bqXFNari1P8QDLJO1MA6",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 342,
+          "total_tokens": 674,
+          "cost": 0.01021,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.00855
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 7,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "ae7587706e0b3d6ff153b3510e8bfe78d8b096f9c02b819cee1ee098467c7474",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976278-jcKIaqH2Kk3sm9289AUA",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 277,
+          "total_tokens": 609,
+          "cost": 0.008585,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.008585,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.006925
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 8,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "1dd58af9024c5ccf416115f03874c0a3751bfd0044ed22ec371297b64ee187d2",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976284-xmMHq3Tf0om2SsNVv40g",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 382,
+          "total_tokens": 714,
+          "cost": 0.01121,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01121,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.00955
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "expectations",
+      "prompt_condition": "Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.",
+      "sample_index": 9,
+      "response_path": "anthropic_claude-opus-4.7/expectations/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "b7f8c2767075ea1889bd1345cf17103edced52d1e258b1e9f96644ff23b79b00",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976292-ECY6fSDGcgE0riF3ToMW",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 332,
+          "completion_tokens": 265,
+          "total_tokens": 597,
+          "cost": 0.008285,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.008285,
+            "upstream_inference_prompt_cost": 0.00166,
+            "upstream_inference_completions_cost": 0.006625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 0,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "9155d7ca53d30f4745f23f633218a610b29c5e4ebb74a8571b6251a35d9cec47",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976161-tiv8DzjI1x7lP49K0odf",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 147,
+          "total_tokens": 484,
+          "cost": 0.00536,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00536,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.003675
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 1,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "e883e9814afdfcf92da45c35609eb6597d471bcaadf207d30e894678f4b521e1",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976165-kYq6VCbgTyIOqETgI7i5",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 63,
+          "total_tokens": 400,
+          "cost": 0.00326,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00326,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.001575
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 2,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "20741e5ad9be8e610af94fc190ea0ecf7c5c238c406e58a9d3ce434497dcd913",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976168-p1LmmahuRV1FCYxLfJhC",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 69,
+          "total_tokens": 406,
+          "cost": 0.00341,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00341,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.001725
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 3,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "3323f85d9b224d8c2065a5d0168af73f11ebea0f7ee2a7ef3fe3015860e08595",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976170-pFWhT6vLdDv9VigEDEJO",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 95,
+          "total_tokens": 432,
+          "cost": 0.00406,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00406,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.002375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 4,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "43b7dc7b6112e3f098ab43ab719c0264d32f3de974ec630c1044abc879d332dd",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976174-9bPHC7IsctR4vySyMxbJ",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 86,
+          "total_tokens": 423,
+          "cost": 0.003835,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003835,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.00215
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 5,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "d32c8a9ea3146f91a3e5a6bbe041f5720ebe37d5880e14cdca6a11bcaba67020",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976177-XZfoUbWVvAsWNvlPIDII",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 98,
+          "total_tokens": 435,
+          "cost": 0.004135,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004135,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.00245
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 6,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "adc27eaae43d6aef719be4549fb3ae3e6aa261617b14aab55193041bd4ebd118",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976180-nCoZS2XxYuhzjlM1GVgs",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 71,
+          "total_tokens": 408,
+          "cost": 0.00346,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00346,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.001775
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 7,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "e0ee5be8abaf0e284eb559bb53c96128c08cde2163b28c082b92417fce01cd2e",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976182-vXPkbQ5Qz9kGZ0ByKiLr",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 61,
+          "total_tokens": 398,
+          "cost": 0.00321,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00321,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.001525
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 8,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "a8119efe98a6e36ff1b2f8c763612c52ea34cbcfc5075e115edde4ddbc9bdd50",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976185-bHawPoLgNqxs9wNhMtpz",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 113,
+          "total_tokens": 450,
+          "cost": 0.00451,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00451,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.002825
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 9,
+      "response_path": "anthropic_claude-opus-4.7/inequality_aversion/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "d0ec22e935c3018bd439811880f45c673b62711d79208a5437bb562904bf9dbd",
+      "parsed_action": 20.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976189-IfwRIqn90YYLVrUAveHk",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 337,
+          "completion_tokens": 64,
+          "total_tokens": 401,
+          "cost": 0.003285,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003285,
+            "upstream_inference_prompt_cost": 0.001685,
+            "upstream_inference_completions_cost": 0.0016
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 0,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "752866845deed646f05941cb516c62ec2422baa686e094453f17f832a0cb461d",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976087-V5CaYMtvLhuQk8IvLa0R",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 63,
+          "total_tokens": 351,
+          "cost": 0.003015,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003015,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.001575
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 1,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "b64ac8cb9aa7decb10d289a73d63a6e9a24df4a90eb5a72be5a53246387e82aa",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976090-IczZYZnqVtKatGfxvOn7",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 69,
+          "total_tokens": 357,
+          "cost": 0.003165,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003165,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.001725
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 2,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "9304fe418023d8968d72eaf28be1d71addb1ad38f6a1d32ed35e956579d29102",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976092-RMo5gnb5w243Zu2wdACd",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 84,
+          "total_tokens": 372,
+          "cost": 0.00354,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00354,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.0021
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 3,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "62ca952d9cf3e44f3678b8205efe4af1cb384f68a9efbd777919ae57512c987e",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976095-sCKAye0CJcTR93q0ucQe",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 91,
+          "total_tokens": 379,
+          "cost": 0.003715,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003715,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.002275
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 4,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "bbc2a9c4dd2f666aec6cfab4f6d9f207f9ee529b4ce1fc52998be108f98caf69",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976098-0ZHlQamuOfXghhNTW8xt",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 122,
+          "total_tokens": 410,
+          "cost": 0.00449,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00449,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.00305
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 5,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "421477e21385cb6a17502e17a7ba7c0608e0c52cd1e62a914ac270ae26406663",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976102-Z7YswsCBWvliXUzzFxR0",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 66,
+          "total_tokens": 354,
+          "cost": 0.00309,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00309,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.00165
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 6,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "950bc0d0418e738f1b160374504ad6c6a7c260048b60a2ffb0b5a558ee7a1885",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976104-H8k3kOZpVUobJIOelRUl",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 68,
+          "total_tokens": 356,
+          "cost": 0.00314,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00314,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.0017
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 7,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "b4bde5057f4d4ef19e3bfa6fa0085f06168444cab65d6687bda588b3ee74f853",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976107-ELVtIoiC6N1U4T23Gqf9",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 81,
+          "total_tokens": 369,
+          "cost": 0.003465,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003465,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.002025
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 8,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "c2d2e6ca63520c05b900a127846e22a8fea2dca3cc2d91c9758aa94b6e2f3811",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976110-KBsin33mp52YHz0TPC9t",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 74,
+          "total_tokens": 362,
+          "cost": 0.00329,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00329,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.00185
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 9,
+      "response_path": "anthropic_claude-opus-4.7/neutral/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "e57ccf77de29ce48dd59e9502674599fd2934678dac5524144934ee2e3b86844",
+      "parsed_action": 15.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976113-Zc1hkiyTebqd8k65vjiq",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 288,
+          "completion_tokens": 74,
+          "total_tokens": 362,
+          "cost": 0.00329,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00329,
+            "upstream_inference_prompt_cost": 0.00144,
+            "upstream_inference_completions_cost": 0.00185
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 0,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "70a9ff09f2d26d75ff7fb8b3bbae3118a182f0195203b263659466c4fa016b9d",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976116-OSgoR5LZvyFEznOXcDCf",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 164,
+          "total_tokens": 502,
+          "cost": 0.00579,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00579,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.0041
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 1,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "1500b3cc59b1053daeebfe8ed70d71d84438c9dcf683cbb10e93f70ba755d9b3",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976122-v2rtb3P3yfmm4MsA0nd2",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 108,
+          "total_tokens": 446,
+          "cost": 0.00439,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00439,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.0027
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 2,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "92be115b4efd39b31cbf8385c0d79fe9a62eef93ad066934e0b14c04da1275c1",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976125-5e6m2eoqQdeAK66m5QPr",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 96,
+          "total_tokens": 434,
+          "cost": 0.00409,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00409,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.0024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 3,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "c9a2b1c5e0ac40d66aa86c2b5ee047e0acb5481a2c308886ea3ff73cf9820ae9",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976128-JXyWuynJSaOs1LBbvtmz",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 189,
+          "total_tokens": 527,
+          "cost": 0.006415,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.006415,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.004725
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 4,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "85953c2f1cdd4243fa20da0373d63c13b0e1398d7a1af538870746f17b59e425",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976133-56bFT3VUFvUApRBKLZuB",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 161,
+          "total_tokens": 499,
+          "cost": 0.005715,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005715,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.004025
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 5,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "5246d4871c60a95bbca39b10a8a08a72c5869e73dc73393a5b03d0ae03d0afd4",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976138-M1EDSyEbpuUAVhhJM58y",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 138,
+          "total_tokens": 476,
+          "cost": 0.00514,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00514,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.00345
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 6,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "d43513a65059060b723c4d82816e2be24b242d3aaf747893814124c8fc4a7544",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976143-2874wc0kkQZq8Ga1g4iC",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 153,
+          "total_tokens": 491,
+          "cost": 0.005515,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005515,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.003825
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 7,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "1d7a47327e0a59d8a86841519d4fb246b49202ff6d5bf1e67cf079a3dd916127",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976147-1fZauOfjQjMKo6JwWZWc",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 118,
+          "total_tokens": 456,
+          "cost": 0.00464,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00464,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.00295
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 8,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "c5e9362f1a3776ed10d3e629aeed73156c85705dff8fd1c4d1525bf5a778188f",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976152-qSiWi2kpnqypGcubJ3wg",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 152,
+          "total_tokens": 490,
+          "cost": 0.00549,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00549,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.0038
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 9,
+      "response_path": "anthropic_claude-opus-4.7/persona/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "e7538dd650f58f5ffd80811758b9382c7ab17c3615969d1258190ed8f2bf598c",
+      "parsed_action": 14.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976156-18JvT6wh5gy1edD81FZN",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 338,
+          "completion_tokens": 170,
+          "total_tokens": 508,
+          "cost": 0.00594,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00594,
+            "upstream_inference_prompt_cost": 0.00169,
+            "upstream_inference_completions_cost": 0.00425
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 0,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "0d4406112ab3f8151db4d71344859923f44248929e9d5eb45265140c50262fb7",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976298-sJeRoD04ZMegjajE8kds",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 77,
+          "total_tokens": 426,
+          "cost": 0.00367,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00367,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.001925
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 1,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "a318413594de70ca1974b4099201510fd35179b55d5aa304155924a8d293705a",
+      "parsed_action": 10.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976301-CTLAwepU8zYGrHBxFxP9",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 72,
+          "total_tokens": 421,
+          "cost": 0.003545,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003545,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.0018
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 2,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "7d6b1385e256fa6c5d0e9bb9f8954bc7c8afe3667744e70ccdbf2373d2a26224",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976303-MqApqJ6umcqvob5SVKf3",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 82,
+          "total_tokens": 431,
+          "cost": 0.003795,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003795,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.00205
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 3,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "27e982a8f53b458ca96a1c36548a21c312c0a34d7cfa370ec7df3bbfff5e545d",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976306-3kxzq6tiQGbhi0pDTpW3",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 59,
+          "total_tokens": 408,
+          "cost": 0.00322,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00322,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.001475
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 4,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "fed8066b2808673b9cede783ed9bd604bb82f8aa63e73308b6efac3414c737ff",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976309-7ZlnT97LAbjw7Vur8Q8E",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 75,
+          "total_tokens": 424,
+          "cost": 0.00362,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00362,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.001875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 5,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "26d5359c0e17ab956a524d705aa86ae63a4cc0929b8704f019f1d6e4cce823d5",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976312-szexnGxA6Don3TW2BHj6",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 65,
+          "total_tokens": 414,
+          "cost": 0.00337,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00337,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.001625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 6,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "c2f44e5db807dd5819b05c8b25770e6f10b93d8ec9fbe132340cf06c0db61b20",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976315-rwvwSbVJJsqh7DezZn5d",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 67,
+          "total_tokens": 416,
+          "cost": 0.00342,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00342,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.001675
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 7,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "cb8622a7fb378ae9c0100bd97cc148e7f25634f046d8a9c38475dc749df79e95",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976317-L7H1Euw1GMHlmprlCeRo",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 42,
+          "total_tokens": 391,
+          "cost": 0.002795,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002795,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.00105
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 8,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "db847164ca34c27d0e72fec161cedb0a740a8b1f210eed0721a8e053269e8836",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976320-r89cbURgXBpRvHkr5SuA",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 68,
+          "total_tokens": 417,
+          "cost": 0.003445,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003445,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.0017
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-4.7-opus-20260416",
+      "model_requested": "anthropic/claude-opus-4.7",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "social_norms",
+      "prompt_condition": "Note: in studies with similar games, participants typically contribute 40-60% of their endowment (about 8-12 tokens out of 20). Contributing significantly less than others is considered unfair.",
+      "sample_index": 9,
+      "response_path": "anthropic_claude-opus-4.7/social_norms/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "cb8622a7fb378ae9c0100bd97cc148e7f25634f046d8a9c38475dc749df79e95",
+      "parsed_action": 12.0,
+      "parse_error": null,
+      "meta": {
+        "chat_id": "gen-1778976327-S0C1DvSDO59oVf7Njhaf",
+        "model": "anthropic/claude-4.7-opus-20260416",
+        "usage": {
+          "prompt_tokens": 349,
+          "completion_tokens": 42,
+          "total_tokens": 391,
+          "cost": 0.002795,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002795,
+            "upstream_inference_prompt_cost": 0.001745,
+            "upstream_inference_completions_cost": 0.00105
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 0,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "4fc4a50c7db0ec651915823a263a70007e6ec25d2c96826ff2d98c7e669dab87",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. The optimal outcome for the group occurs when everyone contributes the maximum amount (20.0 tokens). This would result in a",
+      "meta": {
+        "chat_id": "gen-1778976585-3B50uo8Nlrim9WCTeV4a",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 957,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 1,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "4fc4a50c7db0ec651915823a263a70007e6ec25d2c96826ff2d98c7e669dab87",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. The optimal outcome for the group occurs when everyone contributes the maximum amount (20.0 tokens). This would result in a",
+      "meta": {
+        "chat_id": "gen-1778976594-LpvTb1AdP44RRQeMZqXr",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 957,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 2,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "749f1a61bd27cbc8e57e8ed0d070dd7e242c091089648cd7f307a7e49e58c715",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My decision in this round will set a precedent and allow me to gather information about the other players' tendencies.\n\nThe two extremes",
+      "meta": {
+        "chat_id": "gen-1778976603-a48R6aG7FhXduDt6FCie",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 956,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 3,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "749f1a61bd27cbc8e57e8ed0d070dd7e242c091089648cd7f307a7e49e58c715",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My decision in this round will set a precedent and allow me to gather information about the other players' tendencies.\n\nThe two extremes",
+      "meta": {
+        "chat_id": "gen-1778976612-I0np5GIYMvze6l2aNrC2",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 956,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 4,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "4fc4a50c7db0ec651915823a263a70007e6ec25d2c96826ff2d98c7e669dab87",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. The optimal outcome for the group occurs when everyone contributes the maximum amount (20.0 tokens). This would result in a",
+      "meta": {
+        "chat_id": "gen-1778976620-IbN8gNNzgJk7fV8NHkkb",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 957,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 5,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "4060229e707af2a203598a3c59859e1708634f348a87cdf4bea3a19f2cf08811",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of the Public Goods Game. There is no history to base my decision on.\n\nThe two extremes are contributing 0 (purely self-interested, free",
+      "meta": {
+        "chat_id": "gen-1778976631-KBA0XFarb5xZySjBQrJr",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 959,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 6,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "749f1a61bd27cbc8e57e8ed0d070dd7e242c091089648cd7f307a7e49e58c715",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My decision in this round will set a precedent and allow me to gather information about the other players' tendencies.\n\nThe two extremes",
+      "meta": {
+        "chat_id": "gen-1778976639-xH77Xk5cipKZppYhIcwm",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 956,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "inequality_aversion",
+      "prompt_condition": "In addition to your own payoff, consider fairness among players. Large inequalities in contributions are unfair. Avoid free-riding on others' contributions.",
+      "sample_index": 7,
+      "response_path": "google_gemini-2.5-pro/inequality_aversion/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "1332a0e0875705b6f93dd94a8fce7ad4ae564c53ce2eeb3b081f1b9e3297eabf",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round Public Goods Game. My goal is to maximize my total payoff while also considering fairness and avoiding free-riding.\n\n**Analysis of",
+      "meta": {
+        "chat_id": "gen-1778976648-h3GiwRp0Ifr27hn0dAem",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 234,
+          "completion_tokens": 996,
+          "total_tokens": 1230,
+          "cost": 0.0102525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0102525,
+            "upstream_inference_prompt_cost": 0.0002925,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 958,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 0,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "1f92bc84fe58c473e0429daa5011cb888ea19216d9c59f6d54783e620ee43e54",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My decision in this round can signal my intentions to the other players and potentially encourage cooperation in future rounds.\n\nFrom a purely individual",
+      "meta": {
+        "chat_id": "gen-1778976376-QZQtXr6kzP5peRtsWP3Q",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 956,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 1,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "a3c0f99b7f2fb1a77ddba07c873383a74eed01959292314dd97601cdcd5c12d6",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. The optimal strategy for the group is for everyone to contribute the maximum amount (20), which",
+      "meta": {
+        "chat_id": "gen-1778976398-0Oi7dG7VEdy3bwQQhIEB",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 2,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "a3c0f99b7f2fb1a77ddba07c873383a74eed01959292314dd97601cdcd5c12d6",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. The optimal strategy for the group is for everyone to contribute the maximum amount (20), which",
+      "meta": {
+        "chat_id": "gen-1778976409-9Ge1nMqA4efJ7vEBAG1B",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 3,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "1e38939bcde57c1134195f2f3ab199c7ecbfdc42036c88d7d81fcc52c3e64052",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My decision in this round can set the tone for future interactions, even though the information shared is limited.\n\nLet's",
+      "meta": {
+        "chat_id": "gen-1778976418-TskNPxGM93YhJQTrDxjN",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 957,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 4,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "1e38939bcde57c1134195f2f3ab199c7ecbfdc42036c88d7d81fcc52c3e64052",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My decision in this round can set the tone for future interactions, even though the information shared is limited.\n\nLet's",
+      "meta": {
+        "chat_id": "gen-1778976428-rIgZB2U675gBjwxWwKQP",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 957,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 5,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "1f92bc84fe58c473e0429daa5011cb888ea19216d9c59f6d54783e620ee43e54",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. My decision in this round can signal my intentions to the other players and potentially encourage cooperation in future rounds.\n\nFrom a purely individual",
+      "meta": {
+        "chat_id": "gen-1778976438-PDbi08GlBafjf4NjUkUc",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 956,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 6,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "a3c0f99b7f2fb1a77ddba07c873383a74eed01959292314dd97601cdcd5c12d6",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. The optimal strategy for the group is for everyone to contribute the maximum amount (20), which",
+      "meta": {
+        "chat_id": "gen-1778976449-Qpr5bQeOFgIF0n8cnqu7",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 7,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "afb757016360dafdba692e21839530356142a8066866bbe7d98c2a6dab6a0bef",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round Public Goods Game. There is no information about the other players' tendencies.\n\n**Analysis:**\n\n*   **Individual Incentive",
+      "meta": {
+        "chat_id": "gen-1778976458-QJAdQv361jmDtQYqBsnM",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 959,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 8,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "a3c0f99b7f2fb1a77ddba07c873383a74eed01959292314dd97601cdcd5c12d6",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round game. The optimal strategy for the group is for everyone to contribute the maximum amount (20), which",
+      "meta": {
+        "chat_id": "gen-1778976468-wvOT4aXkLxHww30jZCFW",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "neutral",
+      "prompt_condition": "",
+      "sample_index": 9,
+      "response_path": "google_gemini-2.5-pro/neutral/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "afb757016360dafdba692e21839530356142a8066866bbe7d98c2a6dab6a0bef",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round of a 10-round Public Goods Game. There is no information about the other players' tendencies.\n\n**Analysis:**\n\n*   **Individual Incentive",
+      "meta": {
+        "chat_id": "gen-1778976477-JV8zUtvGH8SjigYYO6zC",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 205,
+          "completion_tokens": 996,
+          "total_tokens": 1201,
+          "cost": 0.01021625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01021625,
+            "upstream_inference_prompt_cost": 0.00025625,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 959,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 0,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_0.txt",
+      "response_sha256": "11ce85e3bb0ef8e71609e5bcecd434d533e325a68f556cd369e9a28b9ef22529",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so I have no idea how the other players will behave.\n\nIf we all cooperate and contribute our full 20 tokens, we all get the best possible",
+      "meta": {
+        "chat_id": "gen-1778976487-aAPEr5QmGl8R6gbUsHCD",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 958,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 1,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_1.txt",
+      "response_sha256": "03dc946acd720d62029614b1f67798c366d98e9d38f52fe1115e91a9d0330a91",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so I have no idea how the other players will behave.\n\nIf we all cooperate and contribute our full 20 tokens, we'll all get the best",
+      "meta": {
+        "chat_id": "gen-1778976496-U97vyn8UaFu4OI4J3oRs",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 957,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 2,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_2.txt",
+      "response_sha256": "03dc946acd720d62029614b1f67798c366d98e9d38f52fe1115e91a9d0330a91",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so I have no idea how the other players will behave.\n\nIf we all cooperate and contribute our full 20 tokens, we'll all get the best",
+      "meta": {
+        "chat_id": "gen-1778976505-UxfPjLUWGBM8NskhYr77",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 957,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 3,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_3.txt",
+      "response_sha256": "11ce85e3bb0ef8e71609e5bcecd434d533e325a68f556cd369e9a28b9ef22529",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so I have no idea how the other players will behave.\n\nIf we all cooperate and contribute our full 20 tokens, we all get the best possible",
+      "meta": {
+        "chat_id": "gen-1778976514-OVHvRPGFB0MFtSezinXK",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 958,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 4,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_4.txt",
+      "response_sha256": "cec6eb86022912464d2a892931c454b06690857b54aaf6423fb2200c80305823",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so it's hard to know what the other players will do.\n\nIf we all cooperate and contribute the full 20 tokens",
+      "meta": {
+        "chat_id": "gen-1778976525-HMkFThQPX36PKIhqCs4j",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 5,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_5.txt",
+      "response_sha256": "11ce85e3bb0ef8e71609e5bcecd434d533e325a68f556cd369e9a28b9ef22529",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so I have no idea how the other players will behave.\n\nIf we all cooperate and contribute our full 20 tokens, we all get the best possible",
+      "meta": {
+        "chat_id": "gen-1778976535-sCeM0QZ9cJZIGYS2qKBu",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 958,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 6,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_6.txt",
+      "response_sha256": "8a2b43cc53aba0e50464238f491d5db3a04d4f79b49ec507d5810ef50deeb8f6",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so I have no idea how the other players will act.\n\nIf we all cooperate and contribute our full 20 tokens, we all get the best possible outcome.",
+      "meta": {
+        "chat_id": "gen-1778976544-ARRJRjF0lQ0HlP0WftzX",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 956,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 7,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_7.txt",
+      "response_sha256": "cec6eb86022912464d2a892931c454b06690857b54aaf6423fb2200c80305823",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so it's hard to know what the other players will do.\n\nIf we all cooperate and contribute the full 20 tokens",
+      "meta": {
+        "chat_id": "gen-1778976555-NSihvvOekHqXvhqMgiGL",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 8,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_8.txt",
+      "response_sha256": "cec6eb86022912464d2a892931c454b06690857b54aaf6423fb2200c80305823",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so it's hard to know what the other players will do.\n\nIf we all cooperate and contribute the full 20 tokens",
+      "meta": {
+        "chat_id": "gen-1778976566-m3TiQaOzQlKRPCN8ITr6",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.5-pro",
+      "model_requested": "google/gemini-2.5-pro",
+      "provider": "openrouter",
+      "horizon": 10,
+      "temperature": 0.0,
+      "prompt_label": "persona",
+      "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+      "sample_index": 9,
+      "response_path": "google_gemini-2.5-pro/persona/horizon_10/temp_0.0/sample_9.txt",
+      "response_sha256": "cec6eb86022912464d2a892931c454b06690857b54aaf6423fb2200c80305823",
+      "parsed_action": null,
+      "parse_error": "Could not parse Answer from response: This is the first round, so it's hard to know what the other players will do.\n\nIf we all cooperate and contribute the full 20 tokens",
+      "meta": {
+        "chat_id": "gen-1778976576-MnLJe6DoSkv9VS7hkZbn",
+        "model": "google/gemini-2.5-pro",
+        "usage": {
+          "prompt_tokens": 239,
+          "completion_tokens": 996,
+          "total_tokens": 1235,
+          "cost": 0.01025875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01025875,
+            "upstream_inference_prompt_cost": 0.00029875,
+            "upstream_inference_completions_cost": 0.00996
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 963,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

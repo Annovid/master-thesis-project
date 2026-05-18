@@ -1,0 +1,41 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 25.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 95af06d90fea9a56c1d02e206355049cc5f6683ebf0939bae9c199b55148e0f1
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 50 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 50).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 50).
+
+RESPONSE:
+Reasoning: This is a one-shot public goods game. From a pure self-interest standpoint, the dominant strategy is to contribute 0, since each token I contribute returns only 0.4 to me (1.6/4). However, behavioral economics experiments consistently show that real people don't play the Nash equilibrium in one-shot PGGs. Typical average contributions hover around 40-50% of the endowment in first-round play.
+
+As a typical human participant, I'd feel some pull toward cooperation and fairness — I'd want to contribute something meaningful, both because I hope others will too (which maximizes group welfare) and because contributing nothing feels selfish. But since this is only one round with no opportunity to build trust or punish defectors, I'd hedge: contribute a moderate amount rather than the full 50.
+
+I expect other players to contribute somewhere between 15-30 on average, with significant variation. Some will free-ride (0), some will be conditional cooperators (~25), and a few might contribute generously.
+
+I'll contribute around half my endowment — this signals cooperation and fairness without being naive. 25 feels like the natural focal point for a typical participant.
+
+Answer = 25

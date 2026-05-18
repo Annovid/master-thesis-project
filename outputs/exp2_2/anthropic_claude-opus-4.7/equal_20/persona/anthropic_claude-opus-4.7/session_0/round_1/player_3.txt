@@ -1,0 +1,45 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 8ef6e30f3f1f8386b13b51abc04a9b7655c4b664a3ccc4f5d13e35d01eeef70c
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 20).
+
+RESPONSE:
+Reasoning as a typical human participant:
+
+This is a one-shot game, which changes things compared to repeated play. With only one round, there's no opportunity to build cooperation or punish defectors. The pure self-interested choice is to contribute 0, since each token I contribute returns only 0.4 to me (1.6/4) while costing me 1.
+
+However, real humans in behavioral economics experiments don't actually play purely selfishly. Studies consistently show average contributions in one-shot public goods games are around 40-60% of the endowment. People contribute because of fairness norms, conditional cooperation preferences, and warm-glow giving.
+
+What do I expect from others? Probably a mix: some free-riders contributing 0-5, some cooperators contributing 15-20, and some moderate contributors around 10. Average might land around 8-12 tokens per person.
+
+My personal approach: I'd like to cooperate to some degree because if everyone contributed 20, we'd all get 32 instead of 20. But I also don't want to be the sucker who contributes everything while others free-ride. A middle-ground contribution feels right — it signals willingness to cooperate without being naive.
+
+I'll contribute 10 tokens — half my endowment. This is a fairly typical "fair-minded but cautious" choice that hedges between cooperation and self-protection.
+
+Answer = 10

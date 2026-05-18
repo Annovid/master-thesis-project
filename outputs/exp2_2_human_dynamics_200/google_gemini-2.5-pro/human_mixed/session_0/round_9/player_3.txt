@@ -1,0 +1,65 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 9
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 8d4e6a0da5c440e6161e9ac0165523ff15c36801f5ae370e74db37708e383371
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 33.25
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 31.37
+Round 7: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 19.2, Player 4: 20.0, total pot 79.2, your payoff 32.48
+Round 8: Contributions - Player 1: 19.8, Player 2: 19.8, Player 3: 20.0, Player 4: 20.0, total pot 79.6, your payoff 31.84
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Previous Rounds:**
+The group has been exceptionally cooperative and predictable. The established norm is for all players to contribute at or very near 20. In each round, one or two players contribute slightly less than 20 (e.g., 19.8, 19.2) to gain a marginally higher payoff, a move that the group has consistently tolerated. In Round 8, I returned to full cooperation (20), and Players 1 and 2 took the opportunity to contribute 19.8, earning the highest payoffs for that round.
+
+**Strategic Considerations for Round 9:**
+This is the penultimate round. The "shadow of the future," which encourages cooperation, is now extremely short. My actions in this round will only influence the final round (Round 10).
+
+Standard game theory predicts that in the final round (Round 10), every rational player will contribute 0, as there is no future round to incentivize cooperation. Knowing this, a rational player has a strong incentive to also defect in Round 9.
+
+Let's analyze the payoffs for the last two rounds based on my decision in Round 9:
+
+*   **Scenario 1: I cooperate (contribute ~20).**
+    *   **Round 9:** I will likely get a payoff of around 31-32.
+    *   **Round 10:** Cooperation will likely collapse, and everyone will contribute 0. My payoff will be 20.
+    *   **Total for R9+R10:** ~52 tokens.
+
+*   **Scenario 2: I defect completely (contribute 0).**
+    *   **Round 9:** The other players, expecting the usual high cooperation, will likely contribute around 20 each. Let's assume a total contribution from them of ~60 tokens. My payoff would be `20 - 0 + (1.6 * 60) / 4 = 20 + 24 = 44`. This is a huge single-round gain.
+    *   **Round 10:** After my complete defection, everyone will certainly contribute 0. My payoff will be 20.
+    *   **Total for R9+R10:** ~64 tokens.
+
+The analysis clearly shows that defecting one round early provides a significantly higher total payoff for the remaining two rounds. My persona is to maximize my own payoff and to keep tokens unless contributing is necessary. With only one round left, contributing a large amount is no longer necessary to maintain long-term group behavior. The incentive to free-ride and take the immediate, large profit is now overwhelming.
+
+Answer = 0.0

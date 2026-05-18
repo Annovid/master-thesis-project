@@ -1,0 +1,45 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 5
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 6.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: dd184a74eff31950cb0a1c562c5a6b346cf9c23fba3a4ba1ebc6086bee73677f
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 10.0, Player 4: 15.0, total pot 45.0, your payoff 28.00
+Round 2: Contributions - Player 1: 10.0, Player 2: 12.0, Player 3: 8.0, Player 4: 12.0, total pot 42.0, your payoff 26.80
+Round 3: Contributions - Player 1: 10.0, Player 2: 11.0, Player 3: 6.0, Player 4: 11.0, total pot 38.0, your payoff 25.20
+Round 4: Contributions - Player 1: 8.0, Player 2: 9.0, Player 3: 4.0, Player 4: 10.0, total pot 31.0, your payoff 24.40
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In Round 4, the contributions were: Player 1: 8, Player 2: 9, Player 3: 4, Player 4: 10. The total contribution was 31 tokens, and my payoff was 24.40.
+
+The average contribution of the other players in Round 4 was 7.67 tokens, which is lower than the previous rounds. Player 3 continued to contribute less than the others.
+
+Since the overall cooperation level is decreasing, and I have already adjusted my contribution downward in Round 4, I will continue to reduce my contribution to match the decreasing average. I will contribute 6 tokens for Round 5.
+
+Answer = 6

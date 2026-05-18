@@ -1,0 +1,54 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 7
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.8
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: e6cc3f9b2e75d9ea0dafaf37832644e636509ae53a59c2d5a914ba356f926701
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 20.0, Player 2: 17.5, Player 3: 15.0, Player 4: 20.0, total pot 72.5, your payoff 29.00
+Round 3: Contributions - Player 1: 17.5, Player 2: 18.1, Player 3: 17.5, Player 4: 20.0, total pot 73.1, your payoff 29.24
+Round 4: Contributions - Player 1: 18.5, Player 2: 18.3, Player 3: 17.5, Player 4: 17.5, total pot 71.8, your payoff 31.22
+Round 5: Contributions - Player 1: 17.8, Player 2: 18.0, Player 3: 17.5, Player 4: 18.1, total pot 71.4, your payoff 30.46
+Round 6: Contributions - Player 1: 17.9, Player 2: 17.9, Player 3: 17.5, Player 4: 17.8, total pot 71.1, your payoff 30.64
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is a textbook example of successful group cooperation.
+
+*   **Group Status:** The group is in a highly stable and profitable equilibrium. For the past three rounds, the total contribution has been between 71.1 and 71.8.
+*   **Individual Behavior:** In the last round, all players contributed within a very narrow band: 17.5, 17.8, 17.9, 17.9. There is no free-riding; everyone is a strong cooperator.
+*   **My Strategy:** My strategy of conditional cooperation—adjusting my contribution to match the group's average—has been very effective in maintaining this state.
+
+My goal now is to do nothing to disturb this harmony. I need to continue signaling my commitment to this cooperative norm.
+
+Let's calculate the average contribution of the other three players in Round 6:
+(17.9 + 17.9 + 17.5) / 3 = 53.3 / 3 ≈ 17.77
+
+My previous contribution was 17.8. The average of the others is almost exactly 17.8. The best move is to stay the course. Contributing 17.8 again reinforces the current equilibrium. It signals that I am content with this level of cooperation and intend to continue it. Any significant change from me could be misinterpreted and might destabilize the group.
+
+Answer = 17.8

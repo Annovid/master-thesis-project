@@ -1,0 +1,36 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: persona
+SAMPLE: 6
+PARSED_ACTION: None
+PARSE_ERROR: Could not parse Answer from response: This is the first round, so I have no idea how the other players will act.
+
+If we all cooperate and contribute our full 20 tokens, we all get the best possible outcome.
+RESPONSE_SHA256: 8a2b43cc53aba0e50464238f491d5db3a04d4f79b49ec507d5810ef50deeb8f6
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round, so I have no idea how the other players will act.
+
+If we all cooperate and contribute our full 20 tokens, we all get the best possible outcome.

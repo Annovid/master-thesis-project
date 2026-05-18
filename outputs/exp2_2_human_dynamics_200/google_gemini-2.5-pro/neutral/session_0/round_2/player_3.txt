@@ -1,0 +1,40 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: neutral
+PLAYER_PROFILE: neutral
+SESSION: 0
+ROUND: 2
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 7284f62df9d228a295f1b72f680dfd22ad86a0b46c9d9cb74f86b70d7a1f974b
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 80.0, your payoff 32.00
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Excellent! Round 1 was a perfect success. All players, including myself, contributed the maximum amount. This led to the highest possible payoff for everyone (32 tokens). We have successfully established a cooperative equilibrium.
+
+The primary goal now is to maintain this trust and cooperation for the remaining 9 rounds. Any deviation from the established pattern of contributing 20 would signal a willingness to defect and could cause the entire cooperative structure to collapse. If I were to contribute less, the other players would see it and would likely reduce their own contributions in the next round to avoid being taken advantage of. This would lead to a downward spiral, and we would all end up with much lower payoffs.
+
+Since everyone has demonstrated their commitment to cooperation, the most rational and profitable long-term strategy is to continue cooperating fully. I will contribute 20 again to reinforce this positive pattern.
+
+Answer = 20.0

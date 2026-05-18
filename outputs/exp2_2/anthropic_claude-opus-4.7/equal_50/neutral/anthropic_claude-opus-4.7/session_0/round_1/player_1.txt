@@ -1,0 +1,53 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 25.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 62cf396429d3d471fae12c8fc93388f22597beac4407edcd0a1432f1e2d6c849
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 50 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 50).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 50).
+
+RESPONSE:
+Reasoning:
+
+This is a one-shot Public Goods Game with no future rounds, so there's no opportunity to build reputation or punish defectors. 
+
+Let me analyze the incentives:
+- For each token I contribute, I personally get back 1.6/4 = 0.4 tokens
+- So every token I contribute costs me 0.6 tokens personally
+- The dominant strategy from a pure self-interest standpoint is to contribute 0
+- However, if everyone contributes 50, everyone gets 50 + (1.6×200)/4 - 50 = 80 tokens, vs 50 if no one contributes
+
+Expectations about other players:
+- In one-shot games with anonymous strangers, contributions in lab experiments typically average around 40-50% of endowment
+- Some players will free-ride (contribute 0), some will be conditional cooperators, some will contribute fully
+- Without communication or repeated interaction, full cooperation is unlikely
+
+My decision:
+Since this is a single round with no reputation effects, the rational self-interested choice is to contribute 0. However, I value the cooperative outcome and recognize that if I expect others to contribute moderately, contributing something supports the social good. 
+
+I'll take a middle approach - contributing a moderate amount signals cooperation but doesn't leave me too exposed if others free-ride. I'll contribute around half my endowment, which is a typical conditional cooperator move.
+
+Actually, given this is purely one-shot with no future, and from a payoff-maximizing perspective each token contributed loses me 0.6 tokens regardless of others' actions, the strictly rational choice is 0. But I'll contribute 25 as a reasonable cooperative gesture matching typical experimental behavior.
+
+Answer = 25

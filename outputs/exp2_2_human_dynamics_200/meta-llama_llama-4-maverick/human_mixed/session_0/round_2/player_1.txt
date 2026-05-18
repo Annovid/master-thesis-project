@@ -1,0 +1,44 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 8.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: ee4da49f8929dda3362687abcb27f320fe427c0614895adbfd6ab3e409bb64c8
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 0.0, Player 4: 15.0, total pot 35.0, your payoff 24.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In Round 1, the total contribution was 35 tokens. Player 1 (me), Player 2, and Player 4 contributed significantly (10, 10, and 15 tokens respectively), while Player 3 contributed 0 tokens. The average contribution was 8.75 tokens.
+
+My payoff for Round 1 was 24 tokens, which is higher than my endowment of 20 tokens, indicating that the overall contribution level was beneficial.
+
+For Round 2, I will consider the contributions of others. Since Player 3 did not contribute at all, I might be inclined to reduce my contribution. However, Players 2 and 4 contributed reasonably well. To maintain cooperation and considering that Player 3 might change their strategy, I will contribute a bit less than in Round 1 but still a significant amount to encourage cooperation.
+
+I will contribute 8 tokens in Round 2, slightly less than my Round 1 contribution, to reflect the mixed signals from the other players.
+
+Answer = 8

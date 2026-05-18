@@ -1,0 +1,61 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: moderate_free_rider
+SESSION: 0
+ROUND: 7
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 701b0be439ef0c7a994ff08a81296d2e1766c71424a2bd7b807ee391b8f90ca9
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 20.0, Player 2: 17.5, Player 3: 15.0, Player 4: 20.0, total pot 72.5, your payoff 34.00
+Round 3: Contributions - Player 1: 17.5, Player 2: 18.1, Player 3: 17.5, Player 4: 20.0, total pot 73.1, your payoff 31.74
+Round 4: Contributions - Player 1: 18.5, Player 2: 18.3, Player 3: 17.5, Player 4: 17.5, total pot 71.8, your payoff 31.22
+Round 5: Contributions - Player 1: 17.8, Player 2: 18.0, Player 3: 17.5, Player 4: 18.1, total pot 71.4, your payoff 31.06
+Round 6: Contributions - Player 1: 17.9, Player 2: 17.9, Player 3: 17.5, Player 4: 17.8, total pot 71.1, your payoff 30.94
+
+You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Previous Rounds:**
+
+The game has reached a state of remarkable stability and high cooperation. For the last three rounds, all players have contributed within a very narrow band (e.g., 17.5 to 17.9 in Round 6). This predictable, cooperative behavior is extremely profitable for the entire group.
+
+**Current Situation (Round 7):**
+
+*   My contribution of 17.5 has consistently been the lowest in the group, but only by a tiny fraction.
+*   The other players have accepted this dynamic and have settled their own contributions just slightly above mine.
+*   This situation perfectly matches my persona: I am contributing a very high amount because the group is cooperating, but I am also the lowest contributor, which satisfies my self-interested side.
+
+**Strategy for Round 7:**
+
+We are now in the later stages of the game (Round 7 of 10). The most important goal is to maintain the current high-trust equilibrium. Any action that could be perceived as a deviation from the established norm is risky.
+
+*   **Decreasing:** This would be a foolish move. It would break the established trust and would almost certainly lead to a collapse in cooperation in the final rounds, drastically reducing my overall score.
+*   **Increasing:** There is no compelling reason to increase my contribution. The current dynamic is working perfectly. My role as the "17.5 contributor" is established and accepted. Changing my number now, even upwards, introduces a small element of unpredictability for no real gain.
+*   **Maintaining:** This is the optimal strategy. By contributing 17.5 again, I signal my commitment to the current arrangement. It tells the other players, "I will continue to hold up my end of the bargain." This consistency is the key to ensuring this profitable cooperation continues through to the final round.
+
+I will stick with the proven strategy and maintain my contribution.
+
+Answer = 17.5

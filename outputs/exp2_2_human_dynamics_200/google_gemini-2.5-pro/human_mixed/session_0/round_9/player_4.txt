@@ -1,0 +1,59 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 9
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: eaea2ab5fd626b92e770caf146e30b9aebd7df2a2b50af5090817286791ef8da
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 30.75
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 31.37
+Round 7: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 19.2, Player 4: 20.0, total pot 79.2, your payoff 31.68
+Round 8: Contributions - Player 1: 19.8, Player 2: 19.8, Player 3: 20.0, Player 4: 20.0, total pot 79.6, your payoff 31.84
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is phenomenal. The group has achieved near-perfect cooperation.
+
+**Analysis of Round 8:**
+*   The total contribution was 79.6 out of a possible 80. This is our best performance yet.
+*   My personal payoff was 31.84, another new record for me in this game.
+*   All players contributed extremely high amounts (19.8, 19.8, 20.0, and my 20.0). This is a clear demonstration of a group that is fully committed to cooperation.
+
+**Strategy for Round 9:**
+We are in the penultimate round. Standard game theory might suggest that cooperation should start to unravel now, as players anticipate the final round where there's no incentive to maintain a reputation.
+
+However, this group has not been playing according to a purely selfish, rational model. We have built an incredible amount of trust and a history of mutual success. My persona is to be generous and value this cooperation, only punishing *repeated free-riding*. There has been zero free-riding.
+
+To defect now by contributing less than 20 would be a betrayal of the group's trust and would almost certainly guarantee a breakdown of cooperation in this round and the final round. This would lower my potential score for the last two rounds.
+
+The best strategy, both for my persona and for maximizing my final score, is to continue the behavior that has led to this outstanding success. I will signal my unwavering commitment to cooperation through to the end. I will trust my fellow players to do the same, as they have for the entire game.
+
+Answer = 20.0

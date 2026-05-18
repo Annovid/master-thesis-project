@@ -1,0 +1,46 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: moderate_free_rider
+SESSION: 0
+ROUND: 4
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 4.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: a2fa3912c7533951613658b6c7952146f03f38b5585969ae46b94d2d1a246157
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 10.0, Player 4: 15.0, total pot 45.0, your payoff 28.00
+Round 2: Contributions - Player 1: 10.0, Player 2: 12.0, Player 3: 8.0, Player 4: 12.0, total pot 42.0, your payoff 28.80
+Round 3: Contributions - Player 1: 10.0, Player 2: 11.0, Player 3: 6.0, Player 4: 11.0, total pot 38.0, your payoff 29.20
+
+You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In Round 3, the total contribution was 38 tokens, a further decrease from the previous rounds. The average contribution was 9.5 tokens. Player 1 maintained their contribution at 10 tokens, Player 2 slightly decreased their contribution to 11 tokens, I contributed 6 tokens, and Player 4 contributed 11 tokens.
+
+My payoff in Round 3 was 29.20 tokens, the highest so far, indicating that the group's cooperation is still beneficial, and my strategy of slightly reducing my contribution is working.
+
+Since the group is still cooperating relatively well, and my payoff is increasing, I'll consider continuing to contribute a moderate amount. However, given my self-interested nature, I might continue to reduce my contribution slightly to maximize my payoff.
+
+For Round 4, I'll consider contributing a bit less than 6 tokens. Let's contribute 4 tokens for Round 4, a further reduction from the previous round.
+
+Answer = 4

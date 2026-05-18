@@ -1,0 +1,42 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 5.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 18758ece87a74643ef6938fcc047ea78ce3df1baa2604ebbfe1054e245e228a4
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round of the Public Goods Game, there is no prior information about the behavior of the other players. Given that I am primarily focused on maximizing my own monetary payoff, I will start with a conservative approach. 
+
+Contributing fewer tokens initially allows me to observe the behavior of the other players and adjust my strategy in subsequent rounds. If other players contribute generously, I might consider increasing my contribution in future rounds to maximize the shared benefit. However, if they contribute minimally, I will continue to contribute minimally to protect my own payoff.
+
+For this first round, I will contribute a small amount to test the waters.
+
+Answer = 5

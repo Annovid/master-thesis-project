@@ -15,7 +15,11 @@ class OpenRouterError(Exception):
     """Raised when OpenRouter returns an error response."""
 
 
-DEFAULT_MAX_TOKENS = int(os.getenv("OPENROUTER_MAX_TOKENS", 1000))
+DEFAULT_MAX_TOKENS = 16000
+
+
+def default_max_tokens() -> int:
+    return int(os.getenv("OPENROUTER_MAX_TOKENS", DEFAULT_MAX_TOKENS))
 
 
 @dataclass
@@ -69,7 +73,7 @@ class OpenRouterConnector(LLMConnector):
         }
 
         payload["temperature"] = temperature if temperature is not None else self.temperature
-        payload["max_tokens"] = max_tokens if max_tokens is not None else DEFAULT_MAX_TOKENS
+        payload["max_tokens"] = max_tokens if max_tokens is not None else default_max_tokens()
         if extra_body:
             payload.update(extra_body)
 

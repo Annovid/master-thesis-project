@@ -1,0 +1,42 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 3
+PLAYER: 4
+STAGE: contribution
+TEMPERATURE: 0.0
+PARSED: 15.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 30d662cd668fea81fe8350e5d016a32fe1d55c35ad92e514770f62b41ba68620
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 4.
+Each round, every player receives an endowment of 20 tokens.
+Stage 1: every player independently chooses how many tokens to contribute to a public pot, any amount from 0 to 20.
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Stage 2: after contributions are revealed, each player may assign punishment points to other players.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You cannot punish yourself.
+Your final score is the sum of your payoffs across all rounds.
+
+History of previous rounds:
+Round 1: contributions - Player 1: 10, Player 2: 15, Player 3: 10, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 25.00.
+Round 2: contributions - Player 1: 12, Player 2: 12, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 25.40.
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.
+
+RESPONSE:
+In the previous rounds, contributions have been fairly consistent, with all players contributing a reasonable amount. While my contributions have been slightly higher, the overall group behavior has been cooperative. To continue encouraging this positive trend and to maintain group cooperation, I will keep my contribution at a generous level.
+
+Answer = 15

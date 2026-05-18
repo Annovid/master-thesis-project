@@ -1,0 +1,65 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 8
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 8bce375d36c8d16b089c45dfe7cbbb64b64c6b995bbb66493e4ecaf69d6d5b7b
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 0.0, Player 4: 15.0, total pot 35.0, your payoff 34.00
+Round 2: Contributions - Player 1: 8.0, Player 2: 8.0, Player 3: 0.0, Player 4: 12.0, total pot 28.0, your payoff 31.20
+Round 3: Contributions - Player 1: 6.0, Player 2: 6.0, Player 3: 0.0, Player 4: 8.0, total pot 20.0, your payoff 28.00
+Round 4: Contributions - Player 1: 4.0, Player 2: 4.0, Player 3: 0.0, Player 4: 4.0, total pot 12.0, your payoff 24.80
+Round 5: Contributions - Player 1: 0.0, Player 2: 2.0, Player 3: 4.0, Player 4: 2.0, total pot 8.0, your payoff 19.20
+Round 6: Contributions - Player 1: 2.0, Player 2: 0.0, Player 3: 0.0, Player 4: 0.0, total pot 2.0, your payoff 20.80
+Round 7: Contributions - Player 1: 0.0, Player 2: 0.0, Player 3: 0.0, Player 4: 0.0, total pot 0.0, your payoff 20.00
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+After Round 7, the history is:
+- Round 1: Contributions - Player 1: 10, Player 2: 10, Player 3: 0, Player 4: 15, total pot 35, my payoff 34.
+- Round 2: Contributions - Player 1: 8, Player 2: 8, Player 3: 0, Player 4: 12, total pot 28, my payoff 31.20.
+- Round 3: Contributions - Player 1: 6, Player 2: 6, Player 3: 0, Player 4: 8, total pot 20, my payoff 28.
+- Round 4: Contributions - Player 1: 4, Player 2: 4, Player 3: 0, Player 4: 4, total pot 12, my payoff 24.80.
+- Round 5: Contributions - Player 1: 0, Player 2: 2, Player 3: 4, Player 4: 2, total pot 8, my payoff 19.20.
+- Round 6: Contributions - Player 1: 2, Player 2: 0, Player 3: 0, Player 4: 0, total pot 2, my payoff 20.80.
+- Round 7: Contributions - Player 1: 0, Player 2: 0, Player 3: 0, Player 4: 0, total pot 0, my payoff 20.
+
+Observations:
+- All players have stopped contributing, and the total pot is 0.
+- My payoff in Round 7 is exactly 20, the baseline.
+
+For Round 8, given that there are 3 rounds remaining and everyone has stopped contributing, it is clear that no one is willing to contribute.
+
+Since contributing will directly reduce my payoff and there's no indication that others will start contributing again, the best strategy is to continue not contributing.
+
+Let's analyze:
+- If I contribute 0, my payoff will be 20.
+- If I contribute, my payoff will be less than 20.
+
+For Round 8, I will continue not to contribute.
+
+Answer = 0

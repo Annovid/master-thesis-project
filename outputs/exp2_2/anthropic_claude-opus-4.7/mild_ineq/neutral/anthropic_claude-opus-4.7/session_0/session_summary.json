@@ -1,0 +1,193 @@
+{
+  "model_requested": "anthropic/claude-opus-4.7",
+  "model_returned_seen": [
+    "anthropic/claude-4.7-opus-20260416"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "neutral",
+  "prompt_condition": "",
+  "endowments": [
+    20,
+    20,
+    50,
+    50
+  ],
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        10.0,
+        10.0,
+        25.0,
+        20.0
+      ],
+      "payoffs": [
+        36.0,
+        36.0,
+        51.0,
+        56.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "83666dc0a6f006f7906e96819c55e0f8136ffc5a990b5580966de4a8bb8c28b9",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778630924-jZcc3IF9StTnFCTThd0f",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 460,
+            "completion_tokens": 475,
+            "total_tokens": 935,
+            "cost": 0.014175,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.014175,
+              "upstream_inference_prompt_cost": 0.0023,
+              "upstream_inference_completions_cost": 0.011875
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.71
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "1330f0bed0939a93f408d265f0e5636129dc8e2bbd7982d1d9432f0b58d8c9f7",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778630932-Y9xGXe8V3sQGmhDMf3pb",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 460,
+            "completion_tokens": 500,
+            "total_tokens": 960,
+            "cost": 0.0148,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0148,
+              "upstream_inference_prompt_cost": 0.0023,
+              "upstream_inference_completions_cost": 0.0125
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 10.45
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 25.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "34e9a8bf8b7c5be34f338a9f8c5c7f12ad9ef85a88a21037e13a4eea8b3903a8",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778630943-jbdJQT8fP7ut0QpXlM48",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 460,
+            "completion_tokens": 697,
+            "total_tokens": 1157,
+            "cost": 0.019725,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.019725,
+              "upstream_inference_prompt_cost": 0.0023,
+              "upstream_inference_completions_cost": 0.017425
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.19
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "da51f04fef905800cbedd9d0371549ac2efaf7f1eaa973eb6bda31fdf087bb4a",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778630951-avHV1XPU93RMDIrydSEe",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 460,
+            "completion_tokens": 473,
+            "total_tokens": 933,
+            "cost": 0.014125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.014125,
+              "upstream_inference_prompt_cost": 0.0023,
+              "upstream_inference_completions_cost": 0.011825
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.45
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    36.0,
+    36.0,
+    51.0,
+    56.0
+  ],
+  "session_path": "anthropic_claude-opus-4.7/session_0",
+  "session_elapsed_s": 33.8
+}

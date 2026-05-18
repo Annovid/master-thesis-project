@@ -1,0 +1,55 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 3
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 93d9a79c4124fd5b3a1f8ff9538e2e4e4f7426abe62390fa138eeb1c227800f3
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 20.0, Player 2: 17.5, Player 3: 15.0, Player 4: 20.0, total pot 72.5, your payoff 29.00
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The group's cooperation is still very high. Let's review the players' actions:
+
+*   **Player 1:** Remains a solid, fully cooperative partner, contributing 20 again.
+*   **Player 2:** Slightly decreased their contribution from 20 to 17.5. This is a small dip, not a major defection. They might be trying to match the group average or reacting to Player 3's initial lower amount.
+*   **Player 3:** Increased their contribution from 10 to 15. This is a very positive signal. They responded to the group's high cooperation by increasing their own. This is exactly the behavior we want to encourage.
+*   **Me (Player 4):** I have maintained full contribution.
+
+The total pot actually increased from 70 to 72.5, which is a positive outcome for the group. My payoff also increased.
+
+My persona is to reduce contributions only if others *repeatedly* free-ride. Player 3 is not repeatedly free-riding; they are moving in the right direction. Player 2's small reduction is not a major concern yet.
+
+The best strategy is to continue signaling my commitment to full cooperation. By contributing 20 again, I am:
+1.  Reinforcing my partnership with the fully cooperative Player 1.
+2.  Encouraging Player 3 to continue increasing their contribution, hopefully towards 20.
+3.  Showing Player 2 that full cooperation is still the goal, which might persuade them to return to contributing 20.
+
+Dropping my contribution now could halt the positive momentum from Player 3 and might trigger a downward spiral. I will maintain my generous stance to foster group success.
+
+Answer = 20.0

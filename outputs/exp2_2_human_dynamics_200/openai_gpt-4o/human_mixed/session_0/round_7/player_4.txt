@@ -1,0 +1,45 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 7
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 2dc7751915aec13771d7870f48a904e1e5fa1fef615a4df57b6e8300c05aa7e8
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 5.0, Player 4: 10.0, total pot 35.0, your payoff 24.00
+Round 2: Contributions - Player 1: 8.0, Player 2: 8.0, Player 3: 8.0, Player 4: 8.0, total pot 32.0, your payoff 24.80
+Round 3: Contributions - Player 1: 10.0, Player 2: 8.0, Player 3: 8.0, Player 4: 8.0, total pot 34.0, your payoff 25.60
+Round 4: Contributions - Player 1: 9.0, Player 2: 9.0, Player 3: 8.0, Player 4: 10.0, total pot 36.0, your payoff 24.40
+Round 5: Contributions - Player 1: 10.0, Player 2: 9.0, Player 3: 8.0, Player 4: 10.0, total pot 37.0, your payoff 24.80
+Round 6: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 10.0, total pot 38.0, your payoff 25.20
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the sixth round, Players 1 and 2 increased their contributions to 10 tokens, while Player 3 maintained their contribution at 8 tokens. The overall contributions have been increasing, which is a positive sign of cooperation.
+
+To continue supporting this cooperative trend and potentially encourage Player 3 to increase their contribution, you might maintain your current level of contribution.
+
+Answer = 10

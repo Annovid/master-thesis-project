@@ -13,6 +13,7 @@ from src.connectors.openai_connector import OpenAIConnector
 from src.connectors.openrouter_connector import OpenRouterConnector
 from src.connectors.gateway_connector import LLMApiGatewayConnector
 from src.connectors.mock_connector import MockConnector
+from src.connectors.model_aliases import resolve_model_alias
 
 logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
 
@@ -37,6 +38,7 @@ def create_agent(agent_config: dict, name: str, default_provider: str = "auto"):
         model = agent_config.get("model")
         if model is None:
             raise ValueError("Missing 'model' for llm agent")
+        model = resolve_model_alias(model)
         temperature = agent_config.get("temperature")
         if temperature is None:
             raise ValueError("Missing 'temperature' for llm agent")

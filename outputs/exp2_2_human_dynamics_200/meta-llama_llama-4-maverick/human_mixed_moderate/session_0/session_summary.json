@@ -1,0 +1,1719 @@
+{
+  "experiment": "2.2",
+  "mode": "human_like_repeated_pgg_dynamics",
+  "model_requested": "meta-llama/llama-4-maverick",
+  "model_returned_seen": [
+    "meta-llama/llama-4-maverick-17b-128e-instruct"
+  ],
+  "provider": "openrouter",
+  "condition_label": "human_mixed_moderate",
+  "condition_mode": "heterogeneous_profiles",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 10,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_condition": "",
+  "player_profiles": [
+    "conditional_cooperator",
+    "conditional_cooperator",
+    "moderate_free_rider",
+    "high_cooperator"
+  ],
+  "player_prompt_conditions": [
+    "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+    "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+    "You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.",
+    "You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride."
+  ],
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        10.0,
+        10.0,
+        10.0,
+        15.0
+      ],
+      "payoffs": [
+        28.0,
+        28.0,
+        28.0,
+        23.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "8b9eb1d023b2bb1b0f67bd1fd24a19c04fc6748c3652fd7c7dfce5cd4040a0ae",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1779061129-VkjBINhMkjaW2ddJzC6k",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 229,
+            "completion_tokens": 168,
+            "total_tokens": 397,
+            "cost": 0.00013515,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00013515,
+              "upstream_inference_prompt_cost": 3.435e-05,
+              "upstream_inference_completions_cost": 0.0001008
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 5.08
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "cebc5deb550483854ef5ca97f4314158d54c1bb20bb23dd1e51b6e83a45794a6",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1779061129-g1JwyLwk94pdoVWRWjYw",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 229,
+            "completion_tokens": 177,
+            "total_tokens": 406,
+            "cost": 0.00014055,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00014055,
+              "upstream_inference_prompt_cost": 3.435e-05,
+              "upstream_inference_completions_cost": 0.0001062
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.82
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "2997c3739b7b6a15c1996ba161b25378e3363fd9bedfee6685ca00441f7793ad",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1779061129-a8Ol8Aa12UFGubSFBwtk",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 227,
+            "completion_tokens": 141,
+            "total_tokens": 368,
+            "cost": 0.00022045,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00022045,
+              "upstream_inference_prompt_cost": 7.945e-05,
+              "upstream_inference_completions_cost": 0.000141
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 2.2
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 15.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "0349eda2f5baf5527ea59aed454d9237a4ba781de0a22e6a0b333640b0929782",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1779061129-Dvt7CH62lpY7DahZzfMu",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 223,
+            "completion_tokens": 120,
+            "total_tokens": 343,
+            "cost": 0.00010545,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00010545,
+              "upstream_inference_prompt_cost": 3.345e-05,
+              "upstream_inference_completions_cost": 7.2e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 5.15
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 2,
+      "actions": [
+        10.0,
+        12.0,
+        8.0,
+        12.0
+      ],
+      "payoffs": [
+        26.8,
+        24.8,
+        28.8,
+        24.8
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "8c1f60d655d25c2025451a120ae15d41bc5af7db2957a7c58cd6c569bc3242a3",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_2/player_1.txt",
+          "chat_id": "gen-1779061136-QWegkcTqGxdjMfld8PLB",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 677,
+            "completion_tokens": 134,
+            "total_tokens": 811,
+            "cost": 0.00036807,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 16,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00036807,
+              "upstream_inference_prompt_cost": 0.00023407,
+              "upstream_inference_completions_cost": 0.000134
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.53
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 12.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "32a4aa9330a9d2674929031b5a0d85e5487bf24787fe914d3534b440ad0bdc35",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_2/player_2.txt",
+          "chat_id": "gen-1779061136-4tRv70wLrmONPhTtWNFE",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 686,
+            "completion_tokens": 153,
+            "total_tokens": 839,
+            "cost": 0.0001947,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0001947,
+              "upstream_inference_prompt_cost": 0.0001029,
+              "upstream_inference_completions_cost": 9.18e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.03
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 8.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "be727107c2a6c1ef742f80bfde52cc3c79758649ffcaf16bde6f495536cdbe8d",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_2/player_3.txt",
+          "chat_id": "gen-1779061136-IE2PM414U0qeiRn6aHe7",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 646,
+            "completion_tokens": 226,
+            "total_tokens": 872,
+            "cost": 0.0002325,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0002325,
+              "upstream_inference_prompt_cost": 9.69e-05,
+              "upstream_inference_completions_cost": 0.0001356
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.1
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 12.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "df7bd856ca131a11297000365ffdcb85e21e71f34cc77f4662fa18316fd7205f",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_2/player_4.txt",
+          "chat_id": "gen-1779061136-Y1aDCh54J8E9wxIa7cNK",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 617,
+            "completion_tokens": 187,
+            "total_tokens": 804,
+            "cost": 0.00020475,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00020475,
+              "upstream_inference_prompt_cost": 9.255e-05,
+              "upstream_inference_completions_cost": 0.0001122
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.93
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 3,
+      "actions": [
+        10.0,
+        11.0,
+        6.0,
+        11.0
+      ],
+      "payoffs": [
+        25.200000000000003,
+        24.200000000000003,
+        29.200000000000003,
+        24.200000000000003
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "96249b0ae1a959316a82f3b8482893ca326f0159d408262412818e1b6015e9f7",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_3/player_1.txt",
+          "chat_id": "gen-1779061145-CaM5csK4mhihurPaCFuv",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1147,
+            "completion_tokens": 138,
+            "total_tokens": 1285,
+            "cost": 0.00039545,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 800,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00039545,
+              "upstream_inference_prompt_cost": 0.00025745,
+              "upstream_inference_completions_cost": 0.000138
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.63
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 11.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "0374ba49326c0438ab78a9eab7d797cf231828dab85d614edff35bf711fe45c3",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_3/player_2.txt",
+          "chat_id": "gen-1779061145-LqKzLZ8UNzlXsoFe1KLJ",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1175,
+            "completion_tokens": 156,
+            "total_tokens": 1331,
+            "cost": 0.00026985,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00026985,
+              "upstream_inference_prompt_cost": 0.00017625,
+              "upstream_inference_completions_cost": 9.36e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 5.93
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 6.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "75a264bfc305faadf07355f30ad991938f255650117018322360b0dca1965b51",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_3/player_3.txt",
+          "chat_id": "gen-1779061145-sDPXV8h2ObDPRhIMfEIh",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1206,
+            "completion_tokens": 216,
+            "total_tokens": 1422,
+            "cost": 0.0003105,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003105,
+              "upstream_inference_prompt_cost": 0.0001809,
+              "upstream_inference_completions_cost": 0.0001296
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 5.53
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 11.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "a9465dae1ddb57e9cba5309a170d5d3ec1577ba24fde0686225ddd2743ff13ac",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_3/player_4.txt",
+          "chat_id": "gen-1779061145-ZhePydNZKmRBmFdtYf03",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1134,
+            "completion_tokens": 204,
+            "total_tokens": 1338,
+            "cost": 0.0002925,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0002925,
+              "upstream_inference_prompt_cost": 0.0001701,
+              "upstream_inference_completions_cost": 0.0001224
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.19
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 4,
+      "actions": [
+        8.0,
+        9.0,
+        4.0,
+        10.0
+      ],
+      "payoffs": [
+        24.4,
+        23.4,
+        28.4,
+        22.4
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 8.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "380a5b0960f8d76572e7afa7939b922fbfd79270837c2c1e6f24caef313070d7",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_4/player_1.txt",
+          "chat_id": "gen-1779061153-P8QZuaYaTlrLvNUn10vX",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1677,
+            "completion_tokens": 155,
+            "total_tokens": 1832,
+            "cost": 0.00051155,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00051155,
+              "upstream_inference_prompt_cost": 0.00035655,
+              "upstream_inference_completions_cost": 0.000155
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.58
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 9.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "6bb12b65f9707d1176fb6a1146844d07f54f0a442c42a295f00cbd5f8132f9be",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_4/player_2.txt",
+          "chat_id": "gen-1779061153-TIs3DABwR8HMFCGw2F4D",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1723,
+            "completion_tokens": 194,
+            "total_tokens": 1917,
+            "cost": 0.00037485,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00037485,
+              "upstream_inference_prompt_cost": 0.00025845,
+              "upstream_inference_completions_cost": 0.0001164
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 7.37
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 4.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "a2fa3912c7533951613658b6c7952146f03f38b5585969ae46b94d2d1a246157",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_4/player_3.txt",
+          "chat_id": "gen-1779061153-wZGmXr5vDhoHTUblAODe",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1812,
+            "completion_tokens": 193,
+            "total_tokens": 2005,
+            "cost": 0.0003876,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003876,
+              "upstream_inference_prompt_cost": 0.0002718,
+              "upstream_inference_completions_cost": 0.0001158
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 7.41
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "ccbda4565da2f1f0ad0aa02e1e7f995d11cb77c560ddeb63d2a9345b6b515c49",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_4/player_4.txt",
+          "chat_id": "gen-1779061153-CAx3iAsnyGFHIvKDrRF0",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 1724,
+            "completion_tokens": 222,
+            "total_tokens": 1946,
+            "cost": 0.0003918,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003918,
+              "upstream_inference_prompt_cost": 0.0002586,
+              "upstream_inference_completions_cost": 0.0001332
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.25
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 5,
+      "actions": [
+        6.0,
+        7.0,
+        2.0,
+        8.0
+      ],
+      "payoffs": [
+        23.200000000000003,
+        22.200000000000003,
+        27.200000000000003,
+        21.200000000000003
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 6.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "dd184a74eff31950cb0a1c562c5a6b346cf9c23fba3a4ba1ebc6086bee73677f",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_5/player_1.txt",
+          "chat_id": "gen-1779061161-XUkxKjyrG7cJZnIwJNlO",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 2280,
+            "completion_tokens": 141,
+            "total_tokens": 2421,
+            "cost": 0.00061068,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 1824,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00061068,
+              "upstream_inference_prompt_cost": 0.00046968,
+              "upstream_inference_completions_cost": 0.000141
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.37
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 7.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "96c657e70162ec94f2b18bbd29299f48a98c2fda660be2071f6e6995b9bd5387",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_5/player_2.txt",
+          "chat_id": "gen-1779061161-5APFNe9tsbVSR0HHtN8L",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 2365,
+            "completion_tokens": 188,
+            "total_tokens": 2553,
+            "cost": 0.00046755,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00046755,
+              "upstream_inference_prompt_cost": 0.00035475,
+              "upstream_inference_completions_cost": 0.0001128
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 5.21
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 2.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "eea7a88c4bf84073391a69792d6c21dff8ae56ac045176a836a16bc803d47f73",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_5/player_3.txt",
+          "chat_id": "gen-1779061161-C6K5s05l7HZiekdQHBON",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 2451,
+            "completion_tokens": 220,
+            "total_tokens": 2671,
+            "cost": 0.00049965,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00049965,
+              "upstream_inference_prompt_cost": 0.00036765,
+              "upstream_inference_completions_cost": 0.000132
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 7.96
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 8.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "d42bc0247e4c4215e798f12435aa16b67e245ce3cb602097c01b15ff95928ca3",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_5/player_4.txt",
+          "chat_id": "gen-1779061161-XsismXgv5cX7DBBWRO38",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 2388,
+            "completion_tokens": 237,
+            "total_tokens": 2625,
+            "cost": 0.0005004,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0005004,
+              "upstream_inference_prompt_cost": 0.0003582,
+              "upstream_inference_completions_cost": 0.0001422
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.95
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 6,
+      "actions": [
+        4.0,
+        5.0,
+        0.0,
+        4.0
+      ],
+      "payoffs": [
+        21.2,
+        20.2,
+        25.2,
+        21.2
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 4.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "983cde11904febbf28e42e978bc864c1e32cbc13c07542337b861c6b8e3860b2",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_6/player_1.txt",
+          "chat_id": "gen-1779061170-hCnjpu9zqQE7jS0ZBYNU",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 2925,
+            "completion_tokens": 152,
+            "total_tokens": 3077,
+            "cost": 0.00074087,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2416,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00074087,
+              "upstream_inference_prompt_cost": 0.00058887,
+              "upstream_inference_completions_cost": 0.000152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.84
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 5.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "b8e4c70ce8e66f5ff011f1da520f981b97094e5d5fc5d5daff57788dc94fbaa5",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_6/player_2.txt",
+          "chat_id": "gen-1779061170-EYJPRpN7lXqFrBGgHa0x",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 3057,
+            "completion_tokens": 184,
+            "total_tokens": 3241,
+            "cost": 0.00056895,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00056895,
+              "upstream_inference_prompt_cost": 0.00045855,
+              "upstream_inference_completions_cost": 0.0001104
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.95
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "cd3cb482e9ee6858b058226295d7e34bfb71c998ace78e7026bf151a6c70c671",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_6/player_3.txt",
+          "chat_id": "gen-1779061170-La4X2XW2Jkb7BwyLcYyA",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 3173,
+            "completion_tokens": 176,
+            "total_tokens": 3349,
+            "cost": 0.00058155,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00058155,
+              "upstream_inference_prompt_cost": 0.00047595,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 5.92
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 4.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "2669d58bfbeba43209e54dff4676bda8e7ed656095b0d8c8a4e8b0155017b0d7",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_6/player_4.txt",
+          "chat_id": "gen-1779061170-VfJL7HBNUzUYoFVhBjfe",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 3123,
+            "completion_tokens": 195,
+            "total_tokens": 3318,
+            "cost": 0.00058545,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00058545,
+              "upstream_inference_prompt_cost": 0.00046845,
+              "upstream_inference_completions_cost": 0.000117
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.34
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 7,
+      "actions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payoffs": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "ba43d45324e5a450d219661ffa2ac135d0513540f4603af99da87b02a434d9ca",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_7/player_1.txt",
+          "chat_id": "gen-1779061177-FrTZDWWu0I8b0NxFgfGf",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 3637,
+            "completion_tokens": 143,
+            "total_tokens": 3780,
+            "cost": 0.00086299,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 3072,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00086299,
+              "upstream_inference_prompt_cost": 0.00071999,
+              "upstream_inference_completions_cost": 0.000143
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.49
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "58087fc9fb1324847486d98ef7aaf70c88563c3b69318fdd9748efa175efc71b",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_7/player_2.txt",
+          "chat_id": "gen-1779061177-jgYSoLSiNgJOxAPhHUTo",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 3801,
+            "completion_tokens": 190,
+            "total_tokens": 3991,
+            "cost": 0.00068415,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00068415,
+              "upstream_inference_prompt_cost": 0.00057015,
+              "upstream_inference_completions_cost": 0.000114
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.95
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "228123872142c525207fa55c8fbb38554e8d09af455df2fa1fd42dacfbb4fc2a",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_7/player_3.txt",
+          "chat_id": "gen-1779061177-Lb8UE1jb8tcr99atZKiD",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 3907,
+            "completion_tokens": 178,
+            "total_tokens": 4085,
+            "cost": 0.00069285,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00069285,
+              "upstream_inference_prompt_cost": 0.00058605,
+              "upstream_inference_completions_cost": 0.0001068
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.29
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "dbd05ce5acfb0a4370cba949a6bca255fc0c6d652ef7aa7388e83809d01cb84e",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_7/player_4.txt",
+          "chat_id": "gen-1779061177-o6IMjPzZ61hr4xdqCQHK",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 3872,
+            "completion_tokens": 181,
+            "total_tokens": 4053,
+            "cost": 0.0006894,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0006894,
+              "upstream_inference_prompt_cost": 0.0005808,
+              "upstream_inference_completions_cost": 0.0001086
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.75
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 8,
+      "actions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payoffs": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "afa8d6b99f22e5e1508fae22fee12ee4ae434b13ae4aec7e1122a2c7968923c9",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_8/player_1.txt",
+          "chat_id": "gen-1779061184-mWJ1OG0Hrqa1HlvfwiP0",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 4396,
+            "completion_tokens": 95,
+            "total_tokens": 4491,
+            "cost": 0.00095392,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 3776,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00095392,
+              "upstream_inference_prompt_cost": 0.00085892,
+              "upstream_inference_completions_cost": 9.5e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.23
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "8c77339c2567b4c891ee05792be88e67fc7c4cb55efaad374d2807762d9a365c",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_8/player_2.txt",
+          "chat_id": "gen-1779061184-ECDg6KPUN7ql8eb83IpE",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 4607,
+            "completion_tokens": 101,
+            "total_tokens": 4708,
+            "cost": 0.00075165,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00075165,
+              "upstream_inference_prompt_cost": 0.00069105,
+              "upstream_inference_completions_cost": 6.06e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 2.68
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "e9dc23398a2edc86b6de584bde1ecf70130fc0204f239179205f2cd0ce880662",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_8/player_3.txt",
+          "chat_id": "gen-1779061184-o6zSFLQKdAXwxdYfdOhq",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 4699,
+            "completion_tokens": 136,
+            "total_tokens": 4835,
+            "cost": 0.00078645,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00078645,
+              "upstream_inference_prompt_cost": 0.00070485,
+              "upstream_inference_completions_cost": 8.16e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.02
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "de1bf5666c0f0d42af403913ccc80528fa6db9472c8244fe1e8e8468aa941963",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_8/player_4.txt",
+          "chat_id": "gen-1779061184-LFUhi0BdTmYt5TWwDRzf",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 4663,
+            "completion_tokens": 104,
+            "total_tokens": 4767,
+            "cost": 0.00076185,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00076185,
+              "upstream_inference_prompt_cost": 0.00069945,
+              "upstream_inference_completions_cost": 6.24e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 2.87
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 9,
+      "actions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payoffs": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "11ab4e934d2a307ce0d85f99252f5856b9c65e575e23a709949944b0f7723155",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_9/player_1.txt",
+          "chat_id": "gen-1779061188-G2LXD5GRzKu81tTna0R4",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 5163,
+            "completion_tokens": 92,
+            "total_tokens": 5255,
+            "cost": 0.00109265,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00109265,
+              "upstream_inference_prompt_cost": 0.00100065,
+              "upstream_inference_completions_cost": 9.2e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.51
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "cf71449589340619576ffba3be8579c55c9eff3ac0e0be031249e5a1f8bebd5f",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_9/player_2.txt",
+          "chat_id": "gen-1779061188-lxrEbqB0z7CYWRSkIQUn",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 5380,
+            "completion_tokens": 104,
+            "total_tokens": 5484,
+            "cost": 0.0008694,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0008694,
+              "upstream_inference_prompt_cost": 0.000807,
+              "upstream_inference_completions_cost": 6.24e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.38
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "47e86544742099d15651c561da4506db509d8017cb25c7ed5bf47b7f6c360989",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_9/player_3.txt",
+          "chat_id": "gen-1779061188-rnWkm8MVyA1cLNKyIe3L",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 5505,
+            "completion_tokens": 135,
+            "total_tokens": 5640,
+            "cost": 0.00199839,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 352,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00199839,
+              "upstream_inference_prompt_cost": 0.00186339,
+              "upstream_inference_completions_cost": 0.000135
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.89
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "22330636fdf8644de95451099bd1b200b5a7311c69cb95dc315ec528da4b9861",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_9/player_4.txt",
+          "chat_id": "gen-1779061188-vOsSR1OgTEERjVXv5rpx",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 5433,
+            "completion_tokens": 99,
+            "total_tokens": 5532,
+            "cost": 0.00087435,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00087435,
+              "upstream_inference_prompt_cost": 0.00081495,
+              "upstream_inference_completions_cost": 5.94e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.44
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 10,
+      "actions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payoffs": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "55506d4865b40f28505c4d04a5f2629d144a15c4b1947dbf75fae81b09448778",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_10/player_1.txt",
+          "chat_id": "gen-1779061192-1MwLeOtOBO41A2vWaKej",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 5983,
+            "completion_tokens": 84,
+            "total_tokens": 6067,
+            "cost": 0.00123341,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 5248,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00123341,
+              "upstream_inference_prompt_cost": 0.00114941,
+              "upstream_inference_completions_cost": 8.4e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.36
+        },
+        {
+          "player_id": 2,
+          "player_profile": "conditional_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "ad9397b516ad403c5bc7c48e04578eb63d5126f3abef19fe0396e8c99700501c",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_10/player_2.txt",
+          "chat_id": "gen-1779061192-tLMAptMsGBp3l0f4vAvG",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 6212,
+            "completion_tokens": 106,
+            "total_tokens": 6318,
+            "cost": 0.0009954,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0009954,
+              "upstream_inference_prompt_cost": 0.0009318,
+              "upstream_inference_completions_cost": 6.36e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 3.0
+        },
+        {
+          "player_id": 3,
+          "player_profile": "moderate_free_rider",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "3caeec6d1fbea79bc015ac8c9bc12c2f77c08fa1b9d359272432a1144770f923",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_10/player_3.txt",
+          "chat_id": "gen-1779061192-couVhaKT1pNtE6gnrFrJ",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 6366,
+            "completion_tokens": 122,
+            "total_tokens": 6488,
+            "cost": 0.00133634,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 5632,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00133634,
+              "upstream_inference_prompt_cost": 0.00121434,
+              "upstream_inference_completions_cost": 0.000122
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.46
+        },
+        {
+          "player_id": 4,
+          "player_profile": "high_cooperator",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "120b8d799f611d14b0b0aeaba04f4d9f11f611f66587068831ee2578f26a9753",
+          "response_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0/round_10/player_4.txt",
+          "chat_id": "gen-1779061192-8NQYExkCRFc6eLRC1lbD",
+          "model_returned": "meta-llama/llama-4-maverick-17b-128e-instruct",
+          "usage": {
+            "prompt_tokens": 6254,
+            "completion_tokens": 89,
+            "total_tokens": 6343,
+            "cost": 0.0009915,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0009915,
+              "upstream_inference_prompt_cost": 0.0009381,
+              "upstream_inference_completions_cost": 5.34e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 3.81
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "metrics": {
+    "complete_rounds": 10,
+    "round_means": [
+      11.25,
+      10.5,
+      9.5,
+      7.75,
+      5.75,
+      3.25,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "round_stds": [
+      2.165063509461097,
+      1.6583123951777,
+      2.0615528128088303,
+      2.277608394786075,
+      2.277608394786075,
+      1.920286436967152,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "r1_mean": 11.25,
+    "r_last_mean": 0.0,
+    "overall_mean": 4.8,
+    "slope": -1.503030303030303,
+    "final_zero_rate": 1.0,
+    "player_slopes": [
+      -1.4303030303030304,
+      -1.5636363636363637,
+      -1.1515151515151516,
+      -1.8666666666666667
+    ],
+    "rank_stability": 1.0,
+    "free_rider_effect": -2.388888888888889,
+    "target_round_means": [
+      10.0,
+      9.11111111111111,
+      8.222222222222221,
+      7.333333333333334,
+      6.444444444444445,
+      5.555555555555555,
+      4.666666666666667,
+      3.7777777777777777,
+      2.8888888888888893,
+      2.0
+    ],
+    "trajectory_distance_to_no_punishment_human": 2.066666666666667,
+    "endpoint_distance_to_no_punishment_human": 6.478282828282828,
+    "distance_to_no_punishment_human": 5.305808080808081
+  },
+  "total_payoffs": [
+    228.8,
+    222.8,
+    246.8,
+    216.8
+  ],
+  "session_path": "meta-llama_llama-4-maverick/human_mixed_moderate/session_0",
+  "session_elapsed_s": 66.94
+}

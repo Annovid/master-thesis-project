@@ -1,0 +1,43 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+STAGE: contribution
+TEMPERATURE: 0.0
+PARSED: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: ef2d5b18368a78377a221dbc73658f0e507dcd41a0a7cc2eaac8aef6414d7b79
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 1.
+Each round, every player receives an endowment of 20 tokens.
+Stage 1: every player independently chooses how many tokens to contribute to a public pot, any amount from 0 to 20.
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Stage 2: after contributions are revealed, each player may assign punishment points to other players.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You cannot punish yourself.
+Your final score is the sum of your payoffs across all rounds.
+
+History of previous rounds:
+No previous rounds.
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.
+
+RESPONSE:
+In the first round, it's often strategic to start with a moderate level of cooperation to gauge the behavior of other players. Since I am willing to cooperate when others do, I will contribute a reasonable amount to encourage cooperation from the others. 
+
+Given the endowment of 20 tokens, I will contribute 10 tokens to the public pot. This is a balanced approach that shows willingness to cooperate while still retaining some tokens for potential punishment or future rounds.
+
+Answer = 10

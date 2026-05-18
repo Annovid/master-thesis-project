@@ -1,0 +1,52 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: df696646f04d77ae9de678bce378e9a0c26d125ef2901be8088f83c7225cf270
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round, I signaled my willingness to cooperate fully by contributing the maximum of 20 tokens. Two other players (Player 2 and Player 4) did the same, which is a very positive sign for future cooperation. However, Player 3 contributed only 10 tokens, which is less than I expected and hoped for.
+
+My persona is that of a conditional cooperator: I cooperate if others do, but I reduce my contribution if others are contributing less. Since the group was not fully cooperative, I must reduce my contribution from 20 to signal that I will not be taken advantage of. However, I don't want to punish the group too harshly, as this could trigger a "race to the bottom" and destroy the high level of cooperation we have with three of the four players.
+
+A fair and common strategy for a conditional cooperator is to match the average contribution of the group from the previous round. This demonstrates a willingness to contribute at the level the group has established.
+
+The contributions in Round 1 were: 20 (me), 20, 10, and 20.
+The average contribution was (20 + 20 + 10 + 20) / 4 = 70 / 4 = 17.5.
+
+By contributing 17.5 this round, I am sending a clear message:
+1.  I am reducing my contribution from 20 because the group was not fully cooperative.
+2.  I am still willing to contribute a high amount, reflecting the group's average behavior.
+3.  This is a fair, reciprocal move that invites Player 3 to increase their contribution while rewarding the high contributions of Players 2 and 4.
+
+This strategy aims to stabilize cooperation at a high level rather than letting it unravel.
+
+Answer = 17.5

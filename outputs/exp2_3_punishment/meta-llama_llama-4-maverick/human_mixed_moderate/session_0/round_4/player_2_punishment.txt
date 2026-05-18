@@ -1,0 +1,54 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 4
+PLAYER: 2
+STAGE: punishment
+TEMPERATURE: 0.0
+PARSED: [0.0, 0.0, 0.0, 0.0]
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 9d5ac7bc82cd08aced65b27a5dfba17f503bb3d631f9681118778fc2c47289a8
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 2.
+Each round starts with 20 tokens per player. Public-good multiplier: 1.6.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You may assign 0 to 5 punishment points to each other player. You cannot punish yourself.
+
+History of previous rounds:
+Round 1: contributions - Player 1: 10, Player 2: 10, Player 3: 10, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.00.
+Round 2: contributions - Player 1: 12, Player 2: 12, Player 3: 8, Player 4: 12; you assigned 1 punishment point(s), received 0 punishment point(s), and your final payoff was 24.60.
+Round 3: contributions - Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 10; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 25.60.
+
+Current round contributions:
+Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 12
+Current round payoffs before punishment:
+Player 1: 26.40, Player 2: 26.40, Player 3: 28.40, Player 4: 26.40
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide punishment points for the current round.
+Use exactly these player keys: "1", "3", "4".
+End your reply with a single line of the form: Punishment = {"1": 0, "3": 0, "4": 0}
+
+RESPONSE:
+The current round contributions are: Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 12. 
+The total contribution is 12 + 12 + 10 + 12 = 46 tokens. 
+The public good is 46 * 1.6 = 73.6 tokens, and each player gets 73.6 / 4 = 18.4 tokens back.
+
+Since I contributed 12 tokens, my payoff before punishment is 20 - 12 + 18.4 = 26.40 tokens.
+
+All players have contributed fairly, with Players 1, 2, and 4 at 12 tokens and Player 3 at 10 tokens. The contributions are generally cooperative.
+
+Given that everyone is contributing a significant amount, there's no clear target for punishment. Player 3 is still contributing a bit less than the others, but they have maintained their increased contribution from Round 3.
+
+Since the contributions are generally cooperative and there's no significant deviation from the average contribution that would warrant punishment, I will not assign any punishment points.
+
+Punishment = {"1": 0, "3": 0, "4": 0}

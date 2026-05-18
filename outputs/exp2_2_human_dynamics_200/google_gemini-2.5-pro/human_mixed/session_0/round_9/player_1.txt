@@ -1,0 +1,49 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 9
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 4a2d2242bea5271a73cea0a50604c8d920b15084a7fc2a7c152ca6f5c82b6d22
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 30.75
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 32.17
+Round 7: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 19.2, Player 4: 20.0, total pot 79.2, your payoff 31.68
+Round 8: Contributions - Player 1: 19.8, Player 2: 19.8, Player 3: 20.0, Player 4: 20.0, total pot 79.6, your payoff 32.04
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The results from Round 8 show an extremely high and stable level of cooperation. Two players (Player 3 and Player 4) contributed the maximum of 20. Player 2 and I both contributed 19.8, acting as conditional cooperators matching the previous round's average.
+
+My persona is to cooperate when others cooperate. The group is clearly demonstrating a strong commitment to cooperation. To reward the full cooperation of Players 3 and 4, and to signal to Player 2 (who seems to be mirroring my behavior) that we should aim for the maximum collective payoff, the best move is to return to a full contribution.
+
+This is Round 9, the second-to-last round. While there is a temptation to start defecting as the game nears its end, my persona is based on reciprocity, not on end-game defection. The other players' actions in Round 8 were highly cooperative, and my strategy is to reciprocate that cooperation. By contributing 20, I am rewarding their trust and encouraging one last push for perfect cooperation before the final round. This is the most cooperative and trusting signal I can send.
+
+Answer = 20.0

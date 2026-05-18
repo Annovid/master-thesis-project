@@ -1,0 +1,58 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 10
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: fb03a9982a6cc5604f61b4e65cabbe18273bc36130340c7a7d06ce9dde6453cc
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 33.25
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 31.37
+Round 7: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 19.2, Player 4: 20.0, total pot 79.2, your payoff 32.48
+Round 8: Contributions - Player 1: 19.8, Player 2: 19.8, Player 3: 20.0, Player 4: 20.0, total pot 79.6, your payoff 31.84
+Round 9: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 0.0, Player 4: 20.0, total pot 60.0, your payoff 44.00
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of the Situation:**
+This is Round 10, the final round of the game. My actions in this round will not influence any future rounds, as there are none. Therefore, the only goal is to maximize my payoff for this specific round.
+
+**Payoff Calculation:**
+My payoff is calculated as: `20 - my_contribution + (1.6 * sum_of_all_contributions) / 4`.
+For every token I contribute, I lose 1 token directly, but I get back `1.6 / 4 = 0.4` tokens from the public pot. This means each token I contribute results in a net loss of `0.6` tokens for me.
+
+**Strategic Considerations:**
+1.  **No Future Consequences:** Since this is the last round, there is no need to contribute to build trust or encourage future cooperation. The "shadow of the future" is gone.
+2.  **Maximizing Personal Gain:** To maximize my payoff, I must minimize my personal loss. Since every token I contribute costs me 0.6 tokens, the most rational action is to contribute nothing.
+3.  **Anticipating Others' Actions:** In Round 9, I defected completely by contributing 0, while the other three players contributed 20. They received a very low payoff (24) as a result of my action. They have been betrayed and will certainly not contribute anything in this final round to avoid being the "sucker" again. Even without my previous defection, standard game theory predicts that rational players will contribute 0 in the final round of a public goods game.
+
+My dominant strategy is to contribute 0. This is the best choice for me regardless of what the other players do.
+
+Answer = 0.0

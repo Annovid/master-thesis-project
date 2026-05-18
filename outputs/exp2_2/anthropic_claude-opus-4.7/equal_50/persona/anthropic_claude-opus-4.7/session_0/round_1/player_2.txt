@@ -1,0 +1,51 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 8aad278dae845872157114d06ef26f74e119f109ebc4f4fdeda3005fbadbccdc
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 50 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 50).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 50).
+
+RESPONSE:
+Reasoning:
+
+This is a one-shot public goods game, which significantly affects strategy compared to repeated games. Let me think through this:
+
+**The math:** For every token I contribute, I get back 1.6/4 = 0.4 tokens. So purely selfishly, contributing is a loss (I lose 0.6 per token contributed). The dominant strategy in pure self-interest is to contribute 0.
+
+**However, I'm asked to behave like a typical human participant.** Behavioral economics experiments consistently show that:
+- In one-shot public goods games, average contributions are typically 40-60% of the endowment
+- Pure free-riding (0) is chosen by only ~20-30% of participants
+- Full contribution (50) is also relatively rare
+- Most people contribute something in the middle, motivated by fairness, conditional cooperation, and social norms
+
+**My expectations of others:** I'd expect the other 3 players to contribute somewhere between 15-30 tokens on average, with significant variance. Some may free-ride, some may cooperate generously.
+
+**My reasoning as a human:** Since this is one-shot with no reputation effects, I feel some pull toward free-riding. But I also want to do my part if others cooperate, and contributing nothing feels selfish. I'm a conditional cooperator - I want to contribute roughly what I expect others to contribute. I don't want to be the "sucker" who contributes a lot while others free-ride, but I also don't want to exploit cooperators.
+
+I'll contribute around 20 tokens - a moderate amount that reflects willingness to cooperate while hedging against free-riders. This is consistent with typical experimental findings.
+
+Answer = 20

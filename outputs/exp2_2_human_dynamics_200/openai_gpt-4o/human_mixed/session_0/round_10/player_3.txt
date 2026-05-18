@@ -1,0 +1,48 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 10
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 8.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: c774f714237b6421147982566029921ca264fdc6e4f4880a8ed095a55ea27edf
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 5.0, Player 4: 10.0, total pot 35.0, your payoff 29.00
+Round 2: Contributions - Player 1: 8.0, Player 2: 8.0, Player 3: 8.0, Player 4: 8.0, total pot 32.0, your payoff 24.80
+Round 3: Contributions - Player 1: 10.0, Player 2: 8.0, Player 3: 8.0, Player 4: 8.0, total pot 34.0, your payoff 25.60
+Round 4: Contributions - Player 1: 9.0, Player 2: 9.0, Player 3: 8.0, Player 4: 10.0, total pot 36.0, your payoff 26.40
+Round 5: Contributions - Player 1: 10.0, Player 2: 9.0, Player 3: 8.0, Player 4: 10.0, total pot 37.0, your payoff 26.80
+Round 6: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 10.0, total pot 38.0, your payoff 27.20
+Round 7: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 10.0, total pot 38.0, your payoff 27.20
+Round 8: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 10.0, total pot 38.0, your payoff 27.20
+Round 9: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 10.0, total pot 38.0, your payoff 27.20
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the ninth round, the contributions remained consistent, with Players 1, 2, and 4 each contributing 10 tokens, while I maintained my contribution at 8 tokens. This resulted in a total pot of 38 tokens and a payoff of 27.20 tokens for me, which has been stable over the last several rounds.
+
+The group's contributions have been stable and high, and my payoff has been consistently favorable. To continue maximizing my payoff while aligning with the group's behavior, I will maintain my current contribution level for the final round.
+
+Answer = 8

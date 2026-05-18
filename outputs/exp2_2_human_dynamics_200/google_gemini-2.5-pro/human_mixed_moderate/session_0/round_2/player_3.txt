@@ -1,0 +1,48 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: moderate_free_rider
+SESSION: 0
+ROUND: 2
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 15.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 057a3b651f479e7e55e353c6164c55375ebc1f07058ed231b74bb5cbb1d5d63f
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+
+You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The first round revealed that the other three players are highly cooperative, all contributing their maximum of 20 tokens. My contribution of 10 tokens made me a partial free-rider, earning me the highest payoff (38.00) while the fully cooperative players earned less (28.00).
+
+This situation is not sustainable. The other players are likely to feel exploited and may reduce their contributions in this round to punish my lower contribution, which would lead to a worse outcome for everyone in the long run.
+
+My persona is to be "somewhat self-interested" but also to "contribute a positive amount when the group is cooperating." The group is clearly cooperating at the highest level. To maintain this cooperation, I need to increase my contribution to show I am a willing partner.
+
+*   Contributing 10 again would likely be seen as a continued exploitation and could break the trust.
+*   Jumping to 20 would be fully cooperative, but it goes against my preference to "contribute less than highly cooperative players."
+*   A good strategy is to increase my contribution significantly to reward their cooperation, but still keep it slightly below their maximum. This signals my willingness to cooperate while maintaining my persona.
+
+I will increase my contribution from 10 to 15. This rewards the other players (if they contribute 20 again, their payoff will increase from 28 to 30) while still giving me a slightly better payoff (35). This move encourages them to continue their high contributions and establishes a potentially stable and very profitable pattern for the upcoming rounds.
+
+Answer = 15.0

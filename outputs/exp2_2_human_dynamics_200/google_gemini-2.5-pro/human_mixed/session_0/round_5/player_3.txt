@@ -1,0 +1,57 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 5
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: c18b88efaedbdc7a419f3a53d2aa80e6ee97b52609c5cf94e0f8052d3fa5c51a
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Previous Rounds:**
+The group is demonstrating a very high level of cooperation, but it's not perfect. There's a recurring pattern of one or two players slightly under-contributing to get a higher individual payoff.
+
+*   **Round 1:** I was the free-rider (10 vs 20s).
+*   **Round 2:** P1 and P2 were the free-riders (17.5 vs 20s).
+*   **Round 3:** I was the free-rider again (17.5 vs 20s).
+*   **Round 4:** I fully cooperated (20), but P1 defected slightly (17.5), earning the highest payoff.
+
+In Round 4, my payoff for contributing 20 was 31.00. Player 1's payoff for contributing 17.5 was `20 - 17.5 + 31.00 = 33.50`.
+
+**Strategic Considerations for Round 5:**
+My persona is to maximize my own payoff and be cautious. Continuing to contribute 20 while others take turns contributing 17.5 makes me a "sucker" with a lower payoff. The group has shown that it can tolerate this slight defection without collapsing into non-cooperation.
+
+*   **Contributing 20:** This is the "nice" move, but it's very likely someone else will contribute 17.5, leaving me with a payoff of 31 again.
+*   **Contributing 17.5:** This is the "rational self-interest" move. I am essentially copying the successful strategy used by P1 in the last round and by myself in Round 3. If the other three players contribute 20, my payoff will be `20 - 17.5 + (1.6 * 77.5) / 4 = 2.5 + 31 = 33.5`. This is the highest possible payoff in this scenario. If another player also contributes 17.5, the payoff will still be good (`32.5`).
+
+Given the established pattern, it's my turn to secure the higher payoff. The risk of cooperation collapsing from this small move is low, based on the history of the last four rounds. Therefore, to maximize my payoff, I should contribute 17.5.
+
+Answer = 17.5

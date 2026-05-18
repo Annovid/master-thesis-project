@@ -1,0 +1,557 @@
+{
+  "experiment": "2.2",
+  "mode": "human_like_repeated_pgg_dynamics",
+  "model_requested": "openai/gpt-4o",
+  "model_returned_seen": [
+    "openai/gpt-4o"
+  ],
+  "provider": "openrouter",
+  "condition_label": "neutral",
+  "condition_mode": "homogeneous_prompt",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 3,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_condition": "",
+  "player_profiles": [
+    "neutral",
+    "neutral",
+    "neutral",
+    "neutral"
+  ],
+  "player_prompt_conditions": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "payoffs": [
+        26.0,
+        26.0,
+        26.0,
+        26.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "37e9caab7b526017a04ef23032294306b6f8610bb594a024dbf45d071cb0e719",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1779058619-62AzJdCqxeYnRZAFPpmo",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 193,
+            "completion_tokens": 100,
+            "total_tokens": 293,
+            "cost": 0.0014825,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0014825,
+              "upstream_inference_prompt_cost": 0.0004825,
+              "upstream_inference_completions_cost": 0.001
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.59
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "ff71bebedbe030639a044f13837a35db8eb1f45d263942092c41e91bc75440e2",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1779058627-F4qiNZCq85varGuFd58w",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 193,
+            "completion_tokens": 102,
+            "total_tokens": 295,
+            "cost": 0.0015025,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0015025,
+              "upstream_inference_prompt_cost": 0.0004825,
+              "upstream_inference_completions_cost": 0.00102
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.46
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "63910f267a275c3853529a04c99c61d24c0e020e8b63ccc9bcfde66f01e60902",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1779058629-c4kd4Ji0qeJhxgoSuwzK",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 193,
+            "completion_tokens": 132,
+            "total_tokens": 325,
+            "cost": 0.0018025,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0018025,
+              "upstream_inference_prompt_cost": 0.0004825,
+              "upstream_inference_completions_cost": 0.00132
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 2.02
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "ba05113ca9bba9d41d814809fc7bfd390193da3655422a60142282fbe5de4e16",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1779058631-jlnWyJLmE5aH5SOBBeie",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 193,
+            "completion_tokens": 128,
+            "total_tokens": 321,
+            "cost": 0.0017625,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0017625,
+              "upstream_inference_prompt_cost": 0.0004825,
+              "upstream_inference_completions_cost": 0.00128
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.36
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 2,
+      "actions": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "payoffs": [
+        26.0,
+        26.0,
+        26.0,
+        26.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "fb179d9fce4a6e42bdb51df2fdc1b9ffa710a64b93a24f08766583f794354b3e",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_2/player_1.txt",
+          "chat_id": "gen-1779058632-111HEFVVVgUcZK0ywhqR",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 538,
+            "completion_tokens": 62,
+            "total_tokens": 600,
+            "cost": 0.001965,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.001965,
+              "upstream_inference_prompt_cost": 0.001345,
+              "upstream_inference_completions_cost": 0.00062
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.1
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "66c5c3c7beeac0ffa90bfb7d94b696d8b1943249293bb68b6f7985d208b7f8c0",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_2/player_2.txt",
+          "chat_id": "gen-1779058633-Zm8kVY7nPG6RtjTjSlqM",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 541,
+            "completion_tokens": 50,
+            "total_tokens": 591,
+            "cost": 0.0018525,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0018525,
+              "upstream_inference_prompt_cost": 0.0013525,
+              "upstream_inference_completions_cost": 0.0005
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.02
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "be206dd5955c21d1055da0f2ce00b4322375787ad8cd2e2f73fc63e66daa2786",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_2/player_3.txt",
+          "chat_id": "gen-1779058634-nNVi8xNNSVPFaDbUwN3U",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 571,
+            "completion_tokens": 69,
+            "total_tokens": 640,
+            "cost": 0.0021175,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0021175,
+              "upstream_inference_prompt_cost": 0.0014275,
+              "upstream_inference_completions_cost": 0.00069
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.42
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "94a01b242abc4663fe86fb153dbc22e80fe4775dedabae1a169351ed92bb2ce2",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_2/player_4.txt",
+          "chat_id": "gen-1779058636-jel1gLHg0e7oVolM2Ka9",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 567,
+            "completion_tokens": 75,
+            "total_tokens": 642,
+            "cost": 0.0021675,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0021675,
+              "upstream_inference_prompt_cost": 0.0014175,
+              "upstream_inference_completions_cost": 0.00075
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.44
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 3,
+      "actions": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "payoffs": [
+        26.0,
+        26.0,
+        26.0,
+        26.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "053a16990e5ae08c6d3bdfb29b07fd3dc4a4f6f351928e18b6df81e4b67acf3e",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_3/player_1.txt",
+          "chat_id": "gen-1779058637-etn1wZtNxUJamrw03iNl",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 902,
+            "completion_tokens": 47,
+            "total_tokens": 949,
+            "cost": 0.002725,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.002725,
+              "upstream_inference_prompt_cost": 0.002255,
+              "upstream_inference_completions_cost": 0.00047
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 2.46
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "f3008294c2619785b3becd5c95514d9402cac1bc6a2678ccc475180b9f1e12c8",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_3/player_2.txt",
+          "chat_id": "gen-1779058640-3jIQguVxYJwFfNIIxify",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 893,
+            "completion_tokens": 45,
+            "total_tokens": 938,
+            "cost": 0.0026825,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0026825,
+              "upstream_inference_prompt_cost": 0.0022325,
+              "upstream_inference_completions_cost": 0.00045
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.02
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "bfbc8045529d2e7b4ac7b303970758da48c8836534255be8270f3effc3b50268",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_3/player_3.txt",
+          "chat_id": "gen-1779058641-vuelKuoA3TrZayp7yFQE",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 941,
+            "completion_tokens": 68,
+            "total_tokens": 1009,
+            "cost": 0.0030325,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0030325,
+              "upstream_inference_prompt_cost": 0.0023525,
+              "upstream_inference_completions_cost": 0.00068
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.15
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 10.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "a36a72b5ba78729173d0e421c519b3791a0500edbeedbb4f236302c1271d3048",
+          "response_path": "openai_gpt-4o/neutral/session_0/round_3/player_4.txt",
+          "chat_id": "gen-1779058642-WjhYUp2kxVhcNuSL2hqT",
+          "model_returned": "openai/gpt-4o",
+          "usage": {
+            "prompt_tokens": 943,
+            "completion_tokens": 51,
+            "total_tokens": 994,
+            "cost": 0.0028675,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0028675,
+              "upstream_inference_prompt_cost": 0.0023575,
+              "upstream_inference_completions_cost": 0.00051
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 1.31
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "metrics": {
+    "complete_rounds": 3,
+    "round_means": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "round_stds": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "r1_mean": 10.0,
+    "r_last_mean": 10.0,
+    "overall_mean": 10.0,
+    "slope": 0.0,
+    "final_zero_rate": 0.0,
+    "player_slopes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rank_stability": 1.0,
+    "free_rider_effect": null,
+    "distance_to_no_punishment_human": 19.0
+  },
+  "total_payoffs": [
+    78.0,
+    78.0,
+    78.0,
+    78.0
+  ],
+  "session_path": "openai_gpt-4o/neutral/session_0",
+  "session_elapsed_s": 24.36
+}

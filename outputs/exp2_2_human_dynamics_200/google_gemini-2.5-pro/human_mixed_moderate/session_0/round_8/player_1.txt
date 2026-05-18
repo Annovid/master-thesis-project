@@ -1,0 +1,56 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 8
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.7
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: d380e8b4d3f2505560a16b48e6097c86a9c3c16dafb85e64b0572264bce12b78
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 20.0, Player 2: 17.5, Player 3: 15.0, Player 4: 20.0, total pot 72.5, your payoff 29.00
+Round 3: Contributions - Player 1: 17.5, Player 2: 18.1, Player 3: 17.5, Player 4: 20.0, total pot 73.1, your payoff 31.74
+Round 4: Contributions - Player 1: 18.5, Player 2: 18.3, Player 3: 17.5, Player 4: 17.5, total pot 71.8, your payoff 30.22
+Round 5: Contributions - Player 1: 17.8, Player 2: 18.0, Player 3: 17.5, Player 4: 18.1, total pot 71.4, your payoff 30.76
+Round 6: Contributions - Player 1: 17.9, Player 2: 17.9, Player 3: 17.5, Player 4: 17.8, total pot 71.1, your payoff 30.54
+Round 7: Contributions - Player 1: 17.7, Player 2: 17.8, Player 3: 17.5, Player 4: 17.8, total pot 70.8, your payoff 30.62
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The group's behavior has become extremely predictable and stable. In Round 7, all contributions were tightly clustered between 17.5 and 17.8. This is a testament to the strong, reciprocal norm we have all established. My strategy of conditional cooperation, specifically matching the average of others from the previous round, has been a key part of building this trust.
+
+We are now in Round 8 of 10. While there is a theoretical risk of cooperation breaking down as we approach the end (the "endgame effect"), there is no sign of it yet. The best strategy is to continue what has been working so well. Any deviation from this established norm could be misinterpreted and trigger a collapse in cooperation, which would be detrimental to my final score.
+
+I will continue to act as a reliable conditional cooperator. I will calculate the average contribution of the other players from Round 7 and use that as my contribution for Round 8.
+
+- Player 2: 17.8
+- Player 3: 17.5
+- Player 4: 17.8
+
+Average = (17.8 + 17.5 + 17.8) / 3 = 53.1 / 3 = 17.7
+
+My contribution will be 17.7. This perfectly matches the group's average and my own previous contribution, signaling my unwavering commitment to our successful cooperative strategy.
+
+Answer = 17.7

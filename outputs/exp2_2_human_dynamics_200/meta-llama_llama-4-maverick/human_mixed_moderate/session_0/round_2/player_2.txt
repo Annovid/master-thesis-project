@@ -1,0 +1,44 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 12.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 32a4aa9330a9d2674929031b5a0d85e5487bf24787fe914d3534b440ad0bdc35
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 10.0, Player 4: 15.0, total pot 45.0, your payoff 28.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In Round 1, I contributed 10 tokens, and the total contribution was 45 tokens. The other players contributed 10, 10, and 15 tokens, respectively. The average contribution was 11.25 tokens.
+
+Since the other players contributed a similar or slightly higher amount than I did, I'm willing to continue cooperating. I'll maintain a similar level of contribution or slightly adjust it based on the overall cooperation level.
+
+Given that the average contribution was slightly higher than mine, I'll consider contributing a bit more or at least maintaining my current level of contribution to continue signaling cooperation.
+
+I'll contribute 12 tokens in Round 2, as it's a slight increase from my initial contribution and reflects the overall cooperation level in the first round.
+
+Answer = 12

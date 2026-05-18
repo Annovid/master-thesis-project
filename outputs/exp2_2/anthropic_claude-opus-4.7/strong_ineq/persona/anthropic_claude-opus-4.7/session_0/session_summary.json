@@ -1,0 +1,193 @@
+{
+  "model_requested": "anthropic/claude-opus-4.7",
+  "model_returned_seen": [
+    "anthropic/claude-4.7-opus-20260416"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 10,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "persona",
+  "prompt_condition": "Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.",
+  "endowments": [
+    10,
+    20,
+    80,
+    160
+  ],
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        5.0,
+        8.0,
+        40.0,
+        80.0
+      ],
+      "payoffs": [
+        58.2,
+        65.2,
+        93.2,
+        133.2
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 5.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "4a0b750898dfff97547a5819dd4363a27d9934140ffc493c8a31857d8b1de509",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778631094-TirCasDoX6TFvxKscF5b",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 510,
+            "completion_tokens": 609,
+            "total_tokens": 1119,
+            "cost": 0.017775,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.017775,
+              "upstream_inference_prompt_cost": 0.00255,
+              "upstream_inference_completions_cost": 0.015225
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.67
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 8.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "b9c22f16b47e6f749c0733c29533ea1ad65d8cd8d5f946621950ae9c6885d2d5",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778631103-Is0cAFztuEIXZkqmarJi",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 510,
+            "completion_tokens": 648,
+            "total_tokens": 1158,
+            "cost": 0.01875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01875,
+              "upstream_inference_prompt_cost": 0.00255,
+              "upstream_inference_completions_cost": 0.0162
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.71
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 40.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "ababf1c3b0cc7f36ab3ff63ea14406f3c93bb3573ac878027bc1368e14ea7812",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778631112-tYBdmiVsw0ClUNjx8c44",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 510,
+            "completion_tokens": 640,
+            "total_tokens": 1150,
+            "cost": 0.01855,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01855,
+              "upstream_inference_prompt_cost": 0.00255,
+              "upstream_inference_completions_cost": 0.016
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.82
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 80.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "58d3ed4b18a4ba5caf43d0b0c092fe1ec9175e61cd8e14df954a9585367a912a",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778631124-sork6KZCE76onrigYmwx",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 510,
+            "completion_tokens": 665,
+            "total_tokens": 1175,
+            "cost": 0.019175,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.019175,
+              "upstream_inference_prompt_cost": 0.00255,
+              "upstream_inference_completions_cost": 0.016625
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.91
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    58.2,
+    65.2,
+    93.2,
+    133.2
+  ],
+  "session_path": "anthropic_claude-opus-4.7/session_0",
+  "session_elapsed_s": 39.11
+}

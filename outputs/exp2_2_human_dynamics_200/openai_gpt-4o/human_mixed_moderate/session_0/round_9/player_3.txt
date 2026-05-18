@@ -1,0 +1,47 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: moderate_free_rider
+SESSION: 0
+ROUND: 9
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 5.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 1c4675d3110a9e2ef9365cfbb75e646b3862c613a1e9969e9faa72b766437bde
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 15.0, total pot 43.0, your payoff 29.20
+Round 2: Contributions - Player 1: 9.0, Player 2: 10.0, Player 3: 9.0, Player 4: 12.0, total pot 40.0, your payoff 27.00
+Round 3: Contributions - Player 1: 9.0, Player 2: 9.0, Player 3: 8.0, Player 4: 12.0, total pot 38.0, your payoff 27.20
+Round 4: Contributions - Player 1: 8.0, Player 2: 8.0, Player 3: 8.0, Player 4: 10.0, total pot 34.0, your payoff 25.60
+Round 5: Contributions - Player 1: 9.0, Player 2: 7.0, Player 3: 7.0, Player 4: 11.0, total pot 34.0, your payoff 26.60
+Round 6: Contributions - Player 1: 7.0, Player 2: 7.0, Player 3: 7.0, Player 4: 9.0, total pot 30.0, your payoff 25.00
+Round 7: Contributions - Player 1: 7.0, Player 2: 6.0, Player 3: 6.0, Player 4: 10.0, total pot 29.0, your payoff 25.60
+Round 8: Contributions - Player 1: 6.0, Player 2: 6.0, Player 3: 6.0, Player 4: 8.0, total pot 26.0, your payoff 24.40
+
+You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the eighth round, contributions decreased further, with the total pot at 26.0. This indicates a continued decline in cooperation among the players. As a somewhat self-interested player, you might want to continue contributing conservatively to maximize your payoff while still participating in the public pot.
+
+The average contribution in the eighth round was 6.5. To align with your strategy, you could choose a contribution slightly below this average.
+
+Answer = 5.0

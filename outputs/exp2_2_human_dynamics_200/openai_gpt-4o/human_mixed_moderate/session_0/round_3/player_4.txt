@@ -1,0 +1,41 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 3
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 12.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: dd08d481b07fd9ec5fa19d2eae79495c784a5042dcc2ad07c21de4164eed8d69
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 15.0, total pot 43.0, your payoff 22.20
+Round 2: Contributions - Player 1: 9.0, Player 2: 10.0, Player 3: 9.0, Player 4: 12.0, total pot 40.0, your payoff 24.00
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the second round, you reduced your contribution to 12 tokens, and the other players contributed 9, 10, and 9 tokens. The total pot was slightly lower at 40 tokens, but your payoff increased to 24.00. This suggests that your strategy of slightly reducing your contribution while still being generous resulted in a better payoff, and the other players maintained their moderate contributions.
+
+Since no player is clearly free-riding and the group is cooperating at a moderate level, you might continue with a similar strategy to encourage consistent contributions. A contribution of 12 tokens again seems reasonable, as it maintains your cooperative stance while allowing you to observe any changes in the group's behavior.
+
+Answer = 12

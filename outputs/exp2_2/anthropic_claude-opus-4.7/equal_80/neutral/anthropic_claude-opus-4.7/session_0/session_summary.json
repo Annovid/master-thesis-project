@@ -1,0 +1,193 @@
+{
+  "model_requested": "anthropic/claude-opus-4.7",
+  "model_returned_seen": [
+    "anthropic/claude-4.7-opus-20260416"
+  ],
+  "provider": "openrouter",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 80,
+  "multiplier": 1.6,
+  "n_rounds": 1,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_label": "neutral",
+  "prompt_condition": "",
+  "endowments": [
+    80,
+    80,
+    80,
+    80
+  ],
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payoffs": [
+        80.0,
+        80.0,
+        80.0,
+        80.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "144da123114269bb220bf08ea5ac514fa00feffe42949da6c42fdf25acaa436a",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1778630866-ABJ9SC70xNe3auBh3WvE",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 328,
+            "completion_tokens": 605,
+            "total_tokens": 933,
+            "cost": 0.016765,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.016765,
+              "upstream_inference_prompt_cost": 0.00164,
+              "upstream_inference_completions_cost": 0.015125
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.59
+        },
+        {
+          "player_id": 2,
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "e703dc2ad259d1c335357587b72f737159a68e734438411dfc6d53d05617c18d",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1778630875-uOWTAvi4lGV27edCq6JU",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 328,
+            "completion_tokens": 243,
+            "total_tokens": 571,
+            "cost": 0.007715,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.007715,
+              "upstream_inference_prompt_cost": 0.00164,
+              "upstream_inference_completions_cost": 0.006075
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 4.71
+        },
+        {
+          "player_id": 3,
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "b75fe6a9f7ff8b5b3daafde43ce1794c502b1d9f62f5e72a291d8ceaf2ecb370",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1778630879-Rx3vTI1zBzVqvTFSQojY",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 328,
+            "completion_tokens": 202,
+            "total_tokens": 530,
+            "cost": 0.00669,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00669,
+              "upstream_inference_prompt_cost": 0.00164,
+              "upstream_inference_completions_cost": 0.00505
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 3.53
+        },
+        {
+          "player_id": 4,
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "a6e09bd3d95463795b1e9ed85ecbf5d2c764cc28de143c41b1b1379c0f706369",
+          "response_path": "anthropic_claude-opus-4.7/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1778630883-nhQU1yTkCFs6RKtlCUep",
+          "model_returned": "anthropic/claude-4.7-opus-20260416",
+          "usage": {
+            "prompt_tokens": 328,
+            "completion_tokens": 602,
+            "total_tokens": 930,
+            "cost": 0.01669,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01669,
+              "upstream_inference_prompt_cost": 0.00164,
+              "upstream_inference_completions_cost": 0.01505
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.44
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "total_payoffs": [
+    80.0,
+    80.0,
+    80.0,
+    80.0
+  ],
+  "session_path": "anthropic_claude-opus-4.7/session_0",
+  "session_elapsed_s": 28.26
+}

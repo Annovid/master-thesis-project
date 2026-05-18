@@ -1,0 +1,52 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: moderate_free_rider
+SESSION: 0
+ROUND: 8
+PLAYER: 3
+STAGE: punishment
+TEMPERATURE: 0.0
+PARSED: [0.0, 0.0, 0.0, 0.0]
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 445fc6ea2ad5ea6b80561a297aaf8aa0f14e7c3b3e69d8534ff0b638f42c17e4
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 3.
+Each round starts with 20 tokens per player. Public-good multiplier: 1.6.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You may assign 0 to 5 punishment points to each other player. You cannot punish yourself.
+
+History of previous rounds:
+Round 1: contributions - Player 1: 10, Player 2: 10, Player 3: 10, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.00.
+Round 2: contributions - Player 1: 12, Player 2: 12, Player 3: 8, Player 4: 12; you assigned 0 punishment point(s), received 4 punishment point(s), and your final payoff was 17.60.
+Round 3: contributions - Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 10; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 27.60.
+Round 4: contributions - Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 12; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.40.
+Round 5: contributions - Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 12; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.40.
+Round 6: contributions - Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 12; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.40.
+Round 7: contributions - Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 12; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.40.
+
+Current round contributions:
+Player 1: 12, Player 2: 12, Player 3: 10, Player 4: 12
+Current round payoffs before punishment:
+Player 1: 26.40, Player 2: 26.40, Player 3: 28.40, Player 4: 26.40
+
+You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.
+
+Decide punishment points for the current round.
+Use exactly these player keys: "1", "2", "4".
+End your reply with a single line of the form: Punishment = {"1": 0, "2": 0, "4": 0}
+
+RESPONSE:
+The current round is Round 8, and the contributions are the same as in Rounds 4, 5, 6, and 7: Player 1: 12, Player 2: 12, Player 3 (me): 10, Player 4: 12.
+
+The situation is identical to the previous rounds. I contributed 10 tokens, which is less than the others, but consistent with my previous contributions. The others are still contributing more, but it seems like they've accepted my contribution level.
+
+I don't see a strong reason to punish anyone, as everyone is still contributing a significant amount to the public pot.
+
+Punishment = {"1": 0, "2": 0, "4": 0}

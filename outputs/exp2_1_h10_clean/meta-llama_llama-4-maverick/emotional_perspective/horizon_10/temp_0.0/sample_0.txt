@@ -1,0 +1,36 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: emotional_perspective
+SAMPLE: 0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: b09185ad4f049b663f27c079f446505a4820ede88adb25c7a3d754cb40b7c26a
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine a typical participant who may feel frustrated by free-riding and may feel good about fair cooperation. Make the decision from that perspective.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round, and I have no information about the contributions of the other players. To encourage cooperation and avoid being taken advantage of too much, I'll contribute a moderate amount. Contributing 0 might encourage others to do the same, but it also risks getting a low payoff if others contribute. Contributing too much (e.g., 20) risks being taken advantage of if others contribute little. A moderate contribution seems like a reasonable starting point.
+
+Let's contribute 10 tokens for the first round, which is half of my endowment. This way, I'm showing willingness to cooperate but also keeping some tokens for myself in case others don't contribute as much.
+
+Answer = 10

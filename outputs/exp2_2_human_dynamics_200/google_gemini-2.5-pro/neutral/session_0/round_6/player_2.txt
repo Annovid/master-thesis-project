@@ -1,0 +1,46 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: neutral
+PLAYER_PROFILE: neutral
+SESSION: 0
+ROUND: 6
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: ee178cbb61417af866a456008bf6c941add00cb7169a5f34301c485dab664367
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 80.0, your payoff 32.00
+Round 2: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 80.0, your payoff 32.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 80.0, your payoff 32.00
+Round 4: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 80.0, your payoff 32.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 80.0, your payoff 32.00
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The history of the game for the past five rounds shows a perfect and unbroken pattern of full cooperation. Every player has contributed their entire endowment of 20 tokens in every single round. This has resulted in the maximum possible payoff of 32 tokens for all players each round.
+
+We have established a highly stable and profitable social contract. The trust among players is at its peak. Any deviation from this established norm would be a breach of that trust and would almost certainly lead to a breakdown of cooperation in the subsequent rounds.
+
+While I could theoretically increase my payoff for this single round by contributing less (free-riding), the long-term consequences would be disastrous. The other players would see my defection and would likely retaliate by contributing less or nothing in the future. This would destroy our profitable equilibrium and lead to much lower payoffs for everyone, including myself, for the remaining rounds of the game.
+
+The most rational and profitable strategy is to continue to uphold my end of our unspoken agreement. I will contribute the full 20 tokens to maintain the trust and continue maximizing our collective and individual gains.
+
+Answer = 20.0

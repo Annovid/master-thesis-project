@@ -1,0 +1,56 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 8
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 7f41d75cff65d583b66df51194b4f9c5dd835d54de31b7113c054b556c41f328
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 33.25
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 31.37
+Round 7: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 19.2, Player 4: 20.0, total pot 79.2, your payoff 32.48
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Previous Rounds:**
+The game has been remarkably stable and cooperative. A clear pattern has emerged: the group maintains a very high level of contribution, but in almost every round, one or two players contribute slightly less than 20 to secure a higher individual payoff. This behavior has been tolerated and has become the group's norm.
+
+In Round 7, I was the sole player to contribute less (19.2), while everyone else contributed 20. As expected, this gave me the highest payoff for the round (32.48).
+
+**Strategic Considerations for Round 8:**
+We are now in Round 8 of 10. The end of the game is approaching. In finite games like this, cooperation tends to unravel as the final round gets closer, because the "shadow of the future" (the need to maintain a good reputation for future rounds) shrinks.
+
+I have just taken my "turn" to be the slight free-rider. If I attempt to do this again, for a second consecutive round, the other players may interpret it as greed rather than turn-taking. This could break the trust that has sustained our high payoffs and trigger a premature collapse of cooperation. If cooperation collapses now, we could all end up with payoffs of 20 for the last three rounds, which would be a significant loss for me compared to the ~32 we are currently achieving.
+
+My persona is to contribute when it's "necessary because of the behavior of the group." To preserve the high-payoff equilibrium for as long as possible, it is now necessary for me to return to the cooperative anchor of 20. This signals that I am not a consistent free-rider and that I am upholding my end of the implicit group agreement. This move maximizes the chance that cooperation will continue into Round 9. The small gain I would make by free-riding again is not worth the risk of losing high payoffs for the remaining rounds.
+
+I will contribute 20, effectively passing the "turn" to be the slight free-rider to another player.
+
+Answer = 20.0

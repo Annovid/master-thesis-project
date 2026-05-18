@@ -1,0 +1,60 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: conditional_coop
+SAMPLE: 3
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: dd97737e20dba5d19455e01d2fc30932f03a0b0dd1d7055c82ff83b4b1611c76
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+You may condition your contribution on what you expect the other players to contribute.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round Public Goods Game. My decision in this round can set the tone for the rest of the game.
+
+**Analysis of Payoff Structure:**
+
+My payoff is calculated as: `Payoff = 20 - My_Contribution + (1.6 * (My_Contribution + Others_Contributions)) / 4`.
+This can be simplified to: `Payoff = 20 - My_Contribution + 0.4 * My_Contribution + 0.4 * Others_Contributions`, which further simplifies to: `Payoff = 20 - 0.6 * My_Contribution + 0.4 * Others_Contributions`.
+
+*   **Individual Incentive:** For every token I contribute, I lose 1 token but get back 0.4 tokens. This is a net loss of 0.6 tokens for me. From a purely selfish, single-round perspective, the best strategy is to contribute 0.
+*   **Group Incentive:** For every token anyone contributes, that person loses 1 token, but the group as a whole gains 1.6 tokens. This means each of the 4 players (including the contributor) gets 0.4 tokens. The net effect on the group's total wealth is a gain of `1.6 - 1 = 0.6` tokens. Therefore, the best outcome for the group is if everyone contributes their full endowment of 20.
+
+**The Dilemma:**
+
+There is a conflict between what is best for me individually in this single round (contribute 0) and what is best for the group (everyone contributes 20). If everyone contributes 20, we all get a payoff of 32. If everyone contributes 0, we all get a payoff of 20.
+
+**Strategy for a Repeated Game:**
+
+Since this is a 10-round game, my actions in early rounds can influence the behavior of other players in later rounds.
+
+*   **Contributing 0 (Full Defection):** This is the safest option for this round and maximizes my immediate payoff, assuming others contribute something. However, it signals that I am not a cooperator, which will likely lead others to contribute less in the future, resulting in lower payoffs for everyone in the long run.
+*   **Contributing 20 (Full Cooperation):** This is a risky strategy. If the other players also cooperate, we can achieve the maximum possible payoff of 32 each. However, if they defect and contribute 0, I will be the "sucker" with a low payoff of `20 - 20 + (1.6 * 20) / 4 = 8`.
+*   **Contributing an Intermediate Amount:** A moderate contribution (e.g., half the endowment) is a good way to "test the waters." It signals a willingness to cooperate but also limits my potential losses if others defect. It's a common strategy to try and establish a cooperative norm without being overly naive.
+
+**Decision for Round 1:**
+
+As this is the first round, I have no information about the other players. I will start by contributing half of my endowment. This is a clear signal of my willingness to cooperate. It's a balanced approach between the high risk of full cooperation and the uncooperative nature of full defection. After this round, I can use my payoff to calculate the average contribution of the other players and adjust my strategy accordingly.
+
+My contribution will be 10.0.
+
+Answer = 10.0

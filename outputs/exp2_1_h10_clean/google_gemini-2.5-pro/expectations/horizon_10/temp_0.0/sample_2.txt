@@ -1,0 +1,55 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: expectations
+SAMPLE: 2
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: fe325df1403b47080e86c7975820ba41df0c942a7aceaa4ff2177bf90ae70743
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Before choosing, explicitly reason about how much each other player is likely to contribute.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their future behavior, even though we cannot communicate directly. The information I will gain after this round (my payoff) will allow me to deduce the sum of the other three players' contributions.
+
+**Payoff Analysis:**
+*   For every token I contribute, I lose 1 token but get back `1.6 / 4 = 0.4` tokens. This is a net loss of 0.6 tokens for me.
+*   For every token someone else contributes, I gain 0.4 tokens.
+*   From a single-round, purely selfish perspective, the best strategy is to contribute 0 (free-ride). This guarantees a payoff of at least 20.
+*   From a group perspective, the best outcome is for everyone to contribute 20. In this case, each player receives a payoff of `20 - 20 + (1.6 * 80) / 4 = 32`.
+
+**Reasoning about other players:**
+Since this is the first round, I have no history of the other players. They could be any mix of player types:
+1.  **Selfish Free-riders:** They will calculate that contributing 0 maximizes their individual payoff in any given round and will likely contribute 0.
+2.  **Cautious Players:** They might contribute a moderate amount, like 10 (half the endowment), as a way to hedge their bets—showing some willingness to cooperate without taking a huge risk.
+3.  **Cooperators:** They will understand that the highest total payoff for everyone is achieved through full cooperation. They might start by contributing 20 to signal their intent to cooperate, hoping others will do the same.
+
+Given this uncertainty, I have to decide what kind of signal I want to send.
+
+*   **Contributing 0:** This is the safest move for this round but signals selfishness. It will likely lead to a breakdown of cooperation, and we will all end up with low payoffs (20 per round) for the rest of the game.
+*   **Contributing an intermediate amount (e.g., 10):** This is a weak signal. It shows some cooperation but also a lack of trust. It may lead to a stable but suboptimal equilibrium where everyone contributes a medium amount.
+*   **Contributing 20:** This is a strong, clear signal of my desire to cooperate for the maximum mutual benefit. It is risky; if the others are free-riders, I will get a very low "sucker" payoff of `20 - 20 + (1.6 * 20) / 4 = 8`. However, it is the best way to try and establish a high-contribution norm from the start. If the others are also willing cooperators, we can all achieve the maximum payoff of 32 per round.
+
+**My Decision:**
+To maximize my total score over 10 rounds, my best chance is to establish a cooperative equilibrium early. The risk of a low score in Round 1 is worth the potential reward of achieving high payoffs (32 per round) in subsequent rounds. I will start by being fully cooperative to send the strongest possible signal. After this round, I can analyze my payoff to deduce what the others did and adjust my strategy accordingly.
+
+Answer = 20.0

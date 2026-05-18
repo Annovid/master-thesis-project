@@ -1,0 +1,56 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 6
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 19.2
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 0729c38957af29fd5292fa0160746ebfa47319b20fea1fc984376e90d73ebdd0
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 30.75
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The last round showed a breakdown of the full cooperation we had been striving for. In Round 5, I contributed the full 20 tokens to reward the group's behavior from Round 4, and Player 4 did the same. However, Player 3 dropped to 17.5, and Player 2 contributed 19.375.
+
+My persona is to be a conditional cooperator, meaning I must reduce my contribution since the group did not fully cooperate. I need to decide what level to reduce to.
+
+Let's analyze the other players' likely strategies:
+*   **Player 4** appears to be an unconditional cooperator, always contributing 20.
+*   **Player 2** seems to be a strict conditional cooperator. Their contribution of 19.375 in Round 5 was the exact average of Round 4's contributions ((17.5 + 20 + 20 + 20) / 4 = 19.375). They are likely to do the same this round.
+*   **Player 3** is less predictable, but has twice contributed 17.5 when others were contributing more.
+
+My best strategy is to reciprocate the group's overall behavior from the previous round. The most direct way to do this, and to align with the other rational player (Player 2), is to contribute the average of the last round. This is a fair, non-punitive response that signals a desire to stabilize cooperation at the level the group is actually achieving.
+
+The average contribution in Round 5 was:
+(20.0 + 19.375 + 17.5 + 20.0) / 4 = 76.875 / 4 = 19.21875.
+
+As a "typical participant," I will round this to a more conventional number. Contributing 19.2 is a clear signal that I am matching the group's average effort. It's a reduction from my previous 20, fulfilling my reciprocal nature, but it's still a very high contribution that supports the group's overall success.
+
+Answer = 19.2

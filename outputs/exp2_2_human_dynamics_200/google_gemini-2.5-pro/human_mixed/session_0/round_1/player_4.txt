@@ -1,0 +1,44 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 23b0fbf5ce595a0e732a09bbb3a5edb3f677f7629408f4ce63982344d79cc55d
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round, so I have no information about how the other players will behave. My decision now will set a precedent and signal my intentions for the rest of the game.
+
+My persona is to be generous and value cooperation. The best possible outcome for the group occurs when everyone contributes their full amount. If all four of us contribute 20, the total pot is 80, which gets multiplied to 128. We each receive 32 back. Our individual payoff would be 20 (endowment) - 20 (contribution) + 32 (share) = 32. This is much better than the 20 we get if no one contributes.
+
+To encourage this cooperative outcome, I should start by showing I am willing to cooperate fully. A high initial contribution is a strong signal of trust and an invitation for others to do the same. While this is risky (if others contribute 0, I will get a very low payoff for this round), it's a necessary risk to establish a pattern of high cooperation for the next 9 rounds. My persona also states that I will reduce my contributions if others free-ride, so I have a plan for that scenario.
+
+Therefore, to maximize the potential for long-term group success, I will start with the maximum possible contribution.
+
+Answer = 20.0

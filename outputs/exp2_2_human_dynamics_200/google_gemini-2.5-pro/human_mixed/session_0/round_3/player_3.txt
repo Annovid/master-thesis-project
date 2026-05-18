@@ -1,0 +1,64 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 3
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: f0d29c9bd5af10a2635876ad3a0611708a29e66597234d5c21ef6bb330e00bb5
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Round 2:**
+In Round 1, I tested the waters with a 10-token contribution and discovered a highly cooperative group, with everyone else contributing 20. I made the highest payoff (38) by free-riding.
+In Round 2, I corrected my strategy to full cooperation by contributing 20. However, Players 1 and 2 reduced their contributions to 17.5 each. Player 4 remained at 20.
+
+Let's look at the payoffs for Round 2:
+*   Total contribution: `17.5 + 17.5 + 20.0 + 20.0 = 75.0`
+*   Share from the pot: `(1.6 * 75.0) / 4 = 30.0`
+*   My payoff (P3): `20 - 20.0 + 30.0 = 30.0`
+*   Player 4's payoff: `20 - 20.0 + 30.0 = 30.0`
+*   Player 1 & 2's payoff: `20 - 17.5 + 30.0 = 32.5`
+
+Players 1 and 2 have now successfully employed the strategy I used in Round 1: contribute slightly less than the group average and get a higher payoff. They saw that I got away with it and are now doing the same. They are acting rationally to maximize their own payoff.
+
+**Strategic Considerations for Round 3:**
+My goal is to maximize my own total payoff. Continuing to contribute 20 while others contribute 17.5 makes me a "sucker" with a lower payoff than them. This is not optimal for me.
+
+*   **Option 1: Maintain 20.** This is a noble strategy to encourage full cooperation, but the evidence from Round 2 suggests P1 and P2 are not interested in that. They are interested in the 32.5 payoff they get from contributing 17.5. I would likely continue to get a lower payoff than them.
+*   **Option 2: Punish them by contributing 0.** This is too aggressive. It would likely cause a complete collapse of cooperation, and we would all revert to the baseline payoff of 20 for the remaining 8 rounds. This is a bad long-term strategy.
+*   **Option 3: Match their contribution.** By contributing 17.5, I signal that I will not be taken advantage of. This is a form of "tit-for-tat." If they contribute 17.5, I will too. This leads to a stable and "fair" outcome where everyone who contributes the same amount gets the same payoff.
+
+Let's calculate the payoff if everyone converges on 17.5:
+*   Total contribution: `4 * 17.5 = 70.0`
+*   Share from the pot: `(1.6 * 70.0) / 4 = 28.0`
+*   Payoff for everyone: `20 - 17.5 + 28.0 = 30.5`
+
+A payoff of 30.5 is better for me than the 30.0 I received in Round 2. It's also a stable equilibrium. By matching the behavior of P1 and P2, I am protecting my own payoff while still maintaining a high level of group cooperation. This seems to be the most rational move.
+
+Answer = 17.5

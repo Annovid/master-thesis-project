@@ -1,0 +1,42 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 2
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 5.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 90f56738827a8470f3270a928271b2573c742849e31bc7aceda997ec03890e81
+
+PROMPT:
+You are playing the Public Goods Game for 3 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 3 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 2.0, Player 4: 15.0, total pot 37.0, your payoff 32.80
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round, the other players contributed relatively high amounts (10, 10, and 15 tokens), while you contributed only 2 tokens. This resulted in a decent payoff for you, as you benefited from the contributions of others.
+
+Given that the other players seem willing to contribute a significant portion of their endowment, you might consider slightly increasing your contribution to maintain goodwill and potentially encourage continued high contributions from others. However, since your primary focus is on maximizing your own payoff, you should still aim to contribute less than the others while benefiting from their contributions.
+
+A reasonable strategy would be to increase your contribution slightly to show some cooperation, but still keep it lower than the average contribution of the other players. You could consider contributing around 5 tokens this round.
+
+Answer = 5

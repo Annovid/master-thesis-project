@@ -1,0 +1,48 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 6
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 4.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 2669d58bfbeba43209e54dff4676bda8e7ed656095b0d8c8a4e8b0155017b0d7
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 10.0, Player 4: 15.0, total pot 45.0, your payoff 23.00
+Round 2: Contributions - Player 1: 10.0, Player 2: 12.0, Player 3: 8.0, Player 4: 12.0, total pot 42.0, your payoff 24.80
+Round 3: Contributions - Player 1: 10.0, Player 2: 11.0, Player 3: 6.0, Player 4: 11.0, total pot 38.0, your payoff 24.20
+Round 4: Contributions - Player 1: 8.0, Player 2: 9.0, Player 3: 4.0, Player 4: 10.0, total pot 31.0, your payoff 22.40
+Round 5: Contributions - Player 1: 6.0, Player 2: 7.0, Player 3: 2.0, Player 4: 8.0, total pot 23.0, your payoff 21.20
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In Round 5, the total contribution decreased further to 23 tokens. Player 1 contributed 6 tokens, Player 2 contributed 7 tokens, Player 3 contributed 2 tokens, and I contributed 8 tokens. The contributions continue to decline, with Player 3's contribution being extremely low.
+
+The trend over the five rounds indicates a significant decrease in contributions from all players, with Player 3's contributions being particularly low. It appears that others are not maintaining their initial level of cooperation, and Player 3 is effectively free-riding.
+
+Given the declining trend and the fact that others are not contributing as much, I will significantly reduce my contribution to avoid being taken advantage of. However, I will not drop it to 0, as I still want to leave room for others to potentially increase their contributions in the future.
+
+Let's contribute 4 tokens in Round 6, which is a substantial reduction but still a non-zero contribution.
+
+Answer = 4

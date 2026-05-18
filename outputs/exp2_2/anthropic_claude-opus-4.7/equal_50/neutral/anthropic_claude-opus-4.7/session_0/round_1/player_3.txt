@@ -1,0 +1,37 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 5946d0381d80dcdb68aa91a9025ee5e50542acc456f4a7760bebcddfe4238fab
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 50 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 50).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 50).
+
+RESPONSE:
+Reasoning:
+- The MPCR (marginal per capita return) is 1.6/4 = 0.4. Each token I contribute returns me 0.4 tokens, so contributing is individually irrational in a one-shot game.
+- Since this is a single round with no future interaction, no reputation building, and no way to punish defectors, the dominant strategy is to contribute 0.
+- Other players, if rational, will likely contribute little. Some may contribute out of altruism or fairness norms, but I can't rely on that.
+- Free-riding maximizes my expected payoff regardless of what others do.
+
+Answer = 0

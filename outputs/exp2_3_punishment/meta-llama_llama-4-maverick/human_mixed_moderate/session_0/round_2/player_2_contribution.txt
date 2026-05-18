@@ -1,0 +1,48 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 2
+STAGE: contribution
+TEMPERATURE: 0.0
+PARSED: 12.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 1496fd8038c3e1fff9006cac533e9330404c008629b0839f12fcee8ffa7ecd85
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 2.
+Each round, every player receives an endowment of 20 tokens.
+Stage 1: every player independently chooses how many tokens to contribute to a public pot, any amount from 0 to 20.
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Stage 2: after contributions are revealed, each player may assign punishment points to other players.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You cannot punish yourself.
+Your final score is the sum of your payoffs across all rounds.
+
+History of previous rounds:
+Round 1: contributions - Player 1: 10, Player 2: 10, Player 3: 10, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.00.
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.
+
+RESPONSE:
+This is Round 2. In Round 1, the contributions were: Player 1: 10, Player 2: 10, Player 3: 10, Player 4: 15. 
+Everyone contributed a significant amount, and there was no punishment. The cooperative behavior was maintained.
+
+Since others cooperated in the previous round, I will continue to cooperate. Player 4 contributed more than the rest of us in the previous round, so there's no reason to reduce my contribution. In fact, I might consider matching or slightly increasing my contribution to reciprocate the cooperative behavior.
+
+Let's consider contributing the same or a bit more. Contributing 12 tokens is a slight increase from the previous round and shows continued willingness to cooperate.
+
+The total contribution in Round 1 was 45 tokens. If we maintain or slightly increase our contributions, the public good will continue to be substantial.
+
+Answer = 12

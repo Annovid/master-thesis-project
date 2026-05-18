@@ -1,0 +1,45 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 1
+STAGE: contribution
+TEMPERATURE: 0.0
+PARSED: 12.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 51a73fa1bf9dbf90b7cad60f0a9e666f55c6328cb5a9a61a2eeb1d54459516a6
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 1.
+Each round, every player receives an endowment of 20 tokens.
+Stage 1: every player independently chooses how many tokens to contribute to a public pot, any amount from 0 to 20.
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Stage 2: after contributions are revealed, each player may assign punishment points to other players.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You cannot punish yourself.
+Your final score is the sum of your payoffs across all rounds.
+
+History of previous rounds:
+Round 1: contributions - Player 1: 10, Player 2: 10, Player 3: 10, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.00.
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.
+
+RESPONSE:
+This is the second round. In the first round, all players contributed a significant amount, with Player 4 contributing a bit more than the others. I contributed 10 tokens and received a payoff of 28.00. Since everyone cooperated fairly well in the first round, I will continue to cooperate in the second round.
+
+Given that the previous round's contributions were generally high and cooperative, I will maintain or slightly increase my level of contribution to continue signaling my willingness to cooperate.
+
+I will contribute 12 tokens this round, slightly more than the previous round, as a continued signal of cooperation and to take advantage of the high contributions from the other players.
+
+Answer = 12

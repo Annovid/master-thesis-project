@@ -1,0 +1,49 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 40.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 51db32012dadb67121750b14cc34c290c1a5b18bcaf1f5ea11d0c912a6319dc3
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 80 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 80).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 80).
+
+RESPONSE:
+Reasoning: This is a one-shot game, which changes the dynamics significantly compared to repeated play. In one-shot public goods games, the dominant strategy from a purely selfish perspective is to contribute 0, since each token I contribute returns only 0.40 to me (1.6/4). However, real humans don't typically free-ride completely in these experiments.
+
+Looking at behavioral economics research, in one-shot public goods games:
+- Average contributions are typically around 40-50% of the endowment
+- Very few people contribute 0 or the full amount
+- Most people are "conditional cooperators" - they contribute if they expect others to
+
+As a typical human, I'd want to cooperate to some degree because:
+1. It feels fair to contribute
+2. If everyone contributes fully, everyone gets 80 - 80 + (1.6×320)/4 = 128, much better than the 80 from contributing nothing
+3. I expect other players to contribute something meaningful, maybe around 30-50
+
+But I'd also hedge against being exploited by free-riders. Contributing about half my endowment feels like a reasonable middle ground - it shows good faith without leaving me too exposed if others defect.
+
+I'll contribute 40 tokens - right around the typical average for one-shot games, reflecting moderate cooperation while protecting myself somewhat from potential free-riders.
+
+Answer = 40

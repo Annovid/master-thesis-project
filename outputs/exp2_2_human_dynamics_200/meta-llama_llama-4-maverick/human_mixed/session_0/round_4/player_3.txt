@@ -1,0 +1,61 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 4
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: f6bb5efd0b5f9191b924b8f2a8a44d7881d8fbe24b0c1443e1be7152027280db
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 0.0, Player 4: 15.0, total pot 35.0, your payoff 34.00
+Round 2: Contributions - Player 1: 8.0, Player 2: 8.0, Player 3: 0.0, Player 4: 12.0, total pot 28.0, your payoff 31.20
+Round 3: Contributions - Player 1: 6.0, Player 2: 6.0, Player 3: 0.0, Player 4: 8.0, total pot 20.0, your payoff 28.00
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+After Round 3, the history is:
+- Round 1: Contributions - Player 1: 10, Player 2: 10, Player 3: 0, Player 4: 15, total pot 35, my payoff 34.
+- Round 2: Contributions - Player 1: 8, Player 2: 8, Player 3: 0, Player 4: 12, total pot 28, my payoff 31.20.
+- Round 3: Contributions - Player 1: 6, Player 2: 6, Player 3: 0, Player 4: 8, total pot 20, my payoff 28.
+
+Observations:
+- Players 1, 2, and 4 have continued to decrease their contributions (Player 1: 10 -> 8 -> 6, Player 2: 10 -> 8 -> 6, Player 4: 15 -> 12 -> 8).
+- I continued to contribute 0.
+
+The total contribution has decreased from 35 to 28 to 20, and my payoff has decreased from 34 to 31.20 to 28. The decrease in my payoff is directly related to the decrease in the total contributions.
+
+For Round 4, considering that others have continued to decrease their contributions, it seems they are adjusting their strategy, possibly in response to my not contributing. If this trend continues, the total pot will be very low, potentially resulting in a payoff close to 20 for everyone.
+
+To maximize my payoff, I need to consider whether contributing could stabilize or increase the total pot. However, since my goal is to maximize my monetary payoff and I've benefited so far from not contributing, the incentive to change my strategy is not strong unless I believe others will significantly decrease their contributions further.
+
+Let's analyze:
+- If I contribute 0 and others continue to decrease their contributions, my payoff will continue to decrease towards 20.
+- If I contribute, it might encourage others or at least partially compensate for their decrease.
+
+For Round 4, considering that my payoff is still above 20 and others are decreasing their contributions, I might need to rethink my strategy to avoid a further decrease in my payoff. However, given that I'm focused on my monetary payoff and have benefited from not contributing so far, I'll continue with a cautious approach.
+
+Since the total contribution is still somewhat significant (20), and my payoff is still above 20, I will continue not to contribute for Round 4.
+
+Answer = 0

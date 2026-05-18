@@ -1,0 +1,44 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: persona
+SAMPLE: 0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 2ed8e7657b756599dc942bfbf7057577f332415ebe38f5f4892ca5792230af47
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make the decision from that perspective.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round, so I have no idea how the other players will behave.
+
+If we all cooperate and contribute our full 20 tokens, we all get the best possible outcome. The total pot would be 80, which gets multiplied to 128. We'd each get 32 back, for a profit of 12 (32 - 20).
+
+However, if I contribute 20 and everyone else contributes 0, I'll be the sucker. I'd get back only (1.6 * 20) / 4 = 8 tokens, for a total payoff of 8. The others would get 28 each. That's a huge risk.
+
+On the other hand, if I contribute 0, I guarantee myself at least 20 tokens. But if everyone does that, we all just get 20 each round, and we miss out on the potential for higher earnings.
+
+I want to signal that I'm willing to cooperate, but I don't want to be taken for a ride. A common strategy is to start by contributing about half of the endowment. It's a gesture of goodwill. If others are also cooperative, we should all do reasonably well. If they are not, I haven't lost my entire endowment.
+
+I'll start by contributing 10 tokens and see what happens. Based on my payoff this round, I can adjust my strategy for the next one.
+
+Answer = 10.0

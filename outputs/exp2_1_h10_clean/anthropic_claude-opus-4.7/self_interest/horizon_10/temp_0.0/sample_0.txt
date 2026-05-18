@@ -1,0 +1,36 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: self_interest
+SAMPLE: 0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RESPONSE_SHA256: c46301ceb001112b62d9d0758ee4a91f710b783938b22578d0b3772cf261d31d
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Focus on maximizing your own monetary payoff in this game.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In this game, the multiplier is 1.6, so each token I contribute returns 1.6/4 = 0.4 tokens to me. Purely for my own payoff, contributing is a loss regardless of what others do.
+
+Since the instructions emphasize maximizing my own monetary payoff, and there's no future reputation beyond this game's anonymous rounds (only my own contribution is revealed to me, not to others), defecting is optimal.
+
+Answer = 0

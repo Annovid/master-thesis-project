@@ -1,0 +1,48 @@
+{
+  "experiment": "2.2",
+  "mode": "human_like_repeated_pgg_dynamics",
+  "models": [
+    "openai/gpt-4o",
+    "google/gemini-2.5-pro",
+    "meta-llama/llama-4-maverick"
+  ],
+  "provider": "openrouter",
+  "temperature": 0.0,
+  "n_sessions": 1,
+  "start_session": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 10,
+  "transparency": true,
+  "reasoning": true,
+  "condition_labels": [
+    "human_mixed_moderate"
+  ],
+  "conditions": [
+    {
+      "label": "human_mixed_moderate",
+      "mode": "heterogeneous_profiles",
+      "prompt_condition": "",
+      "player_profiles": [
+        "conditional_cooperator",
+        "conditional_cooperator",
+        "moderate_free_rider",
+        "high_cooperator"
+      ],
+      "player_prompt_conditions": [
+        "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+        "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+        "You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.",
+        "You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride."
+      ]
+    }
+  ],
+  "max_parse_retries": 1,
+  "max_transport_retries": 4,
+  "transport_backoff_s": 5.0,
+  "skip_existing": true,
+  "parallelism": 4,
+  "env_provider": "auto",
+  "openrouter_max_tokens": null
+}

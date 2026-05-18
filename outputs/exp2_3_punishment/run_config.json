@@ -1,0 +1,80 @@
+{
+  "experiment": "2.3",
+  "mode": "repeated_pgg_with_punishment_validation",
+  "cells": [
+    "openai/gpt-4o|human_mixed_moderate",
+    "meta-llama/llama-4-maverick|human_mixed_moderate",
+    "openai/gpt-4o|neutral"
+  ],
+  "provider": "openrouter",
+  "temperature": 0.0,
+  "session": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 10,
+  "punishment_cost": 1.0,
+  "punishment_impact": 3.0,
+  "max_punishment_points": 5,
+  "conditions": [
+    {
+      "label": "human_mixed_moderate",
+      "mode": "heterogeneous_profiles",
+      "prompt_condition": "",
+      "player_profiles": [
+        "conditional_cooperator",
+        "conditional_cooperator",
+        "moderate_free_rider",
+        "high_cooperator"
+      ],
+      "player_prompt_conditions": [
+        "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+        "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+        "You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.",
+        "You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride."
+      ]
+    },
+    {
+      "label": "human_mixed_moderate",
+      "mode": "heterogeneous_profiles",
+      "prompt_condition": "",
+      "player_profiles": [
+        "conditional_cooperator",
+        "conditional_cooperator",
+        "moderate_free_rider",
+        "high_cooperator"
+      ],
+      "player_prompt_conditions": [
+        "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+        "You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.",
+        "You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.",
+        "You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride."
+      ]
+    },
+    {
+      "label": "neutral",
+      "mode": "homogeneous_prompt",
+      "prompt_condition": "",
+      "player_profiles": [
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral"
+      ],
+      "player_prompt_conditions": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "expected_requests": 240,
+  "max_parse_retries": 1,
+  "max_transport_retries": 4,
+  "transport_backoff_s": 5.0,
+  "parallelism": 4,
+  "skip_existing": true,
+  "env_provider": "auto",
+  "openrouter_max_tokens": null
+}

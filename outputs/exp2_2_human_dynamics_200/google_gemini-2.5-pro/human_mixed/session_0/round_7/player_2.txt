@@ -1,0 +1,67 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 7
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: a0accb9b6c8e2602987ad56296902f2cb2879d61d4298a67a632f0e15055c396
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 31.38
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 32.15
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Here is my thinking process for deciding my contribution for Round 7:
+
+1.  **Analyze the Previous Round (Round 6):**
+    *   Contributions were: Player 1: 19.2, Me (Player 2): 19.21875, Player 3: 20.0, Player 4: 20.0.
+    *   The total contribution was 78.41875, the highest it has been all game. This is an extremely positive development.
+    *   Player 3, who had previously been a source of instability, contributed the maximum of 20. This is a strong signal of their commitment to cooperation.
+    *   Player 1 contributed 19.2, which is very close to my contribution and likely a result of them following a similar "match the average" strategy.
+    *   Player 4 remains a steadfast cooperator at 20.
+
+2.  **Interpret the Group's Behavior:**
+    *   The group is converging on full cooperation. The minor deviations from 20 (from myself and Player 1) were reciprocal responses to past behavior. Now that Player 3 has returned to full cooperation, the reason for those lower contributions is gone.
+    *   The group is signaling a clear desire to reach the optimal state.
+
+3.  **Apply My Persona (Conditional Cooperator):**
+    *   My persona is to cooperate when others cooperate. The cooperation in Round 6 was nearly perfect.
+    *   Rewarding this high level of cooperation is key. The best way to reward the group for being so close to the maximum is to help get them all the way there.
+    *   Continuing to contribute a fractional amount (like the new average of ~19.6) would be overly cautious. It would mean I am still punishing the group for past deviations, even though the group has clearly corrected itself. It's time to show trust.
+
+4.  **Formulate a Strategy for Round 7:**
+    *   The goal is to achieve the optimal equilibrium (everyone contributes 20) and maintain it for the remaining rounds (7, 8, 9, 10).
+    *   By contributing 20, I am rewarding Player 3 and Player 4 for their full cooperation.
+    *   I am also sending a clear signal to Player 1, who seems to be a similar type of player, that it is now safe to return to 20. If they are indeed a conditional cooperator, they will see that 3 out of 4 players are at 20 and will likely join us.
+    *   This is the decisive move to lock in the maximum possible payoff for the rest of the game.
+
+I will contribute the maximum to reward the group's excellent cooperation and lead the final push to the optimal outcome.
+
+Answer = 20.0

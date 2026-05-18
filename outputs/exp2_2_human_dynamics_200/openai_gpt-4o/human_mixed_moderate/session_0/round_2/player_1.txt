@@ -1,0 +1,40 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 9.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 165d0e315d5f88fcd0ccc36942b403762e36d224b7f3b0cd91c444a141b8f539
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 8.0, Player 4: 15.0, total pot 43.0, your payoff 27.20
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round, the contributions varied, with Player 4 contributing the most and Player 3 contributing the least. The total pot was 43.0, which resulted in a decent payoff. Since the average contribution was around 10.75, and I am willing to cooperate when others do, I will slightly adjust my contribution to reflect the overall cooperation level.
+
+Given that Player 3 contributed less than expected, I will reduce my contribution slightly to encourage more balanced cooperation. I will contribute 9 tokens this round.
+
+Answer = 9.0

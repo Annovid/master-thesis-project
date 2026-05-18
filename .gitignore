@@ -1,8 +1,38 @@
+# Local runtime artifacts
 artifacts/
-resources/
+*.log
 
+# Local assistant / IDE state
+.agents/
+.claude/
+.codex/
+.idea/
+.vscode/
+
+# Python caches and build output
 __pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
 
-venv
-.venv
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Secrets and local environment files
 .env
+.env.*
+!.env.example
+
+# Local scratch resources
+resources/

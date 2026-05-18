@@ -1,0 +1,50 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: neutral
+SAMPLE: 1
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: ea61427133f2a19053d96da04a9b2daa720d757ed73d3e5e083adf9826a32465
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their future behavior, even though we can't see each other's specific contributions.
+
+Here's my reasoning:
+
+1.  **The Two Extremes:**
+    *   **Contributing 0 (Pure Self-Interest):** For every token I contribute, I personally lose 0.6 tokens (I pay 1, get back 0.4). From a purely individualistic, single-round perspective, contributing 0 is the dominant strategy. However, if everyone does this, we all end up with a payoff of 20 each round, which is far from the optimal outcome. Starting with 0 signals a lack of trust and may trigger a "race to the bottom" where no one ever contributes.
+    *   **Contributing 20 (Pure Cooperation):** If all four players contribute 20, the total pot is 80, which becomes 128 after the multiplier. Each player gets back 32, for a net payoff of `20 - 20 + 32 = 32`. This is the best possible outcome for the group. However, starting with 20 is very risky. If others contribute little or nothing, I will be the "sucker" with a very low payoff.
+
+2.  **A Middle-Ground Strategy:**
+    *   Since this is a repeated game, it's beneficial to try and establish a cooperative equilibrium. A contribution of 0 is too cynical, and 20 is too naive for the first round.
+    *   I will start with a moderate contribution. This signals my willingness to cooperate without exposing myself to the maximum possible loss. A contribution of 10.0 (half of the endowment) is a common and reasonable starting point. It's a clear signal that I am willing to participate in the public good.
+
+3.  **Gathering Information:**
+    *   After this round, I can use my payoff to calculate the total contribution of the other three players.
+    *   `My Payoff = 20 - My Contribution + 0.4 * (My Contribution + Others' Total Contribution)`
+    *   `My Payoff = 20 - 0.6 * My Contribution + 0.4 * Others' Total Contribution`
+    *   This information will be crucial for deciding my contribution in Round 2. If the others contributed a reasonable amount, I can maintain or increase my contribution. If they contributed very little, I will reduce mine to avoid being exploited.
+
+Therefore, for Round 1, I will contribute 10.0 to test the waters, signal cooperation, and gather information for future rounds.
+
+Answer = 10.0

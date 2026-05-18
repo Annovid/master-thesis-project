@@ -1,0 +1,44 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+STAGE: punishment
+TEMPERATURE: 0.0
+PARSED: [0.0, 0.0, 0.0, 0.0]
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: c4855157bee3209959e2542b40f66714706eb486f9ea1c0ea1f6d335dad1cb81
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 4.
+Each round starts with 20 tokens per player. Public-good multiplier: 1.6.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You may assign 0 to 5 punishment points to each other player. You cannot punish yourself.
+
+History of previous rounds:
+No previous rounds.
+
+Current round contributions:
+Player 1: 10, Player 2: 10, Player 3: 10, Player 4: 15
+Current round payoffs before punishment:
+Player 1: 28.00, Player 2: 28.00, Player 3: 28.00, Player 4: 23.00
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide punishment points for the current round.
+Use exactly these player keys: "1", "2", "3".
+End your reply with a single line of the form: Punishment = {"1": 0, "2": 0, "3": 0}
+
+RESPONSE:
+Since this is the first round, I will assess the contributions of the other players to determine if punishment is warranted. Players 1, 2, and 3 each contributed 10 tokens, while I contributed 15 tokens. The average contribution is (10 + 10 + 10 + 15) / 4 = 11.25 tokens. While my contribution is higher than the others, it's not drastically so, and everyone has contributed a significant amount.
+
+Given that everyone has contributed a reasonable amount and there's no history of free-riding, I will not assign punishment points to any of the other players. The payoffs before punishment also reflect a decent level of cooperation, with all players receiving a substantial amount.
+
+Punishment = {"1": 0, "2": 0, "3": 0}

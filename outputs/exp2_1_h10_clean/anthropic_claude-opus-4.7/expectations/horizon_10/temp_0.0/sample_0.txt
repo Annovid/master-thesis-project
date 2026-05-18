@@ -1,0 +1,38 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: expectations
+SAMPLE: 0
+PARSED_ACTION: 14.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 2e67baa7866e65378bc55e804baa2bb0738a295e5a9c0bfb6fab6d634bc4db15
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Before choosing, explicitly reason about how much each other player is likely to contribute.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round of a public goods game, players often start with moderate-to-high contributions to test cooperation. Typical opening contributions in experimental settings average around 10-12 tokens. I'd estimate the other three players will contribute somewhere in the range of 8-14 tokens each.
+
+To signal willingness to cooperate and encourage sustained high contributions (which maximize group payoff), I should contribute generously in round 1. However, I shouldn't contribute the maximum since I want to leave room to reciprocate or punish later, and full contribution makes me vulnerable to free-riders.
+
+A contribution of around 14 tokens signals strong cooperative intent while being slightly cautious. If others reciprocate, we can sustain high contributions; if they free-ride, I can adjust downward in later rounds.
+
+Answer = 14

@@ -1,0 +1,61 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 3
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 55d2ea24f9dc878006e057d10880d552c374146fd4bad2f5cbc9296fc29252ec
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Here is my thinking process for deciding my contribution for Round 3:
+
+1.  **Analyze the Previous Round (Round 2):**
+    *   My contribution was 17.5, matching the average of Round 1. This was a reciprocal move to signal that I wouldn't tolerate free-riding.
+    *   Player 1 also contributed 17.5, suggesting they are a similar type of conditional cooperator.
+    *   Player 4 continued to contribute the maximum of 20, showing a strong cooperative inclination.
+    *   Most importantly, Player 3, who was the partial free-rider in Round 1 (contributing 10), increased their contribution to the maximum of 20.
+
+2.  **Interpret the Group's Behavior:**
+    *   The group's response is very positive. The slight reduction in contributions from me and Player 1 seems to have successfully signaled to Player 3 that full cooperation is expected. Player 3 has corrected their behavior.
+    *   The group is now very close to the optimal state. The total contribution was 75 out of a possible 80.
+
+3.  **Apply My Persona (Conditional Cooperator):**
+    *   My persona is not just about punishing non-cooperation, but also about rewarding cooperation. The group's behavior in Round 2 was highly cooperative.
+    *   Player 3's move from 10 to 20 is a strong positive signal that deserves a positive response.
+    *   Continuing to contribute a lower amount (like the new average of 18.75) would be overly cautious and might send a mixed signal. It's time to restore trust and aim for the best possible outcome.
+
+4.  **Formulate a Strategy for Round 3:**
+    *   The goal is to re-establish the fully cooperative equilibrium where everyone contributes 20. This yields the highest possible payoff for all players (32 tokens each).
+    *   By returning my contribution to 20, I am rewarding Player 3's change of behavior and signaling to Player 1 (the other conditional cooperator) that it's safe to trust the group again.
+    *   With Player 4 already at 20 and Player 3 now at 20, if I and Player 1 also contribute 20, we can achieve the optimal outcome for this round and hopefully sustain it.
+
+Therefore, I will contribute the maximum amount to reward the group's increased cooperation and attempt to lock in the best possible outcome.
+
+Answer = 20.0

@@ -1,0 +1,44 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 1
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: bc7b37097113a3244a40323246f6c41ffff02b99188d485f312860b52025c15e
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. As a conditional cooperator, my goal is to achieve the highest possible collective payoff, which requires mutual cooperation. However, I have no information about how the other players will behave.
+
+To establish a cooperative norm from the beginning, it's often best to start with a strong, positive signal. Contributing a high amount demonstrates my willingness to cooperate and invites others to do the same. If everyone contributes their full 20 tokens, we all achieve the maximum possible payoff (32 tokens each).
+
+While contributing the full 20 tokens is risky—if others contribute nothing, I will get a very low payoff for this round (8 tokens)—it is the only way to test if the other players are also willing to cooperate fully. If they reciprocate, we can sustain a high level of cooperation for a large total score. If they don't, I will reduce my contribution in the next round to match their lower level of cooperation, as my persona dictates.
+
+Therefore, for Round 1, I will make a bold, cooperative move to signal my intentions clearly.
+
+Answer = 20.0

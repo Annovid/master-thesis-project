@@ -1,0 +1,55 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: fbd004d58774d937ad69b21fd1b904cddaf1689b25d2669cea130eab7ac6b793
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My goal is to maximize my total payoff.
+
+**Analysis:**
+
+1.  **Individual Incentive:** For every token I contribute, I lose that token but get back `1.6 / 4 = 0.4` tokens. This means each token I contribute results in a net loss of `0.6` tokens for me in the current round, assuming others' contributions are fixed. From a single-round perspective, the best strategy is to contribute 0 and free-ride on others' contributions.
+
+2.  **Group Incentive:** If all four players contribute their full 20 tokens, the total contribution is 80. The pot becomes `80 * 1.6 = 128`. Each player receives `128 / 4 = 32` tokens. The payoff for each player would be `20 (endowment) - 20 (contribution) + 32 (share) = 32`. This is much better than the payoff of 20 that everyone gets if they all contribute 0.
+
+3.  **Repeated Game Strategy:** Since this is a 10-round game and contributions are revealed, my actions in this round will influence how others play in future rounds.
+    *   Contributing 0 is a strong signal of non-cooperation. This will likely cause others to contribute 0 in the future, leading to a low payoff (20 per round) for everyone, including me.
+    *   Contributing 20 is a strong signal of cooperation, but it's very risky. If others contribute 0, I will be the "sucker" with a very low payoff of `20 - 20 + (1.6 * 20) / 4 = 8`.
+    *   A moderate contribution is a good way to signal a willingness to cooperate without taking on excessive risk. It acts as a test to see if the other players are also willing to cooperate.
+
+**Decision for Round 1:**
+
+As this is the first round, I have no information about the other players. My persona is to be cautious but also to maximize my payoff. Starting with 0 would likely lead to a low total score over 10 rounds. Therefore, I need to make a contribution to signal my willingness to cooperate and encourage a mutually profitable outcome.
+
+Contributing half of my endowment, 10 tokens, is a common and clear signal. It says, "I am willing to cooperate if you are." It's a balanced move that hedges my bets. If others also contribute, we can build trust for future rounds. If they don't, I can adjust my strategy downwards in the next round to avoid further losses. This initial investment is a calculated risk to enable higher potential payoffs over the course of the game.
+
+Answer = 10.0

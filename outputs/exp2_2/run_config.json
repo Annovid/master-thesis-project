@@ -1,0 +1,65 @@
+{
+  "experiment": "2.2",
+  "models": [
+    "anthropic/claude-opus-4.7",
+    "google/gemini-2.5-pro",
+    "meta-llama/llama-4-maverick",
+    "openai/gpt-4o"
+  ],
+  "provider": "openrouter",
+  "temperature": 0.0,
+  "n_rounds": 1,
+  "multiplier": 1.6,
+  "reasoning": true,
+  "profile_labels": [
+    "equal_20",
+    "equal_50",
+    "equal_80",
+    "mild_ineq",
+    "classic_ineq",
+    "strong_ineq"
+  ],
+  "prompt_labels": [
+    "neutral",
+    "persona"
+  ],
+  "endowment_profiles": {
+    "equal_20": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "equal_50": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "equal_80": [
+      80,
+      80,
+      80,
+      80
+    ],
+    "mild_ineq": [
+      20,
+      20,
+      50,
+      50
+    ],
+    "classic_ineq": [
+      20,
+      50,
+      80,
+      80
+    ],
+    "strong_ineq": [
+      10,
+      20,
+      80,
+      160
+    ]
+  },
+  "env_provider": "auto"
+}

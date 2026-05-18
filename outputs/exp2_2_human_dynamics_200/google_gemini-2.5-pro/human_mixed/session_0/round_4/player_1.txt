@@ -1,0 +1,48 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 4
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 86f9110a04fc0de52c58c50941c95ad59270490ca7fe9ab11a9b2f1385a39724
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The history of the game shows a high level of cooperation, but it's not perfect.
+
+In Round 1, one player contributed less (10), so in Round 2, I (and Player 2) reciprocated by reducing our contributions to the group average (17.5). This sent a successful signal, as everyone contributed a high amount in Round 2, with the previously low contributor moving to 20.
+
+In Round 3, I rewarded this by returning to a full contribution of 20, as did Players 2 and 4. However, Player 3 dropped their contribution to 17.5. It's possible Player 3 is also a conditional cooperator and was matching my contribution from the previous round.
+
+My persona is to reduce my contribution when others contribute less than I expect. I expected 20 from everyone, but Player 3 contributed 17.5. To maintain the principle of reciprocity and to avoid being taken advantage of, I must reduce my contribution from 20.
+
+A harsh reduction would punish the two fully cooperative players (P2 and P4) and could unravel our good dynamic. A fair and clear response is to match the contribution of the player who contributed the least. This signals that the group's cooperation level is determined by its least cooperative member. By contributing 17.5, I am directly reciprocating Player 3's action from the previous round. This is a consistent application of the strategy I used in Round 2. It encourages Player 3 to rejoin the full cooperation norm if they want me (and likely others) to contribute 20 again.
+
+Answer = 17.5

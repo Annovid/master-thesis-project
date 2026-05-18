@@ -1,0 +1,55 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 3
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 17.5
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: cd99438f186dd2f63d2b72101ddf1d5f08410128eeefc3986ae13e49c31c16db
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 20.0, Player 2: 17.5, Player 3: 15.0, Player 4: 20.0, total pot 72.5, your payoff 29.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The history shows a dynamic but still highly cooperative environment.
+
+*   **My behavior:** I have consistently contributed the maximum (20.0) to signal my willingness to cooperate.
+*   **Player 4's behavior:** They have also consistently contributed the maximum, acting as a strong cooperator alongside me.
+*   **Player 3's behavior:** They started low at 10.0 but increased their contribution to 15.0 in Round 2. This is a positive response, suggesting they are willing to cooperate more if others do.
+*   **Player 2's behavior:** They started at 20.0 but slightly reduced their contribution to 17.5. This could be a reaction to Player 3's lower contribution in Round 1.
+
+My persona is that of a conditional cooperator who reciprocates the behavior of others. In the last round, the average contribution of the other three players was (17.5 + 15.0 + 20.0) / 3 = 17.5.
+
+Continuing to contribute 20 while the average is lower would make me a "sucker" and might encourage others to contribute even less, knowing I will carry the weight. My persona dictates that I should reduce my contribution when others contribute less than my own high standard.
+
+A standard strategy for a conditional cooperator is to match the average contribution of the other players from the previous round. This is a clear act of reciprocity. It signals that I am not a blind cooperator but that my cooperation is contingent on theirs. By contributing 17.5, I am:
+1.  Acknowledging the high level of cooperation.
+2.  Adjusting my contribution to match the group's average, preventing myself from being exploited.
+3.  Sending a clear and fair signal to all players about my strategy.
+
+This move is not overly punitive, especially since Player 3 increased their contribution. It's a measured response that aims to stabilize cooperation at a high level.
+
+Answer = 17.5

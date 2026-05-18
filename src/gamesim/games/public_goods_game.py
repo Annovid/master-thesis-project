@@ -7,33 +7,81 @@ from ..game.state import GameState
 logger = logging.getLogger(__name__)
 
 class PublicGoodsGame(Game):
-    """Public Goods Game (VCM)."""
+    """Public Goods Game (VCM).
 
-    def __init__(self, num_players: int = 4, endowment: float = 20.0, multiplier: float = 1.6, transparency: bool = False, agent_configs: list[dict] | None = None, reasoning: bool = False, prompt_condition: str = "") -> None:
+    Supports heterogeneous endowments via the `endowments` parameter.
+    If `endowments` is provided it must have exactly `num_players` entries and
+    overrides the uniform `endowment` value. When endowments differ the prompt
+    discloses all players' endowments and adds a norm-conflict paragraph.
+    """
+
+    def __init__(
+        self,
+        num_players: int = 4,
+        endowment: float = 20.0,
+        endowments: list[float] | None = None,
+        multiplier: float = 1.6,
+        transparency: bool = False,
+        agent_configs: list[dict] | None = None,
+        reasoning: bool = False,
+        prompt_condition: str = "",
+    ) -> None:
         self._num_players = num_players
-        self.endowment = endowment
         self.multiplier = multiplier
         self.transparency = transparency
         self.agent_configs = agent_configs or []
         self.reasoning = reasoning
         self.prompt_condition = prompt_condition
 
+        if endowments is not None:
+            if len(endowments) != num_players:
+                raise ValueError(f"endowments length {len(endowments)} != num_players {num_players}")
+            self.endowments = list(endowments)
+        else:
+            self.endowments = [endowment] * num_players
+        # scalar alias for backward compat (used by callers that read game.endowment)
+        self.endowment = self.endowments[0]
+
     @property
     def num_players(self) -> int:
         return self._num_players
 
+    @property
+    def heterogeneous(self) -> bool:
+        return len(set(self.endowments)) > 1
+
     def get_prompt(self, state: GameState, player_id: int, max_rounds: int) -> str:
-        """Generate a neutral prompt (rules + payoff formula + Answer = N)."""
+        """Generate prompt (rules + payoff formula + Answer = N)."""
         history_str = self._format_history(state, player_id)
         rounds_word = "round" if max_rounds == 1 else "rounds"
+        my_endowment = self.endowments[player_id]
 
         lines = [
             f"You are playing the Public Goods Game for {max_rounds} {rounds_word} with {self.num_players} players in total.",
             f"You are Player {player_id + 1}.",
             "",
-            f"Each round, every player receives an endowment of {self.endowment} tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to {self.endowment}).",
+        ]
+
+        if self.heterogeneous:
+            others = ", ".join(
+                f"Player {j + 1}: {self.endowments[j]:.0f}"
+                for j in range(self.num_players) if j != player_id
+            )
+            lines += [
+                f"Your endowment this round: {my_endowment:.0f} tokens.",
+                f"Other players' endowments: {others}.",
+                "",
+                f"Each round, every player independently chooses how many tokens to contribute to a public pot (any amount from 0 to their own endowment).",
+            ]
+        else:
+            lines.append(
+                f"Each round, every player receives an endowment of {my_endowment:.0f} tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to {my_endowment:.0f})."
+            )
+
+        formula_lhs = "your_endowment" if self.heterogeneous else "endowment"
+        lines += [
             f"The sum of all contributions is multiplied by {self.multiplier} and divided equally among all {self.num_players} players.",
-            f"Your payoff for a round = endowment - your_contribution + ({self.multiplier} * sum_of_all_contributions) / {self.num_players}.",
+            f"Your payoff for a round = {formula_lhs} - your_contribution + ({self.multiplier} * sum_of_all_contributions) / {self.num_players}.",
             f"Your final score is the sum of your payoffs across all {max_rounds} {rounds_word}.",
         ]
 
@@ -48,19 +96,26 @@ class PublicGoodsGame(Game):
             history_str,
             "",
         ]
+
+        if self.heterogeneous:
+            lines += [
+                "Note: players have different endowments. You may think about fairness in different ways:",
+                "  - equal absolute contribution: everyone contributes the same number of tokens;",
+                "  - equal relative contribution: everyone contributes the same percentage of their endowment;",
+                "  - self-interest: maximize your own payoff.",
+                "",
+            ]
+
         if self.prompt_condition:
             lines += [self.prompt_condition, ""]
+
         lines.append("Decide your contribution for the current round.")
         if self.reasoning:
-            lines.append(
-                f"Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution."
-            )
-            lines.append(
-                f"On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (a single number between 0 and {self.endowment})."
-            )
+            lines.append("End your reply with a single line of the form: Answer = N")
+            lines.append(f"where N is a number between 0 and {my_endowment}.")
         else:
             lines.append(
-                f"Reply with only a single number between 0 and {self.endowment}. No explanations, no extra text, no labels."
+                f"Reply with only a single number between 0 and {my_endowment}. No explanations, no extra text, no labels."
             )
         return "\n".join(lines)
 
@@ -120,18 +175,15 @@ class PublicGoodsGame(Game):
         raise ValueError(f"Could not parse Answer from response: {response}")
 
     def compute_payoffs(self, actions: List[Action]) -> List[float]:
-        """Compute payoffs."""
+        """Compute payoffs using per-player endowments."""
         total_contrib = sum(actions)
         share = (total_contrib * self.multiplier) / self.num_players
-        payoffs = []
-        for contrib in actions:
-            payoff = self.endowment - contrib + share
-            payoffs.append(payoff)
-        return payoffs
+        return [self.endowments[i] - actions[i] + share for i in range(self.num_players)]
 
-    def validate_action(self, action: Action) -> bool:
-        """Validate contribution."""
-        return isinstance(action, (int, float)) and 0 <= action <= self.endowment
+    def validate_action(self, action: Action, player_id: int = 0) -> bool:
+        """Validate contribution against player's own endowment."""
+        cap = self.endowments[player_id] if player_id < len(self.endowments) else self.endowments[0]
+        return isinstance(action, (int, float)) and 0 <= action <= cap
 
     def _format_history(self, state: GameState, player_id: int) -> str:
         """Format history for the player."""
@@ -140,18 +192,17 @@ class PublicGoodsGame(Game):
         lines = []
         for i, round_actions in enumerate(state.history, 1):
             actions = round_actions.actions
+            my_endowment = self.endowments[player_id]
             if self.transparency:
-                # Show all contributions
                 contribs_str = ", ".join(f"Player {j+1}: {actions[j]}" for j in range(self.num_players))
                 total = sum(actions)
                 share = (total * self.multiplier) / self.num_players
-                my_payoff = self.endowment - actions[player_id] + share
+                my_payoff = my_endowment - actions[player_id] + share
                 lines.append(f"Round {i}: Contributions - {contribs_str}, total pot {total}, your payoff {my_payoff:.2f}")
             else:
-                # Show only own
                 my_contrib = actions[player_id]
                 total = sum(actions)
                 share = (total * self.multiplier) / self.num_players
-                payoff = self.endowment - my_contrib + share
+                payoff = my_endowment - my_contrib + share
                 lines.append(f"Round {i}: You contributed {my_contrib}, total pot {total}, your payoff {payoff:.2f}")
         return "\n".join(lines)

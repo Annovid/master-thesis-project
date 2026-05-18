@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "game-sim"
+name = "llm-public-goods-game"
 version = "0.1.0"
 description = "Simulation of economic games with LLM agents"
 authors = ["Your Name <your.email@example.com>"]

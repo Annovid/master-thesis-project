@@ -1,0 +1,1719 @@
+{
+  "experiment": "2.2",
+  "mode": "human_like_repeated_pgg_dynamics",
+  "model_requested": "google/gemini-2.5-pro",
+  "model_returned_seen": [
+    "google/gemini-2.5-pro"
+  ],
+  "provider": "openrouter",
+  "condition_label": "neutral",
+  "condition_mode": "homogeneous_prompt",
+  "session": 0,
+  "temperature": 0.0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "n_rounds": 10,
+  "transparency": true,
+  "reasoning": true,
+  "prompt_condition": "",
+  "player_profiles": [
+    "neutral",
+    "neutral",
+    "neutral",
+    "neutral"
+  ],
+  "player_prompt_conditions": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "incomplete": false,
+  "abort_reason": null,
+  "rounds": [
+    {
+      "round": 1,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "fbea6b58a8ca37c00daf891c52a64e9b96db690fb7b1fdbc261661829152c5e6",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_1/player_1.txt",
+          "chat_id": "gen-1779058883-EhgAHNW4EcAdcTc5lxL9",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 201,
+            "completion_tokens": 3335,
+            "total_tokens": 3536,
+            "cost": 0.03360125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.03360125,
+              "upstream_inference_prompt_cost": 0.00025125,
+              "upstream_inference_completions_cost": 0.03335
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2741,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 27.17
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "f98985ab02cfc09de2a957d65d7b7f69773160ba965004160eebad582fcd26ab",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_1/player_2.txt",
+          "chat_id": "gen-1779058910-RoWob03WcQam5RzafbM3",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 201,
+            "completion_tokens": 3254,
+            "total_tokens": 3455,
+            "cost": 0.03279125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.03279125,
+              "upstream_inference_prompt_cost": 0.00025125,
+              "upstream_inference_completions_cost": 0.03254
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2827,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 27.32
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "eec6fb2ddb5f0d0d885e580e21db100c8ba460b7c81a554e06ed5f8f234760cb",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_1/player_3.txt",
+          "chat_id": "gen-1779058937-2J6pQIYlwaQSvrtRT1gf",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 201,
+            "completion_tokens": 2423,
+            "total_tokens": 2624,
+            "cost": 0.02448125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.02448125,
+              "upstream_inference_prompt_cost": 0.00025125,
+              "upstream_inference_completions_cost": 0.02423
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2028,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 20.6
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "731b7fb011dea35db51c12ba294eeb229f13b80623267e33d9660582dd1e6316",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_1/player_4.txt",
+          "chat_id": "gen-1779058958-i6pLUp8sNXkaFnWsDvrf",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 201,
+            "completion_tokens": 3042,
+            "total_tokens": 3243,
+            "cost": 0.03067125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.03067125,
+              "upstream_inference_prompt_cost": 0.00025125,
+              "upstream_inference_completions_cost": 0.03042
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2362,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 28.88
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 2,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "72e70359baf701d07da0343a94f0b021f5236f8356ca9273f9f227242830b7da",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_2/player_1.txt",
+          "chat_id": "gen-1779058986-2QcRNZn9Qcbcd44RXq7g",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1054,
+            "completion_tokens": 1176,
+            "total_tokens": 2230,
+            "cost": 0.0130775,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0130775,
+              "upstream_inference_prompt_cost": 0.0013175,
+              "upstream_inference_completions_cost": 0.01176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 797,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.05
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "93eaaf961f18a064008c43b81dccb427b8918beb009e5e3ef361b47c47dd495e",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_2/player_2.txt",
+          "chat_id": "gen-1779058997-5jGl1D09Q1Bxwu0pyUvz",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 887,
+            "completion_tokens": 948,
+            "total_tokens": 1835,
+            "cost": 0.01058875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01058875,
+              "upstream_inference_prompt_cost": 0.00110875,
+              "upstream_inference_completions_cost": 0.00948
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 777,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 10.32
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "7284f62df9d228a295f1b72f680dfd22ad86a0b46c9d9cb74f86b70d7a1f974b",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_2/player_3.txt",
+          "chat_id": "gen-1779059008-AA1fj6ZQNSWWt9vE96U8",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 855,
+            "completion_tokens": 985,
+            "total_tokens": 1840,
+            "cost": 0.01091875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01091875,
+              "upstream_inference_prompt_cost": 0.00106875,
+              "upstream_inference_completions_cost": 0.00985
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 800,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.34
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "c175769b78b6ec51735f7582960d4c6a06cba0b77d9696dc33ff46b9f1bc43e2",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_2/player_4.txt",
+          "chat_id": "gen-1779059017-dCZJzI58b5o2myTYXqQk",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1140,
+            "completion_tokens": 1333,
+            "total_tokens": 2473,
+            "cost": 0.014755,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.014755,
+              "upstream_inference_prompt_cost": 0.001425,
+              "upstream_inference_completions_cost": 0.01333
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 984,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 13.51
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 3,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "d517e7b4d5b85b2fa7c5bf50d1b2ca8adbb17352d1a09ee18b9c48848ea7d541",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_3/player_1.txt",
+          "chat_id": "gen-1779059031-KAsNNBaNov0YhRNrJ2z4",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1755,
+            "completion_tokens": 803,
+            "total_tokens": 2558,
+            "cost": 0.01022375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01022375,
+              "upstream_inference_prompt_cost": 0.00219375,
+              "upstream_inference_completions_cost": 0.00803
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 567,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 7.78
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "8a6114ba8c4db4810d4f405e5ae567db610dd7fd1936b6d44e32a00de02122d9",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_3/player_2.txt",
+          "chat_id": "gen-1779059038-62YgnFZFUMt2ceajzo20",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1380,
+            "completion_tokens": 532,
+            "total_tokens": 1912,
+            "cost": 0.007045,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.007045,
+              "upstream_inference_prompt_cost": 0.001725,
+              "upstream_inference_completions_cost": 0.00532
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 405,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 6.55
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "0bb704de1d504534bdc64f99a6017fc68b16ccb032a1d2ea4bc3f82e768e7d86",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_3/player_3.txt",
+          "chat_id": "gen-1779059045-pGrimGo78vPDMwxE20vX",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1362,
+            "completion_tokens": 903,
+            "total_tokens": 2265,
+            "cost": 0.0107325,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0107325,
+              "upstream_inference_prompt_cost": 0.0017025,
+              "upstream_inference_completions_cost": 0.00903
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 719,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 7.89
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "cb17b4a722acd589eaf19ef2ffd7061a35f820f003fdbf006377af6c9c906d27",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_3/player_4.txt",
+          "chat_id": "gen-1779059053-TZGZpCdGEHr09Y5Sp8Va",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1811,
+            "completion_tokens": 1056,
+            "total_tokens": 2867,
+            "cost": 0.01282375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01282375,
+              "upstream_inference_prompt_cost": 0.00226375,
+              "upstream_inference_completions_cost": 0.01056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 771,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.32
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 4,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "bfc5f5ef5719f82ea37739e92dfc94e3128897f8003b0c5b891a068d2aaeb19d",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_4/player_1.txt",
+          "chat_id": "gen-1779059062-y3tIMObt5qs1Mc9rX62W",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 2376,
+            "completion_tokens": 948,
+            "total_tokens": 3324,
+            "cost": 0.01245,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01245,
+              "upstream_inference_prompt_cost": 0.00297,
+              "upstream_inference_completions_cost": 0.00948
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 711,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.27
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "972cdd2ce85296043d2cfacd40aef2ecb8ffb6ee56c897155dd51c23bca76186",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_4/player_2.txt",
+          "chat_id": "gen-1779059071-12pfhxlfVQeFmoqb7oqJ",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1892,
+            "completion_tokens": 1024,
+            "total_tokens": 2916,
+            "cost": 0.012605,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.012605,
+              "upstream_inference_prompt_cost": 0.002365,
+              "upstream_inference_completions_cost": 0.01024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 854,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 8.96
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "c3cd81126930653f2abb1731c389b276704115a06be5a0e9dfb6beb4ee195da5",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_4/player_3.txt",
+          "chat_id": "gen-1779059080-p8EslUFUVVHvQKkcYqvw",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 1931,
+            "completion_tokens": 1083,
+            "total_tokens": 3014,
+            "cost": 0.01324375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01324375,
+              "upstream_inference_prompt_cost": 0.00241375,
+              "upstream_inference_completions_cost": 0.01083
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 891,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 10.04
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "1835cf14a8f9335625b108ca56555a9b71490444b787d29312aba8a90fda3064",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_4/player_4.txt",
+          "chat_id": "gen-1779059090-fvXAtSvIZzL9VOAUCrIG",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 2481,
+            "completion_tokens": 916,
+            "total_tokens": 3397,
+            "cost": 0.01226125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01226125,
+              "upstream_inference_prompt_cost": 0.00310125,
+              "upstream_inference_completions_cost": 0.00916
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 702,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.42
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 5,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "488a5b39212b20bb51d318c56aa55b1566bd7c673bcef0ceea4982d1b548ac9a",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_5/player_1.txt",
+          "chat_id": "gen-1779059100-xbcAwNzQB19NiC3fKFq4",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 3061,
+            "completion_tokens": 1168,
+            "total_tokens": 4229,
+            "cost": 0.01550625,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01550625,
+              "upstream_inference_prompt_cost": 0.00382625,
+              "upstream_inference_completions_cost": 0.01168
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 912,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.25
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "6fcbf2f40e1a70f5604791eae2d6b39cad605c49ec2ba38e415bc4c58651580d",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_5/player_2.txt",
+          "chat_id": "gen-1779059111-nffMpNj0hqvvlb3uecao",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 2510,
+            "completion_tokens": 949,
+            "total_tokens": 3459,
+            "cost": 0.0126275,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0126275,
+              "upstream_inference_prompt_cost": 0.0031375,
+              "upstream_inference_completions_cost": 0.00949
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 783,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.02
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "5a2ea6fccc92564ee0b83f187046a01288e31bd593f1fce620f0fe44f79b7ce1",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_5/player_3.txt",
+          "chat_id": "gen-1779059120-UcATK2sXOoTuqfVwA9zo",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 2571,
+            "completion_tokens": 989,
+            "total_tokens": 3560,
+            "cost": 0.01310375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01310375,
+              "upstream_inference_prompt_cost": 0.00321375,
+              "upstream_inference_completions_cost": 0.00989
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 801,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.21
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "e574e20306e8ef600b8b1bff4cfbb524d727b3525545bcdfe305c9ae393d868b",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_5/player_4.txt",
+          "chat_id": "gen-1779059129-KfFoY5VbtkMBXIvzNaW3",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 3143,
+            "completion_tokens": 1162,
+            "total_tokens": 4305,
+            "cost": 0.01554875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01554875,
+              "upstream_inference_prompt_cost": 0.00392875,
+              "upstream_inference_completions_cost": 0.01162
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 953,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 10.27
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 6,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "831558a2676456e79b7786064bd4f20ad345229dbf3468a2723bace411f03a07",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_6/player_1.txt",
+          "chat_id": "gen-1779059140-Fi3xVlBYicDKkiIaeIwq",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 3828,
+            "completion_tokens": 1414,
+            "total_tokens": 5242,
+            "cost": 0.018925,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.018925,
+              "upstream_inference_prompt_cost": 0.004785,
+              "upstream_inference_completions_cost": 0.01414
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1031,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 13.41
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "ee178cbb61417af866a456008bf6c941add00cb7169a5f34301c485dab664367",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_6/player_2.txt",
+          "chat_id": "gen-1779059153-2jk8vMMsME8NO1tZ1aoo",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 3187,
+            "completion_tokens": 1033,
+            "total_tokens": 4220,
+            "cost": 0.01431375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01431375,
+              "upstream_inference_prompt_cost": 0.00398375,
+              "upstream_inference_completions_cost": 0.01033
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 802,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 9.29
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "f88f1d6a6312552119f6fb3107376a547192317c33ab97b814334f9f212e326a",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_6/player_3.txt",
+          "chat_id": "gen-1779059163-S09ASBjdjSRStZxYEZxR",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 3270,
+            "completion_tokens": 1065,
+            "total_tokens": 4335,
+            "cost": 0.0147375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0147375,
+              "upstream_inference_prompt_cost": 0.0040875,
+              "upstream_inference_completions_cost": 0.01065
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 848,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.05
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "c77ba2169817475a0dbf614eafbccaadf6be00c9764a6208b047b078ac32b12c",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_6/player_4.txt",
+          "chat_id": "gen-1779059173-uuhelNBirdclv1rdDFgQ",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 3863,
+            "completion_tokens": 1300,
+            "total_tokens": 5163,
+            "cost": 0.01782875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01782875,
+              "upstream_inference_prompt_cost": 0.00482875,
+              "upstream_inference_completions_cost": 0.013
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 978,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.48
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 7,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "7507cc1abb7971be65e4c4b9c8d0b8adde3d45519b9d2681d9563683d7cfe1f5",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_7/player_1.txt",
+          "chat_id": "gen-1779059185-GZ3dYPDAPxPOYPsN4tiu",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 4785,
+            "completion_tokens": 1882,
+            "total_tokens": 6667,
+            "cost": 0.02480125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.02480125,
+              "upstream_inference_prompt_cost": 0.00598125,
+              "upstream_inference_completions_cost": 0.01882
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1384,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 16.69
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "2fb6b6158052c0b377a6e28e2f1434e692115b383e85510d837e81e433963062",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_7/player_2.txt",
+          "chat_id": "gen-1779059202-JQ6Grt9LbbH3Se1VMUEX",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 3992,
+            "completion_tokens": 1418,
+            "total_tokens": 5410,
+            "cost": 0.01691325,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2006,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01691325,
+              "upstream_inference_prompt_cost": 0.00273325,
+              "upstream_inference_completions_cost": 0.01418
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1085,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 12.4
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "46b75eef4cf2cf68cf48672dcc86ee99a881e8adf65797d65e78ae6c569223c0",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_7/player_3.txt",
+          "chat_id": "gen-1779059214-0hvAuAvXWAQbDd5EpPZX",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 4061,
+            "completion_tokens": 1269,
+            "total_tokens": 5330,
+            "cost": 0.01776625,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01776625,
+              "upstream_inference_prompt_cost": 0.00507625,
+              "upstream_inference_completions_cost": 0.01269
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 962,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.1
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "16b48307208b9bdbd95c7a8bd82b140d7b7a1a593803101572706e2c67ff6e64",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_7/player_4.txt",
+          "chat_id": "gen-1779059225-EqOBN2wyhAqsBnyy9eeC",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 4759,
+            "completion_tokens": 1273,
+            "total_tokens": 6032,
+            "cost": 0.01641525,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2012,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01641525,
+              "upstream_inference_prompt_cost": 0.00368525,
+              "upstream_inference_completions_cost": 0.01273
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 923,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.86
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 8,
+      "actions": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "payoffs": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "9cf86ffc8a8162c2e4c90750b9543957eaeefea4cbda1751f0391efa1e0e911a",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_8/player_1.txt",
+          "chat_id": "gen-1779059237-7FwjU1IeeXsvJHey43ps",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 5920,
+            "completion_tokens": 2711,
+            "total_tokens": 8631,
+            "cost": 0.032242,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2016,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.032242,
+              "upstream_inference_prompt_cost": 0.005132,
+              "upstream_inference_completions_cost": 0.02711
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2007,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 25.35
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "3f875f374ab8fd2a14cdda5184393127a56d80aea17c4f7729febc048ef625d0",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_8/player_2.txt",
+          "chat_id": "gen-1779059262-p24ZxFW1zjqQOIVOfEFY",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 4962,
+            "completion_tokens": 2002,
+            "total_tokens": 6964,
+            "cost": 0.02396125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2010,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.02396125,
+              "upstream_inference_prompt_cost": 0.00394125,
+              "upstream_inference_completions_cost": 0.02002
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1569,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 17.82
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "9117f7a49e9b076fa9dca9937e69f44ac33bb3f05e8a8cccf64c2cde824d4e49",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_8/player_3.txt",
+          "chat_id": "gen-1779059280-NSaQtQt9F3EX165dQBeu",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 5005,
+            "completion_tokens": 1145,
+            "total_tokens": 6150,
+            "cost": 0.01770625,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01770625,
+              "upstream_inference_prompt_cost": 0.00625625,
+              "upstream_inference_completions_cost": 0.01145
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 769,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.88
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "267aa55986880a7f072c565cc437e5b73370e8e3f01ace6e3ec3714bcc97b20e",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_8/player_4.txt",
+          "chat_id": "gen-1779059292-zIUfbu4uqP2zhbh0UTpx",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 5746,
+            "completion_tokens": 2106,
+            "total_tokens": 7852,
+            "cost": 0.02370875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 4030,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.02370875,
+              "upstream_inference_prompt_cost": 0.00264875,
+              "upstream_inference_completions_cost": 0.02106
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1719,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 17.06
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 9,
+      "actions": [
+        20.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payoffs": [
+        8.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 20.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "5f7d0920adc542e6cdeda701492ce5959bea21e9dc45e589e4356c3b811091bb",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_9/player_1.txt",
+          "chat_id": "gen-1779059309-s05KnYMPSojLM61mVXMI",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 7324,
+            "completion_tokens": 3043,
+            "total_tokens": 10367,
+            "cost": 0.037313625,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2019,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.037313625,
+              "upstream_inference_prompt_cost": 0.006883625,
+              "upstream_inference_completions_cost": 0.03043
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2343,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 26.15
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "8381acdae350c79df3b26cf1586a63f77d5981998991f55675519e06c26c9355",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_9/player_2.txt",
+          "chat_id": "gen-1779059335-XMtNITiVQUKmsAr1tbJp",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 6095,
+            "completion_tokens": 2717,
+            "total_tokens": 8812,
+            "cost": 0.030258375,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 4027,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.030258375,
+              "upstream_inference_prompt_cost": 0.003088375,
+              "upstream_inference_completions_cost": 0.02717
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2109,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 22.54
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "545ab213ff9857ff26f2a9f0ce716b1d7cc3b3b0643703b89d06d6c54b9c3160",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_9/player_3.txt",
+          "chat_id": "gen-1779059358-6Fat5mR7RPWDQ0j0Ghxm",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 6081,
+            "completion_tokens": 2828,
+            "total_tokens": 8909,
+            "cost": 0.03588125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.03588125,
+              "upstream_inference_prompt_cost": 0.00760125,
+              "upstream_inference_completions_cost": 0.02828
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2227,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 24.64
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "45c59f1b542236b102d0b84cd78cf05e3e0a1a67066ac5baa92c79e69c262b02",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_9/player_4.txt",
+          "chat_id": "gen-1779059382-pgffKoEZ3UDBMyKXVyGG",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 6833,
+            "completion_tokens": 2468,
+            "total_tokens": 9301,
+            "cost": 0.030952125,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2017,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.030952125,
+              "upstream_inference_prompt_cost": 0.006272125,
+              "upstream_inference_completions_cost": 0.02468
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1889,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 23.47
+        }
+      ],
+      "incomplete": false
+    },
+    {
+      "round": 10,
+      "actions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "payoffs": [
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "players": [
+        {
+          "player_id": 1,
+          "player_profile": "neutral",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "442ad75f8e0f2c9946e904b0aee588bf7b1e82e275d7103ceaf6fa2dfada9a9c",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_10/player_1.txt",
+          "chat_id": "gen-1779059406-gMcAVgvgVwn6BstUeorj",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 8783,
+            "completion_tokens": 1271,
+            "total_tokens": 10054,
+            "cost": 0.02368875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.02368875,
+              "upstream_inference_prompt_cost": 0.01097875,
+              "upstream_inference_completions_cost": 0.01271
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 939,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.48
+        },
+        {
+          "player_id": 2,
+          "player_profile": "neutral",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "7beafd6bae25abfde63aec54d30119e4e633041b520183d000cbd689a4427448",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_10/player_2.txt",
+          "chat_id": "gen-1779059417-aMgvdP8I9Y05XopY7wO2",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 7463,
+            "completion_tokens": 1395,
+            "total_tokens": 8858,
+            "cost": 0.02327875,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.02327875,
+              "upstream_inference_prompt_cost": 0.00932875,
+              "upstream_inference_completions_cost": 0.01395
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1054,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.51
+        },
+        {
+          "player_id": 3,
+          "player_profile": "neutral",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "5da73c1d5415bbc85ba117526c891dbf1b2ad359555742938f06b6e828bfef34",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_10/player_3.txt",
+          "chat_id": "gen-1779059429-y4SZSd8pu98n9q8eiQpf",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 7442,
+            "completion_tokens": 1409,
+            "total_tokens": 8851,
+            "cost": 0.01885425,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 4034,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.01885425,
+              "upstream_inference_prompt_cost": 0.00476425,
+              "upstream_inference_completions_cost": 0.01409
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1045,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 13.48
+        },
+        {
+          "player_id": 4,
+          "player_profile": "neutral",
+          "parsed_action": 0.0,
+          "parse_error": null,
+          "retries": 0,
+          "transport_retries": 0,
+          "response_sha256": "c28481378f8a23277fcea66c61043db7dd2800a44b3be02b5b27882b586c69cc",
+          "response_path": "google_gemini-2.5-pro/neutral/session_0/round_10/player_4.txt",
+          "chat_id": "gen-1779059442-dFSZyR6zlxCtb3ZHAW4T",
+          "model_returned": "google/gemini-2.5-pro",
+          "usage": {
+            "prompt_tokens": 8172,
+            "completion_tokens": 1305,
+            "total_tokens": 9477,
+            "cost": 0.023265,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.023265,
+              "upstream_inference_prompt_cost": 0.010215,
+              "upstream_inference_completions_cost": 0.01305
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 957,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "elapsed_s": 11.06
+        }
+      ],
+      "incomplete": false
+    }
+  ],
+  "metrics": {
+    "complete_rounds": 10,
+    "round_means": [
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      5.0,
+      0.0
+    ],
+    "round_stds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      8.660254037844387,
+      0.0
+    ],
+    "r1_mean": 20.0,
+    "r_last_mean": 0.0,
+    "overall_mean": 16.5,
+    "slope": -1.7272727272727273,
+    "final_zero_rate": 1.0,
+    "player_slopes": [
+      -1.0909090909090908,
+      -1.9393939393939394,
+      -1.9393939393939394,
+      -1.9393939393939394
+    ],
+    "rank_stability": 1.0,
+    "free_rider_effect": -20.0,
+    "target_round_means": [
+      10.0,
+      9.11111111111111,
+      8.222222222222221,
+      7.333333333333334,
+      6.444444444444445,
+      5.555555555555555,
+      4.666666666666667,
+      3.7777777777777777,
+      2.8888888888888893,
+      2.0
+    ],
+    "trajectory_distance_to_no_punishment_human": 10.9,
+    "endpoint_distance_to_no_punishment_human": 15.676767676767676,
+    "distance_to_no_punishment_human": 18.73838383838384
+  },
+  "total_payoffs": [
+    284.0,
+    304.0,
+    304.0,
+    304.0
+  ],
+  "session_path": "google_gemini-2.5-pro/neutral/session_0",
+  "session_elapsed_s": 570.94
+}

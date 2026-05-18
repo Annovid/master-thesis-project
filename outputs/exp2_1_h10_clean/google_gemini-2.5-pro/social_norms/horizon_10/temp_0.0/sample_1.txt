@@ -1,0 +1,48 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: social_norms
+SAMPLE: 1
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 867213fc90aba15b58fdf298c47045cb334c1b353398813380fa4ecb68412345
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Note: in studies with similar public goods games, participants often contribute 40-60% of their endowment.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their future behavior, even though we can't communicate directly.
+
+Here's my reasoning:
+
+1.  **The Selfish Choice (0):** If I contribute 0, my personal payoff is maximized for this single round, *assuming others contribute something*. For every token I keep, I save 1 token, but I only lose 0.4 tokens from the public pot return (1.6 / 4). This means there's a 0.6 token penalty for contributing. However, if everyone thinks this way, we all contribute 0 and our payoff is just our endowment of 20.
+
+2.  **The Cooperative Choice (20):** If all four of us contribute our full 20 tokens, the total pot is 80. This gets multiplied by 1.6 to 128. Divided by 4, we each get 32 back. Our payoff would be `20 - 20 + 32 = 32`. This is the best possible outcome for the group and for each individual if we all cooperate.
+
+3.  **The Dilemma:** The risk of contributing a lot is that others might contribute little (or nothing) and "free-ride" on my contribution. If I contribute 20 and everyone else contributes 0, my payoff would be `20 - 20 + (1.6 * 20) / 4 = 8`. This is a terrible outcome for me.
+
+4.  **Finding a Balance (Round 1 Strategy):** Since this is a repeated game, it's often beneficial to signal a willingness to cooperate from the start. Contributing 0 is too aggressive and will likely lead to a breakdown of cooperation in future rounds. Contributing 20 is too naive and risky.
+
+The note provided states that participants in similar studies often contribute 40-60% of their endowment. In this case, that would be between 8 and 12 tokens. A contribution of 10 tokens (50%) is a common and easily understandable starting point. It signals "I am willing to cooperate if you are." It's a moderate, safe-but-not-selfish choice.
+
+I will start by contributing 10. I will then observe my payoff for this round to try and infer what the others might have done, and adjust my strategy for Round 2 accordingly.
+
+Answer = 10.0

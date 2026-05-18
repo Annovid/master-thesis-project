@@ -1,0 +1,43 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: expectations
+SAMPLE: 3
+PARSED_ACTION: 15.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 3f75826ad8079a4fe7c007d3186817d8270f0c26ff688e06d708e777a7a8b1e2
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Before choosing, explicitly reason about how much each other player is likely to contribute.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round, players often signal cooperation. With 4 players and a 1.6 multiplier, each token contributed returns 0.4 to me personally but 1.6 total—so cooperation is socially optimal but individually costly.
+
+Other players' likely behavior in round 1:
+- Many LLM/strategic players open with moderate-to-high contributions (10-15) to signal cooperation and establish a norm.
+- Some may free-ride from the start (0-5).
+- Expected average from others: probably around 10-12 each.
+
+Starting high signals willingness to cooperate and can sustain a high-contribution equilibrium across rounds, which maximizes my total payoff. If I free-ride now, others will likely retaliate by lowering contributions, hurting me in later rounds.
+
+I'll contribute 15 — high enough to signal strong cooperation, but holding a little back as insurance against pure free-riders.
+
+Answer = 15

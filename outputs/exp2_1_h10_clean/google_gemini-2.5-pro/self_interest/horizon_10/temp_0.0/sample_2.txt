@@ -1,0 +1,50 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: self_interest
+SAMPLE: 2
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 236e668bf292b7472b8c2d4678b31ccccc74a56d4498f4e74c52bd88d6cbbdc1
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Focus on maximizing your own monetary payoff in this game.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My goal is to maximize my total payoff.
+
+Let's analyze the payoff structure. My payoff for a round is:
+`Payoff = 20 - my_contribution + (1.6 * (my_contribution + others_contributions)) / 4`
+`Payoff = 20 - my_contribution + 0.4 * my_contribution + 0.4 * others_contributions`
+`Payoff = 20 - 0.6 * my_contribution + 0.4 * others_contributions`
+
+From this formula, I can see that for every token I contribute, I lose 1 token from my endowment but only get 0.4 tokens back from the public pot. This means every token I personally contribute decreases my own payoff for that round by 0.6 tokens, holding other players' contributions constant.
+
+Therefore, from a single-round perspective, the dominant strategy is to contribute 0. This maximizes my payoff for the current round, regardless of what others do.
+
+However, this is a 10-round game. My actions in early rounds can signal my intentions and influence the behavior of other players in subsequent rounds. After each round, every player can deduce the total amount contributed to the pot.
+
+*   **Cooperative Strategy (contribute a high amount):** If I contribute a lot, I am trying to signal a desire for cooperation. If all players contribute their full 20 tokens, we all get a payoff of 32. This is the best outcome for the group. However, this is risky in Round 1. If others don't cooperate, I will be "the sucker" and get a very low payoff, while the free-riders profit from my contribution.
+*   **Selfish Strategy (contribute 0):** This is the safest strategy for Round 1. It guarantees I cannot be exploited by free-riders. My payoff for this round will be `20 + 0.4 * others_contributions`. This move also allows me to gauge the initial cooperativeness of the group at no personal cost. I can see what the total contribution is and decide how to act in Round 2.
+
+Given that this is the first round and I have no information about the other players, the most rational and safest approach is to start by contributing 0. This protects me from an immediate loss, maximizes my guaranteed payoff for this round, and provides a clear baseline of the other players' initial strategies to inform my decisions for the next 9 rounds.
+
+Answer = 0.0

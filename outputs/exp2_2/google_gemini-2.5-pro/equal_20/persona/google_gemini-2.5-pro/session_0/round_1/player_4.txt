@@ -1,0 +1,63 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: fff0bce9c9450c5735c26816b71fbf3633b154186ef9ec554320f3a21aea9c7c
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 20).
+
+RESPONSE:
+Here is my step-by-step thinking process for the decision:
+
+**1. My Reasoning**
+
+First, I'll analyze the two extreme scenarios to understand the game's core conflict.
+
+*   **The Selfish Choice (Free-riding):** If I contribute 0, I keep my entire 20 token endowment. For every token someone else contributes, I get 0.4 tokens back (1.6 / 4). My personal payoff is maximized by contributing 0, no matter what others do. If everyone is purely selfish and contributes 0, the pot is 0, and we all end up with our initial 20 tokens.
+
+*   **The Cooperative Choice (Social Optimum):** If all 4 players contribute their full 20 tokens, the total pot is 80. This gets multiplied by 1.6 to become 128. Divided by 4, we each get 32 tokens back. My payoff would be: 20 (endowment) - 20 (my contribution) + 32 (my share) = 32 tokens. This is the best possible outcome for the group as a whole.
+
+The dilemma is clear: what's best for me individually (contributing 0) is different from what's best for the group (everyone contributing 20). If I contribute 20 and everyone else contributes 0, I get the "sucker's payoff": 20 - 20 + (1.6 * 20) / 4 = 8 tokens. This is a huge loss.
+
+Since this is a one-round game, there is no opportunity to build trust or punish free-riders in future rounds. This makes the incentive to act selfishly much stronger than in a multi-round game.
+
+**2. What I Expect from Other Players**
+
+I am told to act like a typical human participant. This means the other three players are likely thinking the same way I am. They see the same risks and rewards.
+
+*   I don't expect them to be completely naive and contribute the full 20. The risk of being the sucker is too high in a one-shot game.
+*   I also don't expect all of them to be completely selfish and contribute 0. Most people have some sense of fairness or a desire to cooperate, at least a little. They don't want to be "the jerk" who brings the group down.
+*   Therefore, I expect most players will choose a number somewhere in the middle. A common focal point in these games is contributing half of the endowment. It's a signal of "I'm willing to cooperate, but I'm not a fool."
+
+**3. Why I Pick My Contribution**
+
+Based on this, contributing 20 is too risky. Contributing 0 is the safest for me personally, but it feels cynical and guarantees we won't reach a better outcome. If everyone contributes 0, we all get 20, which is worse than the 32 we could get.
+
+I will choose to contribute half of my endowment: 10 tokens.
+
+This feels like a good compromise. It's a gesture of conditional cooperation. I'm betting that at least some of the other players will also think this way and contribute a moderate amount. If everyone contributes 10, the total pot is 40, which becomes 64 after the multiplier. We each get 16 back. My payoff would be 20 - 10 + 16 = 26. This is a solid improvement over the 20 we'd get by all contributing nothing. It also protects me from a catastrophic loss; if others contribute 0, my payoff is 20 - 10 + (1.6 * 10)/4 = 14, which is a loss, but not as bad as the loss from contributing 20.
+
+Answer = 10

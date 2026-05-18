@@ -1,0 +1,42 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: moderate_free_rider
+SESSION: 0
+ROUND: 1
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 2997c3739b7b6a15c1996ba161b25378e3363fd9bedfee6685ca00441f7793ad
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You are somewhat self-interested and prefer to contribute less than highly cooperative players, but you may still contribute a positive amount when the group is cooperating.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round, and there's no history to draw upon. Since I'm somewhat self-interested but also willing to contribute when the group is cooperating, I'll start by making a moderate contribution to gauge the cooperation level of the other players.
+
+Contributing 0 might be too low as it doesn't encourage cooperation, and contributing too high (e.g., 20) might not be the best strategy if others don't reciprocate. A moderate contribution seems like a reasonable starting point.
+
+Let's contribute 10 tokens for the first round. This is a middle-ground strategy that allows me to potentially benefit from others' cooperation while not risking too much if they decide not to contribute much.
+
+Answer = 10

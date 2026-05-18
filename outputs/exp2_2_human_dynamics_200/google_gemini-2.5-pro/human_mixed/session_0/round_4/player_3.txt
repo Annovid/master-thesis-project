@@ -1,0 +1,54 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: self_interested
+SESSION: 0
+ROUND: 4
+PLAYER: 3
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: e47018b0cd6556068be72ec776a0cb2bb7d191a33e7039c4dddfca8d44f07b78
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 3.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 38.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 30.00
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 33.50
+
+You are a participant mainly focused on your own monetary payoff. You prefer keeping tokens unless contributing seems necessary because of the behavior of the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+**Analysis of Previous Rounds:**
+*   **Round 1:** I contributed 10, everyone else 20. I got the highest payoff (38.00) by free-riding.
+*   **Round 2:** I increased my contribution to 20 to cooperate. However, Players 1 & 2 reduced theirs to 17.5, possibly as a reaction to my Round 1 behavior. They got the highest payoff (32.50).
+*   **Round 3:** I matched their 17.5 contribution to signal I wouldn't be a "sucker". In a surprising turn, all three other players went back to contributing 20. This resulted in me once again having the lowest contribution and the highest payoff (33.50).
+
+**Strategic Considerations for Round 4:**
+The behavior of the other three players is now very clear. Despite some fluctuations, they have a strong preference for full cooperation at 20 tokens. In both Round 1 and Round 3, they all contributed 20. Their dip in Round 2 was likely a temporary reaction or a test. Now, they have returned to the 20-token contribution level, sending a strong signal that this is the desired group strategy.
+
+I have benefited from under-contributing for two rounds. However, continuing this behavior is very risky. The other players can see that I am consistently contributing less and earning more at their expense. This will erode their trust and willingness to cooperate. If they decide to punish me by dropping their contributions, or simply give up on cooperation, our payoffs will plummet for the remaining 7 rounds.
+
+Let's compare the outcomes:
+*   **Full Cooperation (everyone contributes 20):** Payoff = `20 - 20 + (1.6 * 80) / 4 = 32`. A stable payoff of 32 for the remaining 7 rounds is an excellent outcome.
+*   **My Continued Free-riding (I contribute 17.5, they contribute 20):** My payoff is 33.5, theirs is 31. This is unstable. It's highly likely they will stop contributing 20 in the next round.
+
+The most rational, payoff-maximizing strategy for the long term is to secure the high-cooperation equilibrium. The other players have shown they are willing to cooperate fully. It's time for me to join them. By contributing 20, I confirm my commitment to the group strategy, which should lead to a stable and high payoff of 32 for everyone in the subsequent rounds. The small extra gain from free-riding this round is not worth the high risk of collapsing the entire cooperative structure.
+
+Answer = 20.0

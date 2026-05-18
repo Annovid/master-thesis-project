@@ -1,0 +1,50 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: social_norms
+SAMPLE: 1
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 4ebc64dcdca59c40fb74f4da3debe19065132fb5b804028040f25075523dc47c
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Note: in studies with similar public goods games, participants often contribute 40-60% of their endowment.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+To determine my contribution for the current round, I need to consider the structure of the game and the potential strategies of the other players.
+
+The payoff for a round is given by: endowment - my_contribution + (1.6 * sum_of_all_contributions) / 4.
+
+Let's break down the components:
+1. Endowment = 20.0 tokens (constant for all players in every round).
+2. The multiplier for the sum of contributions is 1.6, and the result is divided by 4 (the number of players). So, the marginal per capita return (MPCR) for contributing to the public pot is 1.6 / 4 = 0.4. This means for every token I contribute, I get back 0.4 tokens from the public pot.
+
+Since 0.4 is less than 1, from a purely self-interested perspective, the dominant strategy is to contribute 0 to the public pot, as contributing any positive amount results in a direct loss (because I get back less than I contribute). However, the Public Goods Game is known for often eliciting cooperative behavior from players, at least initially.
+
+Given that there are no previous rounds and I'm playing with 3 other players whose strategies are unknown, I'll consider a moderate contribution to start with, as is often observed in similar studies. The average contribution in similar games is around 40-60% of the endowment.
+
+40% of 20 is 8, and 60% of 20 is 12. So, a moderate contribution could be somewhere between 8 and 12.
+
+To encourage cooperation and potentially higher overall contributions, I'll choose a contribution that is somewhat in the middle of this range.
+
+Let's choose a contribution of 10 tokens for the first round.
+
+Answer = 10

@@ -1,0 +1,50 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: warm_glow
+SAMPLE: 2
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 3902caff3e76c132d6f7680009bbbcbe0e25f3b68a71c853dbe7df6948ab40cb
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Consider that contributing to the public pot may feel personally worthwhile because it helps the group.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round of a 10-round game. My actions in this round can signal my intentions to the other players and influence their behavior in subsequent rounds, even though they can't see my specific contribution.
+
+**Analysis of Payoff Structure:**
+*   For every token I keep for myself, I gain 1 token.
+*   For every token I contribute to the pot, I personally get back `1.6 / 4 = 0.4` tokens. This means I experience a personal loss of `1 - 0.4 = 0.6` tokens for every token I contribute.
+*   However, for every token anyone contributes (including me), the group as a whole gains `1.6` tokens, which is a net gain of `0.6` tokens for the group.
+
+**Strategic Considerations:**
+1.  **Selfish Short-Term Strategy:** The dominant strategy in a single-round game is to contribute 0. This maximizes my individual payoff for this round, assuming the other players' contributions are fixed. This is known as free-riding.
+2.  **Cooperative Long-Term Strategy:** If all four players contribute their full endowment of 20 tokens, the total pot would be 80. This would be multiplied by 1.6 to become 128. Each player would receive `128 / 4 = 32` tokens. The payoff for each player would be `20 (endowment) - 20 (contribution) + 32 (share) = 32`. This is much better than the 20 tokens everyone gets if nobody contributes.
+3.  **Signaling in Round 1:** Since this is the first round, my choice will set a precedent.
+    *   Contributing 0 signals that I intend to free-ride. This might encourage others to also contribute 0 in the future, leading to a poor outcome for everyone (20 tokens per round).
+    *   Contributing the full 20 is a strong, clear signal of my willingness to cooperate. It's a risky move, as I could be taken advantage of if others don't reciprocate. However, it's the best way to try and establish a pattern of high cooperation that leads to the best possible group outcome (and a high personal score of 32 per round).
+    *   The prompt explicitly mentions that "contributing... may feel personally worthwhile because it helps the group," which suggests that a purely selfish strategy might not be the intended path.
+
+**Decision for Round 1:**
+To maximize my potential total score over 10 rounds, the best approach is to try and establish a cooperative equilibrium from the start. I will make a bold, trusting move by contributing my full endowment. This gives the group the best chance to achieve the highest possible payoff. After this round, I can analyze my payoff to deduce what the other players did and adjust my strategy accordingly for Round 2.
+
+Answer = 20.0

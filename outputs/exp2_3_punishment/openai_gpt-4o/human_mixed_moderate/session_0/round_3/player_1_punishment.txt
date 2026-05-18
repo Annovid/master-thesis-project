@@ -1,0 +1,43 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+EXPERIMENT: 2.3
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 3
+PLAYER: 1
+STAGE: punishment
+TEMPERATURE: 0.0
+PARSED: [0.0, 0.0, 0.0, 0.0]
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: d60a007387465267eb30753f7c3a6a455400431affe48bd318737af5ef617c1c
+
+PROMPT:
+You are playing the Public Goods Game with punishment for 10 rounds with 4 players in total.
+You are Player 1.
+Each round starts with 20 tokens per player. Public-good multiplier: 1.6.
+Each punishment point you assign costs you 1 token and reduces the target player's payoff by 3 tokens.
+You may assign 0 to 5 punishment points to each other player. You cannot punish yourself.
+
+History of previous rounds:
+Round 1: contributions - Player 1: 10, Player 2: 15, Player 3: 10, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 30.00.
+Round 2: contributions - Player 1: 12, Player 2: 12, Player 3: 12, Player 4: 15; you assigned 0 punishment point(s), received 0 punishment point(s), and your final payoff was 28.40.
+
+Current round contributions:
+Player 1: 13, Player 2: 14, Player 3: 12, Player 4: 15
+Current round payoffs before punishment:
+Player 1: 28.60, Player 2: 27.60, Player 3: 29.60, Player 4: 26.60
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide punishment points for the current round.
+Use exactly these player keys: "2", "3", "4".
+End your reply with a single line of the form: Punishment = {"2": 0, "3": 0, "4": 0}
+
+RESPONSE:
+In this round, contributions are fairly balanced, with all players contributing a reasonable amount. Player 4 continues to contribute the most, showing consistent cooperation. There is no clear indication of free-riding behavior, and the differences in contributions are minor. Therefore, I will choose not to assign any punishment points this round to maintain a cooperative atmosphere.
+
+Punishment = {"2": 0, "3": 0, "4": 0}

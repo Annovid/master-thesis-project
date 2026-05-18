@@ -1,0 +1,44 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: persona
+SAMPLE: 3
+PARSED_ACTION: 10.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 4367c78de3005de27a16350b65f381f1d46d9aea7a8ae027b4f958dc8529917e
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make the decision from that perspective.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+This is the first round, so I have no idea how the other players will behave.
+
+If we all cooperate and contribute our full 20 tokens, we'll all get the best possible group outcome. The total pot would be 80, which gets multiplied by 1.6 to 128. Divided by 4, we each get 32. My payoff would be 20 - 20 + 32 = 32.
+
+If I'm the only one who contributes 20 and everyone else contributes 0, my payoff would be 20 - 20 + (1.6 * 20) / 4 = 8. That would be a huge loss.
+
+If everyone is selfish and contributes 0, we all just keep our 20 tokens. The payoff is 20.
+
+Contributing 0 is the safest bet for me personally, but it doesn't encourage cooperation. If we all do that, we miss out on the extra money. Contributing 20 is too risky for the first round.
+
+I'll start with a moderate contribution to show I'm willing to cooperate, but I'm not going to be a sucker. Contributing half my endowment seems like a fair, common-sense starting point. It's a signal of goodwill. I'll contribute 10 and see what my payoff is. Based on that, I can adjust my strategy for the next round.
+
+Answer = 10.0

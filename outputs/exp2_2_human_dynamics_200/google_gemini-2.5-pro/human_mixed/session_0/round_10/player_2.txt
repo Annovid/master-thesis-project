@@ -1,0 +1,67 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 10
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 10a4f7ac2d4384a71ae17eeac5b471299fa246fead9f25661f60dd46bf62a0a7
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 31.38
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 32.15
+Round 7: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 19.2, Player 4: 20.0, total pot 79.2, your payoff 31.68
+Round 8: Contributions - Player 1: 19.8, Player 2: 19.8, Player 3: 20.0, Player 4: 20.0, total pot 79.6, your payoff 32.04
+Round 9: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 0.0, Player 4: 20.0, total pot 60.0, your payoff 24.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Here is my thinking process for deciding my contribution for Round 10, the final round:
+
+1.  **Analyze the Previous Round (Round 9):**
+    *   In Round 9, I, along with Player 1 and Player 4, contributed the maximum of 20, showing full commitment to the cooperative state we had built.
+    *   Player 3 completely defected, contributing 0. This was a massive betrayal of trust.
+    *   Let's look at the payoffs. The three cooperators (including me) got a payoff of 24. The defector, Player 3, got a payoff of 44 (20 endowment - 0 contribution + 24 return). Player 3's move was a classic "end-game" defection, maximizing their personal gain at the expense of the group.
+
+2.  **Consider the Game Stage:**
+    *   This is Round 10, the **final round**. There are no more rounds after this.
+    *   This is the most important factor. My actions in this round cannot influence any future behavior. The entire basis of my previous strategy—building trust and using reciprocity to encourage future cooperation—is now gone.
+
+3.  **Apply My Persona and Rationality:**
+    *   **Persona (Reciprocity):** My persona demands that I "reduce my contribution when others contribute less than expected." Player 3's contribution of 0 is the ultimate failure to meet expectations. The only appropriate reciprocal response is to also contribute 0. To contribute anything would be to reward their defection.
+    *   **Rational Self-Interest:** In a single, final round, the game theory is simple. For every token I contribute, I personally lose 1 token but only get back `1.6 / 4 = 0.4` tokens. This is a net loss of 0.6 tokens for every token I contribute. To maximize my payoff for this round, I must minimize my contribution. The minimum is 0.
+
+4.  **Predict Others' Behavior:**
+    *   Player 3 will almost certainly contribute 0 again, as it was so profitable.
+    *   Player 1 and Player 4, who were also betrayed, are rational actors who will likely reach the same conclusion as me: cooperation in the final round is a losing strategy. They will also contribute 0 to protect themselves.
+    *   The trust is irrevocably broken. The cooperative phase of the game is over.
+
+5.  **Conclusion:**
+    *   Both my established persona of reciprocity and pure rational self-interest for the final round point to the exact same action. Any contribution above zero would be irrational, as it would only serve to increase the payoff of the other players (especially the defector) at a direct cost to myself, with no hope of future reward.
+
+Answer = 0.0

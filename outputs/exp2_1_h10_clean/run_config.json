@@ -1,0 +1,39 @@
+{
+  "experiment": "2.1",
+  "mode": "one_shot_prompt_condition_sweep",
+  "models": [
+    "anthropic/claude-opus-4.7",
+    "google/gemini-2.5-pro",
+    "meta-llama/llama-4-maverick",
+    "openai/gpt-4o"
+  ],
+  "provider": "openrouter",
+  "horizon": 10,
+  "temperature": 0.0,
+  "samples_per_cell": 4,
+  "start_sample": 0,
+  "num_players": 4,
+  "endowment": 20.0,
+  "multiplier": 1.6,
+  "transparency": false,
+  "reasoning": true,
+  "prompt_labels": [
+    "neutral",
+    "persona",
+    "self_interest",
+    "group_welfare",
+    "inequality_aversion",
+    "warm_glow",
+    "conditional_coop",
+    "expectations",
+    "social_norms",
+    "emotional_perspective"
+  ],
+  "parallelism": 4,
+  "max_transport_retries": 4,
+  "transport_backoff_s": 5.0,
+  "skip_existing": true,
+  "baseline_prompt_label": "neutral",
+  "env_provider": "auto",
+  "openrouter_max_tokens": null
+}

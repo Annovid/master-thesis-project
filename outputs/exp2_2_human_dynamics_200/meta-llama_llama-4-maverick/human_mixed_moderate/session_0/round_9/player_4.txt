@@ -1,0 +1,49 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 9
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 0.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 22330636fdf8644de95451099bd1b200b5a7311c69cb95dc315ec528da4b9861
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 10.0, Player 4: 15.0, total pot 45.0, your payoff 23.00
+Round 2: Contributions - Player 1: 10.0, Player 2: 12.0, Player 3: 8.0, Player 4: 12.0, total pot 42.0, your payoff 24.80
+Round 3: Contributions - Player 1: 10.0, Player 2: 11.0, Player 3: 6.0, Player 4: 11.0, total pot 38.0, your payoff 24.20
+Round 4: Contributions - Player 1: 8.0, Player 2: 9.0, Player 3: 4.0, Player 4: 10.0, total pot 31.0, your payoff 22.40
+Round 5: Contributions - Player 1: 6.0, Player 2: 7.0, Player 3: 2.0, Player 4: 8.0, total pot 23.0, your payoff 21.20
+Round 6: Contributions - Player 1: 4.0, Player 2: 5.0, Player 3: 0.0, Player 4: 4.0, total pot 13.0, your payoff 21.20
+Round 7: Contributions - Player 1: 0.0, Player 2: 0.0, Player 3: 0.0, Player 4: 0.0, total pot 0.0, your payoff 20.00
+Round 8: Contributions - Player 1: 0.0, Player 2: 0.0, Player 3: 0.0, Player 4: 0.0, total pot 0.0, your payoff 20.00
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The game has reached a point where all players are contributing 0 tokens, and this has been the case for two consecutive rounds. With only 2 rounds remaining, it is clear that the other players are not going to change their strategy.
+
+Given that contributing 0 tokens is the dominant strategy when others are not contributing, and there is no incentive to deviate from this strategy, I will continue to contribute 0 tokens in Round 9.
+
+Let's maintain the current strategy.
+
+Answer = 0

@@ -1,0 +1,45 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+HORIZON: 10
+TEMPERATURE: 0.0
+PROMPT_LABEL: expectations
+SAMPLE: 8
+PARSED_ACTION: 14.0
+PARSE_ERROR: None
+RESPONSE_SHA256: 1dd58af9024c5ccf416115f03874c0a3751bfd0044ed22ec371297b64ee187d2
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20.0 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20.0).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+Between rounds, only your own contribution and round payoff are revealed to you.
+
+History of previous rounds:
+No previous rounds.
+
+Before choosing, explicitly reason about how much each other player is likely to contribute. Then choose a contribution consistent with those expectations.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round of a public goods game, players often start with moderate-to-high contributions to signal cooperation and test the waters. Typical opening contributions in such experiments cluster around 10-15 tokens.
+
+Reasoning about each other player:
+- Player 2: Likely contributes around 10-12, a moderate cooperative opener.
+- Player 3: Likely contributes around 10-12, similar reasoning.
+- Player 4: Likely contributes around 8-12, possibly slightly more cautious.
+
+Expected average contribution from others: roughly 10 each, so ~30 total from them.
+
+If I contribute C, my payoff = 20 - C + 1.6*(30 + C)/4 = 20 - C + 12 + 0.4C = 32 - 0.6C. Strictly, lower contribution gives higher immediate payoff. But to encourage sustained cooperation across 10 rounds (since defecting early can collapse cooperation), I should signal willingness to cooperate.
+
+I'll contribute 14 — slightly above the likely average to encourage others to match or raise their contributions, setting a cooperative tone for future rounds while not being naive.
+
+Answer = 14

@@ -1,0 +1,40 @@
+MODEL_REQUESTED: openai/gpt-4o
+MODEL_RETURNED: openai/gpt-4o
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 2
+PLAYER: 2
+TEMPERATURE: 0.0
+PARSED_ACTION: 8.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: b57c83990c9fb5ac4b735fc67aeacc9f76cc450d00fbb4c05c156238dc9494f2
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 2.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 10.0, Player 2: 10.0, Player 3: 5.0, Player 4: 10.0, total pot 35.0, your payoff 24.00
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+In the first round, you contributed 10 tokens, and the total pot was 35 tokens. Player 3 contributed less than the others, which slightly reduced the overall payoff. Since you are willing to cooperate but also adjust based on others' contributions, you might consider reducing your contribution slightly to encourage Player 3 to contribute more.
+
+A reasonable approach would be to reduce your contribution to signal that you expect more cooperation from others, especially Player 3, while still maintaining a cooperative stance.
+
+Answer = 8

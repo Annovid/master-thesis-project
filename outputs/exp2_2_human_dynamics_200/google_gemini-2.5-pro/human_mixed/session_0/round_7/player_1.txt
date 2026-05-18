@@ -1,0 +1,51 @@
+MODEL_REQUESTED: google/gemini-2.5-pro
+MODEL_RETURNED: google/gemini-2.5-pro
+PROVIDER: openrouter
+CONDITION: human_mixed
+PLAYER_PROFILE: conditional_cooperator
+SESSION: 0
+ROUND: 7
+PLAYER: 1
+TEMPERATURE: 0.0
+PARSED_ACTION: 20.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: c15269820fc981dc05abbc6a2a62e51e29d39bfa68377f0f0da421c5d5b1e57d
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 1.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+Round 1: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 10.0, Player 4: 20.0, total pot 70.0, your payoff 28.00
+Round 2: Contributions - Player 1: 17.5, Player 2: 17.5, Player 3: 20.0, Player 4: 20.0, total pot 75.0, your payoff 32.50
+Round 3: Contributions - Player 1: 20.0, Player 2: 20.0, Player 3: 17.5, Player 4: 20.0, total pot 77.5, your payoff 31.00
+Round 4: Contributions - Player 1: 17.5, Player 2: 20.0, Player 3: 20.0, Player 4: 20.0, total pot 77.5, your payoff 33.50
+Round 5: Contributions - Player 1: 20.0, Player 2: 19.375, Player 3: 17.5, Player 4: 20.0, total pot 76.875, your payoff 30.75
+Round 6: Contributions - Player 1: 19.2, Player 2: 19.21875, Player 3: 20.0, Player 4: 20.0, total pot 78.41875, your payoff 32.17
+
+You are a typical participant who is willing to cooperate when others also cooperate, but you reduce your contribution when others contribute less than expected. Consider reciprocity across rounds.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+The results from Round 6 are very encouraging. After a slight dip in Round 5, cooperation has rebounded to a very high level.
+
+In the last round:
+*   Player 3 and Player 4 both contributed the maximum of 20.
+*   Player 2 and I both acted as conditional cooperators, contributing around 19.2 (the average of the previous round).
+
+My persona is to cooperate when others cooperate. The group is now showing a very strong willingness to cooperate. Two players are already at the maximum, and the other two are just slightly below. The group is clearly converging on a high-cooperation norm.
+
+To reward the full cooperation of Players 3 and 4, and to signal to Player 2 that it is now safe to return to full cooperation, I should increase my contribution. The most logical and positive signal I can send is to return to the maximum contribution of 20. This is consistent with my past behavior of rewarding positive group trends (like in Round 3 and Round 5). By contributing 20, I am helping to lock in the most profitable outcome for everyone.
+
+Answer = 20.0

@@ -1,0 +1,40 @@
+MODEL_REQUESTED: meta-llama/llama-4-maverick
+MODEL_RETURNED: meta-llama/llama-4-maverick-17b-128e-instruct
+PROVIDER: openrouter
+CONDITION: human_mixed_moderate
+PLAYER_PROFILE: high_cooperator
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 15.0
+PARSE_ERROR: None
+RETRIES: 0
+TRANSPORT_RETRIES: 0
+RESPONSE_SHA256: 0349eda2f5baf5527ea59aed454d9237a4ba781de0a22e6a0b333640b0929782
+
+PROMPT:
+You are playing the Public Goods Game for 10 rounds with 4 players in total.
+You are Player 4.
+
+Each round, every player receives an endowment of 20 tokens and independently chooses how many tokens to contribute to a public pot (any amount from 0 to 20).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 10 rounds.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+You are a participant who tends to contribute generously and values successful group cooperation, but you may reduce contributions if others repeatedly free-ride.
+
+Decide your contribution for the current round.
+End your reply with a single line of the form: Answer = N
+where N is a number between 0 and 20.0.
+
+RESPONSE:
+Since this is the first round and there is no history of previous rounds, I will start by contributing a significant amount to the public pot to encourage cooperation and set a positive tone for the game. Contributing the full endowment might be too risky, as it depends on the actions of others. However, contributing a substantial portion of my endowment will demonstrate my willingness to cooperate.
+
+Let's contribute 15 tokens to the public pot. This is a generous contribution that shows my commitment to the success of the group while leaving some tokens for myself in case others do not contribute as much.
+
+Answer = 15

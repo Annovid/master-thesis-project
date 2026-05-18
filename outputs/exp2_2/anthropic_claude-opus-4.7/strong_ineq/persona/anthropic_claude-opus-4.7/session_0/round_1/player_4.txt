@@ -1,0 +1,59 @@
+MODEL_REQUESTED: anthropic/claude-opus-4.7
+MODEL_RETURNED: anthropic/claude-4.7-opus-20260416
+PROVIDER: openrouter
+SESSION: 0
+ROUND: 1
+PLAYER: 4
+TEMPERATURE: 0.0
+PARSED_ACTION: 80.0
+PARSE_ERROR: None
+RETRIES: 0
+RESPONSE_SHA256: 58d3ed4b18a4ba5caf43d0b0c092fe1ec9175e61cd8e14df954a9585367a912a
+
+PROMPT:
+You are playing the Public Goods Game for 1 round with 4 players in total.
+You are Player 4.
+
+Your endowment this round: 160 tokens.
+Other players' endowments: Player 1: 10, Player 2: 20, Player 3: 80.
+
+Each round, every player independently chooses how many tokens to contribute to a public pot (any amount from 0 to their own endowment).
+The sum of all contributions is multiplied by 1.6 and divided equally among all 4 players.
+Your payoff for a round = your_endowment - your_contribution + (1.6 * sum_of_all_contributions) / 4.
+Your final score is the sum of your payoffs across all 1 round.
+After each round, the individual contributions of all players are revealed to everyone.
+
+History of previous rounds:
+No previous rounds.
+
+Note: players have different endowments. You may think about fairness in different ways:
+  - equal absolute contribution: everyone contributes the same number of tokens;
+  - equal relative contribution: everyone contributes the same percentage of their endowment;
+  - self-interest: maximize your own payoff.
+
+Imagine you are a typical human participant in a behavioral economics experiment. Make your decision as a real person would, considering both your interests and what you expect from others.
+
+Decide your contribution for the current round.
+Think step by step about your decision: describe your reasoning, what you expect from the other players, and why you pick this contribution.
+On the last line of your reply, write exactly 'Answer = N' where N is your chosen contribution (an integer between 0 and 160).
+
+RESPONSE:
+Reasoning through this:
+
+**The math:** Each token I contribute returns 1.6/4 = 0.4 to me personally. So purely selfishly, every token I contribute loses me 0.6. Self-interest says contribute 0.
+
+**But I'm not purely selfish.** This is a one-shot game with no future rounds to build reputation, but as a typical human, I care about fairness and cooperation. Behavioral experiments consistently show people contribute 40-60% on average even in one-shot games.
+
+**Fairness considerations:**
+- I have by far the largest endowment (160 vs 10, 20, 80). Total endowment is 270, and I have 59% of it.
+- Equal absolute contribution would be unfair — Player 1 only has 10 tokens total.
+- Equal relative contribution (e.g., 50% each) seems fairest. That would mean I contribute 80.
+- If everyone contributed 50%, total pot = 135, multiplied by 1.6 = 216, divided by 4 = 54 each. My payoff: 160 - 80 + 54 = 134. Without contributing: 160 + 54 = 214 (if others still gave 50%). So free-riding is tempting.
+
+**What I expect from others:** Typical contribution rates are around 40-50%. Smaller-endowment players might contribute proportionally less in absolute terms but similar percentages. Player 3 might contribute moderately. There's risk some contribute very little.
+
+**My choice:** As the wealthiest player, I feel some responsibility to lead with cooperation. Contributing too little would feel stingy given my large endowment. But fully matching 50% (80 tokens) feels risky if others free-ride heavily. 
+
+I'll contribute around 40% — that's 64 tokens. This signals genuine cooperation, is proportionally fair, but hedges against being heavily exploited. Actually, let me go with 50% — 80 tokens — to genuinely embody equal relative contribution, which feels like the fairest norm given unequal endowments.
+
+Answer = 80
